@@ -18,8 +18,8 @@ export default function LandingPage() {
       return;
     }
 
-    if (cleanPseudo.length < 3) {
-      setError("Le pseudo doit contenir au moins 3 caractères");
+    if (cleanPseudo.length < 5) {
+      setError("Le pseudo doit contenir au moins 5 caractères");
       return;
     }
 
@@ -39,7 +39,7 @@ export default function LandingPage() {
     }
   };
 
-  const isValid = pseudo.trim().length >= 3 && pseudo.trim().length <= 8;
+  const isValid = pseudo.trim().length >= 5 && pseudo.trim().length <= 10;
 
   return (
     <main className="relative min-h-screen bg-[#020617] overflow-hidden text-white flex flex-col items-center">
@@ -82,7 +82,7 @@ export default function LandingPage() {
             onChange={handleChange}
             onKeyDown={handleKeyDown}
             placeholder="Entrez votre pseudo"
-            maxLength={8}
+            maxLength={10}
             className={`w-full px-5 py-4 rounded-2xl bg-white/5 border backdrop-blur-xl outline-none transition
               ${error ? "border-red-500/60" : "border-white/10 focus:border-violet-400/50"}
             `}
@@ -94,7 +94,7 @@ export default function LandingPage() {
           )}
 
           <p className="text-xs text-right text-slate-400 mt-1">
-            {pseudo.length}/8 caractères
+            {pseudo.length}/10 caractères
           </p>
         </div>
 
