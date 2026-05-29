@@ -20,7 +20,7 @@ export default function SemesterScreen({ dept: deptProp, level: levelProp }) {
   }, [dept, level, router]);
 
   const handleSelect = (semester) => {
-    //router.push(`/department/${dept}/${level}/${semester}`);
+    router.push(`/department/${dept}/${level}/${semester}`);
     
   };
 
