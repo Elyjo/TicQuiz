@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { d2a } from "@/data/curriculum/d2a";
 import BackButton from "@/components/BackButton";
+import { useRouter } from "next/navigation";
 
 const colorClasses = {
   violet: {
@@ -65,32 +67,58 @@ const colorClasses = {
 export default function SubjectsPage() {
   const [subjects, setSubjects] = useState([]);
   const [path, setPath] = useState(null);
+  const router = useRouter();
 
   useEffect(() => {
     const savedPath = JSON.parse(localStorage.getItem("userPath"));
-
     if (!savedPath) return;
 
     setPath(savedPath);
 
-    if (savedPath.dept === "d2a") {
-      setSubjects(d2a[savedPath.level][savedPath.semester]);
-    }
+    const data = d2a?.[savedPath.level]?.[savedPath.semester] || [];
+
+    setSubjects(data);
   }, []);
 
+  // ✅ SAME AS DEPARTMENT SCREEN
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.45,
+        delayChildren: 0.7,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#020617]">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
+      className="relative min-h-screen overflow-hidden bg-[#020617]"
+    >
       <BackButton />
 
-      {/* Background */}
+      {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
-      <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80" />
+      <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80 pointer-events-none" />
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
       <section className="relative z-20 px-5 py-8 max-w-sm mx-auto">
-        {/* Header */}
+        {/* HEADER */}
+        {/* HEADER STATIQUE */}
         <div className="mt-24 text-center">
           <h1 className="text-3xl font-black text-white">Matières</h1>
 
@@ -100,50 +128,48 @@ export default function SubjectsPage() {
           </p>
         </div>
 
-        {/* Subjects */}
-        <div className="mt-12 flex flex-col gap-4">
-          {subjects.map((subject) => {
-            const Icon = subject.icon;
+        {/* SUBJECTS */}
+{subjects.length > 0 && (
+  <motion.div
+    variants={container}
+    initial="hidden"
+    animate="show"
+    className="mt-12 flex flex-col gap-4"
+  >
+    {subjects.map((subject) => {
+      const Icon = subject.icon;
+      const colors = colorClasses[subject.color] || colorClasses.violet;
 
-            const colors = colorClasses[subject.color] || colorClasses.violet;
+      return (
+        <motion.button
+          key={subject.id}
+          variants={item} // Passe automatiquement en "hidden" puis "show" via le parent
+          whileTap={{ scale: 0.98 }}
+          onClick={() => router.push(`/subjects/${subject.id}`)}
+          className="relative w-full overflow-hidden rounded-[30px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between"
+        >
+          {/* CONTENT */}
+          <div className="relative z-10 flex items-center gap-4">
+            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${colors.bg} ${colors.border}`}>
+              <Icon size={26} className={colors.icon} />
+            </div>
 
-            return (
-              <button
-                key={subject.id}
-                className="relative overflow-hidden rounded-[30px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between active:scale-[0.98] transition"
-              >
-                <div
-                  className={`absolute top-[-30px] right-[-30px] w-[120px] h-[120px] rounded-full blur-3xl ${colors.glow}`}
-                />
+            <div className="text-left">
+              <h3 className="text-lg font-bold text-white">{subject.name}</h3>
+              <p className="text-sm text-slate-400">{subject.credits} crédits</p>
+            </div>
+          </div>
 
-                <div className="flex items-center gap-4 relative z-10">
-                  <div
-                    className={`w-14 h-14 rounded-2xl flex items-center justify-center ${colors.bg} ${colors.border} border`}
-                  >
-                    <Icon size={26} className={colors.icon} />
-                  </div>
-
-                  <div className="text-left">
-                    <h3 className="text-white font-bold text-lg">
-                      {subject.name}
-                    </h3>
-
-                    <p className="text-slate-400 text-sm">
-                      {subject.credits} crédits
-                    </p>
-                  </div>
-                </div>
-
-                <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center border relative z-10 ${colors.bg} ${colors.border}`}
-                >
-                  <ArrowRight size={18} className={colors.icon} />
-                </div>
-              </button>
-            );
-          })}
-        </div>
+          {/* ARROW */}
+          <div className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center border ${colors.bg} ${colors.border}`}>
+            <ArrowRight size={18} className={colors.icon} />
+          </div>
+        </motion.button>
+      );
+    })}
+  </motion.div>
+)}
       </section>
-    </main>
+    </motion.main>
   );
 }
