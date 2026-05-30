@@ -15,12 +15,7 @@ export const d2a = {
         credits: 8,
         icon: "Sigma",
       },
-      {
-        id: "expression",
-        name: "Expression",
-        credits: 6,
-        icon: "BookOpen",
-      },
+     
       {
         id: "algorithmique",
         name: "Algorithmique",
@@ -60,12 +55,7 @@ export const d2a = {
         credits: 6,
         icon: "Network",
       },
-      {
-        id: "anglais",
-        name: "Anglais",
-        credits: 2,
-        icon: "Languages",
-      },
+    
     ],
   },
 
@@ -101,12 +91,7 @@ export const d2a = {
         credits: 4,
         icon: "FileCode2",
       },
-      {
-        id: "anglais-technique",
-        name: "Anglais Technique",
-        credits: 2,
-        icon: "Languages",
-      },
+  
     ],
 
     semester2: [
@@ -202,30 +187,14 @@ export const d2a = {
         credits: 3,
         icon: "BookText",
       },
-      {
-        id: "communication",
-        name: "Communication",
-        credits: 2,
-        icon: "Languages",
-      },
+    
       {
         id: "droit-tic",
         name: "Droit des TIC",
         credits: 2,
         icon: "Scale",
       },
-      {
-        id: "gestion-projet",
-        name: "Gestion de Projet",
-        credits: 3,
-        icon: "Briefcase",
-      },
-      {
-        id: "stage",
-        name: "Stage",
-        credits: 15,
-        icon: "GraduationCap",
-      },
+    
     ],
   },
 };
