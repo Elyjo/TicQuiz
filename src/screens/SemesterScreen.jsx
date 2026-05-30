@@ -28,7 +28,16 @@ export default function SemesterScreen() {
   }, [dept, level, router]);
 
   const handleSelect = (semester) => {
-    router.push(`/department/${dept}/${level}/${semester}`);
+    localStorage.setItem(
+      "userPath",
+      JSON.stringify({
+        dept,
+        level,
+        semester: semester === "s1" ? "semester1" : "semester2",
+      }),
+    );
+
+    router.push("/subjects");
   };
 
   return (
@@ -53,7 +62,6 @@ export default function SemesterScreen() {
 
       {/* CONTENT */}
       <section className="relative z-20 w-full max-w-sm min-h-screen px-5 py-8 flex flex-col items-center justify-center">
-
         {/* HEADER (même animation que LevelScreen) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -92,7 +100,6 @@ export default function SemesterScreen() {
           }}
           className="mt-10 flex flex-col gap-4 w-full"
         >
-
           {/* S1 */}
           <motion.button
             onClick={() => handleSelect("s1")}
@@ -168,7 +175,6 @@ export default function SemesterScreen() {
               <ArrowRight className="text-yellow-300" />
             </div>
           </motion.button>
-
         </motion.div>
       </section>
     </motion.main>

@@ -1,4 +1,4 @@
-import SplashPage from "./splash/Splash";
+import SplashPage from "./splash/page";
 
 
 export default function Home() {
