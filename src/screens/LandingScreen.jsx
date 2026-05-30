@@ -54,9 +54,8 @@ export default function LandingScreen() {
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-violet-500 blur-[70px] opacity-0" />
 
-          <div className="relative w-32 h-32 rounded-[28px] bg-white/0 backdrop-blur-3xl flex items-center justify-center">
-            <img src="/logobf.png" className="w-full h-full object-contain" />
-          </div>
+            <img src="/logobf.png" className="w-32 h-32" />
+          
         </div>
 
         <div className="mt-12 flex flex-row items-center gap-2 text-slate-300/70 text-sm">
