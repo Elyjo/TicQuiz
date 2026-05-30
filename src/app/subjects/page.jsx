@@ -146,7 +146,7 @@ export default function SubjectsPage() {
           variants={item} // Passe automatiquement en "hidden" puis "show" via le parent
           whileTap={{ scale: 0.98 }}
           onClick={() => router.push(`/subjects/${subject.id}`)}
-          className="relative w-full overflow-hidden rounded-[30px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between"
+          className="relative w-full overflow-hidden rounded-[34px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between"
         >
           {/* CONTENT */}
           <div className="relative z-10 flex items-center gap-4">
