@@ -58,7 +58,7 @@ export default function SemesterScreen() {
       {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
-      <div className="absolute -top-45 left-1/2 -translate-x-1/2 w-125 h-125 rounded-full bg-linear-to-br from-orange-500/30 via-amber-500/10 to-yellow-400/10 blur-3xl opacity-80" />
+      <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-orange-500/30 via-amber-500/10 to-yellow-400/10 blur-3xl opacity-80" />
 
       {/* CONTENT */}
       <section className="relative z-20 w-full max-w-sm min-h-screen px-5 py-8 flex flex-col items-center justify-center">
@@ -75,7 +75,7 @@ export default function SemesterScreen() {
 
           <h1 className="mt-6 text-2xl font-black text-white">
             Indiquez votre{" "}
-            <span className="bg-linear-to-r from-orange-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent">
               semestre
             </span>
           </h1>
@@ -118,7 +118,7 @@ export default function SemesterScreen() {
             whileTap={{ scale: 0.96 }}
             className="relative overflow-hidden rounded-[34px] border border-orange-400/20 bg-orange-500/10 backdrop-blur-3xl p-5 flex items-center justify-between"
           >
-            <div className="absolute -top-7.5 -left-7.5 w-30 h-30 rounded-full bg-orange-500/20 blur-3xl" />
+            <div className="absolute top-[-30px] left-[-30px] w-[120px] h-[120px] rounded-full bg-orange-500/20 blur-3xl" />
 
             <div className="relative z-10 flex gap-4">
               <div className="w-16 h-16 rounded-2xl border border-orange-400/20 bg-orange-500/10 backdrop-blur-xl flex items-center justify-center">
@@ -156,7 +156,7 @@ export default function SemesterScreen() {
             whileTap={{ scale: 0.96 }}
             className="relative overflow-hidden rounded-[34px] border border-yellow-400/20 bg-yellow-500/10 backdrop-blur-3xl p-5 flex items-center justify-between"
           >
-            <div className="absolute -bottom-7.5 -right-7.5 w-30 h-30 rounded-full bg-yellow-500/20 blur-3xl" />
+            <div className="absolute bottom-[-30px] right-[-30px] w-[120px] h-[120px] rounded-full bg-yellow-500/20 blur-3xl" />
 
             <div className="relative z-10 flex gap-4">
               <div className="w-16 h-16 rounded-2xl border border-yellow-400/20 bg-yellow-500/10 backdrop-blur-xl flex items-center justify-center">

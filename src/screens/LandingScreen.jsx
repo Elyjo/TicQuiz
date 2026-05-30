@@ -45,8 +45,8 @@ export default function LandingScreen() {
     <main className="relative min-h-screen bg-[#020617] overflow-hidden text-white flex flex-col items-center">
       {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
-      <div className="absolute -top-50 w-125 h-125 rounded-full bg-violet-500/30 blur-3xl" />
-      <div className="absolute -bottom-50 -right-25 w-100 h-100 rounded-full bg-cyan-500/20 blur-3xl" />
+      <div className="absolute top-[-200px] w-[500px] h-[500px] rounded-full bg-violet-500/30 blur-3xl" />
+      <div className="absolute bottom-[-200px] right-[-100px] w-[400px] h-[400px] rounded-full bg-cyan-500/20 blur-3xl" />
 
       {/* HERO */}
       <section className="relative z-10 flex flex-col items-center mt-28 px-6 text-center w-full max-w-sm">
