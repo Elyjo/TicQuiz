@@ -33,7 +33,7 @@ export default function SemesterScreen() {
       JSON.stringify({
         dept,
         level,
-        semester,
+        semester: semester === "s1" ? "semester1" : "semester2",
       }),
     );
 
@@ -102,7 +102,7 @@ export default function SemesterScreen() {
         >
           {/* S1 */}
           <motion.button
-            onClick={() => handleSelect("semestre1")}
+            onClick={() => handleSelect("s1")}
             variants={{
               hidden: { opacity: 0, y: 40, scale: 0.97 },
               show: {
@@ -140,7 +140,7 @@ export default function SemesterScreen() {
 
           {/* S2 */}
           <motion.button
-            onClick={() => handleSelect("semestre2")}
+            onClick={() => handleSelect("s2")}
             variants={{
               hidden: { opacity: 0, y: 40, scale: 0.97 },
               show: {

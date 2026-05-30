@@ -129,46 +129,54 @@ export default function SubjectsPage() {
         </div>
 
         {/* SUBJECTS */}
-{subjects.length > 0 && (
-  <motion.div
-    variants={container}
-    initial="hidden"
-    animate="show"
-    className="mt-12 flex flex-col gap-4"
-  >
-    {subjects.map((subject) => {
-      const Icon = subject.icon;
-      const colors = colorClasses[subject.color] || colorClasses.violet;
+        {subjects.length > 0 && (
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="mt-12 flex flex-col gap-4"
+          >
+            {subjects.map((subject) => {
+              const Icon = subject.icon;
+              const colors = colorClasses[subject.color] || colorClasses.violet;
 
-      return (
-        <motion.button
-          key={subject.id}
-          variants={item} // Passe automatiquement en "hidden" puis "show" via le parent
-          whileTap={{ scale: 0.98 }}
-          onClick={() => router.push(`/subjects/${subject.id}`)}
-          className="relative w-full overflow-hidden rounded-[34px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between"
-        >
-          {/* CONTENT */}
-          <div className="relative z-10 flex items-center gap-4">
-            <div className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${colors.bg} ${colors.border}`}>
-              <Icon size={26} className={colors.icon} />
-            </div>
+              return (
+                <motion.button
+                  key={subject.id}
+                  variants={item} // Passe automatiquement en "hidden" puis "show" via le parent
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => router.push(`/subjects/${subject.id}`)}
+                  className="relative w-full overflow-hidden rounded-[34px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between"
+                >
+                  {/* CONTENT */}
+                  <div className="relative z-10 flex items-center gap-4">
+                    <div
+                      className={`w-14 h-14 rounded-2xl flex items-center justify-center border ${colors.bg} ${colors.border}`}
+                    >
+                      <Icon size={26} className={colors.icon} />
+                    </div>
 
-            <div className="text-left">
-              <h3 className="text-lg font-bold text-white">{subject.name}</h3>
-              <p className="text-sm text-slate-400">{subject.credits} crédits</p>
-            </div>
-          </div>
+                    <div className="text-left">
+                      <h3 className="text-lg font-bold text-white">
+                        {subject.name}
+                      </h3>
+                      <p className="text-sm text-slate-400">
+                        {subject.credits} crédits
+                      </p>
+                    </div>
+                  </div>
 
-          {/* ARROW */}
-          <div className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center border ${colors.bg} ${colors.border}`}>
-            <ArrowRight size={18} className={colors.icon} />
-          </div>
-        </motion.button>
-      );
-    })}
-  </motion.div>
-)}
+                  {/* ARROW */}
+                  <div
+                    className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center border ${colors.bg} ${colors.border}`}
+                  >
+                    <ArrowRight size={18} className={colors.icon} />
+                  </div>
+                </motion.button>
+              );
+            })}
+          </motion.div>
+        )}
       </section>
     </motion.main>
   );
