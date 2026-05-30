@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import {
   ArrowRight,
   CalendarDays,
-  ArrowUp,
-  ArrowDown,
+  Hourglass,
+  Clock,
   ArrowLeft,
 } from "lucide-react";
 
@@ -110,19 +110,19 @@ export default function SemesterScreen() {
                 y: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.3,
+                  duration: 1.35,
                   ease: [0.22, 1, 0.36, 1],
                 },
               },
             }}
             whileTap={{ scale: 0.96 }}
-            className="relative overflow-hidden rounded-[34px] border border-orange-400/20 bg-orange-500/10 backdrop-blur-3xl p-5 flex items-center justify-between"
+            className="relative overflow-hidden rounded-[34px] border border-yellow-400/20 bg-yellow-500/10 backdrop-blur-3xl p-5 flex items-center justify-between"
           >
-            <div className="absolute top-[-30px] left-[-30px] w-[120px] h-[120px] rounded-full bg-orange-500/20 blur-3xl" />
+            <div className="absolute bottom-[-30px] right-[-30px] w-[120px] h-[120px] rounded-full bg-yellow-500/20 blur-3xl" />
 
             <div className="relative z-10 flex gap-4">
-              <div className="w-16 h-16 rounded-2xl border border-orange-400/20 bg-orange-500/10 backdrop-blur-xl flex items-center justify-center">
-                <ArrowUp size={28} className="text-orange-300" />
+              <div className="w-16 h-16 rounded-2xl border border-yellow-400/20 bg-yellow-500/10 backdrop-blur-xl flex items-center justify-center">
+                <Clock size={28} className="text-yellow-300" />
               </div>
 
               <div className="text-left">
@@ -133,8 +133,8 @@ export default function SemesterScreen() {
               </div>
             </div>
 
-            <div className="w-12 h-12 rounded-full bg-orange-500/20 border border-orange-400/20 flex items-center justify-center">
-              <ArrowRight className="text-orange-300" />
+            <div className="w-12 h-12 rounded-full bg-yellow-500/20 border border-yellow-400/20 flex items-center justify-center">
+              <ArrowRight className="text-yellow-300" />
             </div>
           </motion.button>
 
@@ -148,19 +148,19 @@ export default function SemesterScreen() {
                 y: 0,
                 scale: 1,
                 transition: {
-                  duration: 1.35,
+                  duration: 1.3,
                   ease: [0.22, 1, 0.36, 1],
                 },
               },
             }}
             whileTap={{ scale: 0.96 }}
-            className="relative overflow-hidden rounded-[34px] border border-yellow-400/20 bg-yellow-500/10 backdrop-blur-3xl p-5 flex items-center justify-between"
+            className="relative overflow-hidden rounded-[34px] border border-orange-400/20 bg-orange-500/10 backdrop-blur-3xl p-5 flex items-center justify-between"
           >
-            <div className="absolute bottom-[-30px] right-[-30px] w-[120px] h-[120px] rounded-full bg-yellow-500/20 blur-3xl" />
+            <div className="absolute top-[-30px] left-[-30px] w-[120px] h-[120px] rounded-full bg-orange-500/20 blur-3xl" />
 
             <div className="relative z-10 flex gap-4">
-              <div className="w-16 h-16 rounded-2xl border border-yellow-400/20 bg-yellow-500/10 backdrop-blur-xl flex items-center justify-center">
-                <ArrowDown size={28} className="text-yellow-300" />
+              <div className="w-16 h-16 rounded-2xl border border-orange-400/20 bg-orange-500/10 backdrop-blur-xl flex items-center justify-center">
+                <Hourglass size={28} className="text-orange-300" />
               </div>
 
               <div className="text-left">
@@ -171,8 +171,8 @@ export default function SemesterScreen() {
               </div>
             </div>
 
-            <div className="w-12 h-12 rounded-full bg-yellow-500/20 border border-yellow-400/20 flex items-center justify-center">
-              <ArrowRight className="text-yellow-300" />
+            <div className="w-12 h-12 rounded-full bg-orange-500/20 border border-orange-400/20 flex items-center justify-center">
+              <ArrowRight size={28} className="text-orange-300" />
             </div>
           </motion.button>
         </motion.div>
