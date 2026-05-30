@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { BookOpen, RefreshCw, TrendingUp, Info } from "lucide-react";
 
-export default function LandingPage() {
+export default function LandingScreen() {
   const router = useRouter();
 
   const [pseudo, setPseudo] = useState("");

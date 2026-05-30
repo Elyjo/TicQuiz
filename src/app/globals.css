@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes zoomFade {
+  from {
+    transform: scale(1.05);
+    filter: brightness(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    filter: brightness(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoomFade {
+  animation: zoomFade 1.2s ease-out forwards;
+}
