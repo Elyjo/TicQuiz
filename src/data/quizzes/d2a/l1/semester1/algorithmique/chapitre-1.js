@@ -1,5 +1,6 @@
 export const chapter1 = {
   id: "chapter-1",
+
   title: "Données & Opérations simples",
 
   questions: [
@@ -10,10 +11,11 @@ export const chapter1 = {
         "Une donnée produite par l’algorithme",
         "Une donnée fournie à l’algorithme",
         "Une donnée intermédiaire",
-        "Une constante uniquement"
+        "Une constante uniquement",
       ],
-      answer: 1
+      answer: 1,
     },
+
     {
       id: 2,
       question: "Qu’est-ce qu’une donnée de sortie ?",
@@ -21,21 +23,23 @@ export const chapter1 = {
         "Une donnée fournie",
         "Un résultat produit par l’algorithme",
         "Une variable constante",
-        "Une entrée clavier"
+        "Une entrée clavier",
       ],
-      answer: 1
+      answer: 1,
     },
+
     {
       id: 3,
       question: "Une donnée intermédiaire est :",
       options: [
         "Finale",
-        "Utilisée pour calculs",
+        "Utilisée pour les calculs",
         "Toujours une entrée",
-        "Toujours une sortie"
+        "Toujours une sortie",
       ],
-      answer: 1
+      answer: 1,
     },
+
     {
       id: 4,
       question: "Une constante est :",
@@ -43,16 +47,19 @@ export const chapter1 = {
         "Une valeur variable",
         "Une valeur fixe",
         "Une entrée utilisateur",
-        "Une sortie"
+        "Une sortie",
       ],
-      answer: 1
+      answer: 1,
     },
+
     {
       id: 5,
-      question: "Quel symbole représente l’affectation en pseudo-code ?",
+      question:
+        "Quel symbole représente l’affectation en pseudo-code ?",
       options: ["=", "<-", "==", "=>"],
-      answer: 1
+      answer: 1,
     },
+
     {
       id: 6,
       question: "Une variable peut :",
@@ -60,16 +67,24 @@ export const chapter1 = {
         "Ne jamais changer",
         "Changer de valeur",
         "Être uniquement constante",
-        "Être inexistante"
+        "Être inexistante",
       ],
-      answer: 1
+      answer: 1,
     },
+
     {
       id: 7,
-      question: "Quel type contient des nombres entiers ?",
-      options: ["real", "char", "integer", "boolean"],
-      answer: 2
+      question:
+        "Quel type contient des nombres entiers ?",
+      options: [
+        "real",
+        "char",
+        "integer",
+        "boolean",
+      ],
+      answer: 2,
     },
+
     {
       id: 8,
       question: "Un réel peut contenir :",
@@ -77,21 +92,35 @@ export const chapter1 = {
         "Uniquement des entiers",
         "Des décimaux",
         "Des caractères",
-        "Des booléens"
+        "Des booléens",
       ],
-      answer: 1
+      answer: 1,
     },
+
     {
       id: 9,
-      question: "Une entrée utilisateur se fait avec :",
-      options: ["write", "read", "print", "echo"],
-      answer: 1
+      question:
+        "Une entrée utilisateur se fait avec :",
+      options: [
+        "write",
+        "read",
+        "print",
+        "echo",
+      ],
+      answer: 1,
     },
+
     {
       id: 10,
-      question: "Une sortie s’affiche avec :",
-      options: ["read", "input", "write", "scan"],
-      answer: 2
-    }
-  ]
+      question:
+        "Une sortie s’affiche avec :",
+      options: [
+        "read",
+        "input",
+        "write",
+        "scan",
+      ],
+      answer: 2,
+    },
+  ],
 };
