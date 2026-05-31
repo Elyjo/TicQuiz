@@ -1,7 +1,7 @@
 // data/curriculum/d2a.js
 import {
   Cpu,
-  Sigma,
+  AppWindow,
   Code2,
   Globe,
   Calculator,
@@ -34,10 +34,10 @@ export const d2a = {
         color: "indigo",
       },
       {
-        id: "mathematiques",
-        name: "Mathématiques",
+        id: "systeme d'explotation",
+        name: "Système Exploitation",
         credits: 8,
-        icon: Sigma,
+        icon: AppWindow,
         color: "yellow",
       },
       {
