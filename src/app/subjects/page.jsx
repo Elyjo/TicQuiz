@@ -73,7 +73,7 @@ export default function SubjectsPage() {
     const saved = localStorage.getItem("userPath");
 
     if (!saved) {
-      console.log("NO USER PATH");
+    //  console.log("NO USER PATH");
       return;
     }
 
@@ -82,12 +82,12 @@ export default function SubjectsPage() {
     try {
       savedPath = JSON.parse(saved);
     } catch (e) {
-      console.log("INVALID USER PATH");
+    //  console.log("INVALID USER PATH");
       return;
     }
 
     if (!savedPath?.level || !savedPath?.semester) {
-      console.log("PATH INCOMPLETE", savedPath);
+    //  console.log("PATH INCOMPLETE", savedPath);
       return;
     }
 
@@ -95,7 +95,7 @@ export default function SubjectsPage() {
 
     const data = d2a?.[savedPath.level]?.[savedPath.semester] || [];
 
-    console.log("SUBJECTS LOADED:", data);
+    //  console.log("SUBJECTS LOADED:", data);
 
     setSubjects(data);
   }, []);

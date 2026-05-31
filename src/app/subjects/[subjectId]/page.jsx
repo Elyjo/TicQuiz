@@ -36,7 +36,7 @@ export default function SubjectPage() {
         setChapters(Object.values(data));
         setSubjectName(params.subjectId);
       } catch (err) {
-        console.error("Erreur chargement chapitres:", err);
+        //  console.error("Erreur chargement chapitres:", err);
         setChapters([]);
       }
     };
