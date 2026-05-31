@@ -50,8 +50,8 @@ export default function SubjectPage() {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.35,
-        delayChildren: 0.3,
+        staggerChildren: 0.45,
+        delayChildren: 0.7,
       },
     },
   };
@@ -61,7 +61,7 @@ export default function SubjectPage() {
     show: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
@@ -69,11 +69,11 @@ export default function SubjectPage() {
     <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1.2, ease:"easeOut" }}
       className="relative min-h-screen overflow-hidden bg-[#020617]"
     >
       <BackButton />
-      
+
       {/* BACKGROUND IDENTIQUE */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
       <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80 pointer-events-none" />
