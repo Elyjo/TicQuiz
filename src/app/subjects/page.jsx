@@ -70,12 +70,32 @@ export default function SubjectsPage() {
   const router = useRouter();
 
   useEffect(() => {
-    const savedPath = JSON.parse(localStorage.getItem("userPath"));
-    if (!savedPath) return;
+    const saved = localStorage.getItem("userPath");
+
+    if (!saved) {
+      console.log("NO USER PATH");
+      return;
+    }
+
+    let savedPath;
+
+    try {
+      savedPath = JSON.parse(saved);
+    } catch (e) {
+      console.log("INVALID USER PATH");
+      return;
+    }
+
+    if (!savedPath?.level || !savedPath?.semester) {
+      console.log("PATH INCOMPLETE", savedPath);
+      return;
+    }
 
     setPath(savedPath);
 
     const data = d2a?.[savedPath.level]?.[savedPath.semester] || [];
+
+    console.log("SUBJECTS LOADED:", data);
 
     setSubjects(data);
   }, []);
@@ -113,8 +133,6 @@ export default function SubjectsPage() {
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
       <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80 pointer-events-none" />
-
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
       <section className="relative z-20 px-5 py-8 max-w-sm mx-auto">
         {/* HEADER */}
