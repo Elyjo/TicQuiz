@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Code2 } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
+import BackButton from "@/components/BackButton";
 
 const colorClasses = {
   violet: {
@@ -71,6 +72,8 @@ export default function SubjectPage() {
       transition={{ duration: 1 }}
       className="relative min-h-screen overflow-hidden bg-[#020617]"
     >
+      <BackButton />
+      
       {/* BACKGROUND IDENTIQUE */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
       <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80 pointer-events-none" />
