@@ -5,25 +5,28 @@ export const algorithmique = {
 
   chapters: [
     {
-      id: "chapter-1",
+      id: "chapter1",
       title: "Données et opérations simples",
       duration: "45 min",
       questions: 20,
     },
+
     {
-      id: "chapter-2",
+      id: "chapter2",
       title: "Structures conditionnelles",
       duration: "40 min",
       questions: 15,
     },
+
     {
-      id: "chapter-3",
+      id: "chapter3",
       title: "Boucles",
       duration: "50 min",
       questions: 20,
     },
+
     {
-      id: "chapter-4",
+      id: "chapter4",
       title: "Tableaux",
       duration: "45 min",
       questions: 20,

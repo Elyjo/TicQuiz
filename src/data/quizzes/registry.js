@@ -1,13 +1,10 @@
-import { chapter1 } from "./d2a/l1/semester1/algorithmique/chapitre-1";
-
+import { algorithmiqueQuiz } from "./d2a/l1/semester1/algorithmique";
 
 export const quizRegistry = {
   d2a: {
     l1: {
       semester1: {
-        algorithmique: {
-          "chapter-1": chapter1
-        },
+        algorithmique: algorithmiqueQuiz,
       },
     },
   },

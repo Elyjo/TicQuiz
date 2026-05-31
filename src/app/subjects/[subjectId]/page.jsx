@@ -5,7 +5,6 @@ import { useParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { getQuiz } from "@/lib/getQuiz";
-import { quizRegistry } from "@/data/quizzes/registry";
 
 export default function SubjectPage() {
   const params = useParams();
@@ -24,17 +23,29 @@ export default function SubjectPage() {
 
     const subjectKey = params.subjectId;
 
-    const subjectQuizzes =
-      quizRegistry?.[path.dept]?.[path.level]?.[path.semester]?.[subjectKey] ||
-      {};
+    // 🔥 récupérer tous les chapitres depuis registry indirectement
+    const registry = [
+      "chapter-1",
+      "chapter-2",
+      "chapter-3",
+    ];
 
-    const loadedChapters = Object.entries(subjectQuizzes).map(
-      ([chapterId, quiz]) => ({
-        id: chapterId,
-        title: quiz.title,
-        questions: quiz.questions.length,
-      }),
-    );
+    const loadedChapters = registry
+      .map((chapterId) =>
+        getQuiz({
+          dept: path.dept,
+          level: path.level,
+          semester: path.semester,
+          subject: subjectKey,
+          chapter: chapterId,
+        }),
+      )
+      .filter(Boolean)
+      .map((q) => ({
+        id: q.id,
+        title: q.title,
+        questions: q.questions.length,
+      }));
 
     setChapters(loadedChapters);
     setSubjectName(subjectKey);
@@ -72,9 +83,13 @@ export default function SubjectPage() {
             <BookOpen size={34} className="text-violet-300" />
           </div>
 
-          <h1 className="mt-6 text-2xl font-black text-white">{subjectName}</h1>
+          <h1 className="mt-6 text-2xl font-black text-white">
+            {subjectName}
+          </h1>
 
-          <p className="mt-2 text-slate-400 text-sm">Choisissez un chapitre</p>
+          <p className="mt-2 text-slate-400 text-sm">
+            Choisissez un chapitre
+          </p>
         </div>
 
         {/* CHAPTERS */}
