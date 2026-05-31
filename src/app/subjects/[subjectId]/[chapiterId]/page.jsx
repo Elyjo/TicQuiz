@@ -3,10 +3,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { algorithmiqueQuiz } from "@/data/quizzes/d2a/l1/semester1/algorithmique";
+import { ArrowRight } from "lucide-react";
 import { getQuiz } from "@/lib/getQuiz";
-
-// TEMP IMPORT (on branchera dynamique après)
 
 export default function QuizPage() {
   const params = useParams();
@@ -20,16 +18,26 @@ export default function QuizPage() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const saved = JSON.parse(localStorage.getItem("userPath"));
+    const saved = localStorage.getItem("userPath");
     if (!saved) return;
 
+    const path = JSON.parse(saved);
+
     const data = getQuiz({
-      dept: saved.dept,
-      level: saved.level,
-      semester: saved.semester,
+      dept: path.dept,
+      level: path.level,
+      semester: path.semester,
       subject: params.subjectId,
       chapter: params.chapterId,
     });
+
+    if (!data) {
+      console.log("QUIZ NOT FOUND", {
+        subject: params.subjectId,
+        chapter: params.chapterId,
+      });
+      return;
+    }
 
     setQuiz(data);
   }, [params.subjectId, params.chapterId]);
@@ -62,7 +70,7 @@ export default function QuizPage() {
           onClick={() => router.push("/subjects")}
           className="mt-6 px-5 py-3 rounded-xl bg-white/10 border border-white/20"
         >
-          Retour
+          Retour aux matières
         </button>
       </div>
     );
@@ -74,7 +82,6 @@ export default function QuizPage() {
       animate={{ opacity: 1 }}
       className="min-h-screen bg-[#020617] flex flex-col items-center justify-center px-5 text-white"
     >
-      {/* QUESTION */}
       <motion.div
         key={current.id}
         initial={{ opacity: 0, y: 20 }}
@@ -84,7 +91,6 @@ export default function QuizPage() {
       >
         <h2 className="text-xl font-bold mb-6">{current.question}</h2>
 
-        {/* OPTIONS */}
         <div className="flex flex-col gap-3">
           {current.options.map((opt, i) => (
             <button
@@ -97,7 +103,6 @@ export default function QuizPage() {
           ))}
         </div>
 
-        {/* PROGRESSION */}
         <p className="mt-6 text-sm text-slate-400">
           Question {index + 1} / {quiz.questions.length}
         </p>
