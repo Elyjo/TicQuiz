@@ -26,17 +26,14 @@ export default function SubjectPage() {
   useEffect(() => {
     const loadChapters = async () => {
       try {
-        // 🔥 chemin dynamique basé sur subjectId
         const module = await import(
           `@/data/quizzes/d2a/l1/semester1/${params.subjectId}/chapters`
         );
 
-        const data = module?.Quiz || module?.default || module;
-
-        setChapters(Object.values(data));
+        setChapters(Object.values(module.Quiz));
         setSubjectName(params.subjectId);
       } catch (err) {
-        //  console.error("Erreur chargement chapitres:", err);
+        console.error("Erreur chargement chapitres :", err);
         setChapters([]);
       }
     };
@@ -80,7 +77,7 @@ export default function SubjectPage() {
 
       <section className="relative z-20 px-5 py-8 max-w-sm mx-auto">
         {/* HEADER */}
-       <div className="mt-2 text-center">
+        <div className="mt-2 text-center">
           <h1 className="text-3xl font-black text-white">Chapitres</h1>
         </div>
 
