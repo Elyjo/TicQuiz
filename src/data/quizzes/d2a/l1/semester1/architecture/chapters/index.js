@@ -7,7 +7,7 @@ import { chapter4 } from "./chapitre-4";
 import { chapter5 } from "./chapitre-5";
 import { chapter6 } from "./chapitre-6";
 
-export const algorithmiqueQuiz = {
+export const Quiz = {
   "chapter-1": chapter1,
   "chapter-2": chapter2,
   "chapter-3": chapter3,

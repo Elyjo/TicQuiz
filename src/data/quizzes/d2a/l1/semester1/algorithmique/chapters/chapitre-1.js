@@ -1,7 +1,7 @@
 export const chapter1 = {
   id: "chapter-1",
 
-  title: "Données & Opérations",
+  title: "Données && Opérations",
 
   questions: [
     {

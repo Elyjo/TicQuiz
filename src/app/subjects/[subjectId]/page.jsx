@@ -31,7 +31,7 @@ export default function SubjectPage() {
           `@/data/quizzes/d2a/l1/semester1/${params.subjectId}/chapters`
         );
 
-        const data = module?.algorithmiqueQuiz || module?.default || module;
+        const data = module?.Quiz || module?.default || module;
 
         setChapters(Object.values(data));
         setSubjectName(params.subjectId);

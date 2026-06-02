@@ -34,7 +34,7 @@ export const d2a = {
         color: "indigo",
       },
       {
-        id: "systeme d'explotation",
+        id: "systemexploitation",
         name: "Système Exploitation",
         credits: 8,
         icon: AppWindow,
