@@ -1,7 +1,7 @@
 export const chapter6 = {
   id: "chapter-6",
 
-  title: "Les circuits logiques et systèmes combinatoires",
+  title: "Circuits logiques",
 
   questions: [
     {

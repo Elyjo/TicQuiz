@@ -1,7 +1,7 @@
 export const chapter1 = {
   id: "chapter-1",
 
-  title: "Introduction à la technologie des ordinateurs",
+  title: "Technologie des ordinateurs",
 
   questions: [
     {

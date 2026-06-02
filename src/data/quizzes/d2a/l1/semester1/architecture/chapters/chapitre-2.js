@@ -1,7 +1,7 @@
 export const chapter2 = {
   id: "chapter-2",
 
-  title: "Représentation de l’information : Les systèmes de numération",
+  title: "Systèmes de numération",
 
   questions: [
     {

@@ -1,7 +1,7 @@
 export const chapter3 = {
   id: "chapter-3",
 
-  title: "Représentation de l’information : Les nombres signés",
+  title: "Nombres signés",
 
   questions: [
     {

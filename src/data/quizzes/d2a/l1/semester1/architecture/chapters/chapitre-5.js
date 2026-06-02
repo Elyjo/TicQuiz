@@ -1,7 +1,7 @@
 export const chapter5 = {
   id: "chapter-5",
 
-  title: "Le codage binaire et correction d'erreurs",
+  title: "Codage binaire",
 
   questions: [
     {

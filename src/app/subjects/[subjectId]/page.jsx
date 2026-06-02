@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Code2 } from "lucide-react";
+import { ArrowRight, NotepadText } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import BackButton from "@/components/BackButton";
 
@@ -17,9 +17,9 @@ const colorClasses = {
 export default function SubjectPage() {
   const params = useParams();
   const router = useRouter();
-
   const [chapters, setChapters] = useState([]);
   const [subjectName, setSubjectName] = useState("");
+  const [path, setPath] = useState(null);
 
   const colors = colorClasses.violet;
 
@@ -69,7 +69,7 @@ export default function SubjectPage() {
     <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.2, ease:"easeOut" }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
       className="relative min-h-screen overflow-hidden bg-[#020617]"
     >
       <BackButton />
@@ -80,18 +80,8 @@ export default function SubjectPage() {
 
       <section className="relative z-20 px-5 py-8 max-w-sm mx-auto">
         {/* HEADER */}
-        <div className="text-center mt-2">
-          <div
-            className={`w-16 h-16 mx-auto rounded-2xl flex items-center justify-center border ${colors.bg} ${colors.border}`}
-          >
-            <Code2 className={colors.icon} size={28} />
-          </div>
-
-          <h1 className="text-3xl font-black text-white mt-6">
-            {subjectName?.toLowerCase()}
-          </h1>
-
-          <p className="mt-2 text-slate-400 text-sm">Choisissez un chapitre</p>
+       <div className="mt-2 text-center">
+          <h1 className="text-3xl font-black text-white">Chapitres</h1>
         </div>
 
         {/* CHAPTERS */}

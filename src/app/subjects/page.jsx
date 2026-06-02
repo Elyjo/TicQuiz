@@ -136,7 +136,6 @@ export default function SubjectsPage() {
 
       <section className="relative z-20 px-5 py-8 max-w-sm mx-auto">
         {/* HEADER */}
-        {/* HEADER STATIQUE */}
         <div className="mt-2 text-center">
           <h1 className="text-3xl font-black text-white">Matières</h1>
 

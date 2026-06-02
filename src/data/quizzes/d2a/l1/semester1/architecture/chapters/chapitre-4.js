@@ -1,7 +1,7 @@
 export const chapter4 = {
   id: "chapter-4",
 
-  title: "Représentation de l’information : Les nombres réels",
+  title: "Nombres réels",
 
   questions: [
     {
