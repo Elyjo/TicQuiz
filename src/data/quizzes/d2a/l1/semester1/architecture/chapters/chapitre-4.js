@@ -6,7 +6,7 @@ export const chapter4 = {
   questions: [
     {
       id: 1,
-      question: "De quoi est composé un nombre réel selon l'introduction ?",
+      question: "De quoi est composé un nombre réel ?",
       options: [
         "Uniquement d'une suite de bits signés",
         "D'une partie entière et d'une partie fractionnaire après la virgule",
@@ -66,7 +66,7 @@ export const chapter4 = {
 
     {
       id: 6,
-      question: "Sous quelle forme générale normalise-t-on un nombre pour la virgule flottante selon le document ?",
+      question: "Sous quelle forme générale normalise-t-on un nombre pour la virgule flottante ?",
       options: [
         "± 1,M x 2^n",
         "± 0,M x 10^n",

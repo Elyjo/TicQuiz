@@ -90,7 +90,7 @@ export const chapter5 = {
 
     {
       id: 8,
-      question: "Quel est l'objectif principal du code ASCII selon le document ?",
+      question: "Quel est l'objectif principal du code ASCII ?",
       options: [
         "Permettre aux systèmes informatiques de concevoir des processeurs identiques",
         "Permettre le codage des caractères pour échanger du texte, des nombres et des symboles de façon raisonnée",

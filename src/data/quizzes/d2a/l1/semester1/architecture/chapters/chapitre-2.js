@@ -6,7 +6,7 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Qu'est-ce qu'un 'bit' selon l'introduction du cours ?",
+      question: "Qu'est-ce qu'un 'bit' ?",
       options: [
         "Un ensemble de 8 octets",
         "Une information élémentaire correspondant à un chiffre binaire (0 ou 1)",

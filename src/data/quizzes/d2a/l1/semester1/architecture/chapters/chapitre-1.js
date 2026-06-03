@@ -6,7 +6,7 @@ export const chapter1 = {
   questions: [
     {
       id: 1,
-      question: "Quelle est la définition exacte de l'Informatique selon le document ?",
+      question: "Quelle est la définition exacte de l'Informatique ?",
       options: [
         "La science de la maintenance des ordinateurs",
         "La science du traitement automatique de l’information",
