@@ -1,45 +1,40 @@
 export const chapter6 = {
   id: "chapter-6",
-
   title: "Procédures && Fonctions",
-
   questions: [
     {
       id: 1,
-      question: "Qu’est-ce qu’un sous-programme ?",
+      question: "Qu'est-ce qu'un sous-programme ?",
       options: [
         "Une variable",
-        "Un regroupement d’instructions avec un nom",
+        "Instructions regroupées sous un nom",
         "Une entrée utilisateur",
-        "Une sortie",
+        "Une sortie"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 2,
-      question: "Quelle est la différence entre une procédure et une fonction ?",
+      question: "Différence procédure / fonction ?",
       options: [
         "La procédure affiche uniquement",
         "La fonction renvoie une valeur",
         "La procédure renvoie une valeur",
-        "Aucune différence",
+        "Aucune différence"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 3,
-      question: "Une fonction sert à :",
+      question: "Rôle d'une fonction ?",
       options: [
         "Afficher uniquement",
         "Répéter des instructions",
-        "Renvoie une valeur",
-        "Déclarer une variable",
+        "Renvoyer une valeur",
+        "Déclarer une variable"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 4,
       question: "Une procédure :",
@@ -47,78 +42,71 @@ export const chapter6 = {
         "Renvoie toujours une valeur",
         "Ne renvoie aucune valeur",
         "Est une variable",
-        "Est une boucle",
+        "Est une boucle"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 5,
       question: "Un module prédéfini est :",
       options: [
-        "Créé par l’utilisateur",
+        "Créé par l'utilisateur",
         "Fourni par le langage",
         "Une variable",
-        "Une boucle",
+        "Une boucle"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 6,
-      question: "Un exemple de module prédéfini est :",
+      question: "Exemple de module prédéfini ?",
       options: [
         "saisirTab",
         "afficherMenu",
         "sqrt",
-        "afficherTab",
+        "afficherTab"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 7,
-      question: "Une variable locale est :",
+      question: "Variable locale ?",
       options: [
         "Visible partout",
         "Déclarée dans un sous-programme",
         "Toujours globale",
-        "Une constante",
+        "Une constante"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 8,
-      question: "Une variable globale est :",
+      question: "Variable globale ?",
       options: [
-        "Visible uniquement dans une fonction",
-        "Déclarée dans un sous-programme",
+        "Uniquement dans une fonction",
+        "Dans un sous-programme",
         "Visible dans tout le programme",
-        "Une entrée",
+        "Une entrée"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 9,
-      question: "Le passage des paramètres par défaut est :",
+      question: "Passage de paramètre par défaut ?",
       options: [
         "Par référence",
         "Par valeur",
         "Par adresse obligatoire",
-        "Par boucle",
+        "Par boucle"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 10,
-      question: "Le mot-clé pour passage par référence est :",
+      question: "Mot-clé pour la référence ?",
       options: ["var", "ref", "addr", "global"],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 11,
       question: "Une procédure peut avoir :",
@@ -126,117 +114,108 @@ export const chapter6 = {
         "Aucun argument",
         "Toujours des tableaux",
         "Toujours des fonctions",
-        "Jamais de paramètres",
+        "Jamais de paramètres"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 12,
-      question: "Quel est le rôle de begin / end ?",
+      question: "Rôle de begin / end ?",
       options: [
         "Déclarer une variable",
-        "Délimiter un bloc d’instructions",
+        "Délimiter un bloc",
         "Créer une boucle",
-        "Afficher une sortie",
+        "Afficher une sortie"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 13,
-      question: "Une fonction doit toujours contenir :",
+      question: "Une fonction contient toujours :",
       options: [
         "Un read",
         "Un write",
         "Un nom de retour",
-        "Une boucle",
+        "Une boucle"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 14,
-      question: "Une procédure s’appelle comme :",
+      question: "Appel d'une procédure ?",
       options: [
-        "Une variable",
-        "Une instruction",
-        "Une constante",
-        "Un type",
+        "Comme une variable",
+        "Comme une instruction",
+        "Comme une constante",
+        "Comme un type"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 15,
-      question: "Un appel de procédure est :",
+      question: "Exemple d'appel de procédure ?",
       options: [
         "afficherMenu;",
         "integer x;",
         "var x;",
-        "begin x",
+        "begin x"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 16,
-      question: "Une fonction peut être utilisée dans :",
+      question: "Utilisation d'une fonction ?",
       options: [
-        "Une condition",
-        "Une boucle uniquement",
-        "Une variable uniquement",
-        "Jamais",
+        "Dans une condition",
+        "Uniquement en boucle",
+        "Uniquement en variable",
+        "Jamais"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 17,
-      question: "Le rôle de forward en Pascal est :",
+      question: "Pascal : Rôle de 'forward' ?",
       options: [
         "Arrêter le programme",
-        "Déclarer une fonction après son appel",
+        "Déclarer avant l'appel",
         "Créer une variable",
-        "Afficher un résultat",
+        "Afficher un résultat"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 18,
-      question: "Une fonction retourne sa valeur avec :",
+      question: "Retour de valeur d'une fonction ?",
       options: [
         "write",
         "nomFonction := valeur",
         "read",
-        "return void",
+        "return void"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 19,
-      question: "Une procédure peut être appelée :",
+      question: "Appel d'une procédure ?",
       options: [
         "Une seule fois",
         "Plusieurs fois",
         "Jamais",
-        "Uniquement dans les fonctions",
+        "Seulement en fonction"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 20,
-      question: "Le but principal des procédures est :",
+      question: "But principal des procédures ?",
       options: [
-        "Rendre le code plus long",
-        "Réduire la lisibilité",
+        "Code plus long",
+        "Moins de lisibilité",
         "Réutiliser le code",
-        "Supprimer les variables",
+        "Supprimer les variables"
       ],
-      answer: 2,
-    },
-  ],
+      answer: 2
+    }
+  ]
 };

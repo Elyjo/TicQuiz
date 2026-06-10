@@ -1,267 +1,226 @@
 export const chapter3 = {
   id: "chapter-3",
-
   title: "Boucles",
-
   questions: [
     {
       id: 1,
-      question:
-        "À quoi servent les structures itératives ?",
+      question: "Rôle des structures itératives ?",
       options: [
-        "À stocker des données",
-        "À répéter des actions",
-        "À afficher uniquement",
-        "À déclarer des variables",
+        "Stocker des données",
+        "Répéter des actions",
+        "Afficher uniquement",
+        "Déclarer des variables"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 2,
-      question:
-        "Quelle structure utilise-t-on lorsque le nombre de répétitions est connu ?",
+      question: "Nombre de répétitions connu ?",
       options: [
         "Tant Que",
         "Répéter",
         "Pour",
-        "Si",
+        "Si"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 3,
-      question:
-        "Quelle structure est adaptée à un contrôle de saisie ?",
+      question: "Structure pour un contrôle de saisie ?",
       options: [
         "Pour",
         "Répéter Jusqu'à",
         "Si",
-        "Cas",
+        "Cas"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 4,
-      question:
-        "Quelle structure s'exécute au moins une fois ?",
+      question: "S'exécute au moins une fois ?",
       options: [
         "Pour",
         "Tant Que",
         "Répéter Jusqu'à",
-        "Si",
+        "Si"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 5,
-      question:
-        "En pseudo-code, quelle est la syntaxe correcte d'une boucle Pour ?",
+      question: "Syntaxe correcte d'une boucle Pour ?",
       options: [
         "Pour i = 1 à 10 faire",
         "Pour i <= 10",
         "Tant que i <= 10",
-        "Répéter i",
+        "Répéter i"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 6,
-      question:
-        "Combien de fois s'exécute : Pour i:=1 à 10 faire ?",
+      question: "Nombre d'itérations : Pour i:=1 à 10 ?",
       options: [
         "9 fois",
         "10 fois",
         "11 fois",
-        "Indéterminé",
+        "Indéterminé"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 7,
-      question:
-        "Quel mot-clé Pascal correspond à la boucle Pour ?",
+      question: "Pascal : Boucle Pour ?",
       options: [
         "while",
         "repeat",
         "for",
-        "loop",
+        "loop"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 8,
-      question:
-        "Quelle instruction Pascal permet de compter de 10 vers 1 ?",
+      question: "Pascal : Compter de 10 vers 1 ?",
       options: [
         "for i:=10 to 1",
         "for i:=10 downTo 1",
         "while i>0",
-        "repeat",
+        "repeat"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 9,
-      question:
-        "Dans une boucle Pour, le compteur est généralement :",
+      question: "Dans un Pour, le compteur est :",
       options: [
-        "Automatiquement modifié",
+        "Modifié automatiquement",
         "Fixe",
         "Supprimé",
-        "Aléatoire",
+        "Aléatoire"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 10,
-      question:
-        "Modifier manuellement le compteur d'une boucle For est :",
+      question: "Modifier le compteur manuellement dans un For ?",
       options: [
         "Recommandé",
-        "Possible mais déconseillé",
+        "Déconseillé",
         "Obligatoire",
-        "Sans effet",
+        "Sans effet"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 11,
-      question:
-        "La boucle Tant Que s'exécute tant que :",
+      question: "La boucle Tant Que s'exécute si :",
       options: [
-        "La condition est vraie",
-        "La condition est fausse",
-        "Le compteur existe",
-        "Le programme démarre",
+        "Condition vraie",
+        "Condition fausse",
+        "Compteur existe",
+        "Programme démarre"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 12,
-      question:
-        "Quel mot-clé Pascal correspond à Tant Que ?",
+      question: "Pascal : Boucle Tant Que ?",
       options: [
         "repeat",
         "for",
         "while",
-        "loop",
+        "loop"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 13,
-      question:
-        "Quel risque existe avec une boucle While ?",
+      question: "Risque avec une boucle While ?",
       options: [
         "Erreur de compilation",
         "Boucle infinie",
-        "Suppression des variables",
-        "Aucun",
+        "Variables effacées",
+        "Aucun"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 14,
-      question:
-        "Dans une boucle While, il faut généralement :",
+      question: "Dans un While, il faut généralement :",
       options: [
         "Modifier la condition",
-        "Déclarer une constante",
+        "Créer une constante",
         "Créer une fonction",
-        "Afficher un message",
+        "Afficher un message"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 15,
-      question:
-        "Dans Répéter Jusqu'à, la condition est testée :",
+      question: "Dans Répéter Jusqu'à, le test a lieu :",
       options: [
         "Avant l'exécution",
         "Après l'exécution",
         "Jamais",
-        "Deux fois",
+        "Deux fois"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 16,
-      question:
-        "Quel mot-clé Pascal correspond à Répéter Jusqu'à ?",
+      question: "Pascal : Répéter Jusqu'à ?",
       options: [
         "while",
         "for",
         "repeat ... until",
-        "case",
+        "case"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 17,
-      question:
-        "Pour calculer yⁿ, la structure la plus adaptée est :",
+      question: "Structure idéale pour yⁿ ?",
       options: [
         "Pour",
         "Si",
         "Cas",
-        "Aucune",
+        "Aucune"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 18,
-      question:
-        "Pour saisir des nombres jusqu'à entrer 0, on utilise généralement :",
+      question: "Saisir des nombres jusqu'à obtenir 0 ?",
       options: [
         "Pour",
         "Répéter Jusqu'à",
         "Cas",
-        "Si",
+        "Si"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 19,
-      question:
-        "Quelle structure utiliser lorsque le nombre de répétitions est inconnu mais peut être nul ?",
+      question: "Répétitions inconnues mais potentiellement nulles ?",
       options: [
         "Pour",
         "Répéter",
         "Tant Que",
-        "Si",
+        "Si"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 20,
-      question:
-        "Quelle structure utiliser lorsque le nombre de répétitions est inconnu mais doit s'exécuter au moins une fois ?",
+      question: "Répétitions inconnues mais au moins une exécution ?",
       options: [
         "Pour",
         "Tant Que",
         "Répéter Jusqu'à",
-        "Cas",
+        "Cas"
       ],
-      answer: 2,
-    },
-  ],
+      answer: 2
+    }
+  ]
 };

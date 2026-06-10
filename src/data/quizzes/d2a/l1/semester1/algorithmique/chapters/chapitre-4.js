@@ -1,266 +1,226 @@
 export const chapter4 = {
   id: "chapter-4",
-
   title: "Tableaux",
-
   questions: [
     {
       id: 1,
       question: "Qu'est-ce qu'un tableau ?",
       options: [
-        "Une seule variable",
-        "Un ensemble de valeurs de même type",
-        "Une fonction",
-        "Une boucle",
+        "Variable simple",
+        "Valeurs de même type",
+        "Fonction",
+        "Boucle"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 2,
-      question:
-        "Une variable simple contient généralement :",
+      question: "Contenu d'une variable simple ?",
       options: [
         "Plusieurs valeurs",
         "Une seule valeur",
         "Une matrice",
-        "Une procédure",
+        "Une procédure"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 3,
-      question:
-        "Une variable tableau permet de stocker :",
+      question: "Contenu d'une variable tableau ?",
       options: [
         "Une seule valeur",
         "Plusieurs valeurs",
-        "Uniquement des caractères",
-        "Uniquement des entiers",
+        "Seulement des caractères",
+        "Seulement des entiers"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 4,
-      question:
-        "Comment déclare-t-on un tableau en pseudo-code ?",
+      question: "Déclaration en pseudo-code ?",
       options: [
         "Liste[1..10]",
         "Tableau[1..10] de type",
         "Array()",
-        "Table()",
+        "Table()"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 5,
-      question:
-        "Quel mot-clé Pascal permet de déclarer un tableau ?",
+      question: "Pascal : Déclaration de tableau ?",
       options: [
         "Table",
         "Vector",
         "Array",
-        "Matrix",
+        "Matrix"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 6,
-      question:
-        "Dans un tableau tab, que représente tab[4] ?",
+      question: "Que représente tab[4] ?",
       options: [
-        "Le quatrième élément",
-        "La taille du tableau",
+        "Le 4e élément",
+        "La taille globale",
         "Le dernier élément",
-        "Une boucle",
+        "Une boucle"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 7,
-      question:
-        "Après déclaration, la taille d'un tableau est :",
+      question: "Taille après déclaration ?",
       options: [
         "Modifiable",
         "Fixe",
         "Aléatoire",
-        "Inconnue",
+        "Inconnue"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 8,
-      question:
-        "Quelle boucle utilise-t-on souvent pour parcourir un tableau ?",
+      question: "Boucle idéale pour parcourir ?",
       options: [
         "if",
         "case",
         "for",
-        "goto",
+        "goto"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 9,
-      question:
-        "Quelle variable est généralement utilisée comme indice ?",
+      question: "Variable d'indice courante ?",
       options: [
         "x",
         "s",
         "i",
-        "max",
+        "max"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 10,
-      question:
-        "Pour calculer la somme des éléments d'un tableau, il faut :",
+      question: "Calculer la somme implique :",
       options: [
         "Multiplier les éléments",
-        "Les parcourir et les additionner",
+        "Parcourir et additionner",
         "Trier le tableau",
-        "Chercher le maximum",
+        "Chercher le maximum"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 11,
-      question:
-        "Pour rechercher le maximum d'un tableau, on initialise max avec :",
+      question: "Initialisation de max ?",
       options: [
         "0",
-        "Le premier élément",
+        "Premier élément",
         "-1",
-        "Le dernier élément",
+        "Dernier élément"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 12,
-      question:
-        "Lors du calcul du maximum, un nouvel élément devient max si :",
+      question: "Condition pour nouveau max ?",
       options: [
-        "Il est plus petit",
-        "Il est égal",
-        "Il est plus grand",
-        "Il est négatif",
+        "Plus petit",
+        "Égal",
+        "Plus grand",
+        "Négatif"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 13,
-      question:
-        "Pour calculer le minimum, la logique est :",
+      question: "Logique pour le minimum ?",
       options: [
         "Inverse du maximum",
         "Identique au maximum",
-        "Utiliser une boucle while uniquement",
-        "Impossible",
+        "Boucle while obligatoire",
+        "Impossible"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 14,
-      question:
-        "Que signifie 'existence d'un élément' dans un tableau ?",
+      question: "Rechercher l'existence signifie :",
       options: [
-        "Chercher si une valeur est présente",
+        "Vérifier la présence",
         "Calculer une somme",
         "Calculer une moyenne",
-        "Supprimer une valeur",
+        "Supprimer une valeur"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 15,
-      question:
-        "À quoi sert la variable 'trouve' dans une recherche ?",
+      question: "Rôle du booléen 'trouve' ?",
       options: [
         "Stocker une somme",
-        "Indiquer si l'élément a été trouvé",
+        "Indiquer la présence",
         "Compter les indices",
-        "Trier le tableau",
+        "Trier le tableau"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 16,
-      question:
-        "Une matrice est :",
+      question: "Qu'est-ce qu'une matrice ?",
       options: [
-        "Un tableau à deux dimensions",
-        "Un entier",
-        "Une procédure",
-        "Une boucle",
+        "Tableau à 2 dimensions",
+        "Simple entier",
+        "Procédure",
+        "Boucle"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 17,
-      question:
-        "Dans mat[5,3], que représente le 5 ?",
+      question: "Dans mat[5,3], que vaut le 5 ?",
       options: [
         "La colonne",
         "La ligne",
         "La taille",
-        "L'indice final",
+        "L'indice final"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 18,
-      question:
-        "Dans mat[5,3], que représente le 3 ?",
+      question: "Dans mat[5,3], que vaut le 3 ?",
       options: [
         "La ligne",
         "La colonne",
         "La matrice",
-        "Le maximum",
+        "Le maximum"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 19,
-      question:
-        "Pour parcourir une matrice, on utilise généralement :",
+      question: "Parcours d'une matrice ?",
       options: [
         "Une seule boucle",
         "Deux boucles imbriquées",
         "Un if",
-        "Un case",
+        "Un case"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 20,
-      question:
-        "Une matrice de 5 lignes et 10 colonnes contient :",
+      question: "Capacité : mat[5 lignes, 10 cols] ?",
       options: [
         "15 éléments",
         "50 éléments",
         "100 éléments",
-        "500 éléments",
+        "500 éléments"
       ],
-      answer: 1,
-    },
-  ],
+      answer: 1
+    }
+  ]
 };

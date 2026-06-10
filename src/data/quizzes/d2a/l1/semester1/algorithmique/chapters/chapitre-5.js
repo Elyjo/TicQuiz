@@ -1,266 +1,226 @@
 export const chapter5 = {
   id: "chapter-5",
-
   title: "Enregistrements",
-
   questions: [
     {
       id: 1,
-      question: "Un enregistrement est :",
+      question: "Qu'est-ce qu'un enregistrement ?",
       options: [
         "Une boucle",
-        "Une donnée composée de plusieurs champs",
+        "Donnée composée de plusieurs champs",
         "Un tableau uniquement",
-        "Une fonction",
+        "Une fonction"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 2,
-      question:
-        "Contrairement à un tableau, les champs d'un enregistrement peuvent être :",
+      question: "Différence avec un tableau ?",
       options: [
-        "De types différents",
-        "Tous du même type",
+        "Champs de types différents",
+        "Champs du même type",
         "Uniquement numériques",
-        "Uniquement des chaînes",
+        "Uniquement des chaînes"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 3,
-      question:
-        "Quel champ pourrait appartenir à un étudiant ?",
+      question: "Champs possibles d'un étudiant ?",
       options: [
         "nom",
         "prénom",
         "moyenne",
-        "Tous les précédents",
+        "Tous les précédents"
       ],
-      answer: 3,
+      answer: 3
     },
-
     {
       id: 4,
-      question:
-        "Comment accède-t-on à un champ d'un enregistrement ?",
+      question: "Accès à un champ ?",
       options: [
         "Avec []",
         "Avec un point",
         "Avec :=",
-        "Avec ->",
+        "Avec ->"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 5,
-      question:
-        "Quelle écriture est correcte pour accéder à la note dev1 ?",
+      question: "Écriture correcte pour dev1 ?",
       options: [
         "p1[dev1]",
         "p1.dev1",
         "p1->dev1",
-        "dev1.p1",
+        "dev1.p1"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 6,
-      question:
-        "En pseudo-code, un enregistrement est défini avec :",
+      question: "Pseudo-code : Définition ?",
       options: [
         "record",
         "structure",
         "array",
-        "class",
+        "class"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 7,
-      question:
-        "En Pascal, un enregistrement est défini avec :",
+      question: "Pascal : Définition ?",
       options: [
         "array",
         "structure",
         "record",
-        "object",
+        "object"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 8,
-      question:
-        "Que contient généralement un champ ?",
+      question: "Contenu d'un champ ?",
       options: [
         "Une valeur",
         "Une instruction",
         "Une boucle",
-        "Un programme",
+        "Un programme"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 9,
-      question:
-        "Un champ d'un enregistrement peut être :",
+      question: "Type possible d'un champ ?",
       options: [
         "Simple",
         "Un tableau",
         "Un autre enregistrement",
-        "Toutes les réponses",
+        "Toutes les réponses"
       ],
-      answer: 3,
+      answer: 3
     },
-
     {
       id: 10,
-      question:
-        "Quel mot-clé Pascal permet d'éviter d'écrire le nom de l'enregistrement devant chaque champ ?",
+      question: "Pascal : Omettre le nom devant un champ ?",
       options: [
         "record",
         "array",
         "with",
-        "type",
+        "type"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 11,
-      question:
-        "Dans 'with p1 do', les champs utilisés appartiennent à :",
+      question: "Dans 'with p1 do', les champs sont de :",
       options: [
         "p1",
         "p2",
-        "Tous les enregistrements",
-        "Aucun",
+        "Tous les blocs",
+        "Aucun"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 12,
-      question:
-        "Que fait l'instruction 'p1 := p2' ?",
+      question: "Que fait 'p1 := p2' ?",
       options: [
         "Copie tous les champs",
         "Copie uniquement le nom",
         "Supprime p1",
-        "Crée un tableau",
+        "Crée un tableau"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 13,
-      question:
-        "Peut-on lire directement un enregistrement complet avec readln(p1) ?",
+      question: "Lecture directe via readln(p1) ?",
       options: [
         "Oui",
         "Non",
         "Seulement sous Linux",
-        "Seulement avec with",
+        "Seulement avec with"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 14,
-      question:
-        "Comment lit-on généralement un enregistrement ?",
+      question: "Méthode de lecture courante ?",
       options: [
         "Champ par champ",
-        "Avec une seule instruction",
-        "Avec une boucle for obligatoire",
-        "Avec case",
+        "Une seule instruction",
+        "Boucle for obligatoire",
+        "Avec case"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 15,
-      question:
-        "Que permet la déclaration suivante ? Array[1..10] of Personne",
+      question: "Signification : Array[1..10] of Personne ?",
       options: [
         "Un étudiant",
-        "Un tableau de 10 personnes",
+        "Tableau de 10 personnes",
         "Une matrice",
-        "Une procédure",
+        "Une procédure"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 16,
-      question:
-        "Pourquoi utiliser un enregistrement pour représenter un étudiant ?",
+      question: "Pourquoi l'utiliser pour un étudiant ?",
       options: [
-        "Pour regrouper plusieurs informations",
-        "Pour faire des boucles",
-        "Pour trier automatiquement",
-        "Pour afficher uniquement",
+        "Regrouper des informations",
+        "Faire des boucles",
+        "Trier automatiquement",
+        "Afficher uniquement"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 17,
-      question:
-        "Quel est l'avantage principal d'un enregistrement ?",
+      question: "Avantage principal ?",
       options: [
-        "Stocker plusieurs informations liées",
+        "Stocker des données liées",
         "Remplacer les boucles",
         "Remplacer les tableaux",
-        "Accélérer le processeur",
+        "Accélérer le CPU"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 18,
-      question:
-        "Une adresse contenant numéro, rue et ville peut être :",
+      question: "Une adresse (num, rue, ville) est :",
       options: [
         "Un enregistrement",
         "Une boucle",
         "Une constante",
-        "Une matrice",
+        "Une matrice"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 19,
-      question:
-        "Un tableau d'enregistrements permet de gérer :",
+      question: "Un tableau d'enregistrements sert à :",
       options: [
-        "Plusieurs objets similaires",
-        "Une seule valeur",
-        "Une fonction",
-        "Un menu",
+        "Gérer plusieurs objets similaires",
+        "Gérer une seule valeur",
+        "Créer une fonction",
+        "Créer un menu"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 20,
-      question:
-        "Quelle affirmation est vraie ?",
+      question: "Quelle affirmation est vraie ?",
       options: [
-        "Un tableau contient des éléments de même type",
-        "Un enregistrement contient des champs éventuellement différents",
-        "Un enregistrement peut contenir un tableau",
-        "Toutes les réponses",
+        "Tableau = éléments de même type",
+        "Enregistrement = champs éventuellement différents",
+        "Enregistrement peut contenir un tableau",
+        "Toutes les réponses"
       ],
-      answer: 3,
-    },
-  ],
+      answer: 3
+    }
+  ]
 };

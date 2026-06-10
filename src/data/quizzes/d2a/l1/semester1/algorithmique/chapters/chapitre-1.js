@@ -1,45 +1,40 @@
 export const chapter1 = {
   id: "chapter-1",
-
   title: "Données && Opérations",
-
   questions: [
     {
       id: 1,
-      question: "Qu’est-ce qu’une donnée d’entrée ?",
+      question: "Donnée d'entrée ?",
       options: [
-        "Une donnée produite par l’algorithme",
-        "Une donnée fournie à l’algorithme",
-        "Une donnée intermédiaire",
-        "Une constante uniquement",
+        "Produite par l'algorithme",
+        "Fournie à l'algorithme",
+        "Intermédiaire",
+        "Constante uniquement"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 2,
-      question: "Qu’est-ce qu’une donnée de sortie ?",
+      question: "Donnée de sortie ?",
       options: [
-        "Une donnée fournie",
-        "Un résultat produit par l’algorithme",
-        "Une variable constante",
-        "Une entrée clavier",
+        "Donnée fournie",
+        "Résultat produit",
+        "Variable constante",
+        "Entrée clavier"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 3,
-      question: "Une donnée intermédiaire est :",
+      question: "Donnée intermédiaire ?",
       options: [
         "Finale",
         "Utilisée pour les calculs",
         "Toujours une entrée",
-        "Toujours une sortie",
+        "Toujours une sortie"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 4,
       question: "Une constante est :",
@@ -47,18 +42,16 @@ export const chapter1 = {
         "Une valeur variable",
         "Une valeur fixe",
         "Une entrée utilisateur",
-        "Une sortie",
+        "Une sortie"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 5,
-      question: "Quel symbole représente l’affectation en pseudo-code ?",
+      question: "Symbole d'affectation ?",
       options: ["=", "<-", "==", "=>"],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 6,
       question: "Une variable peut :",
@@ -66,82 +59,72 @@ export const chapter1 = {
         "Ne jamais changer",
         "Changer de valeur",
         "Être uniquement constante",
-        "Être inexistante",
+        "Être inexistante"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 7,
-      question: "Quel type contient des nombres entiers ?",
+      question: "Type pour les entiers ?",
       options: ["real", "char", "integer", "boolean"],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 8,
-      question: "Un réel peut contenir :",
+      question: "Un réel contient :",
       options: [
         "Uniquement des entiers",
         "Des décimaux",
         "Des caractères",
-        "Des booléens",
+        "Des booléens"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 9,
-      question: "Une entrée utilisateur se fait avec :",
+      question: "Entrée utilisateur ?",
       options: ["write", "read", "print", "echo"],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 10,
-      question: "Une sortie s’affiche avec :",
+      question: "Affichage d'une sortie ?",
       options: ["read", "input", "write", "scan"],
-      answer: 2,
+      answer: 2
     },
-
-    // ===== NOUVELLES QUESTIONS =====
-
     {
       id: 11,
-      question: "Une variable est définie comme :",
+      question: "Définition d'une variable ?",
       options: [
-        "Une zone mémoire qui change",
-        "Une valeur fixe",
-        "Une sortie uniquement",
-        "Une instruction",
+        "Zone mémoire variable",
+        "Valeur fixe",
+        "Sortie uniquement",
+        "Instruction"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 12,
-      question: "Quel est le rôle principal d’un algorithme ?",
+      question: "Rôle d'un algorithme ?",
       options: [
         "Stocker des données",
         "Résoudre un problème",
         "Afficher des images",
-        "Créer des fichiers",
+        "Créer des fichiers"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 13,
-      question: "Le type booléen peut prendre :",
+      question: "Valeurs du type booléen ?",
       options: [
         "0 et 1 uniquement",
         "Vrai et Faux",
         "Entier et réel",
-        "Char et string",
+        "Char et string"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 14,
       question: "Une instruction est :",
@@ -149,47 +132,38 @@ export const chapter1 = {
         "Une valeur",
         "Une action à exécuter",
         "Une variable",
-        "Une donnée",
+        "Une donnée"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 15,
-      question: "L’algorithme est écrit pour être :",
+      question: "But d'un algorithme ?",
       options: [
-        "Compris uniquement par les humains",
+        "Compris par les humains",
         "Exécuté par un ordinateur",
         "Stocké dans la RAM",
-        "Un langage machine direct",
+        "Langage machine direct"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 16,
-      question: "Une chaîne de caractères est appelée :",
-      options: [
-        "integer",
-        "char",
-        "string",
-        "boolean",
-      ],
-      answer: 2,
+      question: "Chaîne de caractères ?",
+      options: ["integer", "char", "string", "boolean"],
+      answer: 2
     },
-
     {
       id: 17,
-      question: "Quel est le rôle d’une entrée ?",
+      question: "Rôle d'une entrée ?",
       options: [
         "Recevoir des données",
         "Afficher des résultats",
         "Calculer uniquement",
-        "Stocker des constantes",
+        "Stocker des constantes"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 18,
       question: "Une sortie sert à :",
@@ -197,33 +171,31 @@ export const chapter1 = {
         "Lire des données",
         "Afficher un résultat",
         "Créer des variables",
-        "Stocker des entrées",
+        "Stocker des entrées"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 19,
-      question: "Une variable est déclarée pour :",
+      question: "Pourquoi déclarer une variable ?",
       options: [
         "Stocker une valeur",
         "Afficher un résultat",
         "Supprimer des données",
-        "Exécuter un programme",
+        "Exécuter un programme"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 20,
-      question: "Une constante est utilisée quand :",
+      question: "Quand utiliser une constante ?",
       options: [
         "La valeur doit changer",
         "La valeur reste fixe",
         "On fait une boucle",
-        "On lit une entrée",
+        "On lit une entrée"
       ],
-      answer: 1,
-    },
-  ],
+      answer: 1
+    }
+  ]
 };

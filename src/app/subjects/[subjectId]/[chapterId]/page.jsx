@@ -22,13 +22,23 @@ export default function QuizPage() {
 
   const [seconds, setSeconds] = useState(0);
 
+  const restartQuiz = () => {
+    setCurrentQuestion(0);
+    setSelected(null);
+    setScore(0);
+    setFinished(false);
+    setSeconds(0);
+  };
+
   useEffect(() => {
+    if (finished) return;
+
     const timer = setInterval(() => {
       setSeconds((prev) => prev + 1);
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [finished]);
 
   useEffect(() => {
     // console.log("params =", params);
@@ -45,6 +55,28 @@ export default function QuizPage() {
       setQuestions(chapter.questions);
     }
   }, [params.subjectId, params.chapterId]);
+
+  useEffect(() => {
+    if (!finished || !questions.length) return;
+
+    const percentage = Math.round((score / questions.length) * 100);
+
+    const savedScores = JSON.parse(localStorage.getItem("quizScores")) || {};
+
+    savedScores[params.subjectId] = {
+      ...(savedScores[params.subjectId] || {}),
+
+      [params.chapterId]: {
+        score,
+        total: questions.length,
+        percentage,
+        time: seconds,
+        completedAt: Date.now(),
+      },
+    };
+
+    localStorage.setItem("quizScores", JSON.stringify(savedScores));
+  }, [finished, score, questions, seconds, params.subjectId, params.chapterId]);
 
   const formatTime = () => {
     const mins = Math.floor(seconds / 60);
@@ -83,39 +115,15 @@ export default function QuizPage() {
     setSelected(null);
   };
 
-  const savedScores = JSON.parse(localStorage.getItem("quizScores")) || {};
-
-  savedScores[params.subjectId] = {
-    ...(savedScores[params.subjectId] || {}),
-
-    [params.chapterId]: selected === question.answer ? score + 1 : score,
-  };
-
-  localStorage.setItem("quizScores", JSON.stringify(savedScores));
-
-  const finalScore = selected === question.answer ? score + 1 : score;
-
-  const percentage = Math.round((finalScore / questions.length) * 100);
-
-  savedScores[params.subjectId] = {
-    ...(savedScores[params.subjectId] || {}),
-
-    [params.chapterId]: {
-      score: finalScore,
-      total: questions.length,
-      percentage,
-      completedAt: Date.now(),
-    },
-  };
-
   if (finished) {
     const percentage = Math.round((score / questions.length) * 100);
 
     const getMessage = () => {
-      if (percentage >= 80) return "Excellent travail 🚀";
-      if (percentage >= 60) return "Très bon résultat 👏";
-      if (percentage >= 40) return "Continue comme ça 💪";
-      return "Encore un effort 📚";
+      if (percentage >= 90) return "Performance exceptionnelle 🚀";
+      if (percentage >= 75) return "Excellent travail ⭐";
+      if (percentage >= 50) return "Bon progrès 💪";
+      if (percentage >= 25) return "Continue tes efforts 📚";
+      return "Ne lâche rien, tu vas progresser 🌱";
     };
 
     return (
@@ -139,8 +147,7 @@ export default function QuizPage() {
             className="w-full max-w-sm rounded-[34px] bg-none p-8"
           >
             {/* SCORE CIRCLE */}
-            <div className="flex justify-center">
-            </div>
+            <div className="flex justify-center"></div>
 
             {/* TITLE */}
             <h1 className="mt-8 text-center text-3xl font-black text-white">
@@ -177,11 +184,19 @@ export default function QuizPage() {
 
                 <span className="text-white font-semibold">{percentage}%</span>
               </div>
+
+              <div className="mt-3 flex justify-between">
+                <span className="text-slate-400">Temps</span>
+
+                <span className="text-white font-semibold">
+                  {formatTime()}
+                </span>
+              </div>
             </div>
 
             {/* ACTIONS */}
             <button
-              onClick={() => window.location.reload()}
+              onClick={restartQuiz}
               className="mt-12 w-full h-14 rounded-2xl bg-violet-600 text-white font-bold transition-all hover:bg-violet-500"
             >
               Rejouer le quiz

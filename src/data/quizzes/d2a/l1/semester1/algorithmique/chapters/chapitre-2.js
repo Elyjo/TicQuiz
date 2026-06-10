@@ -1,267 +1,226 @@
 export const chapter2 = {
   id: "chapter-2",
-
   title: "Structures conditionnelles",
-
   questions: [
     {
       id: 1,
-      question:
-        "Quel est le rôle principal d'une structure conditionnelle ?",
+      question: "Rôle d'une structure conditionnelle ?",
       options: [
         "Répéter des instructions",
-        "Choisir des actions selon une condition",
+        "Choisir selon une condition",
         "Déclarer des variables",
-        "Afficher des données",
+        "Afficher des données"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 2,
-      question:
-        "Dans un choix simple, les actions sont exécutées lorsque :",
+      question: "Quand s'exécute un choix simple ?",
       options: [
-        "La condition est fausse",
-        "La condition est vraie",
+        "Condition fausse",
+        "Condition vraie",
         "Toujours",
-        "Jamais",
+        "Jamais"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 3,
-      question:
-        "Quelle structure correspond à un choix simple sans alternative ?",
+      question: "Structure sans alternative ?",
       options: [
-        "Si condition alors ... finsi",
-        "Cas ... finCas",
-        "Pour ... faire",
-        "TantQue",
+        "Si...alors...finsi",
+        "Cas...finCas",
+        "Pour...faire",
+        "TantQue"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 4,
-      question:
-        "Quelle partie permet de traiter le cas contraire dans une condition ?",
+      question: "Mot-clé du cas contraire ?",
       options: [
         "Alors",
         "Sinon",
         "Faire",
-        "Début",
+        "Début"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 5,
-      question:
-        "Dans le cours, les valeurs nulles sont considérées comme :",
+      question: "Statut des valeurs nulles ?",
       options: [
         "Négatives",
         "Positives",
-        "Impossible à déterminer",
-        "Des constantes",
+        "Indéterminées",
+        "Constantes"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 6,
-      question:
-        "Pour vérifier qu'une valeur est comprise entre 0 inclus et 20 exclu, on écrit :",
+      question: "Vérifier : 0 inclus à 20 exclu ?",
       options: [
         "a > 0 ET a < 20",
         "a >= 0 ET a < 20",
         "a >= 0 OU a < 20",
-        "a > 0 OU a <= 20",
+        "a > 0 OU a <= 20"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 7,
-      question:
-        "Deux nombres sont de signes contraires lorsque :",
+      question: "Signes contraires si :",
       options: [
-        "Leur somme est négative",
-        "Leur produit est négatif",
-        "Leur différence est nulle",
-        "Leur quotient vaut 1",
+        "Somme négative",
+        "Produit négatif",
+        "Différence nulle",
+        "Quotient vaut 1"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 8,
-      question:
-        "Que faut-il vérifier avant une division a / b ?",
+      question: "Condition avant division a / b ?",
       options: [
         "a ≠ 0",
         "b > a",
         "b ≠ 0",
-        "a > 0",
+        "a > 0"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 9,
-      question:
-        "Quelle instruction permet d'afficher une valeur en pseudo-code ?",
+      question: "Instruction d'affichage ?",
       options: [
         "read",
         "scan",
         "write",
-        "input",
+        "input"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 10,
-      question:
-        "Quelle structure permet de distinguer positif, négatif et nul ?",
+      question: "Distinguer positif, négatif et nul ?",
       options: [
-        "Une seule condition",
-        "Une boucle",
-        "Une condition imbriquée",
-        "Une procédure",
+        "Condition simple",
+        "Boucle",
+        "Condition imbriquée",
+        "Procédure"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 11,
-      question:
-        "Quelle est la valeur initiale d'un compteur ?",
+      question: "Valeur initiale d'un compteur ?",
       options: [
         "1",
         "-1",
         "0",
-        "10",
+        "10"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 12,
-      question:
-        "Comment incrémente-t-on un compteur ?",
+      question: "Incrémentation d'un compteur ?",
       options: [
-        "compteur <- compteur - 1",
-        "compteur <- compteur + 1",
-        "compteur <- 0",
-        "compteur <- compteur * 2",
+        "c <- c - 1",
+        "c <- c + 1",
+        "c <- 0",
+        "c <- c * 2"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 13,
-      question:
-        "Quelle est la valeur initiale d'une somme ?",
+      question: "Valeur initiale d'une somme ?",
       options: [
         "0",
         "1",
         "-1",
-        "10",
+        "10"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 14,
-      question:
-        "Comment ajoute-t-on un élément à une somme ?",
+      question: "Mise à jour d'une somme ?",
       options: [
-        "somme <- somme * element",
-        "somme <- element",
-        "somme <- somme + element",
-        "somme <- somme - element",
+        "s <- s * e",
+        "s <- e",
+        "s <- s + e",
+        "s <- s - e"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 15,
-      question:
-        "Quelle est la valeur initiale d'un produit ?",
+      question: "Valeur initiale d'un produit ?",
       options: [
         "0",
         "1",
         "10",
-        "-1",
+        "-1"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 16,
-      question:
-        "Comment met-on à jour un produit ?",
+      question: "Mise à jour d'un produit ?",
       options: [
-        "produit <- produit + element",
-        "produit <- element",
-        "produit <- produit * element",
-        "produit <- produit - element",
+        "p <- p + e",
+        "p <- e",
+        "p <- p * e",
+        "p <- p - e"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 17,
-      question:
-        "En Pascal, quelle structure délimite un bloc de plusieurs instructions ?",
+      question: "Pascal : Délimiteur de bloc ?",
       options: [
         "if / then",
         "case / of",
         "begin / end",
-        "for / do",
+        "for / do"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 18,
-      question:
-        "En Pascal, quel mot-clé introduit une alternative ?",
+      question: "Pascal : Mot-clé d'alternative ?",
       options: [
         "then",
         "else",
         "case",
-        "begin",
+        "begin"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 19,
-      question:
-        "La structure CASE est utilisée pour :",
+      question: "Utilité de la structure CASE ?",
       options: [
-        "Répéter des traitements",
-        "Faire une sélection multiple",
-        "Déclarer une variable",
-        "Calculer une somme",
+        "Répéter des blocs",
+        "Sélection multiple",
+        "Déclarer des types",
+        "Calculer une somme"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 20,
-      question:
-        "Quel opérateur logique permet de combiner deux conditions qui doivent être vraies simultanément ?",
+      question: "Deux conditions vraies ensemble ?",
       options: [
         "OU",
         "NON",
         "ET",
-        "XOR",
+        "XOR"
       ],
-      answer: 2,
-    },
-  ],
+      answer: 2
+    }
+  ]
 };
