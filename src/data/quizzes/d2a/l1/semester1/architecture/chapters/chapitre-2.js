@@ -1,249 +1,226 @@
 export const chapter2 = {
   id: "chapter-2",
-
   title: "Systèmes de numération",
-
   questions: [
     {
       id: 1,
-      question: "Qu'est-ce qu'un 'bit' ?",
+      question: "Qu'est-ce qu'un bit ?",
       options: [
         "Un ensemble de 8 octets",
-        "Une information élémentaire correspondant à un chiffre binaire (0 ou 1)",
-        "Un système de codage hexadécimal",
-        "Une valeur numérique uniquement décimale",
+        "Chiffre binaire élémentaire (0 ou 1)",
+        "Un codage hexadécimal",
+        "Une valeur uniquement décimale"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 2,
-      question: "Dans un système de numération, comment appelle-t-on le nombre de symboles distincts ?",
+      question: "Nombre de symboles distincts d'une numération ?",
       options: [
         "Le bit de poids fort",
         "Le poids faible",
         "La base",
-        "La position",
+        "La position"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 3,
-      question: "Comment positionne-t-on les chiffres pour calculer la représentation positionnelle de la partie décimale ?",
+      question: "Positions pour la partie décimale ?",
       options: [
-        "À partir de 0, de la droite vers la gauche",
-        "À partir de -1, de la gauche vers la droite",
-        "À partir de 1, de la droite vers la gauche",
-        "À partir de 0, de la gauche vers la droite",
+        "De 0, de droite à gauche",
+        "De -1, de gauche à droite",
+        "De 1, de droite à gauche",
+        "De 0, de gauche à droite"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 4,
-      question: "Que signifient MSB et LSB dans le système binaire ?",
+      question: "Que signifient MSB et LSB ?",
       options: [
-        "Multiplication Successive Binaire et Logique Multi-Système",
-        "Maximum System Bit et Lowest System Bit",
-        "Bit de poids fort (Most Significant Bit) et bit de poids faible (Least Significant Bit)",
-        "Mémoire Super Volatile et Longue Structure Binaire",
+        "Opérations binaires logiques",
+        "Maximum et Lowest System Bit",
+        "Bit de poids fort et poids faible",
+        "Structures de mémoire volatile"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 5,
-      question: "Quel est le principe de la conversion de la base 10 à la base 2 pour un nombre entier ?",
+      question: "Conversion base 10 vers 2 (entier) ?",
       options: [
-        "Faire des multiplications successives par 2 jusqu'à obtenir un résultat nul",
-        "Remplacer chaque chiffre par son équivalent sur 3 bits",
-        "Faire des divisions successives par 2 jusqu'à ce que le quotient soit nul et prendre les restes à l'envers",
-        "Calculer la représentation positionnelle directement",
+        "Multiplications successives par 2",
+        "Remplacer par 3 bits binaire",
+        "Divisions par 2, restes inversés",
+        "Représentation positionnelle directe"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 6,
-      question: "Comment convertit-on la partie décimale (fractionnaire) d'un nombre de la base 10 à la base 2 ?",
+      question: "Conversion base 10 vers 2 (décimale) ?",
       options: [
-        "Par des multiplications successives par 2 jusqu'à ce que la partie décimale soit nulle ou la précision atteinte",
-        "Par des divisions successives par 16",
-        "En extrayant uniquement les puissances négatives de 10",
-        "En regroupant les bits par paquets de 4",
+        "Multiplications successives par 2",
+        "Divisions successives par 16",
+        "Extraire les puissances négatives",
+        "Regrouper les bits par 4"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 7,
-      question: "Pour convertir un nombre de la base 8 (octal) vers la base 2 (binaire), on remplace chaque symbole par :",
+      question: "Conversion base 8 vers binaire ?",
       options: [
-        "Son équivalent binaire sur 2 bits",
-        "Son équivalent binaire sur 4 bits",
-        "Son équivalent binaire sur 3 bits",
-        "Une division successive par 8",
+        "Chaque symbole sur 2 bits",
+        "Chaque symbole sur 4 bits",
+        "Chaque symbole sur 3 bits",
+        "Division successive par 8"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 8,
-      question: "Dans le système hexadécimal, quelle lettre représente la valeur décimale 10 ?",
+      question: "Hexadécimal : Valeur décimale 10 ?",
       options: [
         "B",
         "F",
         "C",
-        "A",
+        "A"
       ],
-      answer: 3,
+      answer: 3
     },
-
     {
       id: 9,
-      question: "Quelle est la méthode recommandée pour convertir un nombre de la base 8 à la base 16 (ou inversement) ?",
+      question: "Conversion base 8 vers base 16 ?",
       options: [
-        "Faire une division directe par 24",
-        "Utiliser la base 2 (le binaire) comme base intermédiaire",
-        "Passer obligatoirement par des multiplications successives par 10",
-        "Multiplier le nombre par 8 puis le diviser par 16",
+        "Division directe par 24",
+        "Utiliser la base 2 en intermédiaire",
+        "Multiplications par 10 obligatoires",
+        "Multiplier par 8 puis diviser par 16"
       ],
-      answer: 1,
+      answer: 1
     },
-
-    // ===== NOUVELLES QUESTIONS (10 à 20) =====
-
     {
       id: 10,
-      question: "À quoi correspond le regroupement par blocs de 4 bits lors d'une conversion binaire ?",
+      question: "Regroupement par blocs de 4 bits ?",
       options: [
-        "À la conversion binaire vers octal",
-        "À la conversion binaire vers décimal",
-        "À la conversion binaire vers hexadécimal",
-        "À l'extraction de la plus grande puissance de 2",
+        "Binaire vers octal",
+        "Binaire vers décimal",
+        "Binaire vers hexadécimal",
+        "Extraction de puissance de 2"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 11,
-      question: "Que signifie le terme 'codage de l'information' selon le document ?",
+      question: "Qu'est-ce que le codage ?",
       options: [
-        "Sécuriser les données de l'ordinateur contre les virus",
-        "Établir une correspondance entre la représentation externe de l'information et sa représentation binaire",
-        "Écrire des programmes informatiques en langage C ou Java",
-        "Calculer la partie entière et décimale d'un nombre réel",
+        "Sécuriser contre les virus",
+        "Lien entre forme externe et binaire",
+        "Programmer en C ou Java",
+        "Calculer les parties réelles"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 12,
-      question: "Quels sont les symboles utilisés par le système de numération octal ?",
+      question: "Symboles du système octal ?",
       options: [
-        "Les symboles de 0 à 8 inclus",
-        "Les symboles de 1 à 8 inclus",
-        "Les symboles de 0 à 7 inclus",
-        "Les symboles de 0 à 9 inclus",
+        "De 0 à 8 inclus",
+        "De 1 à 8 inclus",
+        "De 0 à 7 inclus",
+        "De 0 à 9 inclus"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 13,
-      question: "Quelle est la base du système hexadécimal (hexa-déci) ?",
+      question: "Base du système hexadécimal ?",
       options: [
         "Base 6",
         "Base 10",
         "Base 8",
-        "Base 16",
+        "Base 16"
       ],
-      answer: 3,
+      answer: 3
     },
-
     {
       id: 14,
-      question: "Pour situer les positions de la partie entière d'un nombre, on numérote de la droite vers la gauche à partir de :",
+      question: "Positions pour la partie entière (départ) ?",
       options: [
         "Le chiffre 1",
         "Le chiffre -1",
         "Le chiffre 0",
-        "La base du système",
+        "La base du système"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 15,
-      question: "Calculer la représentation positionnelle d'un nombre revient à le décomposer suivant :",
+      question: "La représentation positionnelle décompose selon :",
       options: [
-        "Les puissances de sa base",
-        "Des multiplications successives par 2",
-        "Des divisions successives par la base",
-        "L'ordre inverse des restes",
+        "Les puissances de la base",
+        "Des multiplications par 2",
+        "Des divisions par la base",
+        "L'ordre inverse des restes"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 16,
-      question: "Quelle est la valeur binaire du nombre décimal (37)10 obtenue par divisions successives ?",
+      question: "Valeur binaire de (37)10 ?",
       options: [
         "(101011)2",
         "(100101)2",
         "(110001)2",
-        "(100111)2",
+        "(100111)2"
       ],
-      answer: 1,
+      answer: 1
     },
-
     {
       id: 17,
-      question: "Dans la méthode d'extraction de la plus grande puissance, que fait-on sous les puissances non extradites ?",
+      question: "Puissances non extraites (méthode extraction) ?",
       options: [
         "On écrit le chiffre 1",
-        "On écrit le reste de la soustraction",
+        "On écrit le reste",
         "On écrit le chiffre 0",
-        "On effectue une division par 2",
+        "On divise par 2"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 18,
-      question: "Quelle est la valeur octale correspondante au nombre décimal entier (37)10 ?",
+      question: "Valeur octale de (37)10 ?",
       options: [
         "(45)8",
         "(25)8",
         "(54)8",
-        "(37)8",
+        "(37)8"
       ],
-      answer: 0,
+      answer: 0
     },
-
     {
       id: 19,
-      question: "En hexadécimal, quelle est la correspondance pour la valeur décimale 15 ?",
+      question: "Hexadécimal : Valeur décimale 15 ?",
       options: [
         "La lettre E",
         "La lettre D",
         "La lettre F",
-        "La lettre A",
+        "La lettre A"
       ],
-      answer: 2,
+      answer: 2
     },
-
     {
       id: 20,
-      question: "Lors d'une conversion binaire vers octal, comment regroupe-t-on les bits de la partie entière ?",
+      question: "Binaire vers octal : Regroupement entier ?",
       options: [
-        "Par groupes de 4 bits de la droite vers la gauche",
-        "Par groupes de 3 bits de la droite vers la gauche",
-        "Par groupes de 3 bits de la gauche vers la droite",
-        "Par groupes de 4 bits de la gauche vers la droite",
+        "Par 4 bits de droite à gauche",
+        "Par 3 bits de droite à gauche",
+        "Par 3 bits de gauche à droite",
+        "Par 4 bits de gauche à droite"
       ],
-      answer: 1,
-    },
-  ],
+      answer: 1
+    }
+  ]
 };
