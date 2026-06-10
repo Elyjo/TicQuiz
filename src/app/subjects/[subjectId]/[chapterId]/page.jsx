@@ -122,7 +122,7 @@ export default function QuizPage() {
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative min-h-screen overflow-hidden bg-[#020617]"
+        className="relative min-h-screen overflow-hidden"
       >
         {/* BACKGROUND */}
         <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
@@ -136,15 +136,10 @@ export default function QuizPage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-full max-w-sm rounded-[34px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-8"
+            className="w-full max-w-sm rounded-[34px] bg-none p-8"
           >
             {/* SCORE CIRCLE */}
             <div className="flex justify-center">
-              <div className="w-28 h-28 rounded-full border border-violet-400/20 bg-violet-500/10 flex items-center justify-center">
-                <span className="text-4xl font-black text-violet-300">
-                  {percentage}%
-                </span>
-              </div>
             </div>
 
             {/* TITLE */}
@@ -162,7 +157,7 @@ export default function QuizPage() {
             </p>
 
             {/* STATS */}
-            <div className="mt-8 rounded-3xl border border-white/10 bg-white/[0.04] p-4">
+            <div className="mt-12 rounded-3xl border border-white/10 bg-white/[0.04] p-4">
               <div className="flex justify-between">
                 <span className="text-slate-400">Questions</span>
 
@@ -187,14 +182,14 @@ export default function QuizPage() {
             {/* ACTIONS */}
             <button
               onClick={() => window.location.reload()}
-              className="mt-8 w-full h-14 rounded-2xl bg-violet-600 text-white font-bold transition-all hover:bg-violet-500"
+              className="mt-12 w-full h-14 rounded-2xl bg-violet-600 text-white font-bold transition-all hover:bg-violet-500"
             >
               Rejouer le quiz
             </button>
 
             <button
               onClick={() => router.push(`/subjects/${params.subjectId}`)}
-              className="mt-4 w-full h-14 rounded-2xl border border-white/10 bg-white/[0.03] text-white font-medium"
+              className="mt-12 w-full h-14 rounded-2xl border border-white/10 bg-white/[0.03] text-white font-medium"
             >
               Retour aux chapitres
             </button>
