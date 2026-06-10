@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import { useParams } from "next/navigation";
 import { quizRegistry } from "@/data/quizzes/registry";
+import { useRouter } from "next/navigation";
 
 export default function QuizPage() {
   const params = useParams();
@@ -18,6 +19,16 @@ export default function QuizPage() {
   const [score, setScore] = useState(0);
 
   const [finished, setFinished] = useState(false);
+
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSeconds((prev) => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     // console.log("params =", params);
@@ -34,6 +45,16 @@ export default function QuizPage() {
       setQuestions(chapter.questions);
     }
   }, [params.subjectId, params.chapterId]);
+
+  const formatTime = () => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+
+    return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  };
+
+  const router = useRouter();
+
   if (!questions.length) {
     return (
       <main className="min-h-screen bg-[#020617] flex items-center justify-center">
@@ -62,23 +83,124 @@ export default function QuizPage() {
     setSelected(null);
   };
 
+  const savedScores = JSON.parse(localStorage.getItem("quizScores")) || {};
+
+  savedScores[params.subjectId] = {
+    ...(savedScores[params.subjectId] || {}),
+
+    [params.chapterId]: selected === question.answer ? score + 1 : score,
+  };
+
+  localStorage.setItem("quizScores", JSON.stringify(savedScores));
+
+  const finalScore = selected === question.answer ? score + 1 : score;
+
+  const percentage = Math.round((finalScore / questions.length) * 100);
+
+  savedScores[params.subjectId] = {
+    ...(savedScores[params.subjectId] || {}),
+
+    [params.chapterId]: {
+      score: finalScore,
+      total: questions.length,
+      percentage,
+      completedAt: Date.now(),
+    },
+  };
+
   if (finished) {
     const percentage = Math.round((score / questions.length) * 100);
 
+    const getMessage = () => {
+      if (percentage >= 80) return "Excellent travail 🚀";
+      if (percentage >= 60) return "Très bon résultat 👏";
+      if (percentage >= 40) return "Continue comme ça 💪";
+      return "Encore un effort 📚";
+    };
+
     return (
-      <main className="min-h-screen bg-[#020617] flex items-center justify-center px-5">
-        <div className="w-full max-w-sm text-center">
-          <h1 className="text-4xl font-black text-white">Quiz terminé</h1>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="relative min-h-screen overflow-hidden bg-[#020617]"
+      >
+        {/* BACKGROUND */}
+        <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
-          <p className="mt-6 text-violet-300 text-5xl font-black">
-            {percentage}%
-          </p>
+        <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80" />
 
-          <p className="mt-4 text-slate-400">
-            {score} / {questions.length} bonnes réponses
-          </p>
-        </div>
-      </main>
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
+
+        <section className="relative z-20 min-h-screen flex items-center justify-center px-5">
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="w-full max-w-sm rounded-[34px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-8"
+          >
+            {/* SCORE CIRCLE */}
+            <div className="flex justify-center">
+              <div className="w-28 h-28 rounded-full border border-violet-400/20 bg-violet-500/10 flex items-center justify-center">
+                <span className="text-4xl font-black text-violet-300">
+                  {percentage}%
+                </span>
+              </div>
+            </div>
+
+            {/* TITLE */}
+            <h1 className="mt-8 text-center text-3xl font-black text-white">
+              Quiz terminé
+            </h1>
+
+            <p className="mt-3 text-center text-slate-400">
+              {score} / {questions.length} bonnes réponses
+            </p>
+
+            {/* MESSAGE */}
+            <p className="mt-6 text-center text-white font-medium">
+              {getMessage()}
+            </p>
+
+            {/* STATS */}
+            <div className="mt-8 rounded-3xl border border-white/10 bg-white/[0.04] p-4">
+              <div className="flex justify-between">
+                <span className="text-slate-400">Questions</span>
+
+                <span className="text-white font-semibold">
+                  {questions.length}
+                </span>
+              </div>
+
+              <div className="mt-3 flex justify-between">
+                <span className="text-slate-400">Bonnes réponses</span>
+
+                <span className="text-violet-300 font-semibold">{score}</span>
+              </div>
+
+              <div className="mt-3 flex justify-between">
+                <span className="text-slate-400">Taux de réussite</span>
+
+                <span className="text-white font-semibold">{percentage}%</span>
+              </div>
+            </div>
+
+            {/* ACTIONS */}
+            <button
+              onClick={() => window.location.reload()}
+              className="mt-8 w-full h-14 rounded-2xl bg-violet-600 text-white font-bold transition-all hover:bg-violet-500"
+            >
+              Rejouer le quiz
+            </button>
+
+            <button
+              onClick={() => router.push(`/subjects/${params.subjectId}`)}
+              className="mt-4 w-full h-14 rounded-2xl border border-white/10 bg-white/[0.03] text-white font-medium"
+            >
+              Retour aux chapitres
+            </button>
+          </motion.div>
+        </section>
+      </motion.main>
     );
   }
 
@@ -97,6 +219,12 @@ export default function QuizPage() {
 
       <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
         {/* HEADER */}
+        <div>
+          <p className="text-slate-400 text-sm">Temps</p>
+
+          <h2 className="text-violet-300 font-bold">{formatTime()}</h2>
+        </div>
+
         <div className="flex justify-between items-center">
           <div>
             <p className="text-slate-400 text-sm">Question</p>
