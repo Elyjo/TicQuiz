@@ -20,15 +20,15 @@ export default function QuizPage() {
   const [finished, setFinished] = useState(false);
 
   useEffect(() => {
-    console.log("params =", params);
+    // console.log("params =", params);
 
     const subjectQuiz = quizRegistry?.[params.subjectId];
 
-    console.log("subjectQuiz =", subjectQuiz);
+    // console.log("subjectQuiz =", subjectQuiz);
 
     const chapter = subjectQuiz?.[params.chapterId];
 
-    console.log("chapter =", chapter);
+    // console.log("chapter =", chapter);
 
     if (chapter?.questions) {
       setQuestions(chapter.questions);
@@ -37,7 +37,7 @@ export default function QuizPage() {
   if (!questions.length) {
     return (
       <main className="min-h-screen bg-[#020617] flex items-center justify-center">
-        <p className="text-slate-400">Chargement...</p>
+        <p className="text-slate-400"></p>
       </main>
     );
   }
@@ -114,7 +114,7 @@ export default function QuizPage() {
         </div>
 
         {/* PROGRESS */}
-        <div className="mt-6 h-3 rounded-full bg-white/10 overflow-hidden">
+        <div className="h-3 rounded-full bg-white/10 overflow-hidden">
           <motion.div
             animate={{
               width: `${progress}%`,
@@ -145,7 +145,7 @@ export default function QuizPage() {
         </motion.div>
 
         {/* OPTIONS */}
-        <div className="mt-8 flex flex-col gap-4">
+        <div className="mt-12 flex flex-col gap-4">
           {question.options.map((option, index) => {
             const isSelected = selected === index;
 
