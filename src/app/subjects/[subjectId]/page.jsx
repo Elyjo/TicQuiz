@@ -26,8 +26,10 @@ export default function SubjectPage() {
   useEffect(() => {
     const loadChapters = async () => {
       try {
+        const savedPath = JSON.parse(localStorage.getItem("userPath"));
+
         const module = await import(
-          `@/data/quizzes/d2a/l1/semester1/${params.subjectId}/chapters`
+          `@/data/quizzes/d2a/${savedPath.level}/${savedPath.semester}/${params.subjectId}/chapters`
         );
 
         setChapters(Object.values(module.Quiz));
