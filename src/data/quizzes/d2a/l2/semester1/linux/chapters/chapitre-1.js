@@ -53,7 +53,7 @@ export const chapter1 = {
         "Affiche le dossier courant",
         "Retourne à la racine /",
         "Revient en arrière",
-        "Va au répertoire personnel (home)"
+        "Va au répertoire home"
       ],
       answer: 3
     },
@@ -86,7 +86,7 @@ export const chapter1 = {
         "Avec l'option -f",
         "Avec rmdir",
         "Avec l'option -r",
-        "Impossible"
+        "C'est impossible"
       ],
       answer: 2
     },
