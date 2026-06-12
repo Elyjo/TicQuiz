@@ -183,25 +183,11 @@ export const d2a = {
         color: "orange",
       },
       {
-        id: "framework-web",
-        name: "Framework Web",
-        credits: 5,
-        icon: Globe,
-        color: "pink",
-      },
-      {
-        id: "jsp-servlet",
+        id: "jspServlet",
         name: "JSP & Servlet",
         credits: 5,
         icon: CodeXml,
         color: "pink",
-      },
-      {
-        id: "oracle",
-        name: "Oracle",
-        credits: 4,
-        icon: Database,
-        color: "red",
       },
       {
         id: "xml",
