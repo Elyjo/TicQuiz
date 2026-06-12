@@ -21,6 +21,7 @@ import {
   Briefcase,
   Scale,
   Workflow,
+  Terminal,
 } from "lucide-react";
 
 export const srt = {
@@ -112,14 +113,14 @@ export const srt = {
         color: "violet",
       },
       {
-        id: "services-reseau",
-        name: "Services Réseau",
+        id: "reseaux",
+        name: "Réseaux",
         credits: 10,
         icon: Network,
         color: "cyan",
       },
       {
-        id: "reseaux-sans-fil",
+        id: "reseauxSansFil",
         name: "Réseaux Sans Fil",
         credits: 10,
         icon: Router,
@@ -129,8 +130,15 @@ export const srt = {
         id: "linux",
         name: "Linux",
         credits: 10,
-        icon: Server,
+        icon: Terminal,
         color: "cyan",
+      },
+      {
+        id: "iot",
+        name: "IoT",
+        credits: 4,
+        icon: Cpu,
+        color: "emerald",
       },
     ],
 

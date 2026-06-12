@@ -12,6 +12,7 @@ import { Quiz as umlQuiz } from "@/data/quizzes/d2a/l3/semester1/uml/chapters";
 import { Quiz as javaAvanceQuiz } from "@/data/quizzes/d2a/l3/semester1/javaAvance/chapters";
 import { Quiz as xmlQuiz } from "@/data/quizzes/d2a/l3/semester1/xml/chapters";
 import { Quiz as jspServletQuiz } from "@/data/quizzes/d2a/l3/semester1/jspServlet/chapters";
+import { Quiz as iotQuiz } from "@/data/quizzes/srt/l2/semester1/iot/chapters"; 
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -26,5 +27,6 @@ export const quizRegistry = {
   javaAvance: javaAvanceQuiz,
   xml: xmlQuiz,
   jspServlet: jspServletQuiz,
+  iot:iotQuiz,
 
 };

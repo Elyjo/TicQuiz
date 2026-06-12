@@ -1,0 +1,1 @@
+export { Quiz } from "@/data/quizzes/d2a/l2/semester1/linux/chapters";

@@ -28,8 +28,12 @@ export default function SubjectPage() {
       try {
         const savedPath = JSON.parse(localStorage.getItem("userPath"));
 
+        //const module = await import(
+        //`@/data/quizzes/d2a/${savedPath.level}/${savedPath.semester}/${params.subjectId}/chapters`
+        //);
+
         const module = await import(
-          `@/data/quizzes/d2a/${savedPath.level}/${savedPath.semester}/${params.subjectId}/chapters`
+          `@/data/quizzes/${savedPath.dept}/${savedPath.level}/${savedPath.semester}/${params.subjectId}/chapters`
         );
 
         setChapters(Object.values(module.Quiz));
