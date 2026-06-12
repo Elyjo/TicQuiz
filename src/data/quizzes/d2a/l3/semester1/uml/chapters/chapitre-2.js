@@ -6,111 +6,96 @@ export const chapter2 = {
       id: 1,
       question: "Définition d'une classe",
       options: [
-        "Un objet concret",
-        "Une factorisation d'attributs et de comportements communs",
-        "Une instance d'objet",
-        "Une méthode d'affichage"
+        "Objet concret",
+        "Factorisation attributs/comportements",
+        "Instance",
+        "Méthode",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
-      question: "Différence entre classe et objet",
+      question: "Différence classe et objet",
       options: [
-        "Aucune différence",
-        "La classe est l'instance, l'objet est le modèle",
-        "La classe est le modèle, l'objet est l'instance",
-        "La classe est une méthode, l'objet est un attribut"
+        "Aucune",
+        "Classe=instance/Objet=modèle",
+        "Classe=modèle/Objet=instance",
+        "Classe=méthode/Objet=attribut",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 3,
-      question: "Niveau de visibilité accessible uniquement aux membres de la même classe",
-      options: [
-        "Public (+)",
-        "Private (-)",
-        "Protected (#)",
-        "Global"
-      ],
-      answer: 1
+      question: "Visibilité membres seule classe",
+      options: ["Public", "Private", "Protected", "Global"],
+      answer: 1,
     },
     {
       id: 4,
       question: "But de l'encapsulation",
       options: [
-        "Accélérer l'exécution",
-        "Masquer les détails d'implémentation et protéger les données",
-        "Supprimer les méthodes",
-        "Multiplier les classes"
+        "Accélérer exécution",
+        "Masquer implémentation/protéger données",
+        "Supprimer méthodes",
+        "Multiplier classes",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 5,
       question: "Relation d'agrégation",
       options: [
-        "Relation ensemble/élément avec cycles de vie indépendants",
-        "Relation de dépendance totale",
+        "Ensemble/élément cycle indépendant",
+        "Dépendance totale",
         "Héritage strict",
-        "Relation d'exclusion"
+        "Exclusion",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 6,
-      question: "Caractéristique principale de la composition",
+      question: "Caractéristique de la composition",
       options: [
-        "Cycle de vie des composants lié à l'agrégat",
-        "Relation purement sémantique",
+        "Cycle de vie lié",
+        "Sémantique pure",
         "Héritage multiple",
-        "Absence d'attributs"
+        "Sans attributs",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 7,
-      question: "Multiplicité * signifie",
-      options: [
-        "Exactement un",
-        "Zéro ou un",
-        "Plusieurs (0..n)",
-        "Interdit"
-      ],
-      answer: 2
+      question: "Signification de la multiplicité *",
+      options: ["Exactement un", "Zéro ou un", "Plusieurs (0..n)", "Interdit"],
+      answer: 2,
     },
     {
       id: 8,
-      question: "Mécanisme de transmission des propriétés vers une sous-classe",
-      options: [
-        "Polymorphisme",
-        "Encapsulation",
-        "Héritage",
-        "Association"
-      ],
-      answer: 2
+      question: "Transmission propriétés vers sous-classe",
+      options: ["Polymorphisme", "Encapsulation", "Héritage", "Association"],
+      answer: 2,
     },
     {
       id: 9,
-      question: "Différence entre généralisation et spécialisation",
+      question: "Différence généralisation et spécialisation",
       options: [
-        "Généralisation (ascendante/factorisation), Spécialisation (descendante/extension)",
-        "Généralisation (descendante), Spécialisation (ascendante)",
-        "Ce sont des termes synonymes",
-        "La généralisation supprime des méthodes"
+        "Généralisation=ascendante/Spécialisation=descendante",
+        "Généralisation=descendante/Spécialisation=ascendante",
+        "Synonymes",
+        "Généralisation supprime méthodes",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 10,
-      question: "Le polymorphisme permet",
+      question: "Utilité du polymorphisme",
       options: [
-        "D'interdire l'héritage",
-        "À une méthode de s'appliquer à des classes différentes via une interface commune",
-        "De réduire la mémoire utilisée",
-        "De renommer toutes les classes"
+        "Interdire héritage",
+        "Méthode commune classes différentes",
+        "Réduire mémoire",
+        "Renommer classes",
       ],
-      answer: 1
-    }
-  ]
+      answer: 1,
+    },
+  ],
 };

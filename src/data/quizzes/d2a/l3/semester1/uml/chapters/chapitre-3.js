@@ -6,111 +6,106 @@ export const chapter3 = {
       id: 1,
       question: "Définition d'un acteur UML",
       options: [
-        "Un utilisateur humain uniquement",
-        "Une entité externe interagissant avec le système",
-        "Un composant interne du code",
-        "Un diagramme de classe"
+        "Utilisateur humain",
+        "Entité externe interagissant avec le système",
+        "Composant interne",
+        "Diagramme de classe",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
       question: "Rôle des cas d'utilisation (use cases)",
       options: [
-        "Décrire la structure interne de la base de données",
-        "Structurer les besoins des utilisateurs et les objectifs du système",
-        "Dessiner l'interface utilisateur graphique",
-        "Générer le code source automatiquement"
+        "Structure interne BDD",
+        "Structurer besoins et objectifs",
+        "Interface graphique",
+        "Génération code",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 3,
       question: "Relation d'inclusion dans les cas d'utilisation",
       options: [
-        "Le cas A est une variante optionnelle de B",
-        "Le cas B est une partie obligatoire de A",
-        "Le cas A hérite de B",
-        "Il n'y a pas de relation entre A et B"
+        "Variante optionnelle",
+        "Partie obligatoire",
+        "Héritage",
+        "Aucune relation",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 4,
-      question: "Différence entre diagramme de séquence et communication",
+      question: "Différence séquence et communication",
       options: [
-        "Le premier est statique, le second dynamique",
-        "Le premier met l'accent sur la chronologie, le second sur les liens",
-        "Il n'y a aucune différence",
-        "Le premier décrit les données, le second les composants"
+        "Statique vs dynamique",
+        "Chronologie vs liens",
+        "Aucune",
+        "Données vs composants",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 5,
       question: "Sémantique d'un diagramme d'état-transition",
       options: [
-        "Décrit les changements d'états d'un objet en réponse à des événements",
-        "Décrit la hiérarchie des classes",
-        "Décrit le déploiement physique",
-        "Décrit la disposition des fichiers sur le disque"
+        "Changements d'états d'un objet",
+        "Hiérarchie des classes",
+        "Déploiement physique",
+        "Disposition fichiers",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 6,
       question: "Utilité du diagramme de déploiement",
       options: [
-        "Montrer la disposition physique des matériels et la répartition des composants",
-        "Lister tous les acteurs du système",
-        "Décrire les étapes d'un algorithme",
-        "Définir les droits d'accès aux fichiers"
+        "Disposition physique matériels/composants",
+        "Lister acteurs",
+        "Étapes algorithme",
+        "Droits accès",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 7,
-      question: "Dans un diagramme de séquence, le temps s'écoule",
-      options: [
-        "De gauche à droite",
-        "De bas en haut",
-        "De haut en bas",
-        "Aléatoirement"
-      ],
-      answer: 2
+      question: "Sens du temps dans un diagramme de séquence",
+      options: ["Gauche à droite", "Bas en haut", "Haut en bas", "Aléatoire"],
+      answer: 2,
     },
     {
       id: 8,
       question: "Qu'est-ce qu'un scénario de cas d'utilisation",
       options: [
-        "Une instance d'un cas d'utilisation",
-        "Le code source complet",
-        "Un schéma de base de données",
-        "La liste des bugs du logiciel"
+        "Instance d'un cas d'utilisation",
+        "Code source",
+        "Schéma BDD",
+        "Liste de bugs",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 9,
       question: "Le diagramme de composants décrit",
       options: [
-        "La structure physique et statique de l'application en modules",
-        "Les interactions entre les utilisateurs",
-        "Les états d'un objet métier",
-        "La configuration réseau"
+        "Structure physique/statique en modules",
+        "Interaction utilisateurs",
+        "États objet métier",
+        "Configuration réseau",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 10,
       question: "Un diagramme de package permet de",
       options: [
-        "Représenter le découpage d'un système en sous-systèmes",
-        "Calculer le temps d'exécution",
-        "Gérer les versions du code",
-        "Dessiner l'interface écran"
+        "Découpage en sous-systèmes",
+        "Calculer temps exécution",
+        "Gestion versions",
+        "Interface écran",
       ],
-      answer: 0
-    }
-  ]
+      answer: 0,
+    },
+  ],
 };
