@@ -4,8 +4,14 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { d2a } from "@/data/curriculum/d2a";
+import { srt } from "@/data/curriculum/srt";
 import BackButton from "@/components/BackButton";
 import { useRouter } from "next/navigation";
+
+const curriculums = {
+  d2a,
+  srt,
+};
 
 const colorClasses = {
   violet: {
@@ -73,7 +79,7 @@ export default function SubjectsPage() {
     const saved = localStorage.getItem("userPath");
 
     if (!saved) {
-    //  console.log("NO USER PATH");
+      //  console.log("NO USER PATH");
       return;
     }
 
@@ -82,18 +88,21 @@ export default function SubjectsPage() {
     try {
       savedPath = JSON.parse(saved);
     } catch (e) {
-    //  console.log("INVALID USER PATH");
+      //  console.log("INVALID USER PATH");
       return;
     }
 
     if (!savedPath?.level || !savedPath?.semester) {
-    //  console.log("PATH INCOMPLETE", savedPath);
+      //  console.log("PATH INCOMPLETE", savedPath);
       return;
     }
 
     setPath(savedPath);
 
-    const data = d2a?.[savedPath.level]?.[savedPath.semester] || [];
+    //const data = d2a?.[savedPath.level]?.[savedPath.semester] || [];
+    const data =
+      curriculums?.[savedPath.dept]?.[savedPath.level]?.[savedPath.semester] ||
+      [];
 
     //  console.log("SUBJECTS LOADED:", data);
 

@@ -35,45 +35,10 @@ export const srt = {
       },
       {
         id: "systemexploitation",
-        name: "Système d’Exploitation",
+        name: "Système Exploitation",
         credits: 10,
         icon: AppWindow,
         color: "yellow",
-      },
-      {
-        id: "algebre-1",
-        name: "Algèbre I",
-        credits: 8,
-        icon: Calculator,
-        color: "emerald",
-      },
-      {
-        id: "analyse-1",
-        name: "Analyse I",
-        credits: 8,
-        icon: Calculator,
-        color: "cyan",
-      },
-      {
-        id: "technique-expression",
-        name: "Technique d’Expression",
-        credits: 4,
-        icon: BookText,
-        color: "orange",
-      },
-      {
-        id: "anglais",
-        name: "Anglais",
-        credits: 4,
-        icon: Languages,
-        color: "pink",
-      },
-      {
-        id: "initiation-informatique",
-        name: "Initiation Informatique",
-        credits: 4,
-        icon: Monitor,
-        color: "blue",
       },
       {
         id: "algorithmique",
@@ -81,13 +46,6 @@ export const srt = {
         credits: 8,
         icon: Code2,
         color: "violet",
-      },
-      {
-        id: "programmation",
-        name: "Programmation",
-        credits: 8,
-        icon: Code2,
-        color: "red",
       },
     ],
 
@@ -147,32 +105,11 @@ export const srt = {
   l2: {
     semester1: [
       {
-        id: "algorithmique-2",
-        name: "Algorithmique II",
+        id: "langageC",
+        name: "Langage C",
         credits: 6,
         icon: Code2,
         color: "violet",
-      },
-      {
-        id: "programmation-2",
-        name: "Programmation II",
-        credits: 6,
-        icon: Code2,
-        color: "red",
-      },
-      {
-        id: "electronique",
-        name: "Électronique",
-        credits: 8,
-        icon: Cpu,
-        color: "yellow",
-      },
-      {
-        id: "recherche-operationnelle",
-        name: "Recherche Opérationnelle",
-        credits: 8,
-        icon: Workflow,
-        color: "emerald",
       },
       {
         id: "services-reseau",
@@ -194,27 +131,6 @@ export const srt = {
         credits: 10,
         icon: Server,
         color: "cyan",
-      },
-      {
-        id: "communication",
-        name: "Communication",
-        credits: 6,
-        icon: BookText,
-        color: "orange",
-      },
-      {
-        id: "anglais-technique",
-        name: "Anglais Technique",
-        credits: 6,
-        icon: Languages,
-        color: "pink",
-      },
-      {
-        id: "projet-professionnel",
-        name: "Projet Professionnel",
-        credits: 6,
-        icon: Briefcase,
-        color: "indigo",
       },
     ],
 
