@@ -70,7 +70,7 @@ export const chapter3 = {
     },
     {
       id: 7,
-      question: "Pascal : Boucle Pour ?",
+      question: "Boucle Pour ?",
       options: [
         "while",
         "repeat",
@@ -81,7 +81,7 @@ export const chapter3 = {
     },
     {
       id: 8,
-      question: "Pascal : Compter de 10 vers 1 ?",
+      question: "Compter de 10 vers 1 ?",
       options: [
         "for i:=10 to 1",
         "for i:=10 downTo 1",
@@ -125,7 +125,7 @@ export const chapter3 = {
     },
     {
       id: 12,
-      question: "Pascal : Boucle Tant Que ?",
+      question: "Boucle Tant Que ?",
       options: [
         "repeat",
         "for",
@@ -169,7 +169,7 @@ export const chapter3 = {
     },
     {
       id: 16,
-      question: "Pascal : Répéter Jusqu'à ?",
+      question: "Répéter Jusqu'à ?",
       options: [
         "while",
         "for",
