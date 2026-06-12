@@ -112,7 +112,7 @@ export const d2a = {
         color: "emerald",
       },
       {
-        id: "langage-c",
+        id: "langageC",
         name: "Langage C",
         credits: 6,
         icon: Code2,
