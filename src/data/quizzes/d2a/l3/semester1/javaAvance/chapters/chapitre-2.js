@@ -4,37 +4,36 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Quelle est la valeur du premier indice d'un tableau en Java",
+      question: "Valeur du premier indice d'un tableau",
       options: ["1", "0", "Le nom du tableau", "Indéfini"],
       answer: 1,
     },
     {
       id: 2,
-      question: "Comment accéder à la taille d'un tableau nommé 't'",
+      question: "Comment accéder à la taille du tableau t",
       options: ["t.size()", "t.length()", "t.length", "t.count"],
       answer: 2,
     },
     {
       id: 3,
-      question:
-        "Que se passe-t-il si on tente d'ajouter un élément dans un tableau plein",
+      question: "Que se passe-t-il si le tableau est plein",
       options: [
-        "Java agrandit automatiquement le tableau",
-        "Une erreur de compilation ou d'exécution (IndexOutOfBounds) survient",
-        "L'élément est ignoré",
-        "Le premier élément est écrasé",
+        "Agrandissement automatique",
+        "Erreur IndexOutOfBounds",
+        "Élément ignoré",
+        "Écrasement du premier",
       ],
       answer: 1,
     },
     {
       id: 4,
-      question: "Comment déclarer un tableau d'entiers à deux dimensions",
+      question: "Déclaration d'un tableau à deux dimensions",
       options: ["int[] t[]", "int[][] t", "int[2] t", "t = new int[x,y]"],
       answer: 1,
     },
     {
       id: 5,
-      question: "Quelle méthode permet de trier un tableau par ordre croissant",
+      question: "Méthode pour trier un tableau",
       options: [
         "Arrays.sort(tab)",
         "tab.sort()",
@@ -45,26 +44,24 @@ export const chapter2 = {
     },
     {
       id: 6,
-      question:
-        "Si l'on initialise 'int[] t = new int[5]', quelle est la valeur des éléments",
+      question: "Valeur par défaut de int[] t = new int[5]",
       options: ["null", "1", "0", "Indéterminée"],
       answer: 2,
     },
     {
       id: 7,
-      question: "Qu'est-ce qu'un tableau à plusieurs dimensions en Java",
+      question: "Définition d'un tableau multidimensionnel",
       options: [
-        "Un tableau dont la taille change dynamiquement",
-        "Un tableau d'objets uniquement",
-        "Un tableau dont les éléments sont eux-mêmes des tableaux",
-        "Une structure de données illimitée",
+        "Taille dynamique",
+        "Tableau d'objets",
+        "Tableau de tableaux",
+        "Structure illimitée",
       ],
       answer: 2,
     },
     {
       id: 8,
-      question:
-        "Quelle méthode est utilisée pour copier une partie d'un tableau",
+      question: "Méthode pour copier une partie d'un tableau",
       options: [
         "Arrays.copyOfRange",
         "System.copyPart",
@@ -77,21 +74,21 @@ export const chapter2 = {
       id: 9,
       question: "Un tableau peut-il contenir des types différents",
       options: [
-        "Oui, si c'est un tableau d'objets",
-        "Non, il doit contenir des éléments de même type",
-        "Oui, en utilisant le type 'var'",
-        "Seulement pour les types primitifs",
+        "Oui, si objets",
+        "Non, type unique requis",
+        "Oui, via var",
+        "Seulement primitifs",
       ],
       answer: 1,
     },
     {
       id: 10,
-      question: "L'instruction 'new Equation[3]' crée",
+      question: "L'instruction new Equation[3] crée",
       options: [
-        "3 objets Equation initialisés",
-        "Un tableau contenant 3 références nulles",
-        "3 références vers une seule instance d'Equation",
-        "Une erreur de compilation",
+        "3 objets initialisés",
+        "3 références nulles",
+        "1 seule instance",
+        "Erreur",
       ],
       answer: 1,
     },
