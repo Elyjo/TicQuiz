@@ -4,37 +4,37 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Instance créatrice du groupe de travail 802 en 1980 ?",
+      question: "Instance créatrice du groupe de travail 802 en 1980",
       options: ["ISO", "ITU", "IEEE", "IETF"],
       answer: 2,
     },
     {
       id: 2,
-      question: "Norme du protocole CSMA/CD Ethernet ?",
+      question: "Norme du protocole CSMA/CD Ethernet",
       options: ["IEEE 802.2", "IEEE 802.3", "IEEE 802.5", "IEEE 802.11"],
       answer: 1,
     },
     {
       id: 3,
-      question: "Méthode d'accès basée sur le passage d'un jeton ?",
+      question: "Méthode d'accès basée sur le passage d'un jeton",
       options: ["Aléatoire", "À contention", "À réservation", "CSMA/CA"],
       answer: 2,
     },
     {
       id: 4,
-      question: "Méthode d'accès utilisée par le WiFi ?",
+      question: "Méthode d'accès utilisée par le WiFi",
       options: ["CSMA/CD", "CSMA/CA", "Token Bus", "HDLC"],
       answer: 1,
     },
     {
       id: 5,
-      question: "Nombre d'octets d'une adresse MAC ?",
+      question: "Nombre d'octets d'une adresse MAC",
       options: ["4", "6", "8", "16"],
       answer: 1,
     },
     {
       id: 6,
-      question: "Rôle des 3 premiers octets d'une adresse MAC ?",
+      question: "Rôle des 3 premiers octets d'une adresse MAC",
       options: [
         "Numéro de série",
         "Identifiant constructeur (OUI)",
@@ -45,13 +45,13 @@ export const chapter2 = {
     },
     {
       id: 7,
-      question: "Commande Windows pour afficher la MAC ?",
+      question: "Commande Windows pour afficher la MAC",
       options: ["ping", "netstat -ano", "ipconfig /all", "ss -tuln"],
       answer: 2,
     },
     {
       id: 8,
-      question: "Valeur de l'adresse MAC de broadcast ?",
+      question: "Valeur de l'adresse MAC de broadcast",
       options: [
         "00-00-00-00-00-00",
         "FF-FF-FF-FF-FF-FF",
@@ -62,7 +62,7 @@ export const chapter2 = {
     },
     {
       id: 9,
-      question: "Points d'accès identifiant les extrémités sous LLC ?",
+      question: "Points d'accès identifiant les extrémités sous LLC",
       options: [
         "IP source / dest",
         "Ports TCP / UDP",
@@ -73,7 +73,7 @@ export const chapter2 = {
     },
     {
       id: 10,
-      question: "Particularité du service LLC1 ?",
+      question: "Particularité du service LLC1",
       options: [
         "Mode connecté",
         "Mode datagramme sans acquittement",
@@ -84,7 +84,7 @@ export const chapter2 = {
     },
     {
       id: 11,
-      question: "Position de la clé CRC (FCS) dans une trame ?",
+      question: "Position de la clé CRC (FCS) dans une trame",
       options: [
         "Préambule",
         "Milieu des données",
@@ -95,7 +95,7 @@ export const chapter2 = {
     },
     {
       id: 12,
-      question: "Action d'une station Ethernet face à une collision ?",
+      question: "Action d'une station Ethernet face à une collision",
       options: [
         "Double son débit",
         "Cesse immédiatement d'émettre",
@@ -106,7 +106,7 @@ export const chapter2 = {
     },
     {
       id: 13,
-      question: "Algorithme gérant le temporisateur après collision ?",
+      question: "Algorithme gérant le temporisateur après collision",
       options: [
         "Interconnexion",
         "Algorithme BEB (Backoff)",
@@ -117,25 +117,25 @@ export const chapter2 = {
     },
     {
       id: 14,
-      question: "Type de codage physique de la trame Ethernet ?",
+      question: "Type de codage physique de la trame Ethernet",
       options: ["Binaire Pur", "Code Manchester", "Hexadécimal", "ASCII"],
       answer: 1,
     },
     {
       id: 15,
-      question: "Taille minimale d'une trame Ethernet ?",
+      question: "Taille minimale d'une trame Ethernet",
       options: ["32 octets", "64 octets", "512 octets", "1518 octets"],
       answer: 1,
     },
     {
       id: 16,
-      question: "Fenêtre de collision à 10 Mbps ?",
+      question: "Fenêtre de collision à 10 Mbps",
       options: ["5,12 µs", "51,2 µs", "5,12 ms", "51,2 ms"],
       answer: 3,
     },
     {
       id: 17,
-      question: "Comportement d'Ethernet à forte charge face au Token Ring ?",
+      question: "Comportement d'Ethernet à forte charge face au Token Ring",
       options: [
         "Débit utile maximal",
         "Débit utile s'effondre",
@@ -146,7 +146,7 @@ export const chapter2 = {
     },
     {
       id: 18,
-      question: "Pourquoi dit-on qu'Ethernet est probabiliste ?",
+      question: "Pourquoi dit-on qu'Ethernet est probabiliste",
       options: [
         "Temps d'accès non borné",
         "Adresses aléatoires",
@@ -157,13 +157,13 @@ export const chapter2 = {
     },
     {
       id: 19,
-      question: "Protocole simplifié de HDLC sans contrôle de flux ?",
+      question: "Protocole simplifié de HDLC sans contrôle de flux",
       options: ["LLC2", "PPP", "Token Bus", "CSMA/CD"],
       answer: 1,
     },
     {
       id: 20,
-      question: "Norme du standard Bluetooth (WPAN) ?",
+      question: "Norme du standard Bluetooth (WPAN)",
       options: ["IEEE 802.3", "IEEE 802.11", "IEEE 802.15", "IEEE 802.16"],
       answer: 2,
     },

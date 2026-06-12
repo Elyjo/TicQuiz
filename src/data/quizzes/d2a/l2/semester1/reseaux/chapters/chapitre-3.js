@@ -4,7 +4,7 @@ export const chapter3 = {
   questions: [
     {
       id: 1,
-      question: "Signification du processus DHCP 'DORA' ?",
+      question: "Signification du processus DHCP 'DORA'",
       options: [
         "Discover, Offer, Request, Ack",
         "Data, Option, Route, Access",
@@ -15,7 +15,7 @@ export const chapter3 = {
     },
     {
       id: 2,
-      question: "IP source et destination d'un DHCPDISCOVER ?",
+      question: "IP source et destination d'un DHCPDISCOVER",
       options: [
         "127.0.0.1 et 192.168.0.1",
         "0.0.0.0 et 255.255.255.255",
@@ -26,19 +26,19 @@ export const chapter3 = {
     },
     {
       id: 3,
-      question: "Message DHCP qui valide définitivement le bail ?",
+      question: "Message DHCP qui valide définitivement le bail",
       options: ["DHCPOFFER", "DHCPREQUEST", "DHCPACK", "DHCPINFORM"],
       answer: 2,
     },
     {
       id: 4,
-      question: "Message permettant au client de résilier son bail ?",
+      question: "Message permettant au client de résilier son bail",
       options: ["DHCPNACK", "DHCPRELEASE", "DHCPDECLINE", "DHCPINFORM"],
       answer: 1,
     },
     {
       id: 5,
-      question: "Fichier de configuration principal d'ISC-DHCP ?",
+      question: "Fichier de configuration principal d'ISC-DHCP",
       options: [
         "/etc/dhcpd.leases",
         "/etc/resolv.conf",
@@ -49,7 +49,7 @@ export const chapter3 = {
     },
     {
       id: 6,
-      question: "Commande Linux pour redémarrer le serveur DHCP ?",
+      question: "Commande Linux pour redémarrer le serveur DHCP",
       options: [
         "ifconfig eth0 up",
         "dhclient eth0",
@@ -60,7 +60,7 @@ export const chapter3 = {
     },
     {
       id: 7,
-      question: "Option de dhcpd.conf pour fixer la passerelle ?",
+      question: "Option de dhcpd.conf pour fixer la passerelle",
       options: [
         "range",
         "option routers",
@@ -71,7 +71,7 @@ export const chapter3 = {
     },
     {
       id: 8,
-      question: "Instruction pour fixer une IP selon la MAC ?",
+      question: "Instruction pour fixer une IP selon la MAC",
       options: [
         "subnet",
         "range",
@@ -82,13 +82,13 @@ export const chapter3 = {
     },
     {
       id: 9,
-      question: "Commande Cisco pour relayer le DHCP ?",
+      question: "Commande Cisco pour relayer le DHCP",
       options: ["ip route", "ip address", "ip helper-address", "ip dhcp pool"],
       answer: 2,
     },
     {
       id: 10,
-      question: "Port et protocole de transport du service DNS ?",
+      question: "Port et protocole de transport du service DNS",
       options: [
         "Port 80 en TCP",
         "Port 53 en UDP",
@@ -99,7 +99,7 @@ export const chapter3 = {
     },
     {
       id: 11,
-      question: "Serveur DNS détenant la base de données maître ?",
+      question: "Serveur DNS détenant la base de données maître",
       options: [
         "Serveur secondaire",
         "Serveur cache",
@@ -110,25 +110,25 @@ export const chapter3 = {
     },
     {
       id: 12,
-      question: "Limite de niveaux de l'espace DNS ?",
+      question: "Limite de niveaux de l'espace DNS",
       options: ["7 niveaux", "32 niveaux", "127 niveaux", "255 niveaux"],
       answer: 2,
     },
     {
       id: 13,
-      question: "Domaine gérant la résolution DNS inverse ?",
+      question: "Domaine gérant la résolution DNS inverse",
       options: [".com", ".edu", "in-addr.arpa", ".sn"],
       answer: 2,
     },
     {
       id: 14,
-      question: "Enregistrement DNS pour la résolution directe (Nom->IP) ?",
+      question: "Enregistrement DNS pour la résolution directe (Nom->IP)",
       options: ["MX", "PTR", "A (ou INA)", "SOA"],
       answer: 2,
     },
     {
       id: 15,
-      question: "Rôle de l'indicateur 'serial' dans le SOA ?",
+      question: "Rôle de l'indicateur 'serial' dans le SOA",
       options: [
         "Numéro de série pour les mises à jour",
         "Temps de rafraîchissement",
@@ -139,25 +139,25 @@ export const chapter3 = {
     },
     {
       id: 16,
-      question: "Daemon Linux qui gère le DNS (BIND) ?",
+      question: "Daemon Linux qui gère le DNS (BIND)",
       options: ["dhcpd", "named", "postfix", "apache2"],
       answer: 1,
     },
     {
       id: 17,
-      question: "Paquet de messagerie remplaçant Sendmail ?",
+      question: "Paquet de messagerie remplaçant Sendmail",
       options: ["Courier-IMAP", "Postfix", "Dovecot", "Apache"],
       answer: 1,
     },
     {
       id: 18,
-      question: "Enregistrement DNS requis pour la messagerie ?",
+      question: "Enregistrement DNS requis pour la messagerie",
       options: ["A", "PTR", "MX", "SOA"],
       answer: 2,
     },
     {
       id: 19,
-      question: "Type d'hébergement Web possédant son propre DocumentRoot ?",
+      question: "Type d'hébergement Web possédant son propre DocumentRoot",
       options: [
         "Site principal",
         "Site par dossier",
@@ -168,7 +168,7 @@ export const chapter3 = {
     },
     {
       id: 20,
-      question: "Rôle majeur d'un serveur Proxy Web ?",
+      question: "Rôle majeur d'un serveur Proxy Web",
       options: [
         "Attribuer des baux IP",
         "Intermédiaire, contrôle d'accès et cache",

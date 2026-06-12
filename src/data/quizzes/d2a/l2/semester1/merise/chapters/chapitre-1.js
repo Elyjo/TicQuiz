@@ -4,13 +4,13 @@ export const chapter1 = {
   questions: [
     {
       id: 1,
-      question: "Pays de création de Merise (1970) ?",
+      question: "Pays de création de Merise (1970)",
       options: ["États-Unis", "France", "Canada", "Allemagne"],
       answer: 1,
     },
     {
       id: 2,
-      question: "Signification de MERISE ?",
+      question: "Signification de MERISE",
       options: [
         "Méthode d'Étude de Réalisation Informatique par Sous-Ensembles",
         "Méthode de Rassemblement des Informations Système Évolué",
@@ -21,7 +21,7 @@ export const chapter1 = {
     },
     {
       id: 3,
-      question: "Qu'est-ce qu'un Système d'Information (SI) ?",
+      question: "Qu'est-ce qu'un Système d'Information (SI)",
       options: [
         "Serveurs et câbles",
         "Ressources humaines, matérielles et données",
@@ -32,19 +32,19 @@ export const chapter1 = {
     },
     {
       id: 4,
-      question: "Système qui prend les décisions ?",
+      question: "Système qui prend les décisions",
       options: ["Opérant", "D'information", "De pilotage", "Informatique"],
       answer: 2,
     },
     {
       id: 5,
-      question: "Système qui exécute la production ?",
+      question: "Système qui exécute la production",
       options: ["Opérant", "De pilotage", "D'information", "Automatisé"],
       answer: 0,
     },
     {
       id: 6,
-      question: "Système servant de pont entre pilotage et opérant ?",
+      question: "Système servant de pont entre pilotage et opérant",
       options: [
         "De décision",
         "D'information (SI)",
@@ -55,7 +55,7 @@ export const chapter1 = {
     },
     {
       id: 7,
-      question: "Quels aspects Merise sépare-t-elle ?",
+      question: "Quels aspects Merise sépare-t-elle",
       options: [
         "Matériel / Logiciel",
         "Données / Traitements",
@@ -66,25 +66,25 @@ export const chapter1 = {
     },
     {
       id: 8,
-      question: "Nombre de niveaux d'abstraction ?",
+      question: "Nombre de niveaux d'abstraction",
       options: ["2", "3", "4", "5"],
       answer: 1,
     },
     {
       id: 9,
-      question: "Niveau d'abstraction du 'QUOI ?' ?",
+      question: "Niveau d'abstraction du 'QUOI ?'",
       options: ["Conceptuel", "Organisationnel", "Logique", "Physique"],
       answer: 0,
     },
     {
       id: 10,
-      question: "Niveau du 'QUI, OÙ, QUAND ?' ?",
+      question: "Niveau du 'QUI, OÙ, QUAND ?'",
       options: ["Conceptuel", "Organisationnel", "Physique", "Technique"],
       answer: 1,
     },
     {
       id: 11,
-      question: "Niveau informatique du 'COMMENT ?' ?",
+      question: "Niveau informatique du 'COMMENT ?'",
       options: [
         "Conceptuel",
         "Logique / Physique",
@@ -95,7 +95,7 @@ export const chapter1 = {
     },
     {
       id: 12,
-      question: "Qu'est-ce que le Cycle de Vie ?",
+      question: "Qu'est-ce que le Cycle de Vie",
       options: [
         "Temps de calcul",
         "Étapes du projet (conception à maintenance)",
@@ -106,31 +106,31 @@ export const chapter1 = {
     },
     {
       id: 13,
-      question: "Cycle gérant l'approbation politique du projet ?",
+      question: "Cycle gérant l'approbation politique du projet",
       options: ["Abstraction", "Décision", "Vie", "Évaluation"],
       answer: 1,
     },
     {
       id: 14,
-      question: "Schéma d'étude logique avant l'implantation en base ?",
+      question: "Schéma d'étude logique avant l'implantation en base",
       options: ["MCD", "MLD", "MPD", "MCT"],
       answer: 1,
     },
     {
       id: 15,
-      question: "Schéma de l'organisation sur un SGBD spécifique ?",
+      question: "Schéma de l'organisation sur un SGBD spécifique",
       options: ["MCD", "MLD", "MPD", "MOT"],
       answer: 2,
     },
     {
       id: 16,
-      question: "Que modélise le MCT ?",
+      question: "Que modélise le MCT",
       options: ["Tables", "Flux réseau", "Réactions aux événements", "Budget"],
       answer: 2,
     },
     {
       id: 17,
-      question: "Démarche par étapes de Merise ?",
+      question: "Démarche par étapes de Merise",
       options: [
         "Du conceptuel vers le physique",
         "Codage immédiat",
@@ -141,7 +141,7 @@ export const chapter1 = {
     },
     {
       id: 18,
-      question: "Avantage de la séparation Données/Traitements ?",
+      question: "Avantage de la séparation Données/Traitements",
       options: [
         "Esthétique web",
         "Stabilité des données face aux changements de procédures",
@@ -152,13 +152,13 @@ export const chapter1 = {
     },
     {
       id: 19,
-      question: "L'étude préalable fait partie de quel cycle ?",
+      question: "L'étude préalable fait partie de quel cycle",
       options: ["Vie", "Abstraction", "Décision", "Logiciel"],
       answer: 0,
     },
     {
       id: 20,
-      question: "Niveau lié au choix du SGBD (MySQL, Oracle) ?",
+      question: "Niveau lié au choix du SGBD (MySQL, Oracle)",
       options: ["Conceptuel", "Organisationnel", "Logique", "Physique"],
       answer: 3,
     },

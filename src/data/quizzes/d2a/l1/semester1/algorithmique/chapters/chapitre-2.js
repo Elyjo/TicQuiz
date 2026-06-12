@@ -4,7 +4,7 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Rôle d'une structure conditionnelle ?",
+      question: "Rôle d'une structure conditionnelle",
       options: [
         "Répéter des instructions",
         "Choisir selon une condition",
@@ -15,7 +15,7 @@ export const chapter2 = {
     },
     {
       id: 2,
-      question: "Quand s'exécute un choix simple ?",
+      question: "Quand s'exécute un choix simple",
       options: [
         "Condition fausse",
         "Condition vraie",
@@ -26,7 +26,7 @@ export const chapter2 = {
     },
     {
       id: 3,
-      question: "Structure sans alternative ?",
+      question: "Structure sans alternative",
       options: [
         "Si...alors...finsi",
         "Cas...finCas",
@@ -37,7 +37,7 @@ export const chapter2 = {
     },
     {
       id: 4,
-      question: "Mot-clé du cas contraire ?",
+      question: "Mot-clé du cas contraire",
       options: [
         "Alors",
         "Sinon",
@@ -48,7 +48,7 @@ export const chapter2 = {
     },
     {
       id: 5,
-      question: "Statut des valeurs nulles ?",
+      question: "Statut des valeurs nulles",
       options: [
         "Négatives",
         "Positives",
@@ -59,7 +59,7 @@ export const chapter2 = {
     },
     {
       id: 6,
-      question: "Vérifier : 0 inclus à 20 exclu ?",
+      question: "Vérifier : 0 inclus à 20 exclu",
       options: [
         "a > 0 ET a < 20",
         "a >= 0 ET a < 20",
@@ -70,7 +70,7 @@ export const chapter2 = {
     },
     {
       id: 7,
-      question: "Signes contraires si :",
+      question: "Signes contraires si",
       options: [
         "Somme négative",
         "Produit négatif",
@@ -81,7 +81,7 @@ export const chapter2 = {
     },
     {
       id: 8,
-      question: "Condition avant division a / b ?",
+      question: "Condition avant division a / b",
       options: [
         "a ≠ 0",
         "b > a",
@@ -92,7 +92,7 @@ export const chapter2 = {
     },
     {
       id: 9,
-      question: "Instruction d'affichage ?",
+      question: "Instruction d'affichage",
       options: [
         "read",
         "scan",
@@ -103,7 +103,7 @@ export const chapter2 = {
     },
     {
       id: 10,
-      question: "Distinguer positif, négatif et nul ?",
+      question: "Distinguer positif, négatif et nul",
       options: [
         "Condition simple",
         "Boucle",
@@ -114,7 +114,7 @@ export const chapter2 = {
     },
     {
       id: 11,
-      question: "Valeur initiale d'un compteur ?",
+      question: "Valeur initiale d'un compteur",
       options: [
         "1",
         "-1",
@@ -125,7 +125,7 @@ export const chapter2 = {
     },
     {
       id: 12,
-      question: "Incrémentation d'un compteur ?",
+      question: "Incrémentation d'un compteur",
       options: [
         "c <- c - 1",
         "c <- c + 1",
@@ -136,7 +136,7 @@ export const chapter2 = {
     },
     {
       id: 13,
-      question: "Valeur initiale d'une somme ?",
+      question: "Valeur initiale d'une somme",
       options: [
         "0",
         "1",
@@ -147,7 +147,7 @@ export const chapter2 = {
     },
     {
       id: 14,
-      question: "Mise à jour d'une somme ?",
+      question: "Mise à jour d'une somme",
       options: [
         "s <- s * e",
         "s <- e",
@@ -158,7 +158,7 @@ export const chapter2 = {
     },
     {
       id: 15,
-      question: "Valeur initiale d'un produit ?",
+      question: "Valeur initiale d'un produit",
       options: [
         "0",
         "1",
@@ -169,7 +169,7 @@ export const chapter2 = {
     },
     {
       id: 16,
-      question: "Mise à jour d'un produit ?",
+      question: "Mise à jour d'un produit",
       options: [
         "p <- p + e",
         "p <- e",
@@ -180,7 +180,7 @@ export const chapter2 = {
     },
     {
       id: 17,
-      question: "Pascal : Délimiteur de bloc ?",
+      question: "Pascal : Délimiteur de bloc",
       options: [
         "if / then",
         "case / of",
@@ -191,7 +191,7 @@ export const chapter2 = {
     },
     {
       id: 18,
-      question: "Pascal : Mot-clé d'alternative ?",
+      question: "Pascal : Mot-clé d'alternative",
       options: [
         "then",
         "else",
@@ -202,7 +202,7 @@ export const chapter2 = {
     },
     {
       id: 19,
-      question: "Utilité de la structure CASE ?",
+      question: "Utilité de la structure CASE",
       options: [
         "Répéter des blocs",
         "Sélection multiple",
@@ -213,7 +213,7 @@ export const chapter2 = {
     },
     {
       id: 20,
-      question: "Deux conditions vraies ensemble ?",
+      question: "Deux conditions vraies ensemble",
       options: [
         "OU",
         "NON",

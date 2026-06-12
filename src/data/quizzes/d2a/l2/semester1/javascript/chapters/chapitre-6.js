@@ -4,7 +4,7 @@ export const chapter6 = {
   questions: [
     {
       id: 1,
-      question: "Qu'est-ce que jQuery en informatique ?",
+      question: "Qu'est-ce que jQuery en informatique",
       options: [
         "Framework CSS",
         "Bibliothèque JavaScript légère",
@@ -15,19 +15,19 @@ export const chapter6 = {
     },
     {
       id: 2,
-      question: "Symbole servant d'alias principal pour appeler jQuery ?",
+      question: "Symbole servant d'alias principal pour appeler jQuery",
       options: ["&", "@", "#", "$"],
       answer: 3,
     },
     {
       id: 3,
-      question: "Comment sélectionner tous les éléments de classe 'menu' ?",
+      question: "Comment sélectionner tous les éléments de classe 'menu'",
       options: ["$('.menu')", "$('#menu')", "$('menu')", "jQuery.get('menu')"],
       answer: 0,
     },
     {
       id: 4,
-      question: "Comment sélectionner un élément unique par son ID 'titre' ?",
+      question: "Comment sélectionner un élément unique par son ID 'titre'",
       options: [
         "$('.titre')",
         "$('titre')",
@@ -38,19 +38,19 @@ export const chapter6 = {
     },
     {
       id: 5,
-      question: "Méthode jQuery équivalente à la propriété innerHTML ?",
+      question: "Méthode jQuery équivalente à la propriété innerHTML",
       options: ["text()", "html()", "val()", "content()"],
       answer: 1,
     },
     {
       id: 6,
-      question: "Méthode récupérant ou modifiant la valeur d'un input ?",
+      question: "Méthode récupérant ou modifiant la valeur d'un input",
       options: ["text()", "html()", "attr()", "val()"],
       answer: 3,
     },
     {
       id: 7,
-      question: "Fonction attendant le chargement du DOM avant d'agir ?",
+      question: "Fonction attendant le chargement du DOM avant d'agir",
       options: [
         "$(document).ready()",
         "$(window).load()",
@@ -61,13 +61,13 @@ export const chapter6 = {
     },
     {
       id: 8,
-      question: "Méthode jQuery masquant instantanément un élément ?",
+      question: "Méthode jQuery masquant instantanément un élément",
       options: ["hide()", "fadeOut()", "slideUp()", "invisible()"],
       answer: 0,
     },
     {
       id: 9,
-      question: "Que fait précisément la méthode slideUp() ?",
+      question: "Que fait précisément la méthode slideUp()",
       options: [
         "Déplacement vertical",
         "Masquage en enroulement",
@@ -78,19 +78,19 @@ export const chapter6 = {
     },
     {
       id: 10,
-      question: "Méthode appliquant un effet de fondu progressif ?",
+      question: "Méthode appliquant un effet de fondu progressif",
       options: ["slideToggle()", "animate()", "fadeToggle()", "hide()"],
       answer: 2,
     },
     {
       id: 11,
-      question: "Méthode universelle attachant un événement en jQuery ?",
+      question: "Méthode universelle attachant un événement en jQuery",
       options: ["bind()", "on()", "click()", "addEventListener()"],
       answer: 1,
     },
     {
       id: 12,
-      question: "Comment ajouter une classe CSS à un élément ?",
+      question: "Comment ajouter une classe CSS à un élément",
       options: [
         "css('classe')",
         "setClass('classe')",
@@ -101,7 +101,7 @@ export const chapter6 = {
     },
     {
       id: 13,
-      question: "Méthode alternant la présence d'une classe CSS ?",
+      question: "Méthode alternant la présence d'une classe CSS",
       options: [
         "toggleClass()",
         "switchClass()",
@@ -112,7 +112,7 @@ export const chapter6 = {
     },
     {
       id: 14,
-      question: "Comment modifier le style CSS 'color' en rouge ?",
+      question: "Comment modifier le style CSS 'color' en rouge",
       options: [
         "element.style('color', 'red')",
         "$('element').css('color', 'red')",
@@ -123,25 +123,25 @@ export const chapter6 = {
     },
     {
       id: 15,
-      question: "Méthode supprimant définitivement un élément du DOM ?",
+      question: "Méthode supprimant définitivement un élément du DOM",
       options: ["empty()", "remove()", "clear()", "detach()"],
       answer: 1,
     },
     {
       id: 16,
-      question: "Méthode vidant le contenu d'un élément sans le supprimer ?",
+      question: "Méthode vidant le contenu d'un élément sans le supprimer",
       options: ["remove()", "delete()", "empty()", "clean()"],
       answer: 2,
     },
     {
       id: 17,
-      question: "Méthode lisant ou modifiant un attribut HTML (src, href) ?",
+      question: "Méthode lisant ou modifiant un attribut HTML (src, href)",
       options: ["attr()", "prop()", "val()", "css()"],
       answer: 0,
     },
     {
       id: 18,
-      question: "Utilité de la méthode animate() ?",
+      question: "Utilité de la méthode animate()",
       options: [
         "Créer des transitions CSS personnalisées",
         "Lancer des vidéos",
@@ -152,7 +152,7 @@ export const chapter6 = {
     },
     {
       id: 19,
-      question: "À quoi sert le chaînage d'instructions jQuery ?",
+      question: "À quoi sert le chaînage d'instructions jQuery",
       options: [
         "Créer des boucles",
         "Exécuter plusieurs méthodes sur un élément",
@@ -163,7 +163,7 @@ export const chapter6 = {
     },
     {
       id: 20,
-      question: "Que vaut '$(this)' dans un écouteur d'événement jQuery ?",
+      question: "Que vaut '$(this)' dans un écouteur d'événement jQuery",
       options: [
         "Objet window global",
         "L'élément cible enveloppé dans un objet jQuery",

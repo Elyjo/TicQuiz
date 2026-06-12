@@ -4,7 +4,7 @@ export const chapter5 = {
   questions: [
     {
       id: 1,
-      question: "Signification précise de l'acronyme DOM ?",
+      question: "Signification précise de l'acronyme DOM",
       options: [
         "Data Object Management",
         "Document Object Model",
@@ -15,13 +15,13 @@ export const chapter5 = {
     },
     {
       id: 2,
-      question: "Objet global représentant le point d'entrée du DOM ?",
+      question: "Objet global représentant le point d'entrée du DOM",
       options: ["window", "document", "html", "screen"],
       answer: 1,
     },
     {
       id: 3,
-      question: "Méthode sélectionnant un élément unique via son identifiant ?",
+      question: "Méthode sélectionnant un élément unique via son identifiant",
       options: [
         "getElementsByClassName()",
         "querySelector()",
@@ -33,7 +33,7 @@ export const chapter5 = {
     {
       id: 4,
       question:
-        "Que retourne querySelectorAll() si aucun élément n'est trouvé ?",
+        "Que retourne querySelectorAll() si aucun élément n'est trouvé",
       options: [
         "null",
         "undefined",
@@ -45,19 +45,19 @@ export const chapter5 = {
     {
       id: 5,
       question:
-        "Propriété modifiant le texte brut sans interpréter les balises ?",
+        "Propriété modifiant le texte brut sans interpréter les balises",
       options: ["innerHTML", "textContent", "value", "outerHTML"],
       answer: 1,
     },
     {
       id: 6,
-      question: "Propriété permettant de lire ou modifier le HTML interne ?",
+      question: "Propriété permettant de lire ou modifier le HTML interne",
       options: ["textContent", "innerText", "innerHTML", "src"],
       answer: 2,
     },
     {
       id: 7,
-      question: "Méthode créant un nouvel élément HTML en mémoire ?",
+      question: "Méthode créant un nouvel élément HTML en mémoire",
       options: [
         "document.createElement()",
         "document.newElement()",
@@ -68,7 +68,7 @@ export const chapter5 = {
     },
     {
       id: 8,
-      question: "Méthode insérant un nœud enfant à la fin d'un parent ?",
+      question: "Méthode insérant un nœud enfant à la fin d'un parent",
       options: [
         "prepend()",
         "appendChild()",
@@ -79,7 +79,7 @@ export const chapter5 = {
     },
     {
       id: 9,
-      question: "Comment supprimer un élément enfant spécifique du DOM ?",
+      question: "Comment supprimer un élément enfant spécifique du DOM",
       options: [
         "parent.deleteChild(enfant)",
         "enfant.remove() ou parent.removeChild(enfant)",
@@ -90,7 +90,7 @@ export const chapter5 = {
     },
     {
       id: 10,
-      question: "Méthode standard pour attacher un écouteur d'événement ?",
+      question: "Méthode standard pour attacher un écouteur d'événement",
       options: [
         "onclick()",
         "addEventListener()",
@@ -101,13 +101,13 @@ export const chapter5 = {
     },
     {
       id: 11,
-      question: "Événement déclenché à la validation finale d'un formulaire ?",
+      question: "Événement déclenché à la validation finale d'un formulaire",
       options: ["click", "submit", "change", "input"],
       answer: 1,
     },
     {
       id: 12,
-      question: "Méthode annulant l'action par défaut d'un événement ?",
+      question: "Méthode annulant l'action par défaut d'un événement",
       options: [
         "e.stopPropagation()",
         "e.preventDefault()",
@@ -118,7 +118,7 @@ export const chapter5 = {
     },
     {
       id: 13,
-      question: "Méthode bloquant la remontée (bubbling) d'un événement ?",
+      question: "Méthode bloquant la remontée (bubbling) d'un événement",
       options: [
         "e.preventDefault()",
         "e.stopPropagation()",
@@ -129,7 +129,7 @@ export const chapter5 = {
     },
     {
       id: 14,
-      question: "Manière propre d'ajouter une classe CSS à un élément ?",
+      question: "Manière propre d'ajouter une classe CSS à un élément",
       options: [
         "element.className = 'classe'",
         "element.classList.add('classe')",
@@ -140,19 +140,19 @@ export const chapter5 = {
     },
     {
       id: 15,
-      question: "Événement détectant l'écriture en temps réel dans un champ ?",
+      question: "Événement détectant l'écriture en temps réel dans un champ",
       options: ["change", "input", "blur", "focus"],
       answer: 1,
     },
     {
       id: 16,
-      question: "Événement s'exécutant quand un élément perd le focus ?",
+      question: "Événement s'exécutant quand un élément perd le focus",
       options: ["focus", "blur", "change", "leave"],
       answer: 1,
     },
     {
       id: 17,
-      question: "Dans addEventListener, à quoi fait référence 'this' ?",
+      question: "Dans addEventListener, à quoi fait référence 'this'",
       options: [
         "window",
         "L'élément ayant déclenché l'écouteur",
@@ -163,13 +163,13 @@ export const chapter5 = {
     },
     {
       id: 18,
-      question: "Objet stockant des données locales persistantes ?",
+      question: "Objet stockant des données locales persistantes",
       options: ["sessionStorage", "cookies", "localStorage", "window.data"],
       answer: 2,
     },
     {
       id: 19,
-      question: "Nature de la collection renvoyée par getElementsByTagName() ?",
+      question: "Nature de la collection renvoyée par getElementsByTagName()",
       options: [
         "Tableau classique",
         "HTMLCollection dynamique",
@@ -180,7 +180,7 @@ export const chapter5 = {
     },
     {
       id: 20,
-      question: "Méthode vérifiant la présence d'une classe CSS ?",
+      question: "Méthode vérifiant la présence d'une classe CSS",
       options: [
         "classList.has()",
         "classList.contains()",

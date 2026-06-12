@@ -4,7 +4,7 @@ export const chapter1 = {
   questions: [
     {
       id: 1,
-      question: "Quel composant exécute les lignes de commande ?",
+      question: "Quel composant exécute les lignes de commande",
       options: [
         "Le programme login",
         "L'interpréteur (shell)",
@@ -15,7 +15,7 @@ export const chapter1 = {
     },
     {
       id: 2,
-      question: "Quel caractère termine le prompt du root ?",
+      question: "Quel caractère termine le prompt du root",
       options: [
         "Le caractère $",
         "Le caractère %",
@@ -26,7 +26,7 @@ export const chapter1 = {
     },
     {
       id: 3,
-      question: "Par quoi commence toujours un chemin absolu ?",
+      question: "Par quoi commence toujours un chemin absolu",
       options: [
         "Le nom d'utilisateur",
         "La racine /",
@@ -37,7 +37,7 @@ export const chapter1 = {
     },
     {
       id: 4,
-      question: "Où sont listés les interpréteurs du système ?",
+      question: "Où sont listés les interpréteurs du système",
       options: [
         "/etc/passwd",
         "/bin/bash",
@@ -48,7 +48,7 @@ export const chapter1 = {
     },
     {
       id: 5,
-      question: "Que fait 'cd' sans option ni argument ?",
+      question: "Que fait 'cd' sans option ni argument",
       options: [
         "Affiche le dossier courant",
         "Retourne à la racine /",
@@ -59,7 +59,7 @@ export const chapter1 = {
     },
     {
       id: 6,
-      question: "Quelle option de 'ls' permet l'affichage long ?",
+      question: "Quelle option de 'ls' permet l'affichage long",
       options: [
         "-a",
         "-l",
@@ -70,7 +70,7 @@ export const chapter1 = {
     },
     {
       id: 7,
-      question: "Que fait 'touch' si le fichier n'existe pas ?",
+      question: "Que fait 'touch' si le fichier n'existe pas",
       options: [
         "Provoque une erreur",
         "Crée un fichier vide",
@@ -81,7 +81,7 @@ export const chapter1 = {
     },
     {
       id: 8,
-      question: "Comment supprimer un dossier non vide avec 'rm' ?",
+      question: "Comment supprimer un dossier non vide avec 'rm'",
       options: [
         "Avec l'option -f",
         "Avec rmdir",
@@ -92,7 +92,7 @@ export const chapter1 = {
     },
     {
       id: 9,
-      question: "Quelle syntaxe rejoue la dernière commande ?",
+      question: "Quelle syntaxe rejoue la dernière commande",
       options: [
         "!N",
         "history",
@@ -103,7 +103,7 @@ export const chapter1 = {
     },
     {
       id: 10,
-      question: "Qu'est-ce qu'un filtre sous Linux ?",
+      question: "Qu'est-ce qu'un filtre sous Linux",
       options: [
         "Un outil de sécurité",
         "Une commande traitant un flux d'entrée",
@@ -114,7 +114,7 @@ export const chapter1 = {
     },
     {
       id: 11,
-      question: "Que fait 'cat' sans argument ?",
+      question: "Que fait 'cat' sans argument",
       options: [
         "Affiche une erreur",
         "Attend une saisie au clavier",
@@ -125,7 +125,7 @@ export const chapter1 = {
     },
     {
       id: 12,
-      question: "Quel outil extrait la colonne 1 séparée par ':' ?",
+      question: "Quel outil extrait la colonne 1 séparée par ':'",
       options: [
         "cut -d : -f1",
         "cut -f 1 -s :",
@@ -136,7 +136,7 @@ export const chapter1 = {
     },
     {
       id: 13,
-      question: "Que cherche l'expression 'grep ^root' ?",
+      question: "Que cherche l'expression 'grep ^root'",
       options: [
         "Root n'importe où",
         "Les lignes finissant par root",
@@ -147,7 +147,7 @@ export const chapter1 = {
     },
     {
       id: 14,
-      question: "Lignes affichées par 'head' sans option ?",
+      question: "Lignes affichées par 'head' sans option",
       options: [
         "1 ligne",
         "5 lignes",
@@ -158,7 +158,7 @@ export const chapter1 = {
     },
     {
       id: 15,
-      question: "Quelle commande affiche un fichier à l'envers ?",
+      question: "Quelle commande affiche un fichier à l'envers",
       options: [
         "cat -v",
         "tac",
@@ -169,7 +169,7 @@ export const chapter1 = {
     },
     {
       id: 16,
-      question: "Quel numéro désigne la sortie d'erreur standard ?",
+      question: "Quel numéro désigne la sortie d'erreur standard",
       options: [
         "Descripteur 0",
         "Descripteur 1",
@@ -180,7 +180,7 @@ export const chapter1 = {
     },
     {
       id: 17,
-      question: "Effet de '>>' comparé à '>' ?",
+      question: "Effet de '>>' comparé à '>'",
       options: [
         "Écrase le contenu",
         "Ajoute à la fin du fichier",
@@ -191,7 +191,7 @@ export const chapter1 = {
     },
     {
       id: 18,
-      question: "Quel critère de 'find' cherche un répertoire ?",
+      question: "Quel critère de 'find' cherche un répertoire",
       options: [
         "-type f",
         "-type r",
@@ -202,7 +202,7 @@ export const chapter1 = {
     },
     {
       id: 19,
-      question: "Quand le séparateur '&&' exécute-t-il la commande 2 ?",
+      question: "Quand le séparateur '&&' exécute-t-il la commande 2",
       options: [
         "Si la commande 1 échoue",
         "Si la commande 1 réussit",
@@ -213,7 +213,7 @@ export const chapter1 = {
     },
     {
       id: 20,
-      question: "Comment rediriger la sortie ET les erreurs ?",
+      question: "Comment rediriger la sortie ET les erreurs",
       options: [
         "Avec >",
         "Avec 2>",

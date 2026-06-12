@@ -4,7 +4,7 @@ export const chapter6 = {
   questions: [
     {
       id: 1,
-      question: "Modèle mathématique pour les circuits logiques ?",
+      question: "Modèle mathématique pour les circuits logiques",
       options: [
         "Modèle de Von Neumann",
         "L'algèbre de BOOLE",
@@ -15,7 +15,7 @@ export const chapter6 = {
     },
     {
       id: 2,
-      question: "Valeurs d'une variable booléenne ?",
+      question: "Valeurs d'une variable booléenne",
       options: [
         "Entières de 0 à 15",
         "Positives ou négatives",
@@ -26,7 +26,7 @@ export const chapter6 = {
     },
     {
       id: 3,
-      question: "Circuits réalisant les opérateurs logiques ?",
+      question: "Circuits réalisant les opérateurs logiques",
       options: [
         "Bascules volatiles",
         "Mémoires auxiliaires",
@@ -37,7 +37,7 @@ export const chapter6 = {
     },
     {
       id: 4,
-      question: "Caractéristique de la porte ET (AND) ?",
+      question: "Caractéristique de la porte ET (AND)",
       options: [
         "Sortie à 1 si au moins une entrée est à 1",
         "Sortie à 1 si toutes les entrées sont à 1",
@@ -48,7 +48,7 @@ export const chapter6 = {
     },
     {
       id: 5,
-      question: "Équation de l'opération somme OU (OR) ?",
+      question: "Équation de l'opération somme OU (OR)",
       options: [
         "Q = A . B",
         "Q = A ⊕ B",
@@ -59,7 +59,7 @@ export const chapter6 = {
     },
     {
       id: 6,
-      question: "Particularité de la table du NON-ET (NAND) ?",
+      question: "Particularité de la table du NON-ET (NAND)",
       options: [
         "Sortie à 0 si toutes les entrées sont à 1",
         "Sortie à 1 si toutes les entrées sont à 1",
@@ -70,7 +70,7 @@ export const chapter6 = {
     },
     {
       id: 7,
-      question: "Porte OU-EXCLUSIF (XOR) : Sortie à 1 si :",
+      question: "Porte OU-EXCLUSIF (XOR) : Sortie à 1 si",
       options: [
         "Toutes les entrées valent 1 simultanément",
         "Une entrée vaut 1 mais pas les deux",
@@ -81,7 +81,7 @@ export const chapter6 = {
     },
     {
       id: 8,
-      question: "Loi de Morgan : Complément d'un produit (¯A ¯. ¯B) ?",
+      question: "Loi de Morgan : Complément d'un produit (¯A ¯. ¯B)",
       options: [
         "¯A . ¯B",
         "A + B",
@@ -92,7 +92,7 @@ export const chapter6 = {
     },
     {
       id: 9,
-      question: "Propriété Boole : 'A + A = A' ?",
+      question: "Propriété Boole : 'A + A = A'",
       options: [
         "L'idempotence",
         "L'absorption",
@@ -103,7 +103,7 @@ export const chapter6 = {
     },
     {
       id: 10,
-      question: "Propriété de l'opérateur ET : 'A . ¯A' vaut :",
+      question: "Propriété de l'opérateur ET : 'A . ¯A' vaut",
       options: [
         "A",
         "1",
@@ -114,7 +114,7 @@ export const chapter6 = {
     },
     {
       id: 11,
-      question: "Départ de la conception combinatoire ?",
+      question: "Départ de la conception combinatoire",
       options: [
         "Dessin direct du logigramme",
         "Cahier des charges pour table de vérité",
@@ -125,7 +125,7 @@ export const chapter6 = {
     },
     {
       id: 12,
-      question: "Variables d'entrée pour l'afficheur 7 segments (0-F) ?",
+      question: "Variables d'entrée pour l'afficheur 7 segments (0-F)",
       options: [
         "3 variables",
         "4 variables (codage 4 bits)",
@@ -136,7 +136,7 @@ export const chapter6 = {
     },
     {
       id: 13,
-      question: "Extraction de la table : l'état 'X = 0' devient :",
+      question: "Extraction de la table : l'état 'X = 0' devient",
       options: [
         "Le chiffre 1",
         "L'opérateur +",
@@ -147,7 +147,7 @@ export const chapter6 = {
     },
     {
       id: 14,
-      question: "Outil graphique pour optimiser les expressions ?",
+      question: "Outil graphique pour optimiser les expressions",
       options: [
         "Logigramme de Von Neumann",
         "Tableau de George Boole",
@@ -158,7 +158,7 @@ export const chapter6 = {
     },
     {
       id: 15,
-      question: "Codage des lignes/colonnes de Karnaugh ?",
+      question: "Codage des lignes/colonnes de Karnaugh",
       options: [
         "Binaire naturel",
         "Code BCD",
@@ -169,7 +169,7 @@ export const chapter6 = {
     },
     {
       id: 16,
-      question: "Taille d'un groupe dans Karnaugh ?",
+      question: "Taille d'un groupe dans Karnaugh",
       options: [
         "Nombre impair de cases",
         "Puissance binaire (1, 2, 4, 8, 16...)",
@@ -180,7 +180,7 @@ export const chapter6 = {
     },
     {
       id: 17,
-      question: "Karnaugh : Quelles variables retient-on ?",
+      question: "Karnaugh : Quelles variables retient-on",
       options: [
         "Toutes les variables du tableau",
         "Variables valant 1 à l'état initial",
@@ -191,7 +191,7 @@ export const chapter6 = {
     },
     {
       id: 18,
-      question: "Chevauchement de cases à 1 permis ?",
+      question: "Chevauchement de cases à 1 permis",
       options: [
         "Non, chaque 1 a un unique groupe",
         "Oui, pour augmenter la taille des groupes",
@@ -202,7 +202,7 @@ export const chapter6 = {
     },
     {
       id: 19,
-      question: "Quand s'arrêtent les groupes de Karnaugh ?",
+      question: "Quand s'arrêtent les groupes de Karnaugh",
       options: [
         "Tableau entièrement rempli de 0",
         "Dès qu'un groupe de taille 8 est trouvé",
@@ -213,7 +213,7 @@ export const chapter6 = {
     },
     {
       id: 20,
-      question: "Qu'est-ce qu'un logigramme ?",
+      question: "Qu'est-ce qu'un logigramme",
       options: [
         "Tableau des mintermes d'une fonction",
         "Schéma électronique en portes logiques",

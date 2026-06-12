@@ -4,7 +4,7 @@ export const chapter1 = {
   questions: [
     {
       id: 1,
-      question: "Donnée d'entrée ?",
+      question: "Donnée d'entrée",
       options: [
         "Produite par l'algorithme",
         "Fournie à l'algorithme",
@@ -15,7 +15,7 @@ export const chapter1 = {
     },
     {
       id: 2,
-      question: "Donnée de sortie ?",
+      question: "Donnée de sortie",
       options: [
         "Donnée fournie",
         "Résultat produit",
@@ -26,7 +26,7 @@ export const chapter1 = {
     },
     {
       id: 3,
-      question: "Donnée intermédiaire ?",
+      question: "Donnée intermédiaire",
       options: [
         "Finale",
         "Utilisée pour les calculs",
@@ -37,7 +37,7 @@ export const chapter1 = {
     },
     {
       id: 4,
-      question: "Une constante est :",
+      question: "Une constante est",
       options: [
         "Une valeur variable",
         "Une valeur fixe",
@@ -48,13 +48,13 @@ export const chapter1 = {
     },
     {
       id: 5,
-      question: "Symbole d'affectation ?",
+      question: "Symbole d'affectation",
       options: ["=", "<-", "==", "=>"],
       answer: 1
     },
     {
       id: 6,
-      question: "Une variable peut :",
+      question: "Une variable peut",
       options: [
         "Ne jamais changer",
         "Changer de valeur",
@@ -65,13 +65,13 @@ export const chapter1 = {
     },
     {
       id: 7,
-      question: "Type pour les entiers ?",
+      question: "Type pour les entiers",
       options: ["real", "char", "integer", "boolean"],
       answer: 2
     },
     {
       id: 8,
-      question: "Un réel contient :",
+      question: "Un réel contient",
       options: [
         "Uniquement des entiers",
         "Des décimaux",
@@ -82,19 +82,19 @@ export const chapter1 = {
     },
     {
       id: 9,
-      question: "Entrée utilisateur ?",
+      question: "Entrée utilisateur ",
       options: ["write", "read", "print", "echo"],
       answer: 1
     },
     {
       id: 10,
-      question: "Affichage d'une sortie ?",
+      question: "Affichage d'une sortie ",
       options: ["read", "input", "write", "scan"],
       answer: 2
     },
     {
       id: 11,
-      question: "Définition d'une variable ?",
+      question: "Définition d'une variable ",
       options: [
         "Zone mémoire variable",
         "Valeur fixe",
@@ -105,7 +105,7 @@ export const chapter1 = {
     },
     {
       id: 12,
-      question: "Rôle d'un algorithme ?",
+      question: "Rôle d'un algorithme ",
       options: [
         "Stocker des données",
         "Résoudre un problème",
@@ -116,7 +116,7 @@ export const chapter1 = {
     },
     {
       id: 13,
-      question: "Valeurs du type booléen ?",
+      question: "Valeurs du type booléen ",
       options: [
         "0 et 1 uniquement",
         "Vrai et Faux",
@@ -127,7 +127,7 @@ export const chapter1 = {
     },
     {
       id: 14,
-      question: "Une instruction est :",
+      question: "Une instruction est",
       options: [
         "Une valeur",
         "Une action à exécuter",
@@ -138,7 +138,7 @@ export const chapter1 = {
     },
     {
       id: 15,
-      question: "But d'un algorithme ?",
+      question: "But d'un algorithme",
       options: [
         "Compris par les humains",
         "Exécuté par un ordinateur",
@@ -149,13 +149,13 @@ export const chapter1 = {
     },
     {
       id: 16,
-      question: "Chaîne de caractères ?",
+      question: "Chaîne de caractères ",
       options: ["integer", "char", "string", "boolean"],
       answer: 2
     },
     {
       id: 17,
-      question: "Rôle d'une entrée ?",
+      question: "Rôle d'une entrée ",
       options: [
         "Recevoir des données",
         "Afficher des résultats",
@@ -166,7 +166,7 @@ export const chapter1 = {
     },
     {
       id: 18,
-      question: "Une sortie sert à :",
+      question: "Une sortie sert à ",
       options: [
         "Lire des données",
         "Afficher un résultat",
@@ -177,7 +177,7 @@ export const chapter1 = {
     },
     {
       id: 19,
-      question: "Pourquoi déclarer une variable ?",
+      question: "Pourquoi déclarer une variable",
       options: [
         "Stocker une valeur",
         "Afficher un résultat",
@@ -188,7 +188,7 @@ export const chapter1 = {
     },
     {
       id: 20,
-      question: "Quand utiliser une constante ?",
+      question: "Quand utiliser une constante",
       options: [
         "La valeur doit changer",
         "La valeur reste fixe",

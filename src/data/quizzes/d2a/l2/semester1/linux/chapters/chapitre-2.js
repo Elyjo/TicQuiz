@@ -4,7 +4,7 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Quelle opération prépare une partition à recevoir un SGF ?",
+      question: "Quelle opération prépare une partition à recevoir un SGF",
       options: [
         "Le partitionnement",
         "Le formatage",
@@ -15,7 +15,7 @@ export const chapter2 = {
     },
     {
       id: 2,
-      question: "Nombre max de partitions principales sur un disque ?",
+      question: "Nombre max de partitions principales sur un disque",
       options: [
         "1",
         "2",
@@ -26,7 +26,7 @@ export const chapter2 = {
     },
     {
       id: 3,
-      question: "Particularité d'une partition étendue ?",
+      question: "Particularité d'une partition étendue",
       options: [
         "Reçoit directement un SGF",
         "Ne contient que des partitions logiques",
@@ -37,7 +37,7 @@ export const chapter2 = {
     },
     {
       id: 4,
-      question: "Fichier de la 1ère partition du 1er disque SATA/SSD ?",
+      question: "Fichier de la 1ère partition du 1er disque SATA/SSD",
       options: [
         "/dev/hda1",
         "/dev/sda0",
@@ -48,7 +48,7 @@ export const chapter2 = {
     },
     {
       id: 5,
-      question: "Fichier de la 1ère partition du 1er disque NVMe ?",
+      question: "Fichier de la 1ère partition du 1er disque NVMe",
       options: [
         "/dev/nvme0n1",
         "/dev/nvme0n1p1",
@@ -59,7 +59,7 @@ export const chapter2 = {
     },
     {
       id: 6,
-      question: "Commande interactive pour modifier les partitions ?",
+      question: "Commande interactive pour modifier les partitions",
       options: [
         "fsck",
         "mount",
@@ -70,7 +70,7 @@ export const chapter2 = {
     },
     {
       id: 7,
-      question: "Que fait la commande 'fdisk -l' ?",
+      question: "Que fait la commande 'fdisk -l'",
       options: [
         "Formate toutes les partitions",
         "Affiche les disques connectés et leurs partitions",
@@ -81,7 +81,7 @@ export const chapter2 = {
     },
     {
       id: 8,
-      question: "Commande pour démonter /media/stock ?",
+      question: "Commande pour démonter /media/stock",
       options: [
         "unmount /media/stock",
         "umount /media/stock",
@@ -92,7 +92,7 @@ export const chapter2 = {
     },
     {
       id: 9,
-      question: "Condition impérative pour lancer 'fsck' ?",
+      question: "Condition impérative pour lancer 'fsck'",
       options: [
         "La partition doit être montée",
         "La partition doit être en vfat",
@@ -103,7 +103,7 @@ export const chapter2 = {
     },
     {
       id: 10,
-      question: "Commande affichant l'espace total occupé et libre ?",
+      question: "Commande affichant l'espace total occupé et libre",
       options: [
         "du -sh",
         "fdisk -l",
@@ -114,7 +114,7 @@ export const chapter2 = {
     },
     {
       id: 11,
-      question: "Fichier gérant le montage auto au démarrage ?",
+      question: "Fichier gérant le montage auto au démarrage",
       options: [
         "/etc/passwd",
         "/etc/fstab",
@@ -125,7 +125,7 @@ export const chapter2 = {
     },
     {
       id: 12,
-      question: "Apport d'ext3 par rapport à ext2 ?",
+      question: "Apport d'ext3 par rapport à ext2",
       options: [
         "Suppression des i-nœuds",
         "Support exclusif du NVMe",
@@ -136,7 +136,7 @@ export const chapter2 = {
     },
     {
       id: 13,
-      question: "Équivalent de 'mkfs -t ext4 /dev/sda1' ?",
+      question: "Équivalent de 'mkfs -t ext4 /dev/sda1'",
       options: [
         "mke2fs /dev/sda1",
         "mkfs.ext4 /dev/sda1",
@@ -147,7 +147,7 @@ export const chapter2 = {
     },
     {
       id: 14,
-      question: "Dossier contenant les configurations système ?",
+      question: "Dossier contenant les configurations système",
       options: [
         "/dev",
         "/boot",
@@ -158,7 +158,7 @@ export const chapter2 = {
     },
     {
       id: 15,
-      question: "Où est le home du super-utilisateur (root) ?",
+      question: "Où est le home du super-utilisateur (root)",
       options: [
         "/home/root",
         "/root",
@@ -169,7 +169,7 @@ export const chapter2 = {
     },
     {
       id: 16,
-      question: "Particularité du répertoire /tmp ?",
+      question: "Particularité du répertoire /tmp",
       options: [
         "Contient les binaires de secours",
         "N'est jamais nettoyé",
@@ -180,7 +180,7 @@ export const chapter2 = {
     },
     {
       id: 17,
-      question: "Dossier contenant les logs variables des démons ?",
+      question: "Dossier contenant les logs variables des démons",
       options: [
         "/usr",
         "/var",
@@ -191,7 +191,7 @@ export const chapter2 = {
     },
     {
       id: 18,
-      question: "Commande pour créer un lien symbolique ?",
+      question: "Commande pour créer un lien symbolique",
       options: [
         "ln fichier lien",
         "ln -s fichier lien",
@@ -202,7 +202,7 @@ export const chapter2 = {
     },
     {
       id: 19,
-      question: "Caractéristique d'un lien physique ?",
+      question: "Caractéristique d'un lien physique",
       options: [
         "Peut pointer vers un répertoire",
         "Peut traverser les partitions",
@@ -213,7 +213,7 @@ export const chapter2 = {
     },
     {
       id: 20,
-      question: "Quand un fichier à liens physiques est-il détruit ?",
+      question: "Quand un fichier à liens physiques est-il détruit",
       options: [
         "Dès le premier lien supprimé",
         "Quand le lien symbolique expire",

@@ -4,25 +4,25 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Quelle condition évalue un bloc si 'if' est faux ?",
+      question: "Quelle condition évalue un bloc si 'if' est faux",
       options: ["else", "elseif", "then", "otherwise"],
       answer: 0,
     },
     {
       id: 2,
-      question: "Quelle boucle teste la condition AVANT chaque itération ?",
+      question: "Quelle boucle teste la condition AVANT chaque itération",
       options: ["do ... while", "for", "while", "foreach"],
       answer: 2,
     },
     {
       id: 3,
-      question: "Quelle boucle s'exécute au moins une fois ?",
+      question: "Quelle boucle s'exécute au moins une fois",
       options: ["while", "for", "do ... while", "switch"],
       answer: 2,
     },
     {
       id: 4,
-      question: "Dans 'for(A; B; C)', que représente la partie B ?",
+      question: "Dans 'for(A; B; C)', que représente la partie B",
       options: [
         "L'initialisation",
         "La condition d'arrêt",
@@ -33,61 +33,61 @@ export const chapter2 = {
     },
     {
       id: 5,
-      question: "Quelle instruction quitte immédiatement une boucle ?",
+      question: "Quelle instruction quitte immédiatement une boucle",
       options: ["continue", "return", "exit", "break"],
       answer: 3,
     },
     {
       id: 6,
-      question: "Quelle instruction passe directement à l'itération suivante ?",
+      question: "Quelle instruction passe directement à l'itération suivante",
       options: ["break", "continue", "skip", "next"],
       answer: 1,
     },
     {
       id: 7,
-      question: "Mot-clé pour terminer un bloc 'case' dans un switch ?",
+      question: "Mot-clé pour terminer un bloc 'case' dans un switch",
       options: ["stop", "end", "break", "default"],
       answer: 2,
     },
     {
       id: 8,
-      question: "Bloc du switch interceptant les cas non gérés ?",
+      question: "Bloc du switch interceptant les cas non gérés",
       options: ["else", "default", "otherwise", "fallback"],
       answer: 1,
     },
     {
       id: 9,
-      question: "Que vaut une condition fausse en langage C ?",
+      question: "Que vaut une condition fausse en langage C",
       options: ["0", "1", "-1", "null"],
       answer: 0,
     },
     {
       id: 10,
-      question: "Que vaut toute valeur non nulle dans un test logique ?",
+      question: "Que vaut toute valeur non nulle dans un test logique",
       options: ["Faux", "Vrai", "Erreur", "Indéfini"],
       answer: 1,
     },
     {
       id: 11,
-      question: "Quel opérateur logique représente le OU (OR) ?",
+      question: "Quel opérateur logique représente le OU (OR)",
       options: ["&&", "||", "!", "|"],
       answer: 1,
     },
     {
       id: 12,
-      question: "Quel opérateur logique représente la négation (NOT) ?",
+      question: "Quel opérateur logique représente la négation (NOT)",
       options: ["~", "NOT", "!", "!="],
       answer: 2,
     },
     {
       id: 13,
-      question: "Comment écrit-on l'opérateur 'différent de' ?",
+      question: "Comment écrit-on l'opérateur 'différent de'",
       options: ["<>", "!=", "==", "not="],
       answer: 1,
     },
     {
       id: 14,
-      question: "Syntaxe de l'opérateur ternaire ?",
+      question: "Syntaxe de l'opérateur ternaire",
       options: [
         "cond ? val1 : val2",
         "cond : val1 ? val2",
@@ -99,7 +99,7 @@ export const chapter2 = {
     {
       id: 15,
       question:
-        "Que provoque une boucle dont la condition reste toujours vraie ?",
+        "Que provoque une boucle dont la condition reste toujours vraie",
       options: [
         "Erreur de syntaxe",
         "Boucle infinie",
@@ -110,19 +110,19 @@ export const chapter2 = {
     },
     {
       id: 16,
-      question: "Peut-on imbriquer une boucle 'for' dans un 'while' ?",
+      question: "Peut-on imbriquer une boucle 'for' dans un 'while'",
       options: ["Oui", "Non", "Avec gcc uniquement", "Seulement dans le main"],
       answer: 0,
     },
     {
       id: 17,
-      question: "Quel type de variable est interdit dans un test switch ?",
+      question: "Quel type de variable est interdit dans un test switch",
       options: ["int", "char", "float", "short"],
       answer: 2,
     },
     {
       id: 18,
-      question: "Que se passe-t-il si on oublie un 'break' dans un switch ?",
+      question: "Que se passe-t-il si on oublie un 'break' dans un switch",
       options: [
         "Arrêt du programme",
         "Erreur compilation",
@@ -133,13 +133,13 @@ export const chapter2 = {
     },
     {
       id: 19,
-      question: "Quelle expression est équivalente à 'while(1)' ?",
+      question: "Quelle expression est équivalente à 'while(1)'",
       options: ["while(0)", "for(;;)", "do(1)", "while()"],
       answer: 1,
     },
     {
       id: 20,
-      question: "Quel résultat donne l'expression '!(5 > 2)' ?",
+      question: "Quel résultat donne l'expression '!(5 > 2)'",
       options: ["0", "1", "Vrai", "5"],
       answer: 0,
     },

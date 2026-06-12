@@ -4,7 +4,7 @@ export const chapter5 = {
   questions: [
     {
       id: 1,
-      question: "Valeurs représentables avec n bits ?",
+      question: "Valeurs représentables avec n bits",
       options: [
         "2 * n valeurs",
         "2^n valeurs",
@@ -15,7 +15,7 @@ export const chapter5 = {
     },
     {
       id: 2,
-      question: "Pourquoi le code binaire est-il 'pondéré' ?",
+      question: "Pourquoi le code binaire est-il 'pondéré'",
       options: [
         "Même nombre de 1 partout",
         "Le ième bit pèse 2^(i-1)",
@@ -26,7 +26,7 @@ export const chapter5 = {
     },
     {
       id: 3,
-      question: "Principe fondamental du codage BCD ?",
+      question: "Principe fondamental du codage BCD",
       options: [
         "Chaque chiffre décimal est codé sur 4 bits",
         "Conversion globale par divisions",
@@ -37,7 +37,7 @@ export const chapter5 = {
     },
     {
       id: 4,
-      question: "Configurations inutilisées en BCD ?",
+      question: "Configurations inutilisées en BCD",
       options: [
         "2",
         "4",
@@ -48,7 +48,7 @@ export const chapter5 = {
     },
     {
       id: 5,
-      question: "BCD : Règle d'addition si résultat > 9 ?",
+      question: "BCD : Règle d'addition si résultat > 9",
       options: [
         "Soustraire 6 au résultat",
         "Ajouter 3 au résultat",
@@ -59,7 +59,7 @@ export const chapter5 = {
     },
     {
       id: 6,
-      question: "Particularité du code Excès-3 ?",
+      question: "Particularité du code Excès-3",
       options: [
         "Code pondéré de poids 8-4-2-1",
         "Équivalent binaire + 3 et autocomplémentaire",
@@ -70,7 +70,7 @@ export const chapter5 = {
     },
     {
       id: 7,
-      question: "Poids binaires fixes du code Aiken ?",
+      question: "Poids binaires fixes du code Aiken",
       options: [
         "8, 4, 2, 1",
         "2, 4, 2, 1",
@@ -81,7 +81,7 @@ export const chapter5 = {
     },
     {
       id: 8,
-      question: "Objectif principal du code ASCII ?",
+      question: "Objectif principal du code ASCII",
       options: [
         "Concevoir des processeurs identiques",
         "Coder les caractères pour échanger du texte",
@@ -92,7 +92,7 @@ export const chapter5 = {
     },
     {
       id: 9,
-      question: "Codes permettant uniquement la détection ?",
+      question: "Codes permettant uniquement la détection",
       options: [
         "Codes autocorrecteurs",
         "Codes pondérés",
@@ -103,7 +103,7 @@ export const chapter5 = {
     },
     {
       id: 10,
-      question: "Position du bit de parité ?",
+      question: "Position du bit de parité",
       options: [
         "Bit le moins significatif (LSB)",
         "Au milieu des bits de données",
@@ -114,7 +114,7 @@ export const chapter5 = {
     },
     {
       id: 11,
-      question: "Valeur du bit en parité paire ?",
+      question: "Valeur du bit en parité paire",
       options: [
         "Rend le nombre de 1 impair",
         "Toujours égale à 0",
@@ -125,7 +125,7 @@ export const chapter5 = {
     },
     {
       id: 12,
-      question: "Parité : Si deux bits s'inversent ?",
+      question: "Parité : Si deux bits s'inversent",
       options: [
         "L'erreur est corrigée",
         "Parité vérifiée, détection impossible",
@@ -136,7 +136,7 @@ export const chapter5 = {
     },
     {
       id: 13,
-      question: "Environnement adapté pour la parité simple ?",
+      question: "Environnement adapté pour la parité simple",
       options: [
         "Longue distance et fortes perturbations",
         "Réseaux internet haut débit",
@@ -147,7 +147,7 @@ export const chapter5 = {
     },
     {
       id: 14,
-      question: "Propriété du code de Hamming ?",
+      question: "Propriété du code de Hamming",
       options: [
         "Autovérificateur uniquement",
         "Autocorrecteur (corrige un bit erroné)",
@@ -158,7 +158,7 @@ export const chapter5 = {
     },
     {
       id: 15,
-      question: "Formule pour les bits de contrôle (k) de Hamming ?",
+      question: "Formule pour les bits de contrôle (k) de Hamming",
       options: [
         "2^k ≤ m + k + 1",
         "2^k ≥ m + k + 1",
@@ -169,7 +169,7 @@ export const chapter5 = {
     },
     {
       id: 16,
-      question: "Où place-t-on les bits k de Hamming ?",
+      question: "Où place-t-on les bits k de Hamming",
       options: [
         "Aux puissances de 2 (1, 2, 4, 8...)",
         "Sur les positions impaires",
@@ -180,7 +180,7 @@ export const chapter5 = {
     },
     {
       id: 17,
-      question: "Hamming paire : Calcul des bits de parité ?",
+      question: "Hamming paire : Calcul des bits de parité",
       options: [
         "Multiplication logique des positions",
         "Addition modulo 2 des positions des 1",
@@ -191,7 +191,7 @@ export const chapter5 = {
     },
     {
       id: 18,
-      question: "Hamming impaire : Opération de contrôle ?",
+      question: "Hamming impaire : Opération de contrôle",
       options: [
         "Addition modulo 2 inversée",
         "Soustraction binaire des puissances",
@@ -202,7 +202,7 @@ export const chapter5 = {
     },
     {
       id: 19,
-      question: "Erreur détectée à la position 9, syndrome ?",
+      question: "Erreur détectée à la position 9, syndrome",
       options: [
         "0100",
         "1001",
@@ -213,7 +213,7 @@ export const chapter5 = {
     },
     {
       id: 20,
-      question: "Action après localisation du bit erroné ?",
+      question: "Action après localisation du bit erroné",
       options: [
         "Demander la retransmission complète",
         "Inverser le bit à la position indiquée",

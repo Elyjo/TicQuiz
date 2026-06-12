@@ -4,7 +4,7 @@ export const chapter6 = {
   questions: [
     {
       id: 1,
-      question: "Qu'est-ce qu'un sous-programme ?",
+      question: "Qu'est-ce qu'un sous-programme",
       options: [
         "Une variable",
         "Instructions regroupées sous un nom",
@@ -15,7 +15,7 @@ export const chapter6 = {
     },
     {
       id: 2,
-      question: "Différence procédure / fonction ?",
+      question: "Différence procédure / fonction",
       options: [
         "La procédure affiche uniquement",
         "La fonction renvoie une valeur",
@@ -26,7 +26,7 @@ export const chapter6 = {
     },
     {
       id: 3,
-      question: "Rôle d'une fonction ?",
+      question: "Rôle d'une fonction",
       options: [
         "Afficher uniquement",
         "Répéter des instructions",
@@ -37,7 +37,7 @@ export const chapter6 = {
     },
     {
       id: 4,
-      question: "Une procédure :",
+      question: "Une procédure",
       options: [
         "Renvoie toujours une valeur",
         "Ne renvoie aucune valeur",
@@ -48,7 +48,7 @@ export const chapter6 = {
     },
     {
       id: 5,
-      question: "Un module prédéfini est :",
+      question: "Un module prédéfini est",
       options: [
         "Créé par l'utilisateur",
         "Fourni par le langage",
@@ -59,7 +59,7 @@ export const chapter6 = {
     },
     {
       id: 6,
-      question: "Exemple de module prédéfini ?",
+      question: "Exemple de module prédéfini",
       options: [
         "saisirTab",
         "afficherMenu",
@@ -70,7 +70,7 @@ export const chapter6 = {
     },
     {
       id: 7,
-      question: "Variable locale ?",
+      question: "Variable locale",
       options: [
         "Visible partout",
         "Déclarée dans un sous-programme",
@@ -81,7 +81,7 @@ export const chapter6 = {
     },
     {
       id: 8,
-      question: "Variable globale ?",
+      question: "Variable globale",
       options: [
         "Uniquement dans une fonction",
         "Dans un sous-programme",
@@ -92,7 +92,7 @@ export const chapter6 = {
     },
     {
       id: 9,
-      question: "Passage de paramètre par défaut ?",
+      question: "Passage de paramètre par défaut",
       options: [
         "Par référence",
         "Par valeur",
@@ -103,13 +103,13 @@ export const chapter6 = {
     },
     {
       id: 10,
-      question: "Mot-clé pour la référence ?",
+      question: "Mot-clé pour la référence",
       options: ["var", "ref", "addr", "global"],
       answer: 0
     },
     {
       id: 11,
-      question: "Une procédure peut avoir :",
+      question: "Une procédure peut avoir",
       options: [
         "Aucun argument",
         "Toujours des tableaux",
@@ -120,7 +120,7 @@ export const chapter6 = {
     },
     {
       id: 12,
-      question: "Rôle de begin / end ?",
+      question: "Rôle de begin / end",
       options: [
         "Déclarer une variable",
         "Délimiter un bloc",
@@ -131,7 +131,7 @@ export const chapter6 = {
     },
     {
       id: 13,
-      question: "Une fonction contient toujours :",
+      question: "Une fonction contient toujours",
       options: [
         "Un read",
         "Un write",
@@ -142,7 +142,7 @@ export const chapter6 = {
     },
     {
       id: 14,
-      question: "Appel d'une procédure ?",
+      question: "Appel d'une procédure",
       options: [
         "Comme une variable",
         "Comme une instruction",
@@ -153,7 +153,7 @@ export const chapter6 = {
     },
     {
       id: 15,
-      question: "Exemple d'appel de procédure ?",
+      question: "Exemple d'appel de procédure",
       options: [
         "afficherMenu;",
         "integer x;",
@@ -164,7 +164,7 @@ export const chapter6 = {
     },
     {
       id: 16,
-      question: "Utilisation d'une fonction ?",
+      question: "Utilisation d'une fonction",
       options: [
         "Dans une condition",
         "Uniquement en boucle",
@@ -175,7 +175,7 @@ export const chapter6 = {
     },
     {
       id: 17,
-      question: "Pascal : Rôle de 'forward' ?",
+      question: "Pascal : Rôle de 'forward'",
       options: [
         "Arrêter le programme",
         "Déclarer avant l'appel",
@@ -186,7 +186,7 @@ export const chapter6 = {
     },
     {
       id: 18,
-      question: "Retour de valeur d'une fonction ?",
+      question: "Retour de valeur d'une fonction",
       options: [
         "write",
         "nomFonction := valeur",
@@ -197,7 +197,7 @@ export const chapter6 = {
     },
     {
       id: 19,
-      question: "Appel d'une procédure ?",
+      question: "Appel d'une procédure",
       options: [
         "Une seule fois",
         "Plusieurs fois",
@@ -208,7 +208,7 @@ export const chapter6 = {
     },
     {
       id: 20,
-      question: "But principal des procédures ?",
+      question: "But principal des procédures",
       options: [
         "Code plus long",
         "Moins de lisibilité",

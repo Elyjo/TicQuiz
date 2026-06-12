@@ -4,7 +4,7 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Qu'est-ce qu'un bit ?",
+      question: "Qu'est-ce qu'un bit",
       options: [
         "Un ensemble de 8 octets",
         "Chiffre binaire élémentaire (0 ou 1)",
@@ -15,7 +15,7 @@ export const chapter2 = {
     },
     {
       id: 2,
-      question: "Nombre de symboles distincts d'une numération ?",
+      question: "Nombre de symboles distincts d'une numération",
       options: [
         "Le bit de poids fort",
         "Le poids faible",
@@ -26,7 +26,7 @@ export const chapter2 = {
     },
     {
       id: 3,
-      question: "Positions pour la partie décimale ?",
+      question: "Positions pour la partie décimale",
       options: [
         "De 0, de droite à gauche",
         "De -1, de gauche à droite",
@@ -37,7 +37,7 @@ export const chapter2 = {
     },
     {
       id: 4,
-      question: "Que signifient MSB et LSB ?",
+      question: "Que signifient MSB et LSB",
       options: [
         "Opérations binaires logiques",
         "Maximum et Lowest System Bit",
@@ -48,7 +48,7 @@ export const chapter2 = {
     },
     {
       id: 5,
-      question: "Conversion base 10 vers 2 (entier) ?",
+      question: "Conversion base 10 vers 2 (entier)",
       options: [
         "Multiplications successives par 2",
         "Remplacer par 3 bits binaire",
@@ -59,7 +59,7 @@ export const chapter2 = {
     },
     {
       id: 6,
-      question: "Conversion base 10 vers 2 (décimale) ?",
+      question: "Conversion base 10 vers 2 (décimale)",
       options: [
         "Multiplications successives par 2",
         "Divisions successives par 16",
@@ -70,7 +70,7 @@ export const chapter2 = {
     },
     {
       id: 7,
-      question: "Conversion base 8 vers binaire ?",
+      question: "Conversion base 8 vers binaire",
       options: [
         "Chaque symbole sur 2 bits",
         "Chaque symbole sur 4 bits",
@@ -81,7 +81,7 @@ export const chapter2 = {
     },
     {
       id: 8,
-      question: "Hexadécimal : Valeur décimale 10 ?",
+      question: "Hexadécimal : Valeur décimale 10",
       options: [
         "B",
         "F",
@@ -92,7 +92,7 @@ export const chapter2 = {
     },
     {
       id: 9,
-      question: "Conversion base 8 vers base 16 ?",
+      question: "Conversion base 8 vers base 16",
       options: [
         "Division directe par 24",
         "Utiliser la base 2 en intermédiaire",
@@ -103,7 +103,7 @@ export const chapter2 = {
     },
     {
       id: 10,
-      question: "Regroupement par blocs de 4 bits ?",
+      question: "Regroupement par blocs de 4 bits",
       options: [
         "Binaire vers octal",
         "Binaire vers décimal",
@@ -114,7 +114,7 @@ export const chapter2 = {
     },
     {
       id: 11,
-      question: "Qu'est-ce que le codage ?",
+      question: "Qu'est-ce que le codage",
       options: [
         "Sécuriser contre les virus",
         "Lien entre forme externe et binaire",
@@ -125,7 +125,7 @@ export const chapter2 = {
     },
     {
       id: 12,
-      question: "Symboles du système octal ?",
+      question: "Symboles du système octal",
       options: [
         "De 0 à 8 inclus",
         "De 1 à 8 inclus",
@@ -136,7 +136,7 @@ export const chapter2 = {
     },
     {
       id: 13,
-      question: "Base du système hexadécimal ?",
+      question: "Base du système hexadécimal",
       options: [
         "Base 6",
         "Base 10",
@@ -147,7 +147,7 @@ export const chapter2 = {
     },
     {
       id: 14,
-      question: "Positions pour la partie entière (départ) ?",
+      question: "Positions pour la partie entière (départ)",
       options: [
         "Le chiffre 1",
         "Le chiffre -1",
@@ -158,7 +158,7 @@ export const chapter2 = {
     },
     {
       id: 15,
-      question: "La représentation positionnelle décompose selon :",
+      question: "La représentation positionnelle décompose selon",
       options: [
         "Les puissances de la base",
         "Des multiplications par 2",
@@ -169,7 +169,7 @@ export const chapter2 = {
     },
     {
       id: 16,
-      question: "Valeur binaire de (37)10 ?",
+      question: "Valeur binaire de (37)10",
       options: [
         "(101011)2",
         "(100101)2",
@@ -180,7 +180,7 @@ export const chapter2 = {
     },
     {
       id: 17,
-      question: "Puissances non extraites (méthode extraction) ?",
+      question: "Puissances non extraites (méthode extraction)",
       options: [
         "On écrit le chiffre 1",
         "On écrit le reste",
@@ -191,7 +191,7 @@ export const chapter2 = {
     },
     {
       id: 18,
-      question: "Valeur octale de (37)10 ?",
+      question: "Valeur octale de (37)10",
       options: [
         "(45)8",
         "(25)8",
@@ -202,7 +202,7 @@ export const chapter2 = {
     },
     {
       id: 19,
-      question: "Hexadécimal : Valeur décimale 15 ?",
+      question: "Hexadécimal : Valeur décimale 15",
       options: [
         "La lettre E",
         "La lettre D",
@@ -213,7 +213,7 @@ export const chapter2 = {
     },
     {
       id: 20,
-      question: "Binaire vers octal : Regroupement entier ?",
+      question: "Binaire vers octal : Regroupement entier",
       options: [
         "Par 4 bits de droite à gauche",
         "Par 3 bits de droite à gauche",

@@ -4,13 +4,13 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Mot-clé moderne déclarant une variable de bloc mutable ?",
+      question: "Mot-clé moderne déclarant une variable de bloc mutable",
       options: ["var", "let", "const", "global"],
       answer: 1,
     },
     {
       id: 2,
-      question: "Effet d'une réaffectation sur une variable 'const' ?",
+      question: "Effet d'une réaffectation sur une variable 'const'",
       options: [
         "Ignoré",
         "La valeur change",
@@ -21,7 +21,7 @@ export const chapter2 = {
     },
     {
       id: 3,
-      question: "Portée d'une variable déclarée avec 'var' ?",
+      question: "Portée d'une variable déclarée avec 'var'",
       options: [
         "Portée de bloc",
         "Portée globale seule",
@@ -32,25 +32,25 @@ export const chapter2 = {
     },
     {
       id: 4,
-      question: "Accès à une variable avant sa déclaration ?",
+      question: "Accès à une variable avant sa déclaration",
       options: ["Shadowing", "Hoisting (Levage)", "Closure", "Binding"],
       answer: 1,
     },
     {
       id: 5,
-      question: "Type représentant l'absence d'une valeur initialisée ?",
+      question: "Type représentant l'absence d'une valeur initialisée",
       options: ["null", "undefined", "NaN", "false"],
       answer: 1,
     },
     {
       id: 6,
-      question: "Que renvoie l'expression : typeof null ?",
+      question: "Que renvoie l'expression : typeof null",
       options: ["'null'", "'undefined'", "'object'", "'boolean'"],
       answer: 2,
     },
     {
       id: 7,
-      question: "Différence fondamentale entre == et === ?",
+      question: "Différence fondamentale entre == et ===",
       options: [
         "Aucune",
         "=== vérifie aussi l'égalité des types",
@@ -61,37 +61,37 @@ export const chapter2 = {
     },
     {
       id: 8,
-      question: "Laquelle de ces valeurs n'est PAS considérée comme 'falsy' ?",
+      question: "Laquelle de ces valeurs n'est PAS considérée comme 'falsy'",
       options: ["0", "'' (chaîne vide)", "null", "[] (tableau vide)"],
       answer: 3,
     },
     {
       id: 9,
-      question: "Résultat de l'évaluation de : '5' + 2 ?",
+      question: "Résultat de l'évaluation de : '5' + 2",
       options: ["7", "52", "NaN", "TypeError"],
       answer: 1,
     },
     {
       id: 10,
-      question: "Résultat de l'évaluation de : '5' - 2 ?",
+      question: "Résultat de l'évaluation de : '5' - 2",
       options: ["3", "52", "NaN", "TypeError"],
       answer: 0,
     },
     {
       id: 11,
-      question: "Boucle parcourant directement les VALEURS d'un tableau ?",
+      question: "Boucle parcourant directement les VALEURS d'un tableau",
       options: ["for...in", "for...of", "while", "do...while"],
       answer: 1,
     },
     {
       id: 12,
-      question: "Boucle parcourant les CLÉS ou INDICES d'un objet/tableau ?",
+      question: "Boucle parcourant les CLÉS ou INDICES d'un objet/tableau",
       options: ["for...in", "for...of", "foreach", "repeat"],
       answer: 0,
     },
     {
       id: 13,
-      question: "Particularité de la boucle do...while ?",
+      question: "Particularité de la boucle do...while",
       options: [
         "Ne s'exécute jamais",
         "S'exécute au moins une fois",
@@ -102,7 +102,7 @@ export const chapter2 = {
     },
     {
       id: 14,
-      question: "Syntaxe d'une fonction fléchée à retour implicite ?",
+      question: "Syntaxe d'une fonction fléchée à retour implicite",
       options: [
         "const carre = x => x * x;",
         "const carre = (x) { x * x };",
@@ -113,19 +113,19 @@ export const chapter2 = {
     },
     {
       id: 15,
-      question: "Valeur de retour par défaut d'une fonction sans return ?",
+      question: "Valeur de retour par défaut d'une fonction sans return",
       options: ["null", "0", "undefined", "false"],
       answer: 2,
     },
     {
       id: 16,
-      question: "Comment appelle-t-on une fonction qui s'appelle elle-même ?",
+      question: "Comment appelle-t-on une fonction qui s'appelle elle-même",
       options: ["Anonyme", "Récursive", "Callback", "Closure"],
       answer: 1,
     },
     {
       id: 17,
-      question: "Qu'est-ce qu'une expression de fonction anonyme ?",
+      question: "Qu'est-ce qu'une expression de fonction anonyme",
       options: [
         "Fonction sans nom dans une variable",
         "Fonction fléchée seule",
@@ -136,7 +136,7 @@ export const chapter2 = {
     },
     {
       id: 18,
-      question: "Fonction passée en argument d'une autre fonction ?",
+      question: "Fonction passée en argument d'une autre fonction",
       options: [
         "Méthode",
         "Paramètre par défaut",
@@ -147,13 +147,13 @@ export const chapter2 = {
     },
     {
       id: 19,
-      question: "Opérateur ES6 définissant des paramètres par défaut ?",
+      question: "Opérateur ES6 définissant des paramètres par défaut",
       options: ["Coalescence ??", "Affectation =", "Ternaire ?", "Rest (...)"],
       answer: 1,
     },
     {
       id: 20,
-      question: "Que renvoie l'expression globale : Number('123abc') ?",
+      question: "Que renvoie l'expression globale : Number('123abc')",
       options: ["123", "NaN", "TypeError", "undefined"],
       answer: 1,
     },

@@ -4,13 +4,13 @@ export const chapter1 = {
   questions: [
     {
       id: 1,
-      question: "Solution contre l'épuisement des adresses IPv4 ?",
+      question: "Solution contre l'épuisement des adresses IPv4",
       options: ["ICMP", "Subnetting et NAT", "Gigue réseau", "Monitoring"],
       answer: 1,
     },
     {
       id: 2,
-      question: "Rôle majeur du subnetting ?",
+      question: "Rôle majeur du subnetting",
       options: [
         "Augmenter l'en-tête IP",
         "Réduire la congestion",
@@ -21,7 +21,7 @@ export const chapter1 = {
     },
     {
       id: 3,
-      question: "Requis obligatoire pour chaque sous-réseau ?",
+      question: "Requis obligatoire pour chaque sous-réseau",
       options: [
         "Serveur RARP",
         "Identifiant unique et masque",
@@ -32,7 +32,7 @@ export const chapter1 = {
     },
     {
       id: 4,
-      question: "Masque décimal pour un binaire fini par 11000000 ?",
+      question: "Masque décimal pour un binaire fini par 11000000",
       options: [
         "255.255.255.0",
         "255.255.255.128",
@@ -43,7 +43,7 @@ export const chapter1 = {
     },
     {
       id: 5,
-      question: "Pourquoi les sous-réseaux 00 et 11 sont-ils interdits ?",
+      question: "Pourquoi les sous-réseaux 00 et 11 sont-ils interdits",
       options: [
         "Erreur de parité",
         "Bits de haut et de bas",
@@ -54,7 +54,7 @@ export const chapter1 = {
     },
     {
       id: 6,
-      question: "Comment obtient-on l'adresse de Broadcast ?",
+      question: "Comment obtient-on l'adresse de Broadcast",
       options: [
         "Bits hôtes à 0",
         "Tous les bits hôtes à 1",
@@ -65,7 +65,7 @@ export const chapter1 = {
     },
     {
       id: 7,
-      question: "Couche OSI du datagramme IP ?",
+      question: "Couche OSI du datagramme IP",
       options: [
         "2 (Liaison)",
         "3 (Réseau)",
@@ -76,19 +76,19 @@ export const chapter1 = {
     },
     {
       id: 8,
-      question: "Taille de l'en-tête IP sans option ?",
+      question: "Taille de l'en-tête IP sans option",
       options: ["10 octets", "20 octets", "32 octets", "60 octets"],
       answer: 1,
     },
     {
       id: 9,
-      question: "Bit qui interdit la fragmentation ?",
+      question: "Bit qui interdit la fragmentation",
       options: ["Bit MF", "Bit TOS", "Bit DF", "Bit URG"],
       answer: 2,
     },
     {
       id: 10,
-      question: "Que se passe-t-il si le TTL tombe à 0 ?",
+      question: "Que se passe-t-il si le TTL tombe à 0",
       options: [
         "Datagramme dupliqué",
         "Datagramme détruit",
@@ -99,19 +99,19 @@ export const chapter1 = {
     },
     {
       id: 11,
-      question: "Valeur de la MTU Ethernet par défaut ?",
+      question: "Valeur de la MTU Ethernet par défaut",
       options: ["576 octets", "1000 octets", "1500 octets", "65536 octets"],
       answer: 2,
     },
     {
       id: 12,
-      question: "Protocole qui trouve la MAC d'une IP ?",
+      question: "Protocole qui trouve la MAC d'une IP",
       options: ["ICMP", "RARP", "ARP", "DHCP"],
       answer: 2,
     },
     {
       id: 13,
-      question: "Adresse MAC cible d'une requête ARP ?",
+      question: "Adresse MAC cible d'une requête ARP",
       options: [
         "00-00-00-00-00-00",
         "FF-FF-FF-FF-FF-FF",
@@ -122,13 +122,13 @@ export const chapter1 = {
     },
     {
       id: 14,
-      question: "Commande utilisant Echo Request/Reply ?",
+      question: "Commande utilisant Echo Request/Reply",
       options: ["netstat", "ping", "ss", "lsof"],
       answer: 1,
     },
     {
       id: 15,
-      question: "Caractéristique principale de TCP ?",
+      question: "Caractéristique principale de TCP",
       options: [
         "Non connecté",
         "Connecté et fiable",
@@ -139,7 +139,7 @@ export const chapter1 = {
     },
     {
       id: 16,
-      question: "Plage des ports d'écoute dits 'référencés' ?",
+      question: "Plage des ports d'écoute dits 'référencés'",
       options: [
         "0 à 1023",
         "Supérieurs à 1024",
@@ -150,25 +150,25 @@ export const chapter1 = {
     },
     {
       id: 17,
-      question: "Flag TCP pour initier une connexion ?",
+      question: "Flag TCP pour initier une connexion",
       options: ["ACK", "FIN", "SYN", "RST"],
       answer: 2,
     },
     {
       id: 18,
-      question: "Commande Linux pour lister les ports en écoute ?",
+      question: "Commande Linux pour lister les ports en écoute",
       options: ["netstat -ano", "ss -tuln", "ping -t", "ifconfig"],
       answer: 1,
     },
     {
       id: 19,
-      question: "Primitive Python pour lier une socket à un port ?",
+      question: "Primitive Python pour lier une socket à un port",
       options: ["s.connect()", "s.listen()", "s.bind()", "s.accept()"],
       answer: 2,
     },
     {
       id: 20,
-      question: "Protocole de transport non connecté et léger ?",
+      question: "Protocole de transport non connecté et léger",
       options: ["TCP", "UDP", "ICMP", "ARP"],
       answer: 1,
     },

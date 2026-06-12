@@ -4,7 +4,7 @@ export const chapter4 = {
   questions: [
     {
       id: 1,
-      question: "Composition d'un nombre réel ?",
+      question: "Composition d'un nombre réel",
       options: [
         "Uniquement des bits signés",
         "Partie entière et fractionnaire",
@@ -15,7 +15,7 @@ export const chapter4 = {
     },
     {
       id: 2,
-      question: "Méthodes pour coder la virgule ?",
+      question: "Méthodes pour coder la virgule",
       options: [
         "Virgule fixe et virgule flottante",
         "Virgule simple et double",
@@ -26,7 +26,7 @@ export const chapter4 = {
     },
     {
       id: 3,
-      question: "Principe de la virgule fixe ?",
+      question: "Principe de la virgule fixe",
       options: [
         "Virgule mobile dynamiquement",
         "Format précis pour entier/fraction",
@@ -37,7 +37,7 @@ export const chapter4 = {
     },
     {
       id: 4,
-      question: "Format (5 bits entiers, 4 décimaux) valide ?",
+      question: "Format (5 bits entiers, 4 décimaux) valide",
       options: [
         "1001011,10011",
         "101,1011101",
@@ -48,7 +48,7 @@ export const chapter4 = {
     },
     {
       id: 5,
-      question: "Pourquoi '100,01' est valide pour ce format (5,4) ?",
+      question: "Pourquoi '100,01' est valide pour ce format (5,4)",
       options: [
         "Ne dépasse pas les limites allouées",
         "Binaire pur sans signe",
@@ -59,7 +59,7 @@ export const chapter4 = {
     },
     {
       id: 6,
-      question: "Forme générale de la virgule flottante ?",
+      question: "Forme générale de la virgule flottante",
       options: [
         "± 1,M x 2^n",
         "± 0,M x 10^n",
@@ -70,7 +70,7 @@ export const chapter4 = {
     },
     {
       id: 7,
-      question: "Nombre de bits total du standard IEEE ici ?",
+      question: "Nombre de bits total du standard IEEE ici",
       options: [
         "8 bits",
         "16 bits",
@@ -81,7 +81,7 @@ export const chapter4 = {
     },
     {
       id: 8,
-      question: "Bits réservés à l'exposant (IEEE 32 bits) ?",
+      question: "Bits réservés à l'exposant (IEEE 32 bits)",
       options: [
         "1 bit",
         "8 bits",
@@ -92,7 +92,7 @@ export const chapter4 = {
     },
     {
       id: 9,
-      question: "Bits réservés à la mantisse (IEEE 32 bits) ?",
+      question: "Bits réservés à la mantisse (IEEE 32 bits)",
       options: [
         "1 bit",
         "8 bits",
@@ -103,7 +103,7 @@ export const chapter4 = {
     },
     {
       id: 10,
-      question: "Valeur du bit de signe (MSB) si négatif ?",
+      question: "Valeur du bit de signe (MSB) si négatif",
       options: [
         "0",
         "1",
@@ -114,7 +114,7 @@ export const chapter4 = {
     },
     {
       id: 11,
-      question: "Valeur du bit de signe (MSB) si positif ?",
+      question: "Valeur du bit de signe (MSB) si positif",
       options: [
         "0",
         "1",
@@ -125,7 +125,7 @@ export const chapter4 = {
     },
     {
       id: 12,
-      question: "Biais appliqué à l'exposant ?",
+      question: "Biais appliqué à l'exposant",
       options: [
         "1 bit",
         "23",
@@ -136,7 +136,7 @@ export const chapter4 = {
     },
     {
       id: 13,
-      question: "Exposants interdits par la norme ?",
+      question: "Exposants interdits par la norme",
       options: [
         "01010101 et 10101010",
         "00000000 et 11111111",
@@ -147,7 +147,7 @@ export const chapter4 = {
     },
     {
       id: 14,
-      question: "Où se situent les bits de la mantisse (M) ?",
+      question: "Où se situent les bits de la mantisse (M)",
       options: [
         "Avant la virgule",
         "Après la virgule",
@@ -158,7 +158,7 @@ export const chapter4 = {
     },
     {
       id: 15,
-      question: "Composant juste après le bit de signe ?",
+      question: "Composant juste après le bit de signe",
       options: [
         "La mantisse (23 bits)",
         "L'exposant (8 bits)",
@@ -169,7 +169,7 @@ export const chapter4 = {
     },
     {
       id: 16,
-      question: "Ordre exact d'un mot IEEE 32 bits ?",
+      question: "Ordre exact d'un mot IEEE 32 bits",
       options: [
         "Signe - mantisse - exposant",
         "Exposant - signe - mantisse",
@@ -180,7 +180,7 @@ export const chapter4 = {
     },
     {
       id: 17,
-      question: "Exemple réel proposé en fin de cours ?",
+      question: "Exemple réel proposé en fin de cours",
       options: [
         "±37,625",
         "±307,625",
@@ -191,7 +191,7 @@ export const chapter4 = {
     },
     {
       id: 18,
-      question: "Format final requis pour l'exercice ?",
+      question: "Format final requis pour l'exercice",
       options: [
         "Binaire pur",
         "Décimal positionnel",
@@ -202,7 +202,7 @@ export const chapter4 = {
     },
     {
       id: 19,
-      question: "Nom de la norme pour la virgule flottante ?",
+      question: "Nom de la norme pour la virgule flottante",
       options: [
         "ISO",
         "IEEE",
@@ -213,7 +213,7 @@ export const chapter4 = {
     },
     {
       id: 20,
-      question: "Pourquoi 1001011,10011 est invalide en fixe (5,4) ?",
+      question: "Pourquoi 1001011,10011 est invalide en fixe (5,4)",
       options: [
         "Entier nécessite 7 bits et fraction 5 bits",
         "C'est un nombre négatif",

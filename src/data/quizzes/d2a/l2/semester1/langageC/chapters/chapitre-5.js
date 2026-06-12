@@ -4,19 +4,19 @@ export const chapter5 = {
   questions: [
     {
       id: 1,
-      question: "Opérateur donnant l'adresse mémoire d'une variable ?",
+      question: "Opérateur donnant l'adresse mémoire d'une variable",
       options: ["L'étoile *", "L'esperluette &", "La flèche ->", "Le point ."],
       answer: 1,
     },
     {
       id: 2,
-      question: "Déclaration d'un pointeur vers un entier ?",
+      question: "Déclaration d'un pointeur vers un entier",
       options: ["int &p;", "ptr int p;", "int *p;", "int p*;"],
       answer: 2,
     },
     {
       id: 3,
-      question: "Qu'est-ce qu'un pointeur en langage C ?",
+      question: "Qu'est-ce qu'un pointeur en langage C",
       options: [
         "Variable contenant une adresse mémoire",
         "Type chiffré",
@@ -27,7 +27,7 @@ export const chapter5 = {
     },
     {
       id: 4,
-      question: "Rôle de l'étoile * placée devant un pointeur existant ?",
+      question: "Rôle de l'étoile * placée devant un pointeur existant",
       options: [
         "Détruit le pointeur",
         "Accède à la valeur pointée (déréférencement)",
@@ -38,31 +38,31 @@ export const chapter5 = {
     },
     {
       id: 5,
-      question: "Formatteur de printf pour afficher une adresse mémoire ?",
+      question: "Formatteur de printf pour afficher une adresse mémoire",
       options: ["%d", "%s", "%x", "%p"],
       answer: 3,
     },
     {
       id: 6,
-      question: "Fonction allouant dynamiquement de la mémoire brute ?",
+      question: "Fonction allouant dynamiquement de la mémoire brute",
       options: ["alloc()", "malloc()", "calloc()", "realloc()"],
       answer: 1,
     },
     {
       id: 7,
-      question: "Valeur indiquant qu'un pointeur ne pointe sur rien ?",
+      question: "Valeur indiquant qu'un pointeur ne pointe sur rien",
       options: ["0", "VOID", "NULL", "EMPTY"],
       answer: 2,
     },
     {
       id: 8,
-      question: "Fonction libérant la mémoire allouée sur le Tas ?",
+      question: "Fonction libérant la mémoire allouée sur le Tas",
       options: ["delete()", "clear()", "free()", "release()"],
       answer: 2,
     },
     {
       id: 9,
-      question: "Qu'est-ce qu'une fuite de mémoire (Memory Leak) ?",
+      question: "Qu'est-ce qu'une fuite de mémoire (Memory Leak)",
       options: [
         "Pointeur instable",
         "Mémoire allouée non libérée",
@@ -73,13 +73,13 @@ export const chapter5 = {
     },
     {
       id: 10,
-      question: "Si 'int T[5];', quelle expression équivaut à T[2] ?",
+      question: "Si 'int T[5];', quelle expression équivaut à T[2]",
       options: ["*(T + 2)", "*T + 2", "&T + 2", "T + 2"],
       answer: 0,
     },
     {
       id: 11,
-      question: "Où est stockée la mémoire allouée par malloc() ?",
+      question: "Où est stockée la mémoire allouée par malloc()",
       options: [
         "Dans la Pile (Stack)",
         "Dans le Tas (Heap)",
@@ -90,13 +90,13 @@ export const chapter5 = {
     },
     {
       id: 12,
-      question: "Taille d'un pointeur sur un système 64 bits ?",
+      question: "Taille d'un pointeur sur un système 64 bits",
       options: ["2 octets", "4 octets", "8 octets", "Dépend du type pointé"],
       answer: 2,
     },
     {
       id: 13,
-      question: "Que retourne malloc() si la mémoire est saturée ?",
+      question: "Que retourne malloc() si la mémoire est saturée",
       options: [
         "Le pointeur NULL",
         "Une adresse aléatoire",
@@ -108,19 +108,19 @@ export const chapter5 = {
     {
       id: 14,
       question:
-        "Opérateur d'accès aux champs d'une structure via son pointeur ?",
+        "Opérateur d'accès aux champs d'une structure via son pointeur",
       options: ["Le point .", "La flèche ->", "L'étoile *", "L'esperluette &"],
       answer: 1,
     },
     {
       id: 15,
-      question: "Qu'est-ce qu'un pointeur générique en C ?",
+      question: "Qu'est-ce qu'un pointeur générique en C",
       options: ["null*", "any*", "void*", "auto*"],
       answer: 2,
     },
     {
       id: 16,
-      question: "Danger d'un pointeur 'dangling' (suspendu) ?",
+      question: "Danger d'un pointeur 'dangling' (suspendu)",
       options: [
         "Pointe vers une zone mémoire libérée",
         "Jamais initialisé",
@@ -131,7 +131,7 @@ export const chapter5 = {
     },
     {
       id: 17,
-      question: "Que mesure l'opérateur sizeof(int*) ?",
+      question: "Que mesure l'opérateur sizeof(int*)",
       options: [
         "Taille de l'entier",
         "Taille du pointeur",
@@ -142,13 +142,13 @@ export const chapter5 = {
     },
     {
       id: 18,
-      question: "Fonction modifiant la taille d'un bloc déjà alloué ?",
+      question: "Fonction modifiant la taille d'un bloc déjà alloué",
       options: ["malloc()", "calloc()", "realloc()", "resize()"],
       answer: 2,
     },
     {
       id: 19,
-      question: "Conséquence du déréférencement d'un pointeur NULL ?",
+      question: "Conséquence du déréférencement d'un pointeur NULL",
       options: [
         "Ignoré",
         "Erreur de Segmentation (Crash)",
@@ -159,7 +159,7 @@ export const chapter5 = {
     },
     {
       id: 20,
-      question: "Arithmétique : que fait 'p++;' si p est un int* ?",
+      question: "Arithmétique : que fait 'p++;' si p est un int*",
       options: [
         "Ajoute 1 octet",
         "Ajoute 1 à la valeur",

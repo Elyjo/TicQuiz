@@ -4,7 +4,7 @@ export const chapter5 = {
   questions: [
     {
       id: 1,
-      question: "Qu'est-ce qu'un enregistrement ?",
+      question: "Qu'est-ce qu'un enregistrement",
       options: [
         "Une boucle",
         "Donnée composée de plusieurs champs",
@@ -15,7 +15,7 @@ export const chapter5 = {
     },
     {
       id: 2,
-      question: "Différence avec un tableau ?",
+      question: "Différence avec un tableau",
       options: [
         "Champs de types différents",
         "Champs du même type",
@@ -26,7 +26,7 @@ export const chapter5 = {
     },
     {
       id: 3,
-      question: "Champs possibles d'un étudiant ?",
+      question: "Champs possibles d'un étudiant",
       options: [
         "nom",
         "prénom",
@@ -37,7 +37,7 @@ export const chapter5 = {
     },
     {
       id: 4,
-      question: "Accès à un champ ?",
+      question: "Accès à un champ",
       options: [
         "Avec []",
         "Avec un point",
@@ -48,7 +48,7 @@ export const chapter5 = {
     },
     {
       id: 5,
-      question: "Écriture correcte pour dev1 ?",
+      question: "Écriture correcte pour dev1",
       options: [
         "p1[dev1]",
         "p1.dev1",
@@ -59,7 +59,7 @@ export const chapter5 = {
     },
     {
       id: 6,
-      question: "Pseudo-code : Définition ?",
+      question: "Pseudo-code : Définition",
       options: [
         "record",
         "structure",
@@ -70,7 +70,7 @@ export const chapter5 = {
     },
     {
       id: 7,
-      question: "Pascal : Définition ?",
+      question: "Pascal : Définition",
       options: [
         "array",
         "structure",
@@ -81,7 +81,7 @@ export const chapter5 = {
     },
     {
       id: 8,
-      question: "Contenu d'un champ ?",
+      question: "Contenu d'un champ",
       options: [
         "Une valeur",
         "Une instruction",
@@ -92,7 +92,7 @@ export const chapter5 = {
     },
     {
       id: 9,
-      question: "Type possible d'un champ ?",
+      question: "Type possible d'un champ",
       options: [
         "Simple",
         "Un tableau",
@@ -103,7 +103,7 @@ export const chapter5 = {
     },
     {
       id: 10,
-      question: "Pascal : Omettre le nom devant un champ ?",
+      question: "Pascal : Omettre le nom devant un champ",
       options: [
         "record",
         "array",
@@ -114,7 +114,7 @@ export const chapter5 = {
     },
     {
       id: 11,
-      question: "Dans 'with p1 do', les champs sont de :",
+      question: "Dans 'with p1 do', les champs sont de",
       options: [
         "p1",
         "p2",
@@ -125,7 +125,7 @@ export const chapter5 = {
     },
     {
       id: 12,
-      question: "Que fait 'p1 := p2' ?",
+      question: "Que fait 'p1 := p2'",
       options: [
         "Copie tous les champs",
         "Copie uniquement le nom",
@@ -136,7 +136,7 @@ export const chapter5 = {
     },
     {
       id: 13,
-      question: "Lecture directe via readln(p1) ?",
+      question: "Lecture directe via readln(p1)",
       options: [
         "Oui",
         "Non",
@@ -147,7 +147,7 @@ export const chapter5 = {
     },
     {
       id: 14,
-      question: "Méthode de lecture courante ?",
+      question: "Méthode de lecture courante",
       options: [
         "Champ par champ",
         "Une seule instruction",
@@ -158,7 +158,7 @@ export const chapter5 = {
     },
     {
       id: 15,
-      question: "Signification : Array[1..10] of Personne ?",
+      question: "Signification : Array[1..10] of Personne",
       options: [
         "Un étudiant",
         "Tableau de 10 personnes",
@@ -169,7 +169,7 @@ export const chapter5 = {
     },
     {
       id: 16,
-      question: "Pourquoi l'utiliser pour un étudiant ?",
+      question: "Pourquoi l'utiliser pour un étudiant",
       options: [
         "Regrouper des informations",
         "Faire des boucles",
@@ -180,7 +180,7 @@ export const chapter5 = {
     },
     {
       id: 17,
-      question: "Avantage principal ?",
+      question: "Avantage principal",
       options: [
         "Stocker des données liées",
         "Remplacer les boucles",
@@ -191,7 +191,7 @@ export const chapter5 = {
     },
     {
       id: 18,
-      question: "Une adresse (num, rue, ville) est :",
+      question: "Une adresse (num, rue, ville) est",
       options: [
         "Un enregistrement",
         "Une boucle",
@@ -202,7 +202,7 @@ export const chapter5 = {
     },
     {
       id: 19,
-      question: "Un tableau d'enregistrements sert à :",
+      question: "Un tableau d'enregistrements sert à",
       options: [
         "Gérer plusieurs objets similaires",
         "Gérer une seule valeur",
@@ -213,7 +213,7 @@ export const chapter5 = {
     },
     {
       id: 20,
-      question: "Quelle affirmation est vraie ?",
+      question: "Quelle affirmation est vraie",
       options: [
         "Tableau = éléments de même type",
         "Enregistrement = champs éventuellement différents",

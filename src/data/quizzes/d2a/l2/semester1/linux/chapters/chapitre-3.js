@@ -4,7 +4,7 @@ export const chapter3 = {
   questions: [
     {
       id: 1,
-      question: "Où sont répertoriés tous les utilisateurs ?",
+      question: "Où sont répertoriés tous les utilisateurs",
       options: [
         "/etc/group",
         "/etc/shadow",
@@ -15,7 +15,7 @@ export const chapter3 = {
     },
     {
       id: 2,
-      question: "Nombre de champs dans une ligne /etc/passwd ?",
+      question: "Nombre de champs dans une ligne /etc/passwd",
       options: [
         "4",
         "5",
@@ -26,7 +26,7 @@ export const chapter3 = {
     },
     {
       id: 3,
-      question: "Quel est l'UID de root ?",
+      question: "Quel est l'UID de root",
       options: [
         "0",
         "1",
@@ -37,7 +37,7 @@ export const chapter3 = {
     },
     {
       id: 4,
-      question: "Que signifie 'x' dans le champ mot de passe ?",
+      question: "Que signifie 'x' dans le champ mot de passe",
       options: [
         "Compte verrouillé",
         "Passe vide",
@@ -48,7 +48,7 @@ export const chapter3 = {
     },
     {
       id: 5,
-      question: "Comment interdire l'accès à un compte via /etc/passwd ?",
+      question: "Comment interdire l'accès à un compte via /etc/passwd",
       options: [
         "Laisser le champ vide",
         "Remplacer le passe par '*'",
@@ -59,7 +59,7 @@ export const chapter3 = {
     },
     {
       id: 6,
-      question: "Qui a le droit de lire /etc/shadow ?",
+      question: "Qui a le droit de lire /etc/shadow",
       options: [
         "Tous les utilisateurs",
         "Le groupe wheel",
@@ -70,7 +70,7 @@ export const chapter3 = {
     },
     {
       id: 7,
-      question: "Que signifie un '0' comme date de dernier changement ?",
+      question: "Que signifie un '0' comme date de dernier changement",
       options: [
         "N'expire jamais",
         "Changement requis au prochain accès",
@@ -81,7 +81,7 @@ export const chapter3 = {
     },
     {
       id: 8,
-      question: "Quelle valeur dans /etc/shadow verrouille un compte ?",
+      question: "Quelle valeur dans /etc/shadow verrouille un compte",
       options: [
         "*",
         "!",
@@ -92,7 +92,7 @@ export const chapter3 = {
     },
     {
       id: 9,
-      question: "Nombre de champs dans une ligne /etc/group ?",
+      question: "Nombre de champs dans une ligne /etc/group",
       options: [
         "4",
         "7",
@@ -103,7 +103,7 @@ export const chapter3 = {
     },
     {
       id: 10,
-      question: "Quelle commande permet de changer de groupe principal ?",
+      question: "Quelle commande permet de changer de groupe principal",
       options: [
         "gpasswd",
         "usermod",
@@ -114,7 +114,7 @@ export const chapter3 = {
     },
     {
       id: 11,
-      question: "Qui modifie le mot de passe groupe dans /etc/gshadow ?",
+      question: "Qui modifie le mot de passe groupe dans /etc/gshadow",
       options: [
         "Les membres du groupe",
         "L'administrateur du groupe",
@@ -125,7 +125,7 @@ export const chapter3 = {
     },
     {
       id: 12,
-      question: "Commande conviviale (Ubuntu) pour créer un utilisateur ?",
+      question: "Commande conviviale (Ubuntu) pour créer un utilisateur",
       options: [
         "useradd",
         "adduser",
@@ -136,7 +136,7 @@ export const chapter3 = {
     },
     {
       id: 13,
-      question: "Commande bas niveau pour créer un utilisateur ?",
+      question: "Commande bas niveau pour créer un utilisateur",
       options: [
         "useradd",
         "adduser",
@@ -147,7 +147,7 @@ export const chapter3 = {
     },
     {
       id: 14,
-      question: "Que fait 'passwd' lancé par root sans argument ?",
+      question: "Que fait 'passwd' lancé par root sans argument",
       options: [
         "Affiche l'aide",
         "Change le passe de root",
@@ -158,7 +158,7 @@ export const chapter3 = {
     },
     {
       id: 15,
-      question: "Quelle commande affiche les UID/GID d'un utilisateur ?",
+      question: "Quelle commande affiche les UID/GID d'un utilisateur",
       options: [
         "who",
         "groups",
@@ -169,7 +169,7 @@ export const chapter3 = {
     },
     {
       id: 16,
-      question: "Option de 'userdel' pour effacer le dossier home ?",
+      question: "Option de 'userdel' pour effacer le dossier home",
       options: [
         "-f",
         "-d",
@@ -180,7 +180,7 @@ export const chapter3 = {
     },
     {
       id: 17,
-      question: "Commande bas niveau pour créer un groupe ?",
+      question: "Commande bas niveau pour créer un groupe",
       options: [
         "addgroup",
         "groupadd",
@@ -191,7 +191,7 @@ export const chapter3 = {
     },
     {
       id: 18,
-      question: "Option usermod pour remplacer les groupes secondaires ?",
+      question: "Option usermod pour remplacer les groupes secondaires",
       options: [
         "-aG",
         "-G",
@@ -202,7 +202,7 @@ export const chapter3 = {
     },
     {
       id: 19,
-      question: "Commande conviviale (Ubuntu) pour supprimer un groupe ?",
+      question: "Commande conviviale (Ubuntu) pour supprimer un groupe",
       options: [
         "groupdel",
         "delgroup",
@@ -213,7 +213,7 @@ export const chapter3 = {
     },
     {
       id: 20,
-      question: "Comment ajouter 'jean' au groupe 'compta' ?",
+      question: "Comment ajouter 'jean' au groupe 'compta'",
       options: [
         "sudo gpasswd -a jean compta",
         "sudo groupadd jean compta",
