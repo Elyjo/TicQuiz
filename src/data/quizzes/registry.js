@@ -10,6 +10,7 @@ import { Quiz as javascriptQuiz } from "@/data/quizzes/d2a/l2/semester1/javascri
 import { Quiz as meriseQuiz } from "@/data/quizzes/d2a/l2/semester1/merise/chapters";
 import { Quiz as umlQuiz } from "@/data/quizzes/d2a/l3/semester1/uml/chapters";
 import { Quiz as javaAvanceQuiz } from "@/data/quizzes/d2a/l3/semester1/javaAvance/chapters";
+import { Quiz as xmlQuiz } from "@/data/quizzes/d2a/l3/semester1/xml/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -22,5 +23,6 @@ export const quizRegistry = {
   merise: meriseQuiz,
   uml: umlQuiz,
   javaAvance: javaAvanceQuiz,
+  xml: xmlQuiz,
 
 };
