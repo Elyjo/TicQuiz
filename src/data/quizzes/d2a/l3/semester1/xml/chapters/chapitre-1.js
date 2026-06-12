@@ -4,91 +4,91 @@ export const chapter1 = {
   questions: [
     {
       id: 1,
-      question: "Quelle est la principale différence entre HTML et XML",
+      question: "Principale différence entre HTML et XML",
       options: [
-        "HTML est pour le Web, XML est pour les bases de données",
-        "HTML décrit la présentation, XML décrit la structure/sémantique",
-        "HTML est plus récent que XML",
-        "XML ne supporte pas les balises"
+        "HTML pour Web / XML pour BDD",
+        "HTML décrit présentation / XML structure",
+        "HTML plus récent",
+        "XML sans balises",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
-      question: "Qu'est-ce qu'un document XML 'bien formé'",
+      question: "Définition d'un document XML bien formé",
       options: [
-        "Un document qui contient une DTD",
-        "Un document qui respecte les règles syntaxiques de base de XML",
-        "Un document qui utilise uniquement des balises prédéfinies",
-        "Un document qui est affichable dans tous les navigateurs"
+        "Contient une DTD",
+        "Respecte les règles syntaxiques de base",
+        "Utilise balises prédéfinies",
+        "Affichable par navigateurs",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 3,
-      question: "Laquelle de ces règles est fausse pour un document bien formé",
+      question: "Règle fausse pour un document bien formé",
       options: [
-        "Il doit y avoir un seul élément racine",
-        "Les balises sont sensibles à la casse",
-        "Les balises peuvent s'imbriquer comme `<A><B></A></B>`",
-        "Les valeurs d'attributs doivent être entre guillemets"
+        "Un seul élément racine",
+        "Sensible à la casse",
+        "Imbrication <A><B></A></B>",
+        "Attributs entre guillemets",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 4,
-      question: "Que signifie 'case sensitive' en XML",
+      question: "Signification de case sensitive",
       options: [
-        "Les balises doivent être écrites en minuscules uniquement",
-        "Les balises ne peuvent pas contenir de chiffres",
-        "La casse (majuscules/minuscules) est importante : `<Nom>` est différent de `<nom>`",
-        "Les balises doivent être en majuscules uniquement"
+        "Minuscules uniquement",
+        "Sans chiffres",
+        "Casse importante (<Nom> != <nom>)",
+        "Majuscules uniquement",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 5,
-      question: "Quelle est la différence entre un document 'bien formé' et un document 'valide'",
+      question: "Différence entre bien formé et valide",
       options: [
-        "Il n'y a aucune différence",
-        "Un document valide respecte en plus une grammaire (DTD ou Schema)",
-        "Un document bien formé est plus complexe qu'un document valide",
-        "Un document valide n'a pas besoin d'élément racine"
+        "Aucune",
+        "Valide respecte une grammaire (DTD/Schema)",
+        "Bien formé plus complexe",
+        "Valide sans racine",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 6,
-      question: "Que fait un processeur XML (parser)",
+      question: "Rôle d'un processeur XML (parser)",
       options: [
-        "Il ajoute du style CSS au document",
-        "Il vérifie si le document respecte les règles de structure XML",
-        "Il convertit le XML en base de données SQL automatiquement",
-        "Il crypte les données"
+        "Ajoute style CSS",
+        "Vérifie les règles de structure",
+        "Convertit en SQL",
+        "Crypte les données",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 7,
-      question: "Quelle est la syntaxe correcte pour un élément vide en XML",
+      question: "Syntaxe correcte pour un élément vide",
       options: [
         "<element></element>",
         "<element/>",
         "<element> </element>",
-        "Toutes les réponses ci-dessus sont correctes"
+        "Toutes les réponses",
       ],
-      answer: 3
+      answer: 3,
     },
     {
       id: 8,
-      question: "Pourquoi XML est-il dit 'extensible'",
+      question: "Pourquoi XML est-il dit extensible",
       options: [
-        "Parce qu'on peut inventer ses propres balises selon ses besoins",
-        "Parce qu'il peut remplacer HTML",
-        "Parce qu'il compresse les fichiers",
-        "Parce qu'il fonctionne sans processeur"
+        "Balises personnalisables",
+        "Remplace HTML",
+        "Compresse fichiers",
+        "Fonctionne sans processeur",
       ],
-      answer: 0
-    }
-  ]
+      answer: 0,
+    },
+  ],
 };

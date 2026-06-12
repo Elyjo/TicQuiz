@@ -6,36 +6,41 @@ export const chapter3 = {
       id: 1,
       question: "Une DTD est-elle un document XML",
       options: ["Oui", "Non"],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
-      question: "Quel opérateur DTD indique qu'un élément peut apparaître 0 ou 1 fois",
+      question: "Opérateur DTD pour 0 ou 1 apparition",
       options: ["*", "+", "?", "|"],
-      answer: 2
+      answer: 2,
     },
     {
       id: 3,
-      question: "Que signifie #REQUIRED dans la déclaration d'un attribut",
-      options: ["L'attribut est optionnel", "L'attribut est obligatoire", "L'attribut a une valeur fixe", "L'attribut est interdit"],
-      answer: 1
+      question: "Signification de #REQUIRED pour un attribut",
+      options: ["Optionnel", "Obligatoire", "Valeur fixe", "Interdit"],
+      answer: 1,
     },
     {
       id: 4,
-      question: "Quelle est la différence entre ID et IDREF",
+      question: "Différence entre ID et IDREF",
       options: [
         "Aucune",
-        "ID définit un identifiant unique, IDREF fait référence à un ID existant",
-        "IDREF définit l'identifiant, ID fait référence",
-        "ID est pour les chiffres, IDREF pour les chaînes"
+        "ID = identifiant unique / IDREF = référence",
+        "IDREF = identifiant / ID = référence",
+        "ID = chiffres / IDREF = chaînes",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 5,
-      question: "Que signifie `(#PCDATA)`",
-      options: ["Un élément vide", "Un contenu textuel analysable", "Un élément enfant obligatoire", "Un attribut"],
-      answer: 1
-    }
-  ]
+      question: "Signification de (#PCDATA)",
+      options: [
+        "Élément vide",
+        "Contenu textuel analysable",
+        "Enfant obligatoire",
+        "Attribut",
+      ],
+      answer: 1,
+    },
+  ],
 };
