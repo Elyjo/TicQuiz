@@ -4,58 +4,58 @@ export const chapter4 = {
   questions: [
     {
       id: 1,
-      question: "Pourquoi a-t-on besoin de mécanismes comme les cookies ou les sessions ?",
+      question: "Pourquoi utiliser cookies ou sessions",
       options: [
-        "Parce que HTTP est un protocole sans état",
-        "Pour accélérer le chargement des pages",
-        "Pour sécuriser la connexion réseau",
-        "Parce que Java ne gère pas les variables globales"
+        "HTTP est sans état",
+        "Accélérer les pages",
+        "Sécuriser le réseau",
+        "Java ne gère pas les variables globales",
       ],
-      answer: 1
+      answer: 0,
     },
     {
       id: 2,
-      question: "Quelle méthode permet d'envoyer un cookie au client ?",
+      question: "Méthode pour envoyer un cookie au client",
       options: [
         "request.addCookie(c)",
         "response.setCookie(c)",
         "response.addCookie(c)",
-        "session.addCookie(c)"
+        "session.addCookie(c)",
       ],
-      answer: 3
+      answer: 2,
     },
     {
       id: 3,
-      question: "Comment empêcher l'accès à un cookie via JavaScript pour protéger contre les attaques XSS ?",
+      question: "Comment empêcher l'accès au cookie via JavaScript",
       options: [
         "cookie.setSecure(true)",
         "cookie.setHttpOnly(true)",
         "cookie.setPath('/')",
-        "cookie.setMaxAge(0)"
+        "cookie.setMaxAge(0)",
       ],
-      answer: 2
+      answer: 1,
     },
     {
       id: 4,
-      question: "Quelle méthode est utilisée pour invalider (fermer) une session ?",
+      question: "Méthode pour invalider une session",
       options: [
         "session.destroy()",
         "session.close()",
         "session.invalidate()",
-        "session.remove()"
+        "session.remove()",
       ],
-      answer: 3
+      answer: 2,
     },
     {
       id: 5,
-      question: "Que se passe-t-il si un client refuse les cookies pour une application utilisant `JSESSIONID` ?",
+      question: "Solution si le client refuse les cookies",
       options: [
-        "La session est impossible à maintenir",
-        "Il faut utiliser la réécriture d'URL",
-        "Le serveur utilise l'adresse IP comme identifiant",
-        "Le navigateur demande une authentification à chaque clic"
+        "Session impossible",
+        "Réécriture d'URL",
+        "Utiliser l'adresse IP",
+        "Authentification à chaque clic",
       ],
-      answer: 2
-    }
-  ]
+      answer: 1,
+    },
+  ],
 };

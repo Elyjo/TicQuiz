@@ -1,61 +1,46 @@
 export const chapter5 = {
   id: "chapter-5",
-  title: "ava Server Pages",
+  title: "Java Server Pages",
   questions: [
     {
       id: 1,
-      question: "Quelle est la syntaxe correcte pour une déclaration JSP (variables ou méthodes globales) ?",
-      options: [
-        "<% déclaration %>",
-        "<%= déclaration %>",
-        "<%! déclaration %>",
-        "<%@ déclaration %>"
-      ],
-      answer: 3
+      question: "Syntaxe pour une déclaration JSP globale",
+      options: ["<% %>", "<%= %>", "<%! %>", "<%@ %>"],
+      answer: 2,
     },
     {
       id: 2,
-      question: "Quelle directive permet d'inclure un fragment de code lors de la phase de compilation (jsp vers servlet) ?",
+      question: "Directive d'inclusion à la compilation",
       options: [
-        "<%@ include file='...' %>",
-        "<jsp:include page='...' />",
-        "<%@ page include='...' %>",
-        "<jsp:forward page='...' />"
+        "<%@ include %>",
+        "<jsp:include />",
+        "<%@ page include %>",
+        "<jsp:forward />",
       ],
-      answer: 1
+      answer: 0,
     },
     {
       id: 3,
-      question: "Quel objet implicite est utilisé pour accéder aux attributs de la page courante ?",
-      options: [
-        "request",
-        "pageContext",
-        "config",
-        "application"
-      ],
-      answer: 2
+      question: "Objet pour accéder aux attributs de page",
+      options: ["request", "pageContext", "config", "application"],
+      answer: 1,
     },
     {
       id: 4,
-      question: "Quelle action JSP transfère la requête vers une autre ressource sans que l'URL dans le navigateur ne change pour l'utilisateur ?",
+      question: "Action transférant la requête sans changer l'URL",
       options: [
         "<jsp:include>",
         "<jsp:forward>",
         "<jsp:param>",
-        "<jsp:plugin>"
+        "<jsp:plugin>",
       ],
-      answer: 2
+      answer: 1,
     },
     {
       id: 5,
-      question: "Dans quel cas l'objet implicite 'exception' est-il disponible ?",
-      options: [
-        "Dans n'importe quel scriptlet",
-        "Uniquement si l'attribut isErrorPage de la directive page est true",
-        "Uniquement dans les fichiers .jspf",
-        "Dans toutes les pages JSP par défaut"
-      ],
-      answer: 2
-    }
-  ]
+      question: "Condition pour l'objet implicite exception",
+      options: ["Toujours", "isErrorPage=true", "Dans les .jspf", "Par défaut"],
+      answer: 1,
+    },
+  ],
 };

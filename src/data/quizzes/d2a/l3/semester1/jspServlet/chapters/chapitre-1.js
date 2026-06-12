@@ -4,58 +4,38 @@ export const chapter1 = {
   questions: [
     {
       id: 1,
-      question: "Quel protocole est utilisé pour la communication entre le client et le serveur web ?",
-      options: [
-        "FTP",
-        "SMTP",
-        "HTTP",
-        "SSH"
-      ],
-      answer: 2
+      question: "Protocole de communication client-serveur web",
+      options: ["FTP", "SMTP", "HTTP", "SSH"],
+      answer: 2,
     },
     {
       id: 2,
-      question: "Quelle classe Java doit obligatoirement étendre un Servlet ?",
+      question: "Classe à étendre pour un Servlet",
       options: [
         "javax.servlet.Servlet",
         "javax.servlet.http.HttpServlet",
         "java.io.Servlet",
-        "javax.servlet.GenericServlet"
+        "javax.servlet.GenericServlet",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 3,
-      question: "Quelle méthode du cycle de vie d'un Servlet est exécutée une seule fois lors de son chargement ?",
-      options: [
-        "service()",
-        "doGet()",
-        "destroy()",
-        "init()"
-      ],
-      answer: 3
+      question: "Méthode du cycle de vie exécutée une seule fois",
+      options: ["service()", "doGet()", "destroy()", "init()"],
+      answer: 3,
     },
     {
       id: 4,
-      question: "Quelle annotation permet de déclarer un Servlet directement dans le code Java ?",
-      options: [
-        "@Servlet",
-        "@WebInit",
-        "@WebServlet",
-        "@RequestMapping"
-      ],
-      answer: 2
+      question: "Annotation pour déclarer un Servlet",
+      options: ["@Servlet", "@WebInit", "@WebServlet", "@RequestMapping"],
+      answer: 2,
     },
     {
       id: 5,
-      question: "Quelle méthode est appelée par le conteneur à chaque fois qu'une requête est reçue ?",
-      options: [
-        "init()",
-        "service()",
-        "destroy()",
-        "config()"
-      ],
-      answer: 1
-    }
-  ]
+      question: "Méthode appelée à chaque requête",
+      options: ["init()", "service()", "destroy()", "config()"],
+      answer: 1,
+    },
+  ],
 };

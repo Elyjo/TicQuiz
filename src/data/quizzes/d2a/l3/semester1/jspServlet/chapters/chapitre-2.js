@@ -4,58 +4,53 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Quelle méthode permet de récupérer un paramètre d'initialisation propre à un Servlet ?",
+      question: "Méthode pour un paramètre d'initialisation",
       options: [
         "getServletContext().getInitParameter()",
         "getServletConfig().getInitParameter()",
         "request.getParameter()",
-        "getAttribute()"
+        "getAttribute()",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
-      question: "Quelle méthode utiliser pour récupérer les valeurs d'un champ de formulaire présent plusieurs fois (ex: cases à cocher) ?",
+      question: "Méthode pour valeurs multiples de formulaire",
       options: [
         "getParameter()",
         "getAttribute()",
         "getParameterValues()",
-        "getHeader()"
+        "getHeader()",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 3,
-      question: "Quel objet permet de transférer une requête d'un servlet à un autre ?",
+      question: "Objet pour transférer une requête",
       options: [
         "ServletConfig",
         "RequestDispatcher",
         "HttpServletResponse",
-        "ServletContext"
+        "ServletContext",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 4,
-      question: "Comment accéder à l'adresse IP du client ?",
+      question: "Comment accéder à l'adresse IP du client",
       options: [
         "request.getServerName()",
         "request.getRemoteHost()",
         "request.getRemoteAddr()",
-        "context.getInitParameter()"
+        "context.getInitParameter()",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 5,
-      question: "Dans quel fichier Tomcat définit-on les utilisateurs et leurs rôles pour l'authentification ?",
-      options: [
-        "web.xml",
-        "context.xml",
-        "tomcat-users.xml",
-        "server.xml"
-      ],
-      answer: 2
-    }
-  ]
+      question: "Fichier de configuration des rôles Tomcat",
+      options: ["web.xml", "context.xml", "tomcat-users.xml", "server.xml"],
+      answer: 2,
+    },
+  ],
 };

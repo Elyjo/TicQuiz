@@ -4,33 +4,43 @@ export const chapter3 = {
   questions: [
     {
       id: 1,
-      question: "Quelle est la syntaxe correcte pour accéder à une variable en JSP EL ?",
-      options: ["<%= variable %>", "${variable}", "#{variable}", "<% variable %>"],
-      answer: 1
+      question: "Syntaxe pour accéder à une variable JSP EL",
+      options: [
+        "<%= variable %>",
+        "${variable}",
+        "#{variable}",
+        "<% variable %>",
+      ],
+      answer: 1,
     },
     {
       id: 2,
-      question: "Parmi les scopes suivants, lequel est parcouru en premier par JSP EL ?",
+      question: "Scope parcouru en premier par JSP EL",
       options: ["application", "session", "request", "pageContext"],
-      answer: 3
+      answer: 3,
     },
     {
       id: 3,
-      question: "Quelle action JSP permet d'initialiser automatiquement toutes les propriétés d'un JavaBean avec les paramètres de la requête ?",
-      options: ["<jsp:useBean property='*'/>", "<jsp:setProperty name='bean' property='*'/>", "<c:set value='*'/>", "<jsp:getProperty property='*'/>"],
-      answer: 1
+      question: "Action pour initialiser les propriétés d'un JavaBean",
+      options: [
+        "<jsp:useBean property='*'/>",
+        "<jsp:setProperty name='bean' property='*'/>",
+        "<c:set value='*'/>",
+        "<jsp:getProperty property='*'/>",
+      ],
+      answer: 1,
     },
     {
       id: 4,
-      question: "Quel tag JSTL est utilisé pour effectuer une boucle itérative ?",
+      question: "Tag JSTL pour une boucle itérative",
       options: ["<c:if>", "<c:choose>", "<c:forEach>", "<c:forTokens>"],
-      answer: 2
+      answer: 2,
     },
     {
       id: 5,
-      question: "Quelle fonction JSTL permet de connaître la taille d'une collection ?",
+      question: "Fonction JSTL pour la taille d'une collection",
       options: ["fn:size()", "fn:length()", "c:length()", "fn:count()"],
-      answer: 1
-    }
-  ]
+      answer: 1,
+    },
+  ],
 };
