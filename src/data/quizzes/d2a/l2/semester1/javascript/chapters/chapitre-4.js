@@ -1,6 +1,6 @@
 export const chapter4 = {
   id: "chapter-4",
-  title: "Programmation Orientée Objet",
+  title: "POO JS",
   questions: [
     {
       id: 1,
