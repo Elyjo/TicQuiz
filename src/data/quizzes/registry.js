@@ -13,6 +13,7 @@ import { Quiz as javaAvanceQuiz } from "@/data/quizzes/d2a/l3/semester1/javaAvan
 import { Quiz as xmlQuiz } from "@/data/quizzes/d2a/l3/semester1/xml/chapters";
 import { Quiz as jspServletQuiz } from "@/data/quizzes/d2a/l3/semester1/jspServlet/chapters";
 import { Quiz as iotQuiz } from "@/data/quizzes/srt/l2/semester1/iot/chapters"; 
+import { Quiz as reseauxSansFilQuiz } from "@/data/quizzes/srt/l2/semester1/reseauxSansFil/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -28,5 +29,7 @@ export const quizRegistry = {
   xml: xmlQuiz,
   jspServlet: jspServletQuiz,
   iot:iotQuiz,
+  reseauxSansFil: reseauxSansFilQuiz,
+
 
 };
