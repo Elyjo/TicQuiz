@@ -9,6 +9,7 @@ import { Quiz as langageCQuiz } from "@/data/quizzes/d2a/l2/semester1/langageC/c
 import { Quiz as javascriptQuiz } from "@/data/quizzes/d2a/l2/semester1/javascript/chapters";
 import { Quiz as meriseQuiz } from "@/data/quizzes/d2a/l2/semester1/merise/chapters";
 import { Quiz as umlQuiz } from "@/data/quizzes/d2a/l3/semester1/uml/chapters";
+import { Quiz as javaAvanceQuiz } from "@/data/quizzes/d2a/l3/semester1/javaAvance/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -20,5 +21,6 @@ export const quizRegistry = {
   javascript: javascriptQuiz,
   merise: meriseQuiz,
   uml: umlQuiz,
+  javaAvance: javaAvanceQuiz,
 
 };

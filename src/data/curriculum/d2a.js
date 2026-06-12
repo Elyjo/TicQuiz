@@ -176,7 +176,7 @@ export const d2a = {
         color: "emerald",
       },
       {
-        id: "java-avance",
+        id: "javaAvance",
         name: "Java Avancé",
         credits: 6,
         icon: Coffee,
