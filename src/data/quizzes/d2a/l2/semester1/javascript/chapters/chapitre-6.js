@@ -6,221 +6,171 @@ export const chapter6 = {
       id: 1,
       question: "Qu'est-ce que jQuery en informatique ?",
       options: [
-        "Un framework CSS",
-        "Une bibliothèque JavaScript légère",
-        "Un serveur web compact",
-        "Un langage de programmation"
+        "Framework CSS",
+        "Bibliothèque JavaScript légère",
+        "Serveur web compact",
+        "Langage de programmation",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
-      question: "Quel symbole sert d'alias principal pour appeler jQuery ?",
-      options: [
-        "&",
-        "@",
-        "#",
-        "$"
-      ],
-      answer: 3
+      question: "Symbole servant d'alias principal pour appeler jQuery ?",
+      options: ["&", "@", "#", "$"],
+      answer: 3,
     },
     {
       id: 3,
-      question: "Comment sélectionne-t-on tous les éléments de classe 'menu' ?",
-      options: [
-        "$('.menu')",
-        "$('#menu')",
-        "$('menu')",
-        "jQuery.get('menu')"
-      ],
-      answer: 0
+      question: "Comment sélectionner tous les éléments de classe 'menu' ?",
+      options: ["$('.menu')", "$('#menu')", "$('menu')", "jQuery.get('menu')"],
+      answer: 0,
     },
     {
       id: 4,
-      question: "Comment sélectionne-t-on un élément unique ayant l'ID 'titre' ?",
+      question: "Comment sélectionner un élément unique par son ID 'titre' ?",
       options: [
         "$('.titre')",
         "$('titre')",
         "$('#titre')",
-        "jQuery.id('titre')"
+        "jQuery.id('titre')",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 5,
-      question: "Quelle méthode jQuery équivaut à la propriété innerHTML ?",
-      options: [
-        "text()",
-        "html()",
-        "val()",
-        "content()"
-      ],
-      answer: 1
+      question: "Méthode jQuery équivalente à la propriété innerHTML ?",
+      options: ["text()", "html()", "val()", "content()"],
+      answer: 1,
     },
     {
       id: 6,
-      question: "Quelle méthode modifie ou récupère la valeur d'un champ d'input ?",
-      options: [
-        "text()",
-        "html()",
-        "attr()",
-        "val()"
-      ],
-      answer: 3
+      question: "Méthode récupérant ou modifiant la valeur d'un input ?",
+      options: ["text()", "html()", "attr()", "val()"],
+      answer: 3,
     },
     {
       id: 7,
-      question: "Quelle fonction attend le chargement complet du DOM avant d'agir ?",
+      question: "Fonction attendant le chargement du DOM avant d'agir ?",
       options: [
-        "$(document).ready() ou $(function())",
+        "$(document).ready()",
         "$(window).load()",
         "$.start()",
-        "$(document).setup()"
+        "$(document).setup()",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 8,
-      question: "Quelle méthode jQuery masque instantanément un élément HTML ?",
-      options: [
-        "hide()",
-        "fadeOut()",
-        "slideUp()",
-        "invisible()"
-      ],
-      answer: 0
+      question: "Méthode jQuery masquant instantanément un élément ?",
+      options: ["hide()", "fadeOut()", "slideUp()", "invisible()"],
+      answer: 0,
     },
     {
       id: 9,
-      question: "Que fait précisément la méthode jQuery slideUp() ?",
+      question: "Que fait précisément la méthode slideUp() ?",
       options: [
-        "Déplace l'élément vers le haut",
-        "Masque l'élément en l'enroulant vers le haut",
-        "Affiche l'élément avec un fondu",
-        "Augmente la taille de la police"
+        "Déplacement vertical",
+        "Masquage en enroulement",
+        "Fondu d'affichage",
+        "Changement de police",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 10,
-      question: "Quelle méthode applique un effet de fondu transparent progressif ?",
-      options: [
-        "slideToggle()",
-        "animate()",
-        "fadeToggle()",
-        "hide()"
-      ],
-      answer: 2
+      question: "Méthode appliquant un effet de fondu progressif ?",
+      options: ["slideToggle()", "animate()", "fadeToggle()", "hide()"],
+      answer: 2,
     },
     {
       id: 11,
-      question: "Quelle méthode universelle attache un événement en jQuery ?",
-      options: [
-        "bind()",
-        "on()",
-        "click()",
-        "addEventListener()"
-      ],
-      answer: 1
+      question: "Méthode universelle attachant un événement en jQuery ?",
+      options: ["bind()", "on()", "click()", "addEventListener()"],
+      answer: 1,
     },
     {
       id: 12,
-      question: "Comment ajoute-t-on une classe CSS à un élément en jQuery ?",
+      question: "Comment ajouter une classe CSS à un élément ?",
       options: [
         "css('classe')",
         "setClass('classe')",
         "addClass('classe')",
-        "append('classe')"
+        "append('classe')",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 13,
-      question: "Quelle méthode jQuery supprime ou alterne la présence d'une classe CSS ?",
+      question: "Méthode alternant la présence d'une classe CSS ?",
       options: [
         "toggleClass()",
         "switchClass()",
         "removeClass()",
-        "alterClass()"
+        "alterClass()",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 14,
-      question: "Comment modifier directement le style CSS 'color' en rouge avec jQuery ?",
+      question: "Comment modifier le style CSS 'color' en rouge ?",
       options: [
         "element.style('color', 'red')",
         "$('element').css('color', 'red')",
         "$('element').color('red')",
-        "$('element').attr('color', 'red')"
+        "$('element').attr('color', 'red')",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 15,
-      question: "Quelle méthode supprime définitivement un élément du DOM ?",
-      options: [
-        "empty()",
-        "remove()",
-        "clear()",
-        "detach()"
-      ],
-      answer: 1
+      question: "Méthode supprimant définitivement un élément du DOM ?",
+      options: ["empty()", "remove()", "clear()", "detach()"],
+      answer: 1,
     },
     {
       id: 16,
-      question: "Quelle méthode vide le contenu interne d'un élément sans le supprimer ?",
-      options: [
-        "remove()",
-        "delete()",
-        "empty()",
-        "clean()"
-      ],
-      answer: 2
+      question: "Méthode vidant le contenu d'un élément sans le supprimer ?",
+      options: ["remove()", "delete()", "empty()", "clean()"],
+      answer: 2,
     },
     {
       id: 17,
-      question: "Quelle méthode permet de modifier ou lire un attribut HTML (ex: src, href) ?",
-      options: [
-        "attr()",
-        "prop()",
-        "val()",
-        "css()"
-      ],
-      answer: 0
+      question: "Méthode lisant ou modifiant un attribut HTML (src, href) ?",
+      options: ["attr()", "prop()", "val()", "css()"],
+      answer: 0,
     },
     {
       id: 18,
-      question: "Que permet de faire la méthode performante animate() ?",
+      question: "Utilité de la méthode animate() ?",
       options: [
-        "Créer des transitions CSS personnalisées via des objets",
-        "Lancer des vidéos HTML5",
-        "Générer des images GIF",
-        "Ajouter des bruitages sonores"
+        "Créer des transitions CSS personnalisées",
+        "Lancer des vidéos",
+        "Générer des GIF",
+        "Ajouter des sons",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 19,
-      question: "À quoi sert le chaînage d'instructions en jQuery (ex: $('#id').show().text('Ok')) ?",
+      question: "À quoi sert le chaînage d'instructions jQuery ?",
       options: [
-        "À créer des boucles infinies",
-        "À exécuter plusieurs méthodes d'affilée sur un même élément",
-        "À fusionner deux variables distinctes",
-        "À sécuriser le code contre le piratage"
+        "Créer des boucles",
+        "Exécuter plusieurs méthodes sur un élément",
+        "Fusionner des variables",
+        "Sécuriser le code",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 20,
-      question: "Que vaut '$(this)' à l'intérieur d'un écouteur d'événement jQuery ?",
+      question: "Que vaut '$(this)' dans un écouteur d'événement jQuery ?",
       options: [
-        "L'objet window global",
-        "L'élément HTML cible enveloppé dans un objet jQuery",
-        "La fonction parente",
-        "Le document de base"
+        "Objet window global",
+        "L'élément cible enveloppé dans un objet jQuery",
+        "Fonction parente",
+        "Document de base",
       ],
-      answer: 1
-    }
-  ]
+      answer: 1,
+    },
+  ],
 };

@@ -4,223 +4,158 @@ export const chapter2 = {
   questions: [
     {
       id: 1,
-      question: "Quel mot-clé moderne déclare une variable à portée de bloc mutable ?",
-      options: [
-        "var",
-        "let",
-        "const",
-        "global"
-      ],
-      answer: 1
+      question: "Mot-clé moderne déclarant une variable de bloc mutable ?",
+      options: ["var", "let", "const", "global"],
+      answer: 1,
     },
     {
       id: 2,
-      question: "Que provoque la réaffectation d'une variable déclarée avec const ?",
+      question: "Effet d'une réaffectation sur une variable 'const' ?",
       options: [
-        "Le code l'ignore",
-        "Elle change de valeur",
-        "Une erreur de type (TypeError)",
-        "Elle devient undefined"
+        "Ignoré",
+        "La valeur change",
+        "Erreur de type (TypeError)",
+        "Devient undefined",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 3,
-      question: "Quelle est la portée d'une variable déclarée avec 'var' ?",
+      question: "Portée d'une variable déclarée avec 'var' ?",
       options: [
         "Portée de bloc",
-        "Portée globale uniquement",
+        "Portée globale seule",
         "Portée de fonction",
-        "Portée de fichier"
+        "Portée de fichier",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 4,
-      question: "Quel terme désigne l'accès à une variable avant sa déclaration ?",
-      options: [
-        "Le shadowing",
-        "Le hoisting (Levage)",
-        "La closure",
-        "Le binding"
-      ],
-      answer: 1
+      question: "Accès à une variable avant sa déclaration ?",
+      options: ["Shadowing", "Hoisting (Levage)", "Closure", "Binding"],
+      answer: 1,
     },
     {
       id: 5,
-      question: "Quel type de données représente l'absence d'une valeur initialisée ?",
-      options: [
-        "null",
-        "undefined",
-        "NaN",
-        "false"
-      ],
-      answer: 1
+      question: "Type représentant l'absence d'une valeur initialisée ?",
+      options: ["null", "undefined", "NaN", "false"],
+      answer: 1,
     },
     {
       id: 6,
       question: "Que renvoie l'expression : typeof null ?",
-      options: [
-        "'null'",
-        "'undefined'",
-        "'object'",
-        "'boolean'"
-      ],
-      answer: 2
+      options: ["'null'", "'undefined'", "'object'", "'boolean'"],
+      answer: 2,
     },
     {
       id: 7,
-      question: "Quelle est la différence fondamentale entre == et === ?",
+      question: "Différence fondamentale entre == et === ?",
       options: [
-        "Aucune différence",
+        "Aucune",
         "=== vérifie aussi l'égalité des types",
-        "== compare uniquement le type",
-        "=== fait une conversion forcée"
+        "== compare le type seul",
+        "=== force la conversion",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 8,
       question: "Laquelle de ces valeurs n'est PAS considérée comme 'falsy' ?",
-      options: [
-        "0",
-        "'' (chaîne vide)",
-        "null",
-        "[] (tableau vide)"
-      ],
-      answer: 3
+      options: ["0", "'' (chaîne vide)", "null", "[] (tableau vide)"],
+      answer: 3,
     },
     {
       id: 9,
-      question: "Quel est le résultat de l'évaluation de : '5' + 2 ?",
-      options: [
-        "7",
-        "52",
-        "NaN",
-        "TypeError"
-      ],
-      answer: 1
+      question: "Résultat de l'évaluation de : '5' + 2 ?",
+      options: ["7", "52", "NaN", "TypeError"],
+      answer: 1,
     },
     {
       id: 10,
-      question: "Quel est le résultat de l'évaluation de : '5' - 2 ?",
-      options: [
-        "3",
-        "52",
-        "NaN",
-        "TypeError"
-      ],
-      answer: 0
+      question: "Résultat de l'évaluation de : '5' - 2 ?",
+      options: ["3", "52", "NaN", "TypeError"],
+      answer: 0,
     },
     {
       id: 11,
-      question: "Quelle boucle ES6 permet de parcourir directement les VALEURS d'un tableau ?",
-      options: [
-        "for...in",
-        "for...of",
-        "while",
-        "do...while"
-      ],
-      answer: 1
+      question: "Boucle parcourant directement les VALEURS d'un tableau ?",
+      options: ["for...in", "for...of", "while", "do...while"],
+      answer: 1,
     },
     {
       id: 12,
-      question: "Quelle boucle ES6 permet de parcourir les CLÉS ou INDICES d'un objet/tableau ?",
-      options: [
-        "for...in",
-        "for...of",
-        "foreach",
-        "repeat"
-      ],
-      answer: 0
+      question: "Boucle parcourant les CLÉS ou INDICES d'un objet/tableau ?",
+      options: ["for...in", "for...of", "foreach", "repeat"],
+      answer: 0,
     },
     {
       id: 13,
-      question: "Quelle est la particularité de la boucle do...while ?",
+      question: "Particularité de la boucle do...while ?",
       options: [
-        "Elle ne s'exécute jamais",
-        "Elle s'exécute au moins une fois",
-        "Elle est plus rapide que for",
-        "Elle évite les boucles infinies"
+        "Ne s'exécute jamais",
+        "S'exécute au moins une fois",
+        "Plus rapide que for",
+        "Évite les boucles infinies",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 14,
-      question: "Quelle syntaxe définit une fonction fléchée à retour implicite ?",
+      question: "Syntaxe d'une fonction fléchée à retour implicite ?",
       options: [
         "const carre = x => x * x;",
         "const carre = (x) { x * x };",
         "function carre(x) => x * x;",
-        "const carre = x => return x * x;"
+        "const carre = x => return x * x;",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 15,
-      question: "Quelle est la valeur de retour par défaut d'une fonction sans instruction return ?",
-      options: [
-        "null",
-        "0",
-        "undefined",
-        "false"
-      ],
-      answer: 2
+      question: "Valeur de retour par défaut d'une fonction sans return ?",
+      options: ["null", "0", "undefined", "false"],
+      answer: 2,
     },
     {
       id: 16,
       question: "Comment appelle-t-on une fonction qui s'appelle elle-même ?",
-      options: [
-        "Une fonction anonyme",
-        "Une fonction récursive",
-        "Une fonction callback",
-        "Une closure"
-      ],
-      answer: 1
+      options: ["Anonyme", "Récursive", "Callback", "Closure"],
+      answer: 1,
     },
     {
       id: 17,
       question: "Qu'est-ce qu'une expression de fonction anonyme ?",
       options: [
-        "Une fonction sans nom stockée dans une variable",
-        "Une fonction fléchée uniquement",
-        "Une fonction qui n'a pas d'arguments",
-        "Une fonction masquée du débogueur"
+        "Fonction sans nom dans une variable",
+        "Fonction fléchée seule",
+        "Fonction sans argument",
+        "Fonction masquée",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 18,
-      question: "Comment appelle-t-on une fonction passée en argument d'une autre fonction ?",
+      question: "Fonction passée en argument d'une autre fonction ?",
       options: [
-        "Une méthode",
-        "Un paramètre par défaut",
-        "Un callback",
-        "Une fonction fléchée"
+        "Méthode",
+        "Paramètre par défaut",
+        "Callback",
+        "Fonction fléchée",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 19,
-      question: "Quel opérateur ES6 permet de définir des paramètres par défaut ?",
-      options: [
-        "L'opérateur de coalescence ??",
-        "L'opérateur d'affectation =",
-        "Le ternaire ?",
-        "L'opérateur rest (...)"
-      ],
-      answer: 1
+      question: "Opérateur ES6 définissant des paramètres par défaut ?",
+      options: ["Coalescence ??", "Affectation =", "Ternaire ?", "Rest (...)"],
+      answer: 1,
     },
     {
       id: 20,
       question: "Que renvoie l'expression globale : Number('123abc') ?",
-      options: [
-        "123",
-        "NaN",
-        "TypeError",
-        "undefined"
-      ],
-      answer: 1
-    }
-  ]
+      options: ["123", "NaN", "TypeError", "undefined"],
+      answer: 1,
+    },
+  ],
 };

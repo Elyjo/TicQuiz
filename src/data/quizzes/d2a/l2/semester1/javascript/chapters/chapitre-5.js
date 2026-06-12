@@ -4,223 +4,190 @@ export const chapter5 = {
   questions: [
     {
       id: 1,
-      question: "Que signifie précisément l'acronyme DOM ?",
+      question: "Signification précise de l'acronyme DOM ?",
       options: [
         "Data Object Management",
         "Document Object Model",
         "Digital Office Mechanism",
-        "Document Option Mode"
+        "Document Option Mode",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 2,
-      question: "Quel objet global représente le point d'entrée du DOM dans le navigateur ?",
-      options: [
-        "window",
-        "document",
-        "html",
-        "screen"
-      ],
-      answer: 1
+      question: "Objet global représentant le point d'entrée du DOM ?",
+      options: ["window", "document", "html", "screen"],
+      answer: 1,
     },
     {
       id: 3,
-      question: "Quelle méthode sélectionne un élément unique via son identifiant HTML ?",
+      question: "Méthode sélectionnant un élément unique via son identifiant ?",
       options: [
         "getElementsByClassName()",
         "querySelector()",
         "getElementById()",
-        "getElementsById()"
+        "getElementsById()",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 4,
-      question: "Que retourne querySelectorAll() si aucun élément ne correspond ?",
+      question:
+        "Que retourne querySelectorAll() si aucun élément n'est trouvé ?",
       options: [
         "null",
         "undefined",
         "Une NodeList vide",
-        "Un tableau contenant [null]"
+        "Un tableau avec [null]",
       ],
-      answer: 2
+      answer: 2,
     },
     {
       id: 5,
-      question: "Quelle propriété modifie le texte brut d'un élément sans interpréter les balises ?",
-      options: [
-        "innerHTML",
-        "textContent",
-        "value",
-        "outerHTML"
-      ],
-      answer: 1
+      question:
+        "Propriété modifiant le texte brut sans interpréter les balises ?",
+      options: ["innerHTML", "textContent", "value", "outerHTML"],
+      answer: 1,
     },
     {
       id: 6,
-      question: "Quelle propriété permet de lire ou modifier le contenu HTML interne d'un nœud ?",
-      options: [
-        "textContent",
-        "innerText",
-        "innerHTML",
-        "src"
-      ],
-      answer: 2
+      question: "Propriété permettant de lire ou modifier le HTML interne ?",
+      options: ["textContent", "innerText", "innerHTML", "src"],
+      answer: 2,
     },
     {
       id: 7,
-      question: "Quelle méthode crée un nouvel élément HTML en mémoire ?",
+      question: "Méthode créant un nouvel élément HTML en mémoire ?",
       options: [
         "document.createElement()",
         "document.newElement()",
         "document.appendChild()",
-        "document.makeElement()"
+        "document.makeElement()",
       ],
-      answer: 0
+      answer: 0,
     },
     {
       id: 8,
-      question: "Quelle méthode insère un nœud enfant à la fin d'un élément parent ?",
+      question: "Méthode insérant un nœud enfant à la fin d'un parent ?",
       options: [
         "prepend()",
         "appendChild()",
         "insertBefore()",
-        "replaceChild()"
+        "replaceChild()",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 9,
-      question: "Comment supprime-t-on un élément enfant spécifique du DOM ?",
+      question: "Comment supprimer un élément enfant spécifique du DOM ?",
       options: [
         "parent.deleteChild(enfant)",
         "enfant.remove() ou parent.removeChild(enfant)",
         "document.clear(enfant)",
-        "enfant.destroy()"
+        "enfant.destroy()",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 10,
-      question: "Quelle est la méthode standard pour attacher un écouteur d'événement ?",
+      question: "Méthode standard pour attacher un écouteur d'événement ?",
       options: [
         "onclick()",
         "addEventListener()",
         "attachEvent()",
-        "listenEvent()"
+        "listenEvent()",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 11,
-      question: "Quel événement se déclenche à la validation finale d'un formulaire HTML ?",
-      options: [
-        "click",
-        "submit",
-        "change",
-        "input"
-      ],
-      answer: 1
+      question: "Événement déclenché à la validation finale d'un formulaire ?",
+      options: ["click", "submit", "change", "input"],
+      answer: 1,
     },
     {
       id: 12,
-      question: "Quelle méthode de l'objet événement annule son action par défaut ?",
+      question: "Méthode annulant l'action par défaut d'un événement ?",
       options: [
         "e.stopPropagation()",
         "e.preventDefault()",
         "e.stop()",
-        "e.cancel()"
+        "e.cancel()",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 13,
-      question: "Quelle méthode de l'objet événement bloque la remontée (bubbling) de l'événement ?",
+      question: "Méthode bloquant la remontée (bubbling) d'un événement ?",
       options: [
         "e.preventDefault()",
         "e.stopPropagation()",
         "e.cancelBubble()",
-        "e.freeze()"
+        "e.freeze()",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 14,
-      question: "Comment ajoute-t-on de manière propre une classe CSS à un élément ?",
+      question: "Manière propre d'ajouter une classe CSS à un élément ?",
       options: [
         "element.className = 'classe'",
         "element.classList.add('classe')",
         "element.classList.push('classe')",
-        "element.style.add('classe')"
+        "element.style.add('classe')",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 15,
-      question: "Quel événement détecte l'écriture en temps réel dans un champ de texte ?",
-      options: [
-        "change",
-        "input",
-        "blur",
-        "focus"
-      ],
-      answer: 1
+      question: "Événement détectant l'écriture en temps réel dans un champ ?",
+      options: ["change", "input", "blur", "focus"],
+      answer: 1,
     },
     {
       id: 16,
-      question: "Quel événement s'exécute lorsqu'un élément perd le focus utilisateur ?",
-      options: [
-        "focus",
-        "blur",
-        "change",
-        "leave"
-      ],
-      answer: 1
+      question: "Événement s'exécutant quand un élément perd le focus ?",
+      options: ["focus", "blur", "change", "leave"],
+      answer: 1,
     },
     {
       id: 17,
-      question: "Dans un addEventListener, à quoi fait référence le mot-clé 'this' (hors fonction fléchée) ?",
+      question: "Dans addEventListener, à quoi fait référence 'this' ?",
       options: [
-        "À l'objet window",
-        "À l'élément du DOM qui a déclenché l'écouteur",
-        "À l'objet événement",
-        "Au document entier"
+        "window",
+        "L'élément ayant déclenché l'écouteur",
+        "L'objet événement",
+        "Le document",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 18,
-      question: "Quel objet permet de stocker des données locales persistantes sans limite de session ?",
-      options: [
-        "sessionStorage",
-        "cookies",
-        "localStorage",
-        "window.data"
-      ],
-      answer: 2
+      question: "Objet stockant des données locales persistantes ?",
+      options: ["sessionStorage", "cookies", "localStorage", "window.data"],
+      answer: 2,
     },
     {
       id: 19,
-      question: "Quelle est la nature des collections d'éléments renvoyées par getElementsByTagName() ?",
+      question: "Nature de la collection renvoyée par getElementsByTagName() ?",
       options: [
-        "Un tableau JavaScript classique (Array)",
-        "Une collection HTML dynamique (HTMLCollection)",
-        "Une NodeList statique",
-        "Une chaîne JSON"
+        "Tableau classique",
+        "HTMLCollection dynamique",
+        "NodeList statique",
+        "Chaîne JSON",
       ],
-      answer: 1
+      answer: 1,
     },
     {
       id: 20,
-      question: "Quelle méthode vérifie si une classe CSS spécifique est appliquée à un élément ?",
+      question: "Méthode vérifiant la présence d'une classe CSS ?",
       options: [
-        "element.classList.has('classe')",
-        "element.classList.contains('classe')",
-        "element.classList.check('classe')",
-        "element.className.includes('classe')"
+        "classList.has()",
+        "classList.contains()",
+        "classList.check()",
+        "className.includes()",
       ],
-      answer: 1
-    }
-  ]
+      answer: 1,
+    },
+  ],
 };
