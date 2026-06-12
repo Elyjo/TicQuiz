@@ -20,7 +20,7 @@ export const chapter3 = {
         "127.0.0.1 et 192.168.0.1",
         "0.0.0.0 et 255.255.255.255",
         "192.168.0.0 et 192.168.0.255",
-        "Unicast direct vers serveur",
+        "Unicast vers serveur",
       ],
       answer: 1,
     },
