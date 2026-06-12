@@ -4,144 +4,119 @@ export const chapter4 = {
   questions: [
     {
       id: 1,
-      question: "Qu'est-ce qu'une entité dans un MCD Merise ?",
+      question: "Qu'est-ce qu'une entité ?",
       options: [
-        "Une table contenant du code SQL",
-        "La modélisation d'un objet concret ou abstrait du monde réel ayant une existence propre",
-        "Un lien logique entre deux fichiers textuels",
-        "Une colonne de données numériques"
+        "Table SQL",
+        "Objet concret ou abstrait avec existence propre",
+        "Lien entre fichiers",
+        "Colonne numérique"
       ],
       answer: 1
     },
     {
       id: 2,
-      question: "Comment appelle-t-on une caractéristique élémentaire qui décrit une entité ou une association ?",
-      options: [
-        "Un identifiant",
-        "Une propriété (ou attribut)",
-        "Une occurrence",
-        "Une cardinalité"
-      ],
+      question: "Caractéristique élémentaire décrivant une entité ?",
+      options: ["Identifiant", "Propriété (ou attribut)", "Occurrence", "Cardinalité"],
       answer: 1
     },
     {
       id: 3,
-      question: "Qu'est-ce qu'une occurrence (ou individu) par rapport à une entité ?",
+      question: "Qu'est-ce qu'une occurrence ?",
       options: [
-        "Un exemplaire ou un enregistrement particulier de cette entité",
-        "Le nombre total de lignes dans la base de données",
-        "Le type de données de l'identifiant",
-        "Une erreur de redondance"
+        "Un exemplaire ou enregistrement particulier",
+        "Nombre total de lignes",
+        "Type de l'identifiant",
+        "Erreur de redondance"
       ],
       answer: 0
     },
     {
       id: 4,
-      question: "Quelle est le rôle obligatoire de l'identifiant d'une entité ?",
+      question: "Rôle obligatoire de l'identifiant ?",
       options: [
-        "Permettre de trier les données par ordre alphabétique",
-        "Désigner de façon unique chaque occurrence de l'entité",
-        "Créer un lien direct avec le serveur web",
-        "Empêcher la suppression des lignes"
+        "Trier par ordre alphabétique",
+        "Désigner de façon unique chaque occurrence",
+        "Créer un lien web",
+        "Empêcher la suppression"
       ],
       answer: 1
     },
     {
       id: 5,
-      question: "Comment représente-t-on graphiquement l'identifiant d'une entité dans un schéma MCD ?",
-      options: [
-        "Il est écrit en italique",
-        "Il est souligné (et souvent placé en tête de liste)",
-        "Il est encadré par des pointillés",
-        "Il est précédé d'une étoile (*)"
-      ],
+      question: "Représentation graphique de l'identifiant ?",
+      options: ["En italique", "Souligné", "Pointillés", "Précédé d'une étoile"],
       answer: 1
     },
     {
       id: 6,
-      question: "Qu'est-ce qu'une association (ou relation) dans un MCD ?",
+      question: "Qu'est-ce qu'une association ?",
       options: [
-        "Un fichier de configuration informatique",
-        "Un lien sémantique entre deux ou plusieurs entités",
-        "Une clé étrangère physique",
-        "Une commande d'insertion de données"
+        "Fichier de configuration",
+        "Lien sémantique entre entités",
+        "Clé étrangère",
+        "Commande d'insertion"
       ],
       answer: 1
     },
     {
       id: 7,
-      question: "Comment appelle-t-on le nombre d'entités connectées à une même association ?",
-      options: [
-        "La cardinalité",
-        "La dimension de l'association",
-        "L'indice de transitivité",
-        "La multiplicité relationnelle"
-      ],
+      question: "Nombre d'entités connectées à une association ?",
+      options: ["Cardinalité", "Dimension de l'association", "Indice de transitivité", "Multiplicité"],
       answer: 1
     },
     {
       id: 8,
       question: "Qu'est-ce qu'une association réflexive ?",
       options: [
-        "Une association qui relie une entité à elle-même",
-        "Une association qui n'a pas de propriétés",
-        "Une relation impossible à traduire au niveau logique",
-        "Une association reliant plus de quatre entités"
+        "Association d'une entité avec elle-même",
+        "Association sans propriété",
+        "Relation intraduisible",
+        "Lien entre +4 entités"
       ],
       answer: 0
     },
     {
       id: 9,
-      question: "Que représente la cardinalité minimale (ex: 0 ou 1) dans un MCD ?",
+      question: "Que représente la cardinalité minimale ?",
       options: [
-        "Le nombre minimum de fois qu'une occurrence de l'entité participe à l'association",
-        "Le nombre minimal de colonnes dans la table",
-        "La taille en octets de l'identifiant",
-        "Le nombre de clés étrangères requises"
+        "Nombre minimum de participations d'une occurrence",
+        "Nombre minimal de colonnes",
+        "Taille en octets",
+        "Clés étrangères requises"
       ],
       answer: 0
     },
     {
       id: 10,
-      question: "Que représente la cardinalité maximale (ex: 1 ou n) dans un MCD ?",
+      question: "Que représente la cardinalité maximale ?",
       options: [
-        "Le nombre maximum de fois qu'une occurrence de l'entité peut participer à l'association",
-        "La limite de stockage du SGBD",
-        "Le nombre total de lignes de la table",
-        "Le nombre d'utilisateurs simultanés"
+        "Nombre maximum de participations d'une occurrence",
+        "Limite du SGBD",
+        "Nombre total de lignes",
+        "Utilisateurs simultanés"
       ],
       answer: 0
     },
     {
       id: 11,
-      question: "Si un étudiant appartient à un et un seul groupe de TD, quelle est sa cardinalité du côté de l'association ?",
-      options: [
-        "0,n",
-        "1,1",
-        "0,1",
-        "1,n"
-      ],
+      question: "Cardinalité d'un étudiant inscrit dans UN SEUL groupe ?",
+      options: ["0,n", "1,1", "0,1", "1,n"],
       answer: 1
     },
     {
       id: 12,
-      question: "Si un groupe de TD peut contenir entre 0 et 35 étudiants, quelle est sa cardinalité du côté de l'association ?",
-      options: [
-        "1,1",
-        "0,n",
-        "1,n",
-        "0,1"
-      ],
+      question: "Cardinalité d'un groupe contenant de 0 à n étudiants ?",
+      options: ["1,1", "0,n", "1,n", "0,1"],
       answer: 1
     },
     {
       id: 13,
-      question: "Une association dans un MCD peut-elle posséder des propriétés propres ?",
+      question: "Une association peut-elle avoir des propriétés ?",
       options: [
-        "Non, c'est théoriquement impossible",
-        "Oui, si ces propriétés dépendent des entités reliées (ex: Quantité dans une vente)",
-        "Uniquement si l'association est de dimension supérieure à 3",
-        "Seulement si ce sont des propriétés de type Date"
+        "Non, impossible",
+        "Oui, si elles dépendent des entités reliées (ex: Quantité)",
+        "Si dimension supérieure à 3",
+        "Seulement de type Date"
       ],
       answer: 1
     },
@@ -149,77 +124,57 @@ export const chapter4 = {
       id: 14,
       question: "Qu'est-ce qu'un dictionnaire des données ?",
       options: [
-        "Un manuel d'utilisation SQL",
-        "Un document recensant de façon exhaustive toutes les propriétés à intégrer dans le MCD",
-        "Un répertoire contenant les mots de passe de la base",
-        "Le code source du composant React"
+        "Manuel SQL",
+        "Document recensant toutes les propriétés du MCD",
+        "Répertoire de mots de passe",
+        "Code source React"
       ],
       answer: 1
     },
     {
       id: 15,
-      question: "Quelle règle interdit d'avoir deux propriétés portant le même nom pour désigner des choses différentes ?",
-      options: [
-        "L'élimination des synonymes",
-        "L'élimination des polysèmes",
-        "La règle d'atomicité",
-        "La normalisation 2FN"
-      ],
+      question: "Règle interdisant un même nom pour deux choses différentes ?",
+      options: ["Élimination des synonymes", "Élimination des polysèmes", "Atomicité", "2FN"],
       answer: 1
     },
     {
       id: 16,
-      question: "Que signifie le principe d'atomicité d'une propriété dans un MCD ?",
+      question: "Principe d'atomicité d'une propriété ?",
       options: [
-        "La propriété doit être chiffrée",
-        "La propriété n'est pas décomposable en sous-informations (ex: Ville et Code Postal séparés)",
-        "La propriété doit obligatoirement être un nombre entier",
-        "La propriété est partagée par toutes les entités"
+        "Chiffrement requis",
+        "Non décomposable en sous-informations",
+        "Nombre entier obligatoire",
+        "Partagée par tous"
       ],
       answer: 1
     },
     {
       id: 17,
-      question: "Dans une relation sémantique 'Un auteur écrit des livres', de quoi 'écrit' est-il le nom ?",
-      options: [
-        "De l'entité",
-        "De l'association",
-        "De l'identifiant",
-        "De l'occurrence"
-      ],
+      question: "Dans 'Un auteur écrit des livres', qu'est-ce que 'écrit' ?",
+      options: ["L'entité", "L'association", "L'identifiant", "L'occurrence"],
       answer: 1
     },
     {
       id: 18,
       question: "Qu'est-ce qu'une dépendance fonctionnelle (A -> B) ?",
       options: [
-        "Une fonction informatique écrite en langage C",
-        "La connaissance d'une valeur de A détermine une et une seule valeur de B",
-        "Le lien réseau entre deux ordinateurs",
-        "Une contrainte de clé étrangère au format SQL"
+        "Fonction en langage C",
+        "La valeur de A détermine une seule valeur de B",
+        "Lien réseau",
+        "Contrainte SQL"
       ],
       answer: 1
     },
     {
       id: 19,
-      question: "Le Modèle Conceptuel des Données (MCD) dépend-il du type de SGBD (MySQL, Oracle, PostgreSQL...) ?",
-      options: [
-        "Oui, totalement",
-        "Non, il est purement conceptuel et indépendant de tout choix technique ou logiciel",
-        "Uniquement pour le choix des types numériques",
-        "Seulement si l'application est en ligne"
-      ],
+      question: "Le MCD dépend-il du type de SGBD (MySQL, Oracle) ?",
+      options: ["Oui, totalement", "Non, indépendant de la technique", "Pour les types numériques", "Si appli en ligne"],
       answer: 1
     },
     {
       id: 20,
-      question: "Quelle est l'étape suivante immédiate après la validation du MCD dans la méthode Merise ?",
-      options: [
-        "L'écriture du code HTML/CSS",
-        "La dérivation en Modèle Logique des Données (MLD)",
-        "L'installation du serveur Ubuntu",
-        "La configuration du serveur DHCP"
-      ],
+      question: "Étape immédiate après la validation du MCD ?",
+      options: ["Code HTML/CSS", "Dérivation en MLD", "Serveur Ubuntu", "Configuration DHCP"],
       answer: 1
     }
   ]
