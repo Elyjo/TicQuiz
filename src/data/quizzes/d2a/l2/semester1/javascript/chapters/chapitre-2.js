@@ -1,5 +1,5 @@
-export const chapterJs2 = {
-  id: "js-chapter-2",
+export const chapter2 = {
+  id: "chapter-2",
   title: "Variables, Types et Fonctions",
   questions: [
     {

@@ -6,6 +6,8 @@ import { Quiz as systemexploitationQuiz } from "@/data/quizzes/d2a/l1/semester1/
 import { Quiz as linuxQuiz } from "@/data/quizzes/d2a/l2/semester1/linux/chapters";
 import { Quiz as reseauxQuiz } from "@/data/quizzes/d2a/l2/semester1/reseaux/chapters";
 import { Quiz as langageCQuiz } from "@/data/quizzes/d2a/l2/semester1/langageC/chapters";
+import { Quiz as javascriptQuiz } from "@/data/quizzes/d2a/l2/semester1/javascript/chapters";
+import { Quiz as meriseQuiz } from "@/data/quizzes/d2a/l2/semester1/merise/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -14,4 +16,7 @@ export const quizRegistry = {
   linux: linuxQuiz,
   reseaux: reseauxQuiz,
   langageC: langageCQuiz,
+  javascript: javascriptQuiz,
+  merise: meriseQuiz,
+
 };
