@@ -1,6 +1,6 @@
 export const chapter4 = {
   id: "chapter-4",
-  title: "Configuration Cisco : Routeurs et DHCP",
+  title: "Config Routeurs et DHCP",
   questions: [
     {
       id: 1,
