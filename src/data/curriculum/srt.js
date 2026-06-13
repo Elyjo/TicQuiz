@@ -212,7 +212,7 @@ export const srt = {
         color: "cyan",
       },
       {
-        id: "reseaux-etendus",
+        id: "reseauxEtendus",
         name: "Réseaux Étendus",
         credits: 8,
         icon: Network,
