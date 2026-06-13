@@ -18,7 +18,7 @@ export default function BackButton({ fallback = "/" }) {
   return (
     <button
       onClick={handleBack}
-      className="absolute top-6 left-6 z-50 w-11 h-11 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl flex items-center justify-center active:scale-95 transition"
+      className="fixed top-6 left-6 z-50 w-11 h-11 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl flex items-center justify-center active:scale-95 transition"
       aria-label="Retour"
     >
       <ArrowLeft size={18} className="text-white/80" />
