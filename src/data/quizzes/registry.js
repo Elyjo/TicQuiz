@@ -18,6 +18,7 @@ import { Quiz as routageQuiz } from "@/data/quizzes/srt/l3/semester1/routage/cha
 import { Quiz as reseauxEtendusQuiz } from "@/data/quizzes/srt/l3/semester1/reseauxEtendus/chapters";
 import { Quiz as securiteQuiz } from "@/data/quizzes/srt/l3/semester1/securite/chapters";
 import { Quiz as webServicesQuiz } from "@/data/quizzes/srt/l3/semester1/webServices/chapters";
+import { Quiz as htmlCssQuiz } from "@/data/quizzes/d2a/l1/semester2/htmlCss/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -38,5 +39,6 @@ export const quizRegistry = {
   reseauxEtendus: reseauxEtendusQuiz,
   securite: securiteQuiz,
   webServices: webServicesQuiz,
+  htmlCss: htmlCssQuiz,
 
 };

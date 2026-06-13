@@ -51,15 +51,15 @@ export const d2a = {
 
     semester2: [
       {
-        id: "html-css",
+        id: "htmlCss",
         name: "HTML & CSS",
         credits: 6,
         icon: Globe,
         color: "cyan",
       },
       {
-        id: "algorithmique-avance",
-        name: "Algorithmique",
+        id: "algorithmique2",
+        name: "Algorithmique II",
         credits: 8,
         icon: Code2,
         color: "violet",
