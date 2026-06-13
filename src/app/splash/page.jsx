@@ -13,7 +13,7 @@ export default function Splash() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/login");
-    }, 4000);
+    }, 4800);
 
     return () => clearTimeout(timer);
   }, [router]);
