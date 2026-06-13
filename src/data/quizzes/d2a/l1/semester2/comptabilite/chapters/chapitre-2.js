@@ -1,0 +1,126 @@
+export const chapter2 = {
+  id: "chapter-2",
+  title: "Structure du Bilan",
+  questions: [
+    {
+      id: 1,
+      question: "Actif immobilisé",
+      options: ["Long terme", "Court terme", "Dette", "Stock"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Actif circulant",
+      options: ["Court terme", "Long terme", "Dette", "Immo"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Immobilisation corporelle",
+      options: ["Terrains/Bâtiments", "Stock", "Cash", "Dette"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Immobilisation incorporelle",
+      options: ["Brevets/Fonds comm.", "Stock", "Cash", "Dette"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Stocks",
+      options: ["Actif circulant", "Immo", "Dette", "Capitaux"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Créances clients",
+      options: ["Actif circulant", "Immo", "Dette", "Capitaux"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Disponibilités",
+      options: ["Cash/Banque", "Stock", "Bâtiment", "Dette"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Passif",
+      options: ["Origine fonds", "Emploi", "Stock", "Cash"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Capitaux propres",
+      options: ["Passif", "Actif", "Immo", "Stock"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Dettes financières",
+      options: ["Emprunts", "Stocks", "Clients", "Cash"],
+      answer: 1,
+    }, // Correction logique: Dette bancaire
+    {
+      id: 11,
+      question: "Dettes fournisseurs",
+      options: ["Passif circulant", "Immo", "Capitaux", "Cash"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Équilibre bilan",
+      options: ["Actif = Passif", "Actif > Passif", "Actif < Passif", "Nul"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Amortissement",
+      options: ["Diminution valeur immo", "Dette", "Cash", "Stock"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Provision",
+      options: ["Risque/Charge", "Bénéfice", "Cash", "Dette"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Immobilisation financière",
+      options: ["Titres participation", "Stock", "Bâtiment", "Dette"],
+      answer: 0,
+    },
+    {
+      id: 16,
+      question: "Passif non courant",
+      options: ["Long terme", "Court terme", "Cash", "Stock"],
+      answer: 0,
+    },
+    {
+      id: 17,
+      question: "Passif courant",
+      options: ["Court terme", "Long terme", "Immo", "Capitaux"],
+      answer: 0,
+    },
+    {
+      id: 18,
+      question: "Capital social",
+      options: ["Apport associés", "Dette", "Stock", "Cash"],
+      answer: 0,
+    },
+    {
+      id: 19,
+      question: "Résultat",
+      options: ["Passif", "Actif", "Stock", "Dette"],
+      answer: 0,
+    },
+    {
+      id: 20,
+      question: "Patrimoine",
+      options: ["Actif net", "Bénéfice", "Cash", "Dette"],
+      answer: 0,
+    },
+  ],
+};
