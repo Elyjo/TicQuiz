@@ -20,6 +20,9 @@ import { Quiz as securiteQuiz } from "@/data/quizzes/srt/l3/semester1/securite/c
 import { Quiz as webServicesQuiz } from "@/data/quizzes/srt/l3/semester1/webServices/chapters";
 import { Quiz as htmlCssQuiz } from "@/data/quizzes/d2a/l1/semester2/htmlCss/chapters";
 import { Quiz as algorithmique2Quiz } from "@/data/quizzes/d2a/l1/semester2/algorithmique2/chapters";
+import { Quiz as reseaux2Quiz } from "@/data/quizzes/d2a/l1/semester2/reseaux/chapters";
+
+
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -42,5 +45,6 @@ export const quizRegistry = {
   webServices: webServicesQuiz,
   htmlCss: htmlCssQuiz,
   algorithmique2: algorithmique2Quiz,
+  reseaux: reseaux2Quiz,
 
 };
