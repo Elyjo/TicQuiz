@@ -16,6 +16,7 @@ import { Quiz as iotQuiz } from "@/data/quizzes/srt/l2/semester1/iot/chapters";
 import { Quiz as reseauxSansFilQuiz } from "@/data/quizzes/srt/l2/semester1/reseauxSansFil/chapters";
 import { Quiz as routageQuiz } from "@/data/quizzes/srt/l3/semester1/routage/chapters";
 import { Quiz as reseauxEtendusQuiz } from "@/data/quizzes/srt/l3/semester1/reseauxEtendus/chapters";
+import { Quiz as securiteQuiz } from "@/data/quizzes/srt/l3/semester1/securite/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -34,5 +35,6 @@ export const quizRegistry = {
   reseauxSansFil: reseauxSansFilQuiz,
   routage: routageQuiz,
   reseauxEtendus: reseauxEtendusQuiz,
+  securite: securiteQuiz,
 
 };
