@@ -22,6 +22,7 @@ import { Quiz as htmlCssQuiz } from "@/data/quizzes/d2a/l1/semester2/htmlCss/cha
 import { Quiz as algorithmique2Quiz } from "@/data/quizzes/d2a/l1/semester2/algorithmique2/chapters";
 import { Quiz as reseaux2Quiz } from "@/data/quizzes/d2a/l1/semester2/reseaux/chapters";
 import { Quiz as comptabiliteQuiz } from "@/data/quizzes/d2a/l1/semester2/comptabilite/chapters";
+import { Quiz as electriciteQuiz } from "@/data/quizzes/srt/l1/semester2/electricite/chapters";
 
 
 export const quizRegistry = {
@@ -47,5 +48,6 @@ export const quizRegistry = {
   algorithmique2: algorithmique2Quiz,
   reseaux: reseaux2Quiz,
   comptabilite: comptabiliteQuiz,
+  electricite: electriciteQuiz,
 
 };

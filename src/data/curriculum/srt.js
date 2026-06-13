@@ -52,39 +52,11 @@ export const srt = {
 
     semester2: [
       {
-        id: "introduction-reseaux",
-        name: "Introduction Réseaux",
+        id: "reseaux",
+        name: "Réseaux",
         credits: 11,
         icon: Network,
         color: "cyan",
-      },
-      {
-        id: "structure-donnees",
-        name: "Structure de Données",
-        credits: 11,
-        icon: Database,
-        color: "emerald",
-      },
-      {
-        id: "algebre-2",
-        name: "Algèbre II",
-        credits: 12,
-        icon: Calculator,
-        color: "emerald",
-      },
-      {
-        id: "analyse-2",
-        name: "Analyse II",
-        credits: 12,
-        icon: Calculator,
-        color: "cyan",
-      },
-      {
-        id: "statistiques-probabilites",
-        name: "Statistiques & Probabilités",
-        credits: 12,
-        icon: Calculator,
-        color: "yellow",
       },
       {
         id: "electricite",

@@ -65,13 +65,6 @@ export const d2a = {
         color: "violet",
       },
       {
-        id: "probabilites",
-        name: "Probabilités",
-        credits: 4,
-        icon: Calculator,
-        color: "yellow",
-      },
-      {
         id: "comptabilite",
         name: "Comptabilité",
         credits: 4,
