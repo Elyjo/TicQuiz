@@ -226,14 +226,14 @@ export const srt = {
         color: "red",
       },
       {
-        id: "java-avance",
+        id: "javaAvance",
         name: "Java Avancé",
         credits: 15,
         icon: Coffee,
         color: "orange",
       },
       {
-        id: "web-services",
+        id: "webServices",
         name: "Web Services",
         credits: 15,
         icon: Globe,

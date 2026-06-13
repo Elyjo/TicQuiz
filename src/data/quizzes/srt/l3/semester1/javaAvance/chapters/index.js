@@ -1,0 +1,1 @@
+export { Quiz } from "@/data/quizzes/d2a/l3/semester1/javaAvance/chapters";
