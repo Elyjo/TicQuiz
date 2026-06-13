@@ -1,5 +1,5 @@
-export const chapter6 = {
-  id: "chapter-6",
+export const chapter3 = {
+  id: "chapter-3",
   title: "Procédures && Fonctions",
   questions: [
     {
