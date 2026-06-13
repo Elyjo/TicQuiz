@@ -71,7 +71,7 @@ export const d2a = {
         color: "emerald",
       },
       {
-        id: "reseaux",
+        id: "reseaux1",
         name: "Réseaux",
         credits: 6,
         icon: Network,
