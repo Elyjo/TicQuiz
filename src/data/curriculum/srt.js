@@ -66,7 +66,7 @@ export const srt = {
         color: "orange",
       },
       {
-        id: "traitement-signal",
+        id: "traitementSignal",
         name: "Traitement du Signal",
         credits: 7,
         icon: Signal,

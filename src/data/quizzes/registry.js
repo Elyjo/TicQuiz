@@ -23,6 +23,8 @@ import { Quiz as algorithmique2Quiz } from "@/data/quizzes/d2a/l1/semester2/algo
 import { Quiz as reseaux2Quiz } from "@/data/quizzes/d2a/l1/semester2/reseaux/chapters";
 import { Quiz as comptabiliteQuiz } from "@/data/quizzes/d2a/l1/semester2/comptabilite/chapters";
 import { Quiz as electriciteQuiz } from "@/data/quizzes/srt/l1/semester2/electricite/chapters";
+import { Quiz as traitementSignalQuiz } from "@/data/quizzes/srt/l1/semester2/traitementSignal/chapters";
+import { tr } from "framer-motion/client";
 
 
 export const quizRegistry = {
@@ -49,5 +51,6 @@ export const quizRegistry = {
   reseaux: reseaux2Quiz,
   comptabilite: comptabiliteQuiz,
   electricite: electriciteQuiz,
+  traitementSignal: traitementSignalQuiz,
 
 };
