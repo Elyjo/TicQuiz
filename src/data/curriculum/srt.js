@@ -226,13 +226,6 @@ export const srt = {
         color: "red",
       },
       {
-        id: "maintenance-peripheriques",
-        name: "Maintenance Périphériques",
-        credits: 7,
-        icon: Monitor,
-        color: "yellow",
-      },
-      {
         id: "java-avance",
         name: "Java Avancé",
         credits: 15,
@@ -245,13 +238,6 @@ export const srt = {
         credits: 15,
         icon: Globe,
         color: "pink",
-      },
-      {
-        id: "developpement-mobile",
-        name: "Développement Mobile",
-        credits: 15,
-        icon: Smartphone,
-        color: "emerald",
       },
     ],
 
