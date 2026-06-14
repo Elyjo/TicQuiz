@@ -24,7 +24,7 @@ export default function LandingScreen() {
     }
 
     localStorage.setItem("ticquiz_user", cleanPseudo);
-    router.push("/home");
+    router.push("/department");
   };
 
   const handleChange = (e) => {

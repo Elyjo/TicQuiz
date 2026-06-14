@@ -18,10 +18,27 @@ export default function HomePage() {
   useEffect(() => {
     const saved = localStorage.getItem("userPath");
 
-    if (saved) {
-      setPath(JSON.parse(saved));
+    if (!saved) {
+      router.replace("/department");
+      return;
     }
-  }, []);
+
+    let parsed;
+
+    try {
+      parsed = JSON.parse(saved);
+    } catch (e) {
+      router.replace("/department");
+      return;
+    }
+
+    if (!parsed.dept || !parsed.level || !parsed.semester) {
+      router.replace("/department");
+      return;
+    }
+
+    setPath(parsed);
+  }, [router]);
 
   return (
     <motion.main
@@ -37,7 +54,6 @@ export default function HomePage() {
       <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
         {/* Header */}
         <div>
-
           <h1 className="mt-2 text-3xl font-black text-white">Bonjour 👋</h1>
 
           {path && (
