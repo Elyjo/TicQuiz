@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import {
   ArrowRight,
   Code2,
@@ -13,18 +14,32 @@ import {
 export default function DepartmentScreen() {
   const router = useRouter();
 
+  // 🔒 protection si onboarding déjà terminé
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const saved = localStorage.getItem("userPath");
+
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+
+        if (parsed.dept && parsed.level) {
+          router.replace("/home");
+        }
+      } catch (e) {
+        console.log("Invalid userPath");
+      }
+    }
+  }, [router]);
+
+  // 💾 save department proprement
   const saveDepartment = (dept) => {
-    const existing = localStorage.getItem("userPath");
-
-    const userPath = existing
-      ? JSON.parse(existing)
-      : {
-          dept: null,
-          level: null,
-          semester: null,
-        };
-
-    userPath.dept = dept;
+    const userPath = {
+      dept,
+      level: null,
+      semester: null,
+    };
 
     localStorage.setItem("userPath", JSON.stringify(userPath));
 

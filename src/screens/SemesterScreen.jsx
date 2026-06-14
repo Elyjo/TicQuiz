@@ -22,8 +22,22 @@ export default function SemesterScreen() {
   const level = params?.level;
 
   useEffect(() => {
+    const saved = localStorage.getItem("userPath");
+
+    if (!saved) {
+      router.replace("/department");
+      return;
+    }
+
+    const parsed = JSON.parse(saved);
+
+    if (!parsed.dept || !parsed.level) {
+      router.replace("/department");
+      return;
+    }
+
     if (!VALID_DEPTS.includes(dept) || !VALID_LEVELS.includes(level)) {
-      router.replace("/");
+      router.replace("/department");
     }
   }, [dept, level, router]);
 

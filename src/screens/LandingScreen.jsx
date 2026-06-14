@@ -13,23 +13,22 @@ export default function LandingScreen() {
   const handleStart = () => {
     const cleanPseudo = pseudo.trim();
 
-    if (!cleanPseudo) {
-      setError("Veuillez entrer votre pseudo");
-      return;
-    }
-
     if (cleanPseudo.length < 5) {
       setError("Le pseudo doit contenir au moins 5 caractères");
       return;
     }
 
+    // stockage utilisateur
     localStorage.setItem("ticquiz_user", cleanPseudo);
+
+    // flag onboarding démarré
+    localStorage.setItem("hasStartedApp", "true");
+
     router.push("/department");
   };
 
   const handleChange = (e) => {
     setPseudo(e.target.value);
-
     if (error) setError("");
   };
 
@@ -39,7 +38,7 @@ export default function LandingScreen() {
     }
   };
 
-  const isValid = pseudo.trim().length >= 5 && pseudo.trim().length <= 10;
+  const isValid = pseudo.trim().length >= 5;
 
   return (
     <main className="relative min-h-screen bg-[#020617] overflow-hidden text-white flex flex-col items-center">
@@ -50,12 +49,8 @@ export default function LandingScreen() {
 
       {/* HERO */}
       <section className="relative z-10 flex flex-col items-center mt-28 px-6 text-center w-full max-w-sm">
-        {/* ICON */}
         <div className="relative">
-          <div className="absolute inset-0 rounded-full bg-violet-500 blur-[70px] opacity-0" />
-
-            <img src="/logobf.png" className="w-32 h-32" />
-          
+          <img src="/logobf.png" className="w-32 h-32" />
         </div>
 
         <div className="mt-12 flex flex-row items-center gap-2 text-slate-300/70 text-sm">
@@ -74,6 +69,7 @@ export default function LandingScreen() {
             <span>Progresser</span>
           </div>
         </div>
+
         {/* INPUT */}
         <div className="mt-10 w-full">
           <input
@@ -83,11 +79,14 @@ export default function LandingScreen() {
             placeholder="Entrez votre pseudo"
             maxLength={10}
             className={`w-full px-5 py-4 rounded-2xl bg-white/5 border backdrop-blur-xl outline-none transition
-              ${error ? "border-red-500/60" : "border-white/10 focus:border-violet-400/50"}
+              ${
+                error
+                  ? "border-red-500/60"
+                  : "border-white/10 focus:border-violet-400/50"
+              }
             `}
           />
 
-          {/* ERROR MESSAGE */}
           {error && (
             <p className="text-red-400 text-xs mt-2 text-left">{error}</p>
           )}
@@ -102,12 +101,12 @@ export default function LandingScreen() {
           onClick={handleStart}
           disabled={!isValid}
           className={`mt-10 w-full px-6 py-4 rounded-2xl font-semibold transition
-    ${
-      isValid
-        ? "bg-violet-600 hover:bg-violet-700"
-        : "bg-violet-600/30 cursor-not-allowed"
-    }
-  `}
+            ${
+              isValid
+                ? "bg-violet-600 hover:bg-violet-700"
+                : "bg-violet-600/30 cursor-not-allowed"
+            }
+          `}
         >
           Commencer
         </button>
