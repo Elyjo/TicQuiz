@@ -101,13 +101,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* Citation */}
-        <div className="mt-1 p-5 text-center">
-          <p className="text-slate-300 italic">
-            "Chaque quiz terminé est un pas vers la réussite."
-          </p>
-        </div>
       </section>
     </motion.main>
   );
