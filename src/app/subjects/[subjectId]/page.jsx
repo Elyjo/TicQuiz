@@ -25,18 +25,37 @@ export default function SubjectPage() {
   const colors = colorClasses.violet;
 
   useEffect(() => {
-    const loadChapters = async () => {
-      try {
-        const savedPath = JSON.parse(localStorage.getItem("userPath"));
+  const saved = localStorage.getItem("userPath");
 
+  if (!saved) {
+    router.replace("/home");
+    return;
+  }
+
+  let parsed;
+
+  try {
+    parsed = JSON.parse(saved);
+  } catch (e) {
+    router.replace("/home");
+    return;
+  }
+
+  // 🔒 validation stricte
+  if (!parsed?.dept || !parsed?.level || !parsed?.semester) {
+    router.replace("/home");
+    return;
+  }
+
+  const loadChapters = async () => {
+      try {
         const module = await import(
-          `@/data/quizzes/${savedPath.dept}/${savedPath.level}/${savedPath.semester}/${params.subjectId}/chapters`
+          `@/data/quizzes/${parsed.dept}/${parsed.level}/${parsed.semester}/${params.subjectId}/chapters`
         );
 
         setChapters(Object.values(module.Quiz));
         setAvailable(true);
       } catch (err) {
-        console.log("Quiz non disponible :", err);
         setAvailable(false);
       } finally {
         setLoading(false);
@@ -46,7 +65,8 @@ export default function SubjectPage() {
     if (params.subjectId) {
       loadChapters();
     }
-  }, [params.subjectId]);
+  }, [params.subjectId, router]);
+
 
   const container = {
     hidden: {},

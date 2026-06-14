@@ -8,7 +8,35 @@ import { quizRegistry } from "@/data/quizzes/registry";
 import { useRouter } from "next/navigation";
 
 export default function QuizPage() {
+  const router = useRouter();
   const params = useParams();
+
+
+  useEffect(() => {
+    if (!router || !params?.subjectId || !params?.chapterId) return;
+
+    const saved = localStorage.getItem("userPath");
+
+    if (!saved) {
+      router.replace("/home");
+      return;
+    }
+
+    let parsed;
+
+    try {
+      parsed = JSON.parse(saved);
+    } catch (e) {
+      router.replace("/home");
+      return;
+    }
+
+    if (!parsed?.dept || !parsed?.level || !parsed?.semester) {
+      router.replace("/home");
+      return;
+    }
+  }, [params, router]);
+   
 
   const [questions, setQuestions] = useState([]);
 
@@ -31,42 +59,49 @@ export default function QuizPage() {
   };
 
   useEffect(() => {
-    if (finished) return;
+    if (!finished) return;
 
-    const timer = setInterval(() => {
-      setSeconds((prev) => prev + 1);
-    }, 1000);
+    // empêche retour arrière vers quiz
+    window.history.pushState(null, "", window.location.href);
 
-    return () => clearInterval(timer);
+    const blockBack = () => {
+      window.history.pushState(null, "", window.location.href);
+    };
+
+    window.addEventListener("popstate", blockBack);
+
+    return () => {
+      window.removeEventListener("popstate", blockBack);
+    };
   }, [finished]);
 
   useEffect(() => {
-    // console.log("params =", params);
+    const subjectId = params?.subjectId;
+    const chapterId = params?.chapterId;
 
-    const subjectQuiz = quizRegistry?.[params.subjectId];
+    if (!subjectId || !chapterId) return;
 
-    // console.log("subjectQuiz =", subjectQuiz);
-
-    const chapter = subjectQuiz?.[params.chapterId];
-
-    // console.log("chapter =", chapter);
+    const subjectQuiz = quizRegistry?.[subjectId];
+    const chapter = subjectQuiz?.[chapterId];
 
     if (chapter?.questions) {
       setQuestions(chapter.questions);
     }
-  }, [params.subjectId, params.chapterId]);
+  }, [params]);
+
+  const subjectId = params?.subjectId;
+  const chapterId = params?.chapterId;
 
   useEffect(() => {
-    if (!finished || !questions.length) return;
+    if (!finished || !questions.length || !subjectId || !chapterId) return;
 
     const percentage = Math.round((score / questions.length) * 100);
 
     const savedScores = JSON.parse(localStorage.getItem("quizScores")) || {};
 
-    savedScores[params.subjectId] = {
-      ...(savedScores[params.subjectId] || {}),
-
-      [params.chapterId]: {
+    savedScores[subjectId] = {
+      ...(savedScores[subjectId] || {}),
+      [chapterId]: {
         score,
         total: questions.length,
         percentage,
@@ -76,7 +111,7 @@ export default function QuizPage() {
     };
 
     localStorage.setItem("quizScores", JSON.stringify(savedScores));
-  }, [finished, score, questions, seconds, params.subjectId, params.chapterId]);
+  }, [finished, score, questions, seconds, subjectId, chapterId]);
 
   const formatTime = () => {
     const mins = Math.floor(seconds / 60);
@@ -85,7 +120,15 @@ export default function QuizPage() {
     return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
   };
 
-  const router = useRouter();
+  useEffect(() => {
+    if (finished) return;
+
+    const interval = setInterval(() => {
+      setSeconds((s) => s + 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [finished]);
 
   if (!questions.length) {
     return (
@@ -188,9 +231,7 @@ export default function QuizPage() {
               <div className="mt-3 flex justify-between">
                 <span className="text-slate-400">Temps</span>
 
-                <span className="text-white font-semibold">
-                  {formatTime()}
-                </span>
+                <span className="text-white font-semibold">{formatTime()}</span>
               </div>
             </div>
 
@@ -203,7 +244,7 @@ export default function QuizPage() {
             </button>
 
             <button
-              onClick={() => router.push(`/subjects/${params.subjectId}`)}
+              onClick={() => router.replace(`/subjects/${params.subjectId}`)}
               className="mt-12 w-full h-14 rounded-2xl border border-white/10 bg-white/[0.03] text-white font-medium"
             >
               Retour aux chapitres

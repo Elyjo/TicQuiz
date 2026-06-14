@@ -79,7 +79,7 @@ export default function SubjectsPage() {
     const saved = localStorage.getItem("userPath");
 
     if (!saved) {
-      //  console.log("NO USER PATH");
+      router.replace("/department");
       return;
     }
 
@@ -88,27 +88,23 @@ export default function SubjectsPage() {
     try {
       savedPath = JSON.parse(saved);
     } catch (e) {
-      //  console.log("INVALID USER PATH");
+      router.replace("/department");
       return;
     }
 
-    if (!savedPath?.level || !savedPath?.semester) {
-      //  console.log("PATH INCOMPLETE", savedPath);
+    if (!savedPath?.dept || !savedPath?.level || !savedPath?.semester) {
+      router.replace("/department");
       return;
     }
 
     setPath(savedPath);
 
-    //const data = d2a?.[savedPath.level]?.[savedPath.semester] || [];
     const data =
       curriculums?.[savedPath.dept]?.[savedPath.level]?.[savedPath.semester] ||
       [];
 
-    //  console.log("SUBJECTS LOADED:", data);
-
     setSubjects(data);
-  }, []);
-
+  }, [router]);
   // ✅ SAME AS DEPARTMENT SCREEN
   const container = {
     hidden: {},

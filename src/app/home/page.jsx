@@ -14,6 +14,11 @@ import { useRouter } from "next/navigation";
 export default function HomePage() {
   const router = useRouter();
   const [path, setPath] = useState(null);
+  const [stats, setStats] = useState({
+    quizzes: 0,
+    questions: 0,
+    percentage: 0,
+  });
 
   useEffect(() => {
     const saved = localStorage.getItem("userPath");
@@ -39,6 +44,67 @@ export default function HomePage() {
 
     setPath(parsed);
   }, [router]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("quizScores");
+
+    if (!saved) return;
+
+    try {
+      const parsed = JSON.parse(saved);
+
+      let quizzes = 0;
+      let questions = 0;
+      let totalScore = 0;
+      let totalQuestions = 0;
+
+      Object.values(parsed).forEach((subject) => {
+        Object.values(subject).forEach((chapter) => {
+          quizzes += 1;
+          questions += chapter.total || 0;
+
+          totalScore += chapter.score || 0;
+          totalQuestions += chapter.total || 0;
+        });
+      });
+
+      const percentage =
+        totalQuestions > 0
+          ? Math.round((totalScore / totalQuestions) * 100)
+          : 0;
+
+      setStats({
+        quizzes,
+        questions,
+        percentage,
+      });
+    } catch (e) {
+      console.error("quizScores corrupted");
+    }
+  }, []);
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20, scale: 0.95 },
+    show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
 
   return (
     <motion.main
@@ -95,27 +161,44 @@ export default function HomePage() {
         <div className="mt-10">
           <h2 className="text-white font-bold text-lg mb-4">Progression</h2>
 
-          <div className="flex flex-col gap-12">
-            <div className="p-5">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col gap-6"
+          >
+            {/* Quiz */}
+            <motion.div
+              variants={item}
+              className="p-5"
+            >
               <BookOpen className="text-cyan-300 mb-3" />
-              <h3 className="text-white text-2xl font-black">0</h3>
+              <h3 className="text-white text-2xl font-black">{stats.quizzes}</h3>
               <p className="text-slate-400 text-sm">Quiz terminés</p>
-            </div>
+            </motion.div>
 
-            <div className="p-5">
+            {/* Questions */}
+            <motion.div
+              variants={item}
+              className="p-5"
+            >
               <Brain className="text-violet-300 mb-3" />
-              <h3 className="text-white text-2xl font-black">0</h3>
+              <h3 className="text-white text-2xl font-black">{stats.questions}</h3>
               <p className="text-slate-400 text-sm">Questions</p>
-            </div>
+            </motion.div>
 
-            <div className="col-span-2 p-5">
+            {/* Percentage */}
+            <motion.div
+              variants={item}
+              className="p-5"
+            >
               <TrendingUp className="text-emerald-300 mb-3" />
-
-              <h3 className="text-white text-2xl font-black">0%</h3>
-
+              <h3 className="text-white text-2xl font-black">
+                {stats.percentage}%
+              </h3>
               <p className="text-slate-400 text-sm">Taux de réussite</p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
     </motion.main>
