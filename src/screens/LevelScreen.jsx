@@ -28,6 +28,22 @@ export default function LevelScreen({ dept: deptProp }) {
 
   const handleSelect = (level) => {
     if (!dept) return;
+
+    const existing = localStorage.getItem("userPath");
+
+    const userPath = existing
+      ? JSON.parse(existing)
+      : {
+          dept: null,
+          level: null,
+          semester: null,
+        };
+
+    userPath.dept = dept;
+    userPath.level = level;
+
+    localStorage.setItem("userPath", JSON.stringify(userPath));
+
     router.push(`/department/${dept}/${level}`);
   };
 
@@ -57,7 +73,6 @@ export default function LevelScreen({ dept: deptProp }) {
 
       {/* CONTENT */}
       <section className="relative z-20 w-full max-w-sm min-h-screen px-5 py-8 flex flex-col items-center justify-center">
-
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,7 +81,6 @@ export default function LevelScreen({ dept: deptProp }) {
           className="flex flex-col items-center text-center"
         >
           <div className="relative">
-
             <div className="relative w-24 h-24 rounded-[28px] border border-white/20 bg-white/10 backdrop-blur-3xl flex items-center justify-center">
               <GraduationCap size={42} className="text-pink-300" />
             </div>
@@ -81,7 +95,8 @@ export default function LevelScreen({ dept: deptProp }) {
           </h1>
 
           <p className="mt-3 text-slate-300/70 text-sm leading-6">
-            Sélectionnez votre année universitaire pour continuer votre parcours.
+            Sélectionnez votre année universitaire pour continuer votre
+            parcours.
           </p>
         </motion.div>
 
@@ -100,7 +115,6 @@ export default function LevelScreen({ dept: deptProp }) {
           }}
           className="mt-10 flex flex-col gap-4 w-full"
         >
-
           {/* L1 */}
           <motion.button
             onClick={() => handleSelect("l1")}
@@ -217,7 +231,6 @@ export default function LevelScreen({ dept: deptProp }) {
               <ArrowRight className="text-rose-300" />
             </div>
           </motion.button>
-
         </motion.div>
       </section>
     </motion.main>

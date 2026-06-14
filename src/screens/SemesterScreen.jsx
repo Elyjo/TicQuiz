@@ -28,14 +28,22 @@ export default function SemesterScreen() {
   }, [dept, level, router]);
 
   const handleSelect = (semester) => {
-    localStorage.setItem(
-      "userPath",
-      JSON.stringify({
-        dept,
-        level,
-        semester: semester === "s1" ? "semester1" : "semester2",
-      }),
-    );
+    const existing = localStorage.getItem("userPath");
+
+    const userPath = existing
+      ? JSON.parse(existing)
+      : {
+          dept: null,
+          level: null,
+          semester: null,
+        };
+
+    userPath.dept = dept;
+    userPath.level = level;
+
+    userPath.semester = semester === "s1" ? "semester1" : "semester2";
+
+    localStorage.setItem("userPath", JSON.stringify(userPath));
 
     router.push("/subjects");
   };
@@ -62,7 +70,7 @@ export default function SemesterScreen() {
 
       {/* CONTENT */}
       <section className="relative z-20 w-full max-w-sm min-h-screen px-5 py-8 flex flex-col items-center justify-center">
-        {/* HEADER (même animation que LevelScreen) */}
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,7 +93,7 @@ export default function SemesterScreen() {
           </p>
         </motion.div>
 
-        {/* CARDS (même pattern EXACT LevelScreen) */}
+        {/* CARDS */}
         <motion.div
           initial="hidden"
           animate="show"

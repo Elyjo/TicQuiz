@@ -2,10 +2,34 @@
 
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, RadioTower, Computer, ArrowLeft } from "lucide-react";
+import {
+  ArrowRight,
+  Code2,
+  RadioTower,
+  Computer,
+  ArrowLeft,
+} from "lucide-react";
 
 export default function DepartmentScreen() {
   const router = useRouter();
+
+  const saveDepartment = (dept) => {
+    const existing = localStorage.getItem("userPath");
+
+    const userPath = existing
+      ? JSON.parse(existing)
+      : {
+          dept: null,
+          level: null,
+          semester: null,
+        };
+
+    userPath.dept = dept;
+
+    localStorage.setItem("userPath", JSON.stringify(userPath));
+
+    router.push(`/department/${dept}`);
+  };
 
   const container = {
     hidden: {},
@@ -56,7 +80,6 @@ export default function DepartmentScreen() {
 
       {/* CONTENT */}
       <section className="relative z-20 w-full max-w-sm min-h-screen px-5 py-8 flex flex-col items-center justify-center">
-
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -65,7 +88,6 @@ export default function DepartmentScreen() {
           className="flex flex-col items-center text-center"
         >
           <div className="relative">
-
             <div className="relative w-24 h-24 rounded-[28px] border border-white/20 bg-white/10 backdrop-blur-3xl flex items-center justify-center">
               <Computer size={42} className="text-violet-300" />
             </div>
@@ -91,12 +113,11 @@ export default function DepartmentScreen() {
           animate="show"
           className="mt-12 flex flex-col gap-5 w-full"
         >
-
           {/* D2A */}
           <motion.button
             variants={item}
             whileTap={{ scale: 0.98 }}
-            onClick={() => router.push("/department/d2a")}
+            onClick={() => saveDepartment("d2a")}
             className="relative overflow-hidden rounded-[34px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between"
           >
             <div className="absolute top-[-30px] right-[-30px] w-[120px] h-[120px] rounded-full bg-violet-500/20 blur-3xl" />
@@ -123,7 +144,7 @@ export default function DepartmentScreen() {
           <motion.button
             variants={item}
             whileTap={{ scale: 0.98 }}
-            onClick={() => router.push("/department/srt")}
+            onClick={() => saveDepartment("srt")}
             className="relative overflow-hidden rounded-[34px] border border-white/15 bg-white/[0.08] backdrop-blur-3xl p-5 flex items-center justify-between"
           >
             <div className="absolute bottom-[-30px] left-[-30px] w-[120px] h-[120px] rounded-full bg-cyan-500/20 blur-3xl" />
@@ -145,7 +166,6 @@ export default function DepartmentScreen() {
               <ArrowRight className="text-cyan-300" />
             </div>
           </motion.button>
-
         </motion.div>
       </section>
     </motion.main>
