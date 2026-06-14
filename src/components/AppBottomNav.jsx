@@ -7,6 +7,7 @@ export default function AppBottomNav() {
   const pathname = usePathname();
 
   const hiddenRoutes = [
+    "/",
     "/login",
     "/department",
     "/levels",

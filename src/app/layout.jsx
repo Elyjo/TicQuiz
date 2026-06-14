@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import AppBottomNav from "@/components/AppBottomNav";
 import "./global.css";
 import Shell from "@/components/Shell";
 
@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="min-h-full">
         <Shell>{children}</Shell>
+        <AppBottomNav />
       </body>
     </html>
   );
