@@ -118,20 +118,8 @@ export default function HomePage() {
       <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80" />
 
       <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
-        {/* Header */}
-        <div>
-          <h1 className="mt-2 text-3xl font-black text-white">Bonjour 👋</h1>
-
-          {path && (
-            <p className="mt-3 text-slate-400">
-              {path.dept?.toUpperCase()} • {path.level?.toUpperCase()} •{" "}
-              {path.semester === "semester1" ? "Semestre 1" : "Semestre 2"}
-            </p>
-          )}
-        </div>
-
         {/* Carte principale */}
-        <div className="mt-12 p-6">
+        <div className="mt-10 p-6">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 rounded-2xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
               <GraduationCap className="text-violet-300" />

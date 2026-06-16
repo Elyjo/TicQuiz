@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   User,
-  Settings,
   GraduationCap,
   RefreshCw,
   Info,
@@ -49,6 +48,29 @@ export default function ProfilePage() {
     alert("Statistiques réinitialisées.");
   };
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20, scale: 0.95 },
+    show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <motion.main
       initial={{ opacity: 0 }}
@@ -62,18 +84,15 @@ export default function ProfilePage() {
 
       <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
         {/* Student Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="mt-10 p-6"
-        >
+        <motion.div className="mt-10 p-6">
           <div className="flex flex-col items-center text-center">
             <div className="w-20 h-20 rounded-3xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
               <User size={34} className="text-violet-300" />
             </div>
 
-            <h2 className="mt-6 text-xl font-bold text-white">Étudiant</h2>
+            <h2 className="mt-6 text-xl font-bold text-white">
+              {path?.name || "Étudiant"}
+            </h2>
 
             {path && (
               <p className="mt-2 text-slate-400">
@@ -85,10 +104,15 @@ export default function ProfilePage() {
         </motion.div>
 
         {/* Settings */}
-        <div className="mt-24">
+        <motion.div
+          className="mt-24"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
           <div className="mt-10 flex flex-col gap-4">
-            {/* Change Path */}
-            <button
+            <motion.button
+              variants={item}
               onClick={handleChangePath}
               className="flex items-center justify-between p-5 rounded-2xl border border-white/10 bg-white/5"
             >
@@ -107,10 +131,10 @@ export default function ProfilePage() {
               </div>
 
               <ChevronRight size={18} className="text-slate-500" />
-            </button>
+            </motion.button>
 
-            {/* Reset Stats */}
-            <button
+            <motion.button
+              variants={item}
               onClick={handleResetStats}
               className="flex items-center justify-between p-5 rounded-2xl border border-white/10 bg-white/5"
             >
@@ -129,10 +153,12 @@ export default function ProfilePage() {
               </div>
 
               <ChevronRight size={18} className="text-slate-500" />
-            </button>
+            </motion.button>
 
-            {/* About */}
-            <div className="mt-24 p-5 rounded-2xl border border-white/10 bg-white/5">
+            <motion.div
+              variants={item}
+              className="mt-24 p-5 rounded-2xl border border-white/10 bg-white/5"
+            >
               <div className="flex items-center gap-3">
                 <Info size={20} className="text-violet-300" />
 
@@ -146,9 +172,9 @@ export default function ProfilePage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </motion.main>
   );
