@@ -10,6 +10,7 @@ import {
   Crown,
   ArrowLeft,
 } from "lucide-react";
+import { useEffect } from "react";
 
 const VALID_DEPTS = ["d2a", "srt"];
 
