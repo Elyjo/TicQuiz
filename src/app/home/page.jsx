@@ -122,10 +122,10 @@ export default function HomePage() {
 
       <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
         {/* Carte principale */}
-        <div className="mt-10 p-6">
+        <div className="p-6 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
-              <GraduationCap className="text-violet-300" />
+            <div className="px-3 py-3 rounded-2xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
+              <GraduationCap className="text-violet-300" size={24} />
             </div>
 
             <div>
