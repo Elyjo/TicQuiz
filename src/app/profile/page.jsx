@@ -99,7 +99,7 @@ export default function ProfilePage() {
 
       <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
         {/* Student Card */}
-        <motion.div className="mt-10 p-6">
+        <motion.div className="p-6">
           <div className="flex flex-col items-center text-center">
             <div className="w-20 h-20 rounded-3xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
               <User size={34} className="text-violet-300" />
@@ -238,9 +238,9 @@ export default function ProfilePage() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed top-6
-           bg-green-600 text-white px-5 py-3 
-           rounded-xl shadow-lg z-50 whitespace-nowrap"
+          className="fixed top-6 left-12
+           bg-green-600 text-white px-3 py-3 
+           rounded-2xl shadow-lg z-50 whitespace-nowrap"
         >
           Statistiques réinitialisées avec succès ✔
         </motion.div>
