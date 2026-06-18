@@ -15,6 +15,8 @@ export default function ProfilePage() {
   const router = useRouter();
 
   const [path, setPath] = useState(null);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem("userPath");
@@ -37,15 +39,17 @@ export default function ProfilePage() {
   };
 
   const handleResetStats = () => {
-    const confirmed = window.confirm(
-      "Voulez-vous vraiment réinitialiser toutes vos statistiques ?",
-    );
+    setShowConfirm(true);
+  };
 
-    if (!confirmed) return;
-
+  const confirmReset = () => {
     localStorage.removeItem("quizScores");
+    setShowConfirm(false);
+    setShowSuccess(true);
 
-    alert("Statistiques réinitialisées.");
+    setTimeout(() => {
+      setShowSuccess(false);
+    }, 2000);
   };
 
   const container = {
@@ -176,6 +180,60 @@ export default function ProfilePage() {
           </div>
         </motion.div>
       </section>
+      {/* MODAL CONFIRMATION */}
+      {showConfirm && (
+        <div
+          className="fixed inset-0 bg-black/40 backdrop-blur-md flex items-center justify-center z-50"
+          onClick={() => setShowConfirm(false)}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            onClick={(e) => e.stopPropagation()}
+            className="backdrop-blur-sm
+                 p-6 rounded-2xl w-[90%] max-w-md shadow-2xl"
+          >
+            <h2 className="text-lg font-bold mb-3 text-gray -900">
+              Confirmation
+            </h2>
+
+            <p className="mt-6 text-sm text-gray-700 mb-6">
+              Voulez-vous vraiment réinitialiser toutes vos statistiques ?
+            </p>
+
+            <div className="flex justify-end gap-3">
+              <button
+                onClick={() => setShowConfirm(false)}
+                className="px-4 py-2 bg-gray-200 rounded-lg"
+              >
+                Annuler
+              </button>
+
+              <button
+                onClick={confirmReset}
+                className="px-4 py-2 bg-red-600 text-white rounded-lg"
+              >
+                Confirmer
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      {/* MODAL SUCCESS */}
+      {showSuccess && (
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed top-6
+           bg-green-600 text-white px-5 py-3 
+           rounded-xl shadow-lg z-50 whitespace-nowrap"
+        >
+          Statistiques réinitialisées ✔
+        </motion.div>
+      )}
     </motion.main>
   );
 }
