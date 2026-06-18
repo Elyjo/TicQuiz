@@ -10,6 +10,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { decodeData } from "@/utils/secureStorage";
 
 export default function HomePage() {
   const router = useRouter();
@@ -51,7 +52,9 @@ export default function HomePage() {
     if (!saved) return;
 
     try {
-      const parsed = JSON.parse(saved);
+      const parsed = decodeData(saved);
+
+      if (!parsed) return;
 
       let quizzes = 0;
       let questions = 0;
@@ -156,30 +159,25 @@ export default function HomePage() {
             className="flex flex-col gap-6"
           >
             {/* Quiz */}
-            <motion.div
-              variants={item}
-              className="p-5"
-            >
+            <motion.div variants={item} className="p-5">
               <BookOpen className="text-cyan-300 mb-3" />
-              <h3 className="text-white text-2xl font-black">{stats.quizzes}</h3>
+              <h3 className="text-white text-2xl font-black">
+                {stats.quizzes}
+              </h3>
               <p className="text-slate-400 text-sm">Quiz terminés</p>
             </motion.div>
 
             {/* Questions */}
-            <motion.div
-              variants={item}
-              className="p-5"
-            >
+            <motion.div variants={item} className="p-5">
               <Brain className="text-violet-300 mb-3" />
-              <h3 className="text-white text-2xl font-black">{stats.questions}</h3>
+              <h3 className="text-white text-2xl font-black">
+                {stats.questions}
+              </h3>
               <p className="text-slate-400 text-sm">Questions</p>
             </motion.div>
 
             {/* Percentage */}
-            <motion.div
-              variants={item}
-              className="p-5"
-            >
+            <motion.div variants={item} className="p-5">
               <TrendingUp className="text-emerald-300 mb-3" />
               <h3 className="text-white text-2xl font-black">
                 {stats.percentage}%

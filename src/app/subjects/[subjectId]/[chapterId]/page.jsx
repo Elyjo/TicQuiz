@@ -6,11 +6,11 @@ import { CheckCircle2 } from "lucide-react";
 import { useParams } from "next/navigation";
 import { quizRegistry } from "@/data/quizzes/registry";
 import { useRouter } from "next/navigation";
+import { encodeData } from "@/utils/secureStorage";
 
 export default function QuizPage() {
   const router = useRouter();
   const params = useParams();
-
 
   useEffect(() => {
     if (!router || !params?.subjectId || !params?.chapterId) return;
@@ -36,7 +36,6 @@ export default function QuizPage() {
       return;
     }
   }, [params, router]);
-   
 
   const [questions, setQuestions] = useState([]);
 
@@ -110,7 +109,8 @@ export default function QuizPage() {
       },
     };
 
-    localStorage.setItem("quizScores", JSON.stringify(savedScores));
+    // localStorage.setItem("quizScores", JSON.stringify(savedScores));
+    localStorage.setItem("quizScores", encodeData(savedScores));
   }, [finished, score, questions, seconds, subjectId, chapterId]);
 
   const formatTime = () => {
