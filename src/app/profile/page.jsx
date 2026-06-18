@@ -19,6 +19,7 @@ export default function ProfilePage() {
   const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
+    let cancelled = false;
     const saved = localStorage.getItem("userPath");
 
     if (!saved) {
@@ -27,10 +28,20 @@ export default function ProfilePage() {
     }
 
     try {
-      setPath(JSON.parse(saved));
+      const savedPath = JSON.parse(saved);
+
+      queueMicrotask(() => {
+        if (!cancelled) {
+          setPath(savedPath);
+        }
+      });
     } catch {
       router.replace("/department");
     }
+
+    return () => {
+      cancelled = true;
+    };
   }, [router]);
 
   const handleChangePath = () => {
@@ -191,28 +202,28 @@ export default function ProfilePage() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
-            className="backdrop-blur-sm
+            className="profile-confirm-dialog backdrop-blur-sm
                  p-6 rounded-2xl w-[90%] max-w-md shadow-2xl"
           >
-            <h2 className="text-lg font-bold mb-3 text-gray -900">
+            <h2 className="profile-confirm-title text-lg font-bold mb-3">
               Confirmation
             </h2>
 
-            <p className="mt-6 text-sm text-gray-700 mb-6">
+            <p className="profile-confirm-copy mt-6 text-sm mb-6">
               Voulez-vous vraiment réinitialiser toutes vos statistiques ?
             </p>
 
             <div className="flex justify-end gap-3">
               <button
                 onClick={() => setShowConfirm(false)}
-                className="px-4 py-2 bg-gray-200 rounded-lg"
+                className="profile-confirm-cancel px-4 py-2 rounded-lg"
               >
                 Annuler
               </button>
 
               <button
                 onClick={confirmReset}
-                className="px-4 py-2 bg-red-600 text-white rounded-lg"
+                className="profile-confirm-danger px-4 py-2 rounded-lg"
               >
                 Confirmer
               </button>
@@ -231,7 +242,7 @@ export default function ProfilePage() {
            bg-green-600 text-white px-5 py-3 
            rounded-xl shadow-lg z-50 whitespace-nowrap"
         >
-          Statistiques réinitialisées ✔
+          Statistiques réinitialisées avec succès ✔
         </motion.div>
       )}
     </motion.main>

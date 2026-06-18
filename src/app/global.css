@@ -7,3 +7,26 @@ body{
   color:white;
   font-family:Arial, Helvetica, sans-serif;
 }
+
+.profile-confirm-dialog {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.profile-confirm-title {
+  color: #111827;
+}
+
+.profile-confirm-copy {
+  color: #374151;
+}
+
+.profile-confirm-cancel {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.profile-confirm-danger {
+  background-color: #dc2626;
+  color: #ffffff;
+}
