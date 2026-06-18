@@ -9,24 +9,27 @@ body{
 }
 
 .profile-confirm-dialog {
-  background-color: #ffffff;
-  color: #111827;
+  background-color: rgba(51, 26, 133, 0.265);
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
 }
 
 .profile-confirm-title {
-  color: #111827;
+  color: #ffffff;
 }
 
 .profile-confirm-copy {
-  color: #374151;
+  color: #cbd5e1;
 }
 
 .profile-confirm-cancel {
-  background-color: #e5e7eb;
-  color: #111827;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .profile-confirm-danger {
-  background-color: #dc2626;
+  background-color: rgba(220, 38, 38, 0.88);
   color: #ffffff;
 }
