@@ -14,6 +14,7 @@ import { decodeData } from "@/utils/secureStorage";
 
 export default function HomePage() {
   const router = useRouter();
+
   const [path, setPath] = useState(null);
   const [stats, setStats] = useState({
     quizzes: 0,
@@ -21,7 +22,10 @@ export default function HomePage() {
     percentage: 0,
   });
 
+  // PATH CHECK
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const saved = localStorage.getItem("userPath");
 
     if (!saved) {
@@ -29,31 +33,29 @@ export default function HomePage() {
       return;
     }
 
-    let parsed;
-
     try {
-      parsed = JSON.parse(saved);
+      const parsed = JSON.parse(saved);
+
+      if (!parsed?.dept || !parsed?.level || !parsed?.semester) {
+        router.replace("/department");
+        return;
+      }
+
+      setPath(parsed);
     } catch (e) {
       router.replace("/department");
-      return;
     }
+  }, []);
 
-    if (!parsed.dept || !parsed.level || !parsed.semester) {
-      router.replace("/department");
-      return;
-    }
-
-    setPath(parsed);
-  }, [router]);
-
+  // STATS LOAD
   useEffect(() => {
-    const saved = localStorage.getItem("quizScores");
+    if (typeof window === "undefined") return;
 
+    const saved = localStorage.getItem("quizScores");
     if (!saved) return;
 
     try {
       const parsed = decodeData(saved);
-
       if (!parsed) return;
 
       let quizzes = 0;
@@ -65,21 +67,18 @@ export default function HomePage() {
         Object.values(subject).forEach((chapter) => {
           quizzes += 1;
           questions += chapter.total || 0;
-
           totalScore += chapter.score || 0;
           totalQuestions += chapter.total || 0;
         });
       });
 
-      const percentage =
-        totalQuestions > 0
-          ? Math.round((totalScore / totalQuestions) * 100)
-          : 0;
-
       setStats({
         quizzes,
         questions,
-        percentage,
+        percentage:
+          totalQuestions > 0
+            ? Math.round((totalScore / totalQuestions) * 100)
+            : 0,
       });
     } catch (e) {
       console.error("quizScores corrupted");
@@ -90,9 +89,7 @@ export default function HomePage() {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
+      transition: { staggerChildren: 0.15 },
     },
   };
 
@@ -102,10 +99,7 @@ export default function HomePage() {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
 
@@ -115,14 +109,14 @@ export default function HomePage() {
       animate={{ opacity: 1 }}
       className="relative min-h-screen overflow-hidden bg-[#020617] pb-32"
     >
-      {/* Background */}
+      {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
-
       <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80" />
 
-      <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
-        {/* Carte principale */}
-        <div className="p-6 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm">
+      <section className="relative z-20 max-w-md md:max-w-2xl mx-auto px-5 py-8 md:py-12">
+        
+        {/* MAIN CARD */}
+        <div className="p-6 md:p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm">
           <div className="flex items-center gap-4">
             <div className="px-3 py-3 rounded-2xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
               <GraduationCap className="text-violet-300" size={24} />
@@ -132,7 +126,6 @@ export default function HomePage() {
               <h2 className="text-white font-bold text-lg">
                 Continuer mes révisions
               </h2>
-
               <p className="text-slate-400 text-sm">
                 Accède à tes matières et progresse chaque jour.
               </p>
@@ -148,18 +141,21 @@ export default function HomePage() {
           </button>
         </div>
 
-        {/* Stats */}
+        {/* STATS */}
         <div className="mt-10">
-          <h2 className="text-white font-bold text-lg mb-4">Progression</h2>
+          <h2 className="text-white font-bold text-lg mb-4">
+            Progression
+          </h2>
 
           <motion.div
             variants={container}
             initial="hidden"
             animate="show"
-            className="flex flex-col gap-6"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
-            {/* Quiz */}
-            <motion.div variants={item} className="p-5">
+            
+            {/* QUIZZES */}
+            <motion.div variants={item} className="p-5 md:p-6 rounded-3xl bg-white/5 border border-white/10">
               <BookOpen className="text-cyan-300 mb-3" />
               <h3 className="text-white text-2xl font-black">
                 {stats.quizzes}
@@ -167,8 +163,8 @@ export default function HomePage() {
               <p className="text-slate-400 text-sm">Quiz terminés</p>
             </motion.div>
 
-            {/* Questions */}
-            <motion.div variants={item} className="p-5">
+            {/* QUESTIONS */}
+            <motion.div variants={item} className="p-5 md:p-6 rounded-3xl bg-white/5 border border-white/10">
               <Brain className="text-violet-300 mb-3" />
               <h3 className="text-white text-2xl font-black">
                 {stats.questions}
@@ -176,14 +172,15 @@ export default function HomePage() {
               <p className="text-slate-400 text-sm">Questions</p>
             </motion.div>
 
-            {/* Percentage */}
-            <motion.div variants={item} className="p-5">
+            {/* PERCENTAGE */}
+            <motion.div variants={item} className="p-5 md:p-6 rounded-3xl bg-white/5 border border-white/10">
               <TrendingUp className="text-emerald-300 mb-3" />
               <h3 className="text-white text-2xl font-black">
                 {stats.percentage}%
               </h3>
               <p className="text-slate-400 text-sm">Taux de réussite</p>
             </motion.div>
+
           </motion.div>
         </div>
       </section>
