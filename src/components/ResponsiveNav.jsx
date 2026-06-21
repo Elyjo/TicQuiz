@@ -1,22 +1,38 @@
 "use client";
 
-import BottomNav from "./BottomNav";
-import Sidebar from "./Sidebar";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import AppBottomNav from "@/components/AppBottomNav";
+import Sidebar from "@/components/Sidebar"; // si tu l’as déjà
 
 export default function ResponsiveNav() {
-  const [isMobile, setIsMobile] = useState(true);
+  const pathname = usePathname();
 
-  useEffect(() => {
-    const checkScreen = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+  const hiddenRoutes = [
+    "/",
+    "/username",
+    "/department",
+    "/login",
+    "/levels",
+  ];
 
-    checkScreen();
-    window.addEventListener("resize", checkScreen);
+  const hideNav = hiddenRoutes.some(
+    (route) =>
+      pathname === route || pathname.startsWith(route + "/")
+  );
 
-    return () => window.removeEventListener("resize", checkScreen);
-  }, []);
+  if (hideNav) return null;
 
-  return isMobile ? <BottomNav /> : <Sidebar />;
+  return (
+    <>
+      {/* MOBILE */}
+      <div className="md:hidden">
+        <AppBottomNav />
+      </div>
+
+      {/* DESKTOP */}
+      <div className="hidden md:block">
+        <Sidebar />
+      </div>
+    </>
+  );
 }

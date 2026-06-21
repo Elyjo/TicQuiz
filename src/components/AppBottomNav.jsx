@@ -6,10 +6,17 @@ import BottomNav from "./BottomNav";
 export default function AppBottomNav() {
   const pathname = usePathname();
 
-  const hiddenRoutes = ["/" ,"/login", "/department", "/levels", "/subjects"];
+  const hiddenRoutes = [
+    "/",
+    "/username",
+    "/department",
+    "/login",
+    "/levels",
+    "/subjects",
+  ];
 
-  const hideNav = hiddenRoutes.some(
-    (route) => pathname === route || pathname.startsWith(route + "/")
+  const hideNav = hiddenRoutes.some((route) =>
+    pathname === route || pathname.startsWith(route + "/")
   );
 
   if (hideNav) return null;
