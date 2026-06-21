@@ -90,140 +90,133 @@ export default function ProfilePage() {
     <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="relative min-h-screen overflow-hidden bg-[#020617] pb-32"
+      className="relative min-h-screen overflow-hidden bg-[#020617]"
     >
-      {/* Background */}
+      {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
-
       <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80" />
 
-      <section className="relative z-20 max-w-sm mx-auto px-5 py-8">
-        {/* Student Card */}
-        <motion.div className="p-6">
-          <div className="flex flex-col items-center text-center">
-            <div className="w-20 h-20 rounded-3xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
-              <User size={34} className="text-violet-300" />
+      <section className="relative z-20 max-w-md md:max-w-2xl mx-auto px-5 py-10">
+        {/* PROFILE CARD */}
+        <div className="p-6 md:p-8 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm text-center">
+          <div className="w-20 h-20 mx-auto rounded-3xl bg-violet-500/10 border border-violet-400/20 flex items-center justify-center">
+            <User size={34} className="text-violet-300" />
+          </div>
+
+          <h2 className="mt-6 text-xl font-bold text-white">
+            {path?.name || "Étudiant"}
+          </h2>
+
+          {path && (
+            <p className="mt-2 text-slate-400 text-sm">
+              {path.dept?.toUpperCase()} • {path.level?.toUpperCase()} •{" "}
+              {path.semester === "semester1" ? "Semestre 1" : "Semestre 2"}
+            </p>
+          )}
+        </div>
+
+        {/* SETTINGS */}
+        <div className="mt-12 grid gap-4">
+          {/* CHANGE PATH */}
+          <button
+            onClick={handleChangePath}
+            className="
+            flex items-center justify-between
+            p-5 md:p-6
+            rounded-2xl
+            border border-white/10
+            bg-white/5
+            hover:bg-white/10
+            transition
+          "
+          >
+            <div className="flex items-center gap-3">
+              <GraduationCap size={20} className="text-cyan-300" />
+              <div className="text-left">
+                <p className="text-white font-medium">Modifier mon parcours</p>
+                <p className="text-xs text-slate-400">
+                  Département, niveau et semestre
+                </p>
+              </div>
             </div>
 
-            <h2 className="mt-6 text-xl font-bold text-white">
-              {path?.name || "Étudiant"}
-            </h2>
+            <ChevronRight size={18} className="text-slate-500" />
+          </button>
 
-            {path && (
-              <p className="mt-2 text-slate-400">
-                {path.dept?.toUpperCase()} • {path.level?.toUpperCase()} •{" "}
-                {path.semester === "semester1" ? "Semestre 1" : "Semestre 2"}
-              </p>
-            )}
+          {/* RESET STATS */}
+          <button
+            onClick={handleResetStats}
+            className="
+            flex items-center justify-between
+            p-5 md:p-6
+            rounded-2xl
+            border border-white/10
+            bg-white/5
+            hover:bg-white/10
+            transition
+          "
+          >
+            <div className="flex items-center gap-3">
+              <RefreshCw size={20} className="text-red-300" />
+              <div className="text-left">
+                <p className="text-white font-medium">
+                  Réinitialiser mes statistiques
+                </p>
+                <p className="text-xs text-slate-400">
+                  Supprimer tous les résultats
+                </p>
+              </div>
+            </div>
+
+            <ChevronRight size={18} className="text-slate-500" />
+          </button>
+
+          {/* INFO CARD */}
+          <div className="mt-40 md:mt-68 p-5 md:p-6 rounded-2xl border border-white/10 bg-white/5">
+            <div className="flex items-start gap-3">
+              <Info size={20} className="text-violet-300 mt-1" />
+
+              <div>
+                <p className="text-white font-medium">Tic Quiz</p>
+                <p className="text-xs text-slate-400 mt-1">Version 1.0.0</p>
+                <p className="text-xs text-slate-500 mt-2">
+                  Application de révision destinée aux étudiants.
+                </p>
+              </div>
+            </div>
           </div>
-        </motion.div>
-
-        {/* Settings */}
-        <motion.div
-          className="mt-24"
-          variants={container}
-          initial="hidden"
-          animate="show"
-        >
-          <div className="mt-10 flex flex-col gap-4">
-            <motion.button
-              variants={item}
-              onClick={handleChangePath}
-              className="flex items-center justify-between p-5 rounded-2xl border border-white/10 bg-white/5"
-            >
-              <div className="flex items-center gap-3">
-                <GraduationCap size={20} className="text-cyan-300" />
-
-                <div className="text-left">
-                  <p className="text-white font-medium">
-                    Modifier mon parcours
-                  </p>
-
-                  <p className="text-xs text-slate-400">
-                    Département, niveau et semestre
-                  </p>
-                </div>
-              </div>
-
-              <ChevronRight size={18} className="text-slate-500" />
-            </motion.button>
-
-            <motion.button
-              variants={item}
-              onClick={handleResetStats}
-              className="flex items-center justify-between p-5 rounded-2xl border border-white/10 bg-white/5"
-            >
-              <div className="flex items-center gap-3">
-                <RefreshCw size={20} className="text-red-300" />
-
-                <div className="text-left">
-                  <p className="text-white font-medium">
-                    Réinitialiser mes statistiques
-                  </p>
-
-                  <p className="text-xs text-slate-400">
-                    Supprimer tous les résultats
-                  </p>
-                </div>
-              </div>
-
-              <ChevronRight size={18} className="text-slate-500" />
-            </motion.button>
-
-            <motion.div
-              variants={item}
-              className="mt-24 p-5 rounded-2xl border border-white/10 bg-white/5"
-            >
-              <div className="flex items-center gap-3">
-                <Info size={20} className="text-violet-300" />
-
-                <div>
-                  <p className="text-white font-medium">Tic Quiz</p>
-
-                  <p className="text-xs text-slate-400 mt-1">Version 1.0.0</p>
-
-                  <p className="text-xs text-slate-500 mt-2">
-                    Application de révision destinée aux étudiants.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
+        </div>
       </section>
-      {/* MODAL CONFIRMATION */}
+
+      {/* CONFIRM MODAL */}
       {showConfirm && (
         <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-md flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black/50 backdrop-blur-md flex items-center justify-center z-50 px-4"
           onClick={() => setShowConfirm(false)}
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 10 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
             onClick={(e) => e.stopPropagation()}
-            className="profile-confirm-dialog backdrop-blur-sm
-                 p-6 rounded-2xl w-[90%] max-w-md shadow-2xl"
+            className="w-full max-w-md p-6 rounded-2xl bg-[#0b1020] border border-white/10"
           >
-            <h2 className="profile-confirm-title text-lg font-bold mb-3">
-              Confirmation
-            </h2>
+            <h2 className="text-lg font-bold text-white">Confirmation</h2>
 
-            <p className="profile-confirm-copy mt-6 text-sm mb-6">
+            <p className="text-sm text-slate-400 mt-4">
               Voulez-vous vraiment réinitialiser toutes vos statistiques ?
             </p>
 
-            <div className="flex justify-end gap-3">
+            <div className="flex justify-end gap-3 mt-6">
               <button
                 onClick={() => setShowConfirm(false)}
-                className="profile-confirm-cancel px-4 py-2 rounded-lg"
+                className="px-4 py-2 rounded-lg bg-white/5 text-white hover:bg-white/10 transition"
               >
                 Annuler
               </button>
 
               <button
                 onClick={confirmReset}
-                className="profile-confirm-danger px-4 py-2 rounded-lg"
+                className="px-4 py-2 rounded-lg bg-red-500/20 text-red-300 hover:bg-red-500/30 transition"
               >
                 Confirmer
               </button>
@@ -232,17 +225,14 @@ export default function ProfilePage() {
         </div>
       )}
 
-      {/* MODAL SUCCESS */}
+      {/* SUCCESS TOAST */}
       {showSuccess && (
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed top-6 left-12
-           bg-green-600 text-white px-3 py-3 
-           rounded-2xl shadow-lg z-50 whitespace-nowrap"
+          className="fixed top-6 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-3 rounded-2xl shadow-lg z-50"
         >
-          Statistiques réinitialisées avec succès ✔
+          Statistiques réinitialisées ✔
         </motion.div>
       )}
     </motion.main>
