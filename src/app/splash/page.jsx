@@ -32,14 +32,13 @@ export default function Splash() {
       {/* Glow Central */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full bg-fuchsia-500/15 blur-3xl" />
 
-     
       {/* CONTENT */}
       <div className="relative z-10 flex flex-col items-center -translate-y-16">
         {/* Logo + Glow */}
         <div className="relative flex items-center justify-center">
           <div className="absolute w-40 h-40 rounded-full bg-violet-500/20 blur-3xl" />
 
-          <div
+          <motion.div
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{
               opacity: 1,
@@ -62,9 +61,8 @@ export default function Splash() {
               alt="TicQuiz Logo"
               className="w-full h-full object-contain"
             />
-          </div>
+          </motion.div>
         </div>
-
 
         {/* Subtitle */}
         <p className="mt-6 text-slate-400 text-sm flex">
