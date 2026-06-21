@@ -1,0 +1,1 @@
+export { Quiz } from "@/data/quizzes/d2a/l1/semester2/reseaux1/chapters";

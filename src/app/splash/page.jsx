@@ -32,9 +32,7 @@ export default function Splash() {
       {/* Glow Central */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full bg-fuchsia-500/15 blur-3xl" />
 
-      {/* Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px]" />
-
+     
       {/* CONTENT */}
       <div className="relative z-10 flex flex-col items-center -translate-y-16">
         {/* Logo + Glow */}

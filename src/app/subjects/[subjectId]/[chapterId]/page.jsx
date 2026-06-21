@@ -12,6 +12,21 @@ export default function QuizPage() {
   const router = useRouter();
   const params = useParams();
 
+  const [showInstall, setShowInstall] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+
+  useEffect(() => {
+    const handler = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      setShowInstall(true);
+    };
+
+    window.addEventListener("beforeinstallprompt", handler);
+
+    return () => window.removeEventListener("beforeinstallprompt", handler);
+  }, []);
+
   useEffect(() => {
     if (!router || !params?.subjectId || !params?.chapterId) return;
 
@@ -57,6 +72,20 @@ export default function QuizPage() {
     setSeconds(0);
   };
 
+  const installApp = async () => {
+    if (!deferredPrompt) return;
+
+    deferredPrompt.prompt();
+
+    const choice = await deferredPrompt.userChoice;
+
+    if (choice.outcome === "accepted") {
+      setShowInstall(false);
+    }
+
+    setDeferredPrompt(null);
+  };
+
   useEffect(() => {
     if (!finished) return;
 
@@ -96,7 +125,19 @@ export default function QuizPage() {
 
     const percentage = Math.round((score / questions.length) * 100);
 
-    const savedScores = JSON.parse(localStorage.getItem("quizScores")) || {};
+    let savedScores = {};
+
+    try {
+      const raw = localStorage.getItem("quizScores");
+
+      if (raw) {
+        savedScores = JSON.parse(raw);
+      }
+    } catch (e) {
+      console.warn("Reset corrupted quizScores");
+      localStorage.removeItem("quizScores");
+      savedScores = {};
+    }
 
     savedScores[subjectId] = {
       ...(savedScores[subjectId] || {}),
@@ -363,6 +404,21 @@ export default function QuizPage() {
           Valider ma réponse
         </button>
       </section>
+
+      {showInstall && (
+        <div className="fixed top-0 left-0 right-0 z-[9999] bg-violet-600 text-white px-4 py-3 flex items-center justify-between">
+          <p className="text-sm font-medium">
+            Installer TicQuiz pour une meilleure expérience
+          </p>
+
+          <button
+            onClick={installApp}
+            className="bg-white text-violet-600 px-3 py-1 rounded-lg text-sm font-semibold"
+          >
+            Installer
+          </button>
+        </div>
+      )}
     </motion.main>
   );
 }

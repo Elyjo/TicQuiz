@@ -47,7 +47,7 @@ export const srt = {
 
     semester2: [
       {
-        id: "reseaux",
+        id: "reseaux1",
         name: "Réseaux",
         credits: 11,
         icon: Network,
