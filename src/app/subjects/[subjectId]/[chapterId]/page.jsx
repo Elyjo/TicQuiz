@@ -12,10 +12,20 @@ export default function QuizPage() {
   const router = useRouter();
   const params = useParams();
 
-  const [showInstall, setShowInstall] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [isIOS, setIsIOS] = useState(false);
+  const [showInstall, setShowInstall] = useState(true);
+
+  const isStandalone =
+    typeof window !== "undefined" &&
+    window.matchMedia("(display-mode: standalone)").matches;
+
+  const shouldShowInstall = !isStandalone && (isIOS || deferredPrompt);
 
   useEffect(() => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    setIsIOS(/iphone|ipad|ipod/.test(userAgent));
+
     const handler = (e) => {
       e.preventDefault();
       setDeferredPrompt(e);
@@ -24,8 +34,30 @@ export default function QuizPage() {
 
     window.addEventListener("beforeinstallprompt", handler);
 
-    return () => window.removeEventListener("beforeinstallprompt", handler);
+    return () => {
+      window.removeEventListener("beforeinstallprompt", handler);
+    };
   }, []);
+
+  const installApp = async () => {
+    if (isIOS) {
+      alert(
+        "🚀 Installer TicQuiz sur iPhone\n\n1️⃣ Ouvrez TicQuiz dans Safari.\n\n2️⃣ Touchez l'icône Partager (⬆️ dans un carré).\n\n3️⃣ Sélectionnez 'Ajouter à l'écran d'accueil'.\n\n4️⃣ Touchez 'Ajouter'.\n\n📚 Vous pourrez ensuite lancer TicQuiz comme une application normale depuis votre écran d'accueil.",
+      );
+      return;
+    }
+
+    if (!deferredPrompt) return;
+
+    deferredPrompt.prompt();
+
+    const choice = await deferredPrompt.userChoice;
+
+    if (choice.outcome === "accepted") {
+      setDeferredPrompt(null);
+      setShowInstall(false);
+    }
+  };
 
   useEffect(() => {
     if (!router || !params?.subjectId || !params?.chapterId) return;
@@ -70,20 +102,6 @@ export default function QuizPage() {
     setScore(0);
     setFinished(false);
     setSeconds(0);
-  };
-
-  const installApp = async () => {
-    if (!deferredPrompt) return;
-
-    deferredPrompt.prompt();
-
-    const choice = await deferredPrompt.userChoice;
-
-    if (choice.outcome === "accepted") {
-      setShowInstall(false);
-    }
-
-    setDeferredPrompt(null);
   };
 
   useEffect(() => {
@@ -214,8 +232,28 @@ export default function QuizPage() {
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative min-h-screen overflow-hidden"
+        className="relative overflow-hidden"
       >
+        {/* PWA BANNER GLOBAL */}
+        {shouldShowInstall && (
+          <div
+            onClick={installApp}
+            className="fixed top-0 left-0 right-0 z-[9999] h-10 bg-violet-600 text-white overflow-hidden cursor-pointer border-b border-violet-400/30"
+          >
+            <div className="flex items-center h-full whitespace-nowrap animate-marquee">
+              <span className="mx-8 font-medium">
+                🚀 Installer TicQuiz maintenant
+              </span>
+              <span className="mx-8 font-medium">
+                📚 Réviser hors connexion
+              </span>
+              <span className="mx-8 font-medium">
+                ⚡ App rapide et gratuite
+              </span>
+            </div>
+          </div>
+        )}
+
         {/* BACKGROUND */}
         <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
@@ -404,21 +442,6 @@ export default function QuizPage() {
           Valider ma réponse
         </button>
       </section>
-
-      {showInstall && (
-        <div className="fixed top-0 left-0 right-0 z-[9999] bg-violet-600 text-white px-4 py-3 flex items-center justify-between">
-          <p className="text-sm font-medium">
-            Installer TicQuiz pour une meilleure expérience
-          </p>
-
-          <button
-            onClick={installApp}
-            className="bg-white text-violet-600 px-3 py-1 rounded-lg text-sm font-semibold"
-          >
-            Installer
-          </button>
-        </div>
-      )}
     </motion.main>
   );
 }

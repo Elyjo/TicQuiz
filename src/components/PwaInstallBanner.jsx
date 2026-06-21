@@ -16,7 +16,7 @@ export default function PwaInstallBanner() {
     "/home",
     "/stats",
     "/profile",
-    "/leaderboard"
+    "/leaderboard",
   ];
 
   const hideBanner = hiddenRoutes.some(

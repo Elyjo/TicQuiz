@@ -198,7 +198,7 @@ export default function ProfilePage() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-md p-6 rounded-2xl bg-[#0b1020] border border-white/10"
+            className="w-full max-w-md p-6 rounded-2xl bg-[#35136d38] border border-white/10"
           >
             <h2 className="text-lg font-bold text-white">Confirmation</h2>
 
@@ -230,7 +230,7 @@ export default function ProfilePage() {
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="fixed top-6 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-3 rounded-2xl shadow-lg z-50"
+          className="fixed top-6 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-3 rounded-2xl shadow-lg z-50 whitespace-nowrap"
         >
           Statistiques réinitialisées ✔
         </motion.div>
