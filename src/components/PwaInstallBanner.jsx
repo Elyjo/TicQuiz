@@ -1,10 +1,29 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function PwaInstallBanner() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isIOS, setIsIOS] = useState(false);
+  const pathname = usePathname();
+
+  const hiddenRoutes = [
+    "/",
+    "/department",
+    "/levels",
+    "/subjects",
+    "/home",
+    "/stats",
+    "/profile",
+    "/leaderboard"
+  ];
+
+  const hideBanner = hiddenRoutes.some(
+    (route) => pathname === route || pathname.startsWith(route + "/"),
+  );
+
+  if (hideBanner) return null;
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
