@@ -36,32 +36,11 @@ export default function Splash() {
       <div className="relative z-10 flex flex-col items-center -translate-y-16">
         {/* Logo + Glow */}
         <div className="relative flex items-center justify-center">
-          <div className="absolute w-40 h-40 rounded-full bg-violet-500/20 blur-3xl" />
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.7 }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-              y: [0, -8, 0],
-            }}
-            transition={{
-              opacity: { duration: 0.8 },
-              scale: { duration: 0.8 },
-              y: {
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-              },
-            }}
-            className="relative w-32 h-32"
-          >
-            <img
-              src="/logobf.png"
-              alt="TicQuiz Logo"
-              className="w-full h-full object-contain"
-            />
-          </motion.div>
+          <img
+            src="/logobf.png"
+            alt="TicQuiz Logo"
+            className="w-32 h-32 object-contain"
+          />
         </div>
 
         {/* Subtitle */}
