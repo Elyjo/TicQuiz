@@ -38,7 +38,6 @@ export default function Splash() {
           <div className="absolute w-40 h-40 rounded-full" />
           <img
             src="/logobf.png"
-            alt="TicQuiz Logo"
             className="w-32 h-32 object-contain"
           />
         </div>
