@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 export default function Splash() {
   const router = useRouter();
 
-  const title = "TicQuiz";
   const subtitle = "Conçu avec passion par Elyjo";
 
   useEffect(() => {
@@ -53,7 +52,7 @@ export default function Splash() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
-                delay: 1.5 + index * 0.1,
+                delay: 1.95 + index * 0.1,
                 duration: 0.5,
               }}
             >
