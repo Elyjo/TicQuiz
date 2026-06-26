@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { BookOpen, RefreshCw, TrendingUp, Info } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import Image from "next/image";
 
 export default function UsernamePage() {
   const router = useRouter();
@@ -85,7 +86,14 @@ export default function UsernamePage() {
       {/* HERO */}
       <section className="relative z-10 flex flex-col items-center mt-28 px-6 text-center w-full max-w-sm">
         <div className="relative">
-          <img src="/logobf.png" className="w-32 h-32" />
+          <Image
+            src="/logobf.png"
+            alt="TicQuiz Logo"
+            width={128}
+            height={128}
+            priority
+            className="w-32 h-32 object-contain"
+          />
         </div>
 
         <div className="mt-12 flex flex-row items-center gap-2 text-slate-300/70 text-sm">
@@ -151,7 +159,8 @@ export default function UsernamePage() {
           <Info className="text-cyan-300 mt-0.5" size={30} />
 
           <p className="text-xs text-slate-300/70 leading-5">
-            Ceci est un système de pseudo. Tes données sont stockées dans Supabase et sur ton appareil.
+            Ceci est un système de pseudo. Tes données sont stockées dans
+            Supabase et sur ton appareil.
           </p>
         </div>
       </section>

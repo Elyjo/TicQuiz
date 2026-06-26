@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Splash() {
   const router = useRouter();
@@ -36,9 +37,13 @@ export default function Splash() {
         {/* Logo + Glow */}
         <div className="relative flex items-center justify-center">
           <div className="absolute w-40 h-40 rounded-full" />
-          <img
+          <Image
             src="/logobf.png"
-            className="w-32 h-32 object-contain"
+            alt="TicQuiz Logo"
+            width={128}
+            height={128}
+            priority
+            className="w-full h-full object-contain"
           />
         </div>
 
