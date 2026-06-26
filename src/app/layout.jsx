@@ -7,8 +7,8 @@ export const metadata = {
   title: "TicQuiz",
   description: "Application de révision destinée aux étudiants",
   icons: {
-    icon: "/logobf.png",
-    apple: "/logobf.png"
+    icon: "/tic-logo.png",
+    apple: "/tic-logo.png"
   }
 };
 
