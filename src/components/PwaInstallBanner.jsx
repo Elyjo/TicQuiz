@@ -23,8 +23,6 @@ export default function PwaInstallBanner() {
     (route) => pathname === route || pathname.startsWith(route + "/"),
   );
 
-  if (hideBanner) return null;
-
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
 
@@ -41,6 +39,8 @@ export default function PwaInstallBanner() {
       window.removeEventListener("beforeinstallprompt", handler);
     };
   }, []);
+
+  if (hideBanner) return null;
 
   const handleInstallClick = async () => {
     if (isIOS) {
