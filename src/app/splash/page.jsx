@@ -13,7 +13,7 @@ export default function Splash() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/username");
-    }, 4800);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, [router]);
@@ -43,7 +43,7 @@ export default function Splash() {
             width={128}
             height={128}
             priority
-            className="w-full h-full object-contain"
+            className="w-32 h-32 object-contain"
           />
         </div>
 
@@ -55,7 +55,7 @@ export default function Splash() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
-                delay: 1.95 + index * 0.1,
+                delay: 0.5 + index * 0.1,
                 duration: 0.5,
               }}
             >
@@ -70,7 +70,7 @@ export default function Splash() {
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{
-              duration: 2.2,
+              duration: 3.5,
               ease: "linear",
             }}
             className="h-full rounded-full bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400"
