@@ -36,11 +36,13 @@ export default function Splash() {
       <div className="relative z-10 flex flex-col items-center -translate-y-16">
         {/* Logo + Glow */}
         <div className="relative flex items-center justify-center">
-          <img
-            src="/logobf.png"
-            alt="TicQuiz Logo"
-            className="w-32 h-32 object-contain"
-          />
+          <div className="absolute w-40 h-40 rounded-full" />
+            <img
+              src="/logobf.png"
+              alt="TicQuiz Logo"
+              className="w-32 h-32 object-contain"
+            />
+         
         </div>
 
         {/* Subtitle */}
