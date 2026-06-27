@@ -7,6 +7,10 @@ export const metadata = {
   title: "TicQuiz",
   description: "Application de révision destinée aux étudiants",
   manifest: "manifest/json",
+  icons: {
+    icon: "/logobf.png",
+    apple: "/logobf.png",
+  }
 };
 
 export default function RootLayout({ children }) {
