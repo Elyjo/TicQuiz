@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export default function PwaInstallBanner() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isIOS, setIsIOS] = useState(false);
+  const isAndroid = /android/.test(userAgent);
   const pathname = usePathname();
 
   const hiddenRoutes = [
@@ -50,8 +51,14 @@ export default function PwaInstallBanner() {
       return;
     }
 
-    if (!deferredPrompt) {
-      alert("Installation non disponible pour le moment.");
+    if (!deferredPrompt && !isAndroid) {
+      alert(
+        "🚀 Installer TicQuiz sur Android\n\n" +
+          "1️⃣ Ouvrez le menu Chrome (⋮)\n" +
+          "2️⃣ Sélectionnez 'Ajouter à l'écran d'accueil'\n" +
+          "3️⃣ Validez avec 'Installer'\n\n" +
+          "📚 TicQuiz sera disponible comme une application normale.",
+      );
       return;
     }
 
