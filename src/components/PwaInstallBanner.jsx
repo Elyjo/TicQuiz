@@ -65,7 +65,7 @@ export default function PwaInstallBanner() {
   };
 
   // On n'affiche rien si l'installation n'est pas possible
-  if (!deferredPrompt && !isIOS) return null;
+  //if (!deferredPrompt && !isIOS) return null;
 
   return (
     <div
