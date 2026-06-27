@@ -6,10 +6,7 @@ import PwaInstallBanner from "@/components/PwaInstallBanner";
 export const metadata = {
   title: "TicQuiz",
   description: "Application de révision destinée aux étudiants",
-  icons: {
-    icon: "/tic-logo.png",
-    apple: "/tic-logo.png"
-  }
+  manifest: "manifest/json",
 };
 
 export default function RootLayout({ children }) {
