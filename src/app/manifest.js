@@ -1,0 +1,23 @@
+export default function manifest() {
+  return {
+    name: "TicQuiz",
+    short_name: "TicQuiz",
+    description: "Application de révision destinée aux étudiants",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#020617",
+    theme_color: "#020617",
+    icons: [
+      {
+        src: "/logobf.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        src: "/logobf.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  };
+}
