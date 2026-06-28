@@ -78,34 +78,26 @@ export default function SubjectsPage() {
   useEffect(() => {
     const saved = localStorage.getItem("userPath");
 
-    if (!saved) {
-      router.replace("/department");
-      return;
-    }
+    if (!saved) return;
 
-    let savedPath;
+    let parsed = null;
 
     try {
-      savedPath = JSON.parse(saved);
-    } catch (e) {
-      router.replace("/department");
+      parsed = JSON.parse(saved);
+    } catch {
+      localStorage.removeItem("userPath");
       return;
     }
 
-    if (!savedPath?.dept || !savedPath?.level || !savedPath?.semester) {
-      router.replace("/department");
-      return;
-    }
+    if (!parsed?.dept || !parsed?.level || !parsed?.semester) return;
 
-    setPath(savedPath);
+    setPath(parsed);
 
     const data =
-      curriculums?.[savedPath.dept]?.[savedPath.level]?.[savedPath.semester] ||
-      [];
+      curriculums?.[parsed.dept]?.[parsed.level]?.[parsed.semester] || [];
 
     setSubjects(data);
-  }, [router]);
-  // ✅ SAME AS DEPARTMENT SCREEN
+  }, []);
   const container = {
     hidden: {},
     show: {
