@@ -42,7 +42,12 @@ export default function SubjectPage() {
 
     const loadChapters = async () => {
       try {
-        if (!parsed?.dept || !parsed?.level || !parsed?.semester || !params?.subjectId) {
+        if (
+          !parsed?.dept ||
+          !parsed?.level ||
+          !parsed?.semester ||
+          !params?.subjectId
+        ) {
           setAvailable(false);
           setLoading(false);
           return;
