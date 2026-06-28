@@ -25,35 +25,34 @@ export default function SubjectPage() {
   const colors = colorClasses.violet;
 
   useEffect(() => {
-  const saved = localStorage.getItem("userPath");
+    let parsed = null;
 
-  if (!saved) {
-    router.replace("/home");
-    return;
-  }
+    const saved = localStorage.getItem("userPath");
 
-  let parsed;
-
-  try {
-    parsed = JSON.parse(saved);
-  } catch (e) {
-    router.replace("/home");
-    return;
-  }
-
-  // 🔒 validation stricte
-  if (!parsed?.dept || !parsed?.level || !parsed?.semester) {
-    router.replace("/home");
-    return;
-  }
-
-  const loadChapters = async () => {
+    if (saved) {
       try {
+        parsed = JSON.parse(saved);
+      } catch (e) {
+        parsed = null;
+      }
+    }
+
+    // ❌ PLUS DE REDIRECTION FORCÉE
+    // 👉 fallback UI au lieu de router.replace
+
+    const loadChapters = async () => {
+      try {
+        if (!parsed?.dept || !parsed?.level || !parsed?.semester || !params?.subjectId) {
+          setAvailable(false);
+          setLoading(false);
+          return;
+        }
+
         const module = await import(
           `@/data/quizzes/${parsed.dept}/${parsed.level}/${parsed.semester}/${params.subjectId}/chapters`
         );
 
-        setChapters(Object.values(module.Quiz));
+        setChapters(Object.values(module.Quiz || {}));
         setAvailable(true);
       } catch (err) {
         setAvailable(false);
@@ -62,11 +61,8 @@ export default function SubjectPage() {
       }
     };
 
-    if (params.subjectId) {
-      loadChapters();
-    }
-  }, [params.subjectId, router]);
-
+    loadChapters();
+  }, [params?.subjectId]);
 
   const container = {
     hidden: {},
