@@ -13,6 +13,8 @@ window.onerror = function () {
 };
 
 export default function QuizPage() {
+  if (typeof window === "undefined") return null;
+  
   const router = useRouter();
   const params = useParams();
 
@@ -25,8 +27,7 @@ export default function QuizPage() {
     window.matchMedia("(display-mode: standalone)").matches;
 
   const shouldShowInstall = !isStandalone && (isIOS || deferredPrompt);
-
-  if (typeof window === "undefined") return null;
+  
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
