@@ -26,6 +26,8 @@ export default function QuizPage() {
 
   const shouldShowInstall = !isStandalone && (isIOS || deferredPrompt);
 
+  if (typeof window === "undefined") return null;
+
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
     setIsIOS(/iphone|ipad|ipod/.test(userAgent));
