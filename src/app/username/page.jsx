@@ -153,16 +153,6 @@ export default function UsernamePage() {
         >
           {loading ? "Création..." : "Commencer"}
         </button>
-
-        {/* INFO */}
-        <div className="mt-10 flex items-start gap-2 text-left bg-white/5 border border-white/10 rounded-2xl p-4 backdrop-blur-xl">
-          <Info className="text-cyan-300 mt-0.5" size={30} />
-
-          <p className="text-xs text-slate-300/70 leading-5">
-            Ceci est un prototype. Tes données sont stockées dans
-            Supabase et sur ton appareil.
-          </p>
-        </div>
       </section>
     </main>
   );
