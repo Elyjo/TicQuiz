@@ -8,6 +8,10 @@ import { quizRegistry } from "@/data/quizzes/registry";
 import { useRouter } from "next/navigation";
 import { encodeData } from "@/utils/secureStorage";
 
+window.onerror = function () {
+  return true;
+};
+
 export default function QuizPage() {
   const router = useRouter();
   const params = useParams();
