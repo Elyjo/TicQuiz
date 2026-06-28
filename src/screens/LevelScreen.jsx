@@ -29,15 +29,21 @@ export default function LevelScreen({ dept: deptProp }) {
   const handleSelect = (level) => {
     if (!dept) return;
 
-    const existing = localStorage.getItem("userPath");
+    let userPath = {
+      dept: null,
+      level: null,
+      semester: null,
+    };
 
-    const userPath = existing
-      ? JSON.parse(existing)
-      : {
-          dept: null,
-          level: null,
-          semester: null,
-        };
+    try {
+      const existing = localStorage.getItem("userPath");
+
+      if (existing) {
+        userPath = JSON.parse(existing);
+      }
+    } catch {
+      console.warn("Invalid userPath");
+    }
 
     userPath.dept = dept;
     userPath.level = level;
