@@ -21,37 +21,22 @@ export default function SemesterScreen() {
   const dept = params?.dept;
   const level = params?.level;
 
-  useEffect(() => {
-    const saved = localStorage.getItem("userPath");
-
-    if (!saved) {
-      router.replace("/department");
-      return;
-    }
-
-    const parsed = JSON.parse(saved);
-
-    if (!parsed.dept || !parsed.level) {
-      router.replace("/department");
-      return;
-    }
-
-    if (!VALID_DEPTS.includes(dept) || !VALID_LEVELS.includes(level)) {
-      router.replace("/department");
-    }
-  }, [dept, level, router]);
-
   const handleSelect = (semester) => {
-    const existing = localStorage.getItem("userPath");
+    let userPath = {
+      dept: null,
+      level: null,
+      semester: null,
+    };
 
-    const userPath = existing
-      ? JSON.parse(existing)
-      : {
-          dept: null,
-          level: null,
-          semester: null,
-        };
+    try {
+      const existing = localStorage.getItem("userPath");
 
+      if (existing) {
+        userPath = JSON.parse(existing);
+      }
+    } catch {
+      console.warn("Invalid userPath");
+    }
     userPath.dept = dept;
     userPath.level = level;
 
