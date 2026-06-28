@@ -6,8 +6,9 @@ import { useEffect, useState } from "react";
 export default function PwaInstallBanner() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isIOS, setIsIOS] = useState(false);
-  const isAndroid = /android/.test(userAgent);
+  const [isAndroid, setIsAndroid] = useState(false);
   const pathname = usePathname();
+  const [showInstallModal, setShowInstallModal] = useState(false);
 
   const hiddenRoutes = [
     "/",
@@ -28,6 +29,7 @@ export default function PwaInstallBanner() {
     const userAgent = window.navigator.userAgent.toLowerCase();
 
     setIsIOS(/iphone|ipad|ipod/.test(userAgent));
+    setIsAndroid(/android/.test(userAgent));
 
     const handler = (e) => {
       e.preventDefault();
@@ -45,20 +47,16 @@ export default function PwaInstallBanner() {
 
   const handleInstallClick = async () => {
     if (isIOS) {
-      alert(
-        "🚀 Installer TicQuiz sur iPhone\n\n1️⃣ Ouvrez TicQuiz dans Safari.\n\n2️⃣ Touchez l'icône Partager (⬆️ dans un carré).\n\n3️⃣ Sélectionnez 'Ajouter à l'écran d'accueil'.\n\n4️⃣ Touchez 'Ajouter'.\n\n📚 Vous pourrez ensuite lancer TicQuiz comme une application normale depuis votre écran d'accueil.",
-      );
+      setShowInstallModal(true);
       return;
     }
 
-    if (!deferredPrompt && !isAndroid) {
-      alert(
-        "🚀 Installer TicQuiz sur Android\n\n" +
-          "1️⃣ Ouvrez le menu Chrome (⋮)\n" +
-          "2️⃣ Sélectionnez 'Ajouter à l'écran d'accueil'\n" +
-          "3️⃣ Validez avec 'Installer'\n\n" +
-          "📚 TicQuiz sera disponible comme une application normale.",
-      );
+    if (isAndroid && !deferredPrompt) {
+      setShowInstallModal(true);
+      return;
+    }
+
+    if (!deferredPrompt) {
       return;
     }
 
@@ -70,9 +68,6 @@ export default function PwaInstallBanner() {
       setDeferredPrompt(null);
     }
   };
-
-  // On n'affiche rien si l'installation n'est pas possible
-  //if (!deferredPrompt && !isIOS) return null;
 
   return (
     <div
@@ -104,6 +99,41 @@ export default function PwaInstallBanner() {
           ⚡ Installation rapide en un clic
         </span>
       </div>
+      {showInstallModal && (
+        <div className="fixed inset-0 z-[10000] bg-black/50 backdrop-blur-sm flex items-center justify-center px-5" onClick={() => setShowInstallModal(false)}>
+          <div className="w-full max-w-sm rounded-3xl border border-white/10 bg-[#35136d38] p-6" onClick={(e) => e.stopPropagation()}>
+            <h2 className="text-xl font-bold text-white">Installer TicQuiz</h2>
+
+            <div className="mt-5 text-slate-300 text-sm leading-7">
+              {isIOS ? (
+                <>
+                  <p>1️⃣ Ouvrez TicQuiz dans Safari</p>
+                  <p>2️⃣ Touchez Partager ⬆️</p>
+                  <p>3️⃣ Ajouter à l'écran d'accueil</p>
+                  <p>4️⃣ Touchez Ajouter</p>
+                </>
+              ) : (
+                <>
+                  <p>1️⃣ Ouvrez le menu Chrome ⋮</p>
+                  <p>2️⃣ Cliquez sur Installer l'application</p>
+                  <p>3️⃣ Ou Ajouter à l'écran d'accueil</p>
+                  <p>4️⃣ Confirmez l'installation</p>
+                </>
+              )}
+            </div>
+
+            <button
+              onClick={(e) => {
+                setShowInstallModal(false);
+                e.stopPropagation();  
+              }}
+              className="mt-6 w-full h-12 rounded-2xl bg-violet-600 text-white font-semibold cursor-pointer"
+            >
+              Compris
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
