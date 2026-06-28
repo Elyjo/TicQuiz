@@ -14,25 +14,6 @@ import {
 export default function DepartmentScreen() {
   const router = useRouter();
 
-  // 🔒 protection si onboarding déjà terminé
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const saved = localStorage.getItem("userPath");
-
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-
-        if (parsed.dept && parsed.level) {
-          router.replace("/home");
-        }
-      } catch (e) {
-        console.log("Invalid userPath");
-      }
-    }
-  }, [router]);
-
   // 💾 save department proprement
   const saveDepartment = (dept) => {
     const userPath = {
