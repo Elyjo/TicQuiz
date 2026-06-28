@@ -8,13 +8,13 @@
   "theme_color": "#020617",
   "icons": [
     {
-      "src": "/logobf.png",
-      "sizes": "500x500",
+      "src": "/tic-logo .png",
+      "sizes": "1254x1254",
       "type": "image/png"
     },
     {
-      "src": "/logobf.png",
-      "sizes": "500x500",
+      "src": "/tic-logo .png",
+      "sizes": "1254x1254",
       "type": "image/png"
     }
   ]
