@@ -11,8 +11,6 @@ import {
   ArrowLeft,
 } from "lucide-react";
 
-const VALID_DEPTS = ["d2a", "srt"];
-const VALID_LEVELS = ["l1", "l2", "l3"];
 
 export default function SemesterScreen() {
   const router = useRouter();

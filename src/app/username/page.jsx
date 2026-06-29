@@ -154,7 +154,7 @@ export default function UsernamePage() {
             }
           `}
         >
-          {loading ? "Création..." : "Commencer"}
+          {loading ? "Ouverture du portail..." : "Entrer dans l'arène"}
         </button>
       </section>
     </main>

@@ -14,7 +14,6 @@ import {
 export default function DepartmentScreen() {
   const router = useRouter();
 
-  // 💾 save department proprement
   const saveDepartment = (dept) => {
     const userPath = {
       dept,
