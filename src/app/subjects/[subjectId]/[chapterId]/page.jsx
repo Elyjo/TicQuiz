@@ -402,14 +402,6 @@ export default function QuizPage() {
             );
           })}
         </div>
-
-        <button
-          onClick={validateAnswer}
-          disabled={selected === null}
-          className="mt-10 w-full h-14 rounded-2xl bg-violet-600 text-white font-bold disabled:opacity-40"
-        >
-          Valider ma réponse
-        </button>
       </section>
     </motion.main>
   );
