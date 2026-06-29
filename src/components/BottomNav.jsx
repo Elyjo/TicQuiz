@@ -24,7 +24,7 @@ export default function BottomNav() {
           max-w-md mx-auto
 
           md:bg-white/5
-          backdrop-blur-2xl
+          backdrop-blur-8xl
           md:border md:border-white/10
 
           rounded-3xl
