@@ -26,7 +26,8 @@ export default function QuizPage() {
     typeof window !== "undefined" &&
     window.matchMedia("(display-mode: standalone)").matches;
 
-  const shouldShowInstall = !isStandalone && (isIOS || deferredPrompt);
+  // const shouldShowInstall = !isStandalone && (isIOS || deferredPrompt);
+  const shouldShowInstall = !isStandalone;
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();

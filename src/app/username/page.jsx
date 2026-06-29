@@ -64,11 +64,13 @@ export default function UsernamePage() {
     router.push("/department");
   };
 
+  // Handle input change
   const handleChange = (e) => {
     setPseudo(e.target.value);
     if (error) setError("");
   };
 
+  // Handle Enter key press
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       handleStart();
