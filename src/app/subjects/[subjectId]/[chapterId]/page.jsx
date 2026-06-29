@@ -14,7 +14,7 @@ window.onerror = function () {
 
 export default function QuizPage() {
   if (typeof window === "undefined") return null;
-  
+
   const router = useRouter();
   const params = useParams();
 
@@ -27,7 +27,6 @@ export default function QuizPage() {
     window.matchMedia("(display-mode: standalone)").matches;
 
   const shouldShowInstall = !isStandalone && (isIOS || deferredPrompt);
-  
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
@@ -66,7 +65,6 @@ export default function QuizPage() {
     }
   };
 
-  // ❌ GUARD SUPPRIMÉ (plus de redirect home)
   useEffect(() => {
     if (!params?.subjectId || !params?.chapterId) return;
 
@@ -77,7 +75,6 @@ export default function QuizPage() {
     try {
       const parsed = JSON.parse(saved);
 
-      // juste lecture, PAS de redirect
       if (!parsed?.dept || !parsed?.level || !parsed?.semester) {
         return;
       }
@@ -234,13 +231,15 @@ export default function QuizPage() {
           >
             <div className="flex items-center h-full whitespace-nowrap animate-marquee">
               <span className="mx-8 font-medium">
-                🚀 Installer TicQuiz maintenant
+                📱 Ajouter TicQuiz à l'écran d'accueil
               </span>
+
               <span className="mx-8 font-medium">
-                📚 Réviser hors connexion
+                ⚡ Ouvrir TicQuiz comme une application
               </span>
+
               <span className="mx-8 font-medium">
-                ⚡ App rapide et gratuite
+                📚 Réviser vos cours plus rapidement
               </span>
             </div>
           </div>

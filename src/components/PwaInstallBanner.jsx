@@ -76,48 +76,56 @@ export default function PwaInstallBanner() {
     >
       <div className="flex items-center h-full whitespace-nowrap animate-marquee">
         <span className="mx-8 font-medium">
-          🚀 Cliquez ici pour installer TicQuiz sur votre appareil
+          📱 Ajouter TicQuiz à l'écran d'accueil
         </span>
 
         <span className="mx-8 font-medium">
-          📚 Révisez même hors connexion avec TicQuiz
+          ⚡ Ouvrir TicQuiz comme une application
         </span>
 
         <span className="mx-8 font-medium">
-          ⚡ Installation rapide en un clic
+          📚 Réviser vos cours plus rapidement
         </span>
 
         <span className="mx-8 font-medium">
-          🚀 Cliquez ici pour installer TicQuiz sur votre appareil
+          📱 Ajouter TicQuiz à l'écran d'écran d'accueil
         </span>
 
         <span className="mx-8 font-medium">
-          📚 Révisez même hors connexion avec TicQuiz
+          ⚡ Ouvrir TicQuiz comme une application
         </span>
 
         <span className="mx-8 font-medium">
-          ⚡ Installation rapide en un clic
+          📚 Réviser vos cours plus rapidement
         </span>
       </div>
       {showInstallModal && (
-        <div className="fixed inset-0 z-[10000] bg-black/50 backdrop-blur-sm flex items-center justify-center px-5" onClick={() => setShowInstallModal(false)}>
-          <div className="w-full max-w-sm rounded-3xl border border-white/10 bg-[#35136d38] p-6" onClick={(e) => e.stopPropagation()}>
-            <h2 className="text-xl font-bold text-white">Installer TicQuiz</h2>
+        <div
+          className="fixed inset-0 z-[10000] bg-black/50 backdrop-blur-sm flex items-center justify-center px-5"
+          onClick={() => setShowInstallModal(false)}
+        >
+          <div
+            className="w-full max-w-sm rounded-3xl border border-white/10 bg-[#35136d38] p-6"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 className="text-xl font-bold text-white">
+              Ajouter TicQuiz à l'écran d'accueil
+            </h2>
 
             <div className="mt-5 text-slate-300 text-sm leading-7">
               {isIOS ? (
                 <>
-                  <p>1️⃣ Ouvrez TicQuiz dans Safari</p>
-                  <p>2️⃣ Touchez Partager ⬆️</p>
-                  <p>3️⃣ Ajouter à l'écran d'accueil</p>
-                  <p>4️⃣ Touchez Ajouter</p>
+                  <p>1️⃣ Touchez le bouton Partager ⬆️</p>
+                  <p>2️⃣ Sélectionnez "Ajouter à l'écran d'accueil"</p>
+                  <p>3️⃣ Touchez "Créer un raccourci"</p>
+                  <p>4️⃣ Touchez "Ajouter"</p>
                 </>
-              ) : (
+              ) : ( 
                 <>
                   <p>1️⃣ Ouvrez le menu Chrome ⋮</p>
-                  <p>2️⃣ Cliquez sur Installer l'application</p>
-                  <p>3️⃣ Ou Ajouter à l'écran d'accueil</p>
-                  <p>4️⃣ Confirmez l'installation</p>
+                  <p>2️⃣ Sélectionnez "Ajouter à l'écran d'accueil"</p>
+                  <p>3️⃣ Choisissez "Créer un raccourci"</p>
+                  <p>4️⃣ Touchez "Ajouter"</p>
                 </>
               )}
             </div>
@@ -125,7 +133,7 @@ export default function PwaInstallBanner() {
             <button
               onClick={(e) => {
                 setShowInstallModal(false);
-                e.stopPropagation();  
+                e.stopPropagation();
               }}
               className="mt-6 w-full h-12 rounded-2xl bg-violet-600 text-white font-semibold cursor-pointer"
             >
