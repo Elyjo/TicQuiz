@@ -13,14 +13,7 @@ export const Quiz = {
   "chapter-3": chapter3,
   "chapter-4": chapter4,
   "chapter-5": chapter5,
-  "chapter-6": chapter6,   
+  "chapter-6": chapter6,
 };
 
-export {
-  chapter1,
-  chapter2,
-  chapter3,
-  chapter4,
-  chapter5,
-  chapter6,
-};
+export { chapter1, chapter2, chapter3, chapter4, chapter5, chapter6 };

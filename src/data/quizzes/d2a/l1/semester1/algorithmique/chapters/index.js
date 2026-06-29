@@ -8,11 +8,6 @@ export const Quiz = {
   "chapter-1": chapter1,
   "chapter-2": chapter2,
   "chapter-3": chapter3,
-
 };
 
-export {
-  chapter1,
-  chapter2,
-  chapter3,
-};
+export { chapter1, chapter2, chapter3 };
