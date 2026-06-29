@@ -364,7 +364,23 @@ export default function QuizPage() {
             return (
               <motion.button
                 key={index}
-                onClick={() => setSelected(index)}
+                onClick={() => {
+                  setSelected(index);
+
+                  setTimeout(() => {
+                    if (index === question.answer) {
+                      setScore((prev) => prev + 1);
+                    }
+
+                    if (currentQuestion + 1 >= questions.length) {
+                      setFinished(true);
+                      return;
+                    }
+
+                    setCurrentQuestion((prev) => prev + 1);
+                    setSelected(null);
+                  }, 500);
+                }}
                 className={`p-5 rounded-[28px] border text-left transition-all
     ${
       isSelected
