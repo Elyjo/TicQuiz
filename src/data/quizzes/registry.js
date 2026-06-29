@@ -25,6 +25,7 @@ import { Quiz as comptabiliteQuiz } from "@/data/quizzes/d2a/l1/semester2/compta
 import { Quiz as electriciteQuiz } from "@/data/quizzes/srt/l1/semester2/electricite/chapters";
 import { Quiz as traitementSignalQuiz } from "@/data/quizzes/srt/l1/semester2/traitementSignal/chapters";
 import { Quiz as adminWindowsQuiz } from "@/data/quizzes/d2a/l2/semester2/adminWindows/chapters";
+import { Quiz as phpQuiz } from "@/data/quizzes/d2a/l2/semester2/php/chapters";
 
 
 export const quizRegistry = {
@@ -53,6 +54,7 @@ export const quizRegistry = {
   electricite: electriciteQuiz,
   traitementSignal: traitementSignalQuiz,
   adminWindows: adminWindowsQuiz,
+  php: phpQuiz,
   
 
 };
