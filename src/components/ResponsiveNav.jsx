@@ -2,22 +2,15 @@
 
 import { usePathname } from "next/navigation";
 import AppBottomNav from "@/components/AppBottomNav";
-import Sidebar from "@/components/Sidebar"; // si tu l’as déjà
+import Sidebar from "@/components/Sidebar";
 
 export default function ResponsiveNav() {
   const pathname = usePathname();
 
-  const hiddenRoutes = [
-    "/",
-    "/username",
-    "/department",
-    "/login",
-    "/levels",
-  ];
+  const hiddenRoutes = ["/", "/username", "/department", "/login", "/levels"];
 
   const hideNav = hiddenRoutes.some(
-    (route) =>
-      pathname === route || pathname.startsWith(route + "/")
+    (route) => pathname === route || pathname.startsWith(route + "/"),
   );
 
   if (hideNav) return null;

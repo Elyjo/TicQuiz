@@ -163,7 +163,7 @@ export default function ProfilePage() {
                   Réinitialiser mes statistiques
                 </p>
                 <p className="text-xs text-slate-400">
-                  Supprimer tous les résultats
+                  Supprimer tous tes résultats
                 </p>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function ProfilePage() {
             <h2 className="text-lg font-bold text-white">Confirmation</h2>
 
             <p className="text-sm text-slate-400 mt-4">
-              Voulez-vous vraiment réinitialiser toutes vos statistiques ?
+              Veux-tu vraiment réinitialiser toutes tes statistiques ?
             </p>
 
             <div className="flex justify-end gap-3 mt-6">

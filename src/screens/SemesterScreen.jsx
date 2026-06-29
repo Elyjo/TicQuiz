@@ -81,14 +81,14 @@ export default function SemesterScreen() {
           </div>
 
           <h1 className="mt-6 text-2xl font-black text-white">
-            Indiquer votre{" "}
+            Indique ton{" "}
             <span className="bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent">
               semestre
             </span>
           </h1>
 
           <p className="mt-3 text-slate-300/70 text-sm leading-6">
-            Choisissez votre semestre pour continuer votre parcours.
+            Choisis ton semestre pour continuer ton parcours.
           </p>
         </motion.div>
 

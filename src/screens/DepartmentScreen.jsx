@@ -90,7 +90,7 @@ export default function DepartmentScreen() {
           </div>
 
           <h1 className="mt-16 text-2xl font-black text-white">
-            Quelle est votre{" "}
+            Quelle est ta{" "}
             <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
               spécialité
             </span>
@@ -98,7 +98,7 @@ export default function DepartmentScreen() {
           </h1>
 
           <p className="mt-3 text-slate-300/70 text-sm leading-6">
-            Choisissez votre filière afin d’accéder aux niveaux.
+            Choisis ta filière afin d’accéder aux niveaux.
           </p>
         </motion.div>
 

@@ -93,7 +93,7 @@ export default function LevelScreen({ dept: deptProp }) {
           </div>
 
           <h1 className="mt-6 text-2xl font-black text-white">
-            Quel est votre{" "}
+            Quel est ton{" "}
             <span className="bg-gradient-to-r from-pink-400 via-rose-400 to-orange-400 bg-clip-text text-transparent">
               niveau
             </span>
@@ -101,7 +101,7 @@ export default function LevelScreen({ dept: deptProp }) {
           </h1>
 
           <p className="mt-3 text-slate-300/70 text-sm leading-6">
-            Sélectionnez votre année universitaire pour continuer votre
+            Sélectionne ton année universitaire pour continuer ton
             parcours.
           </p>
         </motion.div>
