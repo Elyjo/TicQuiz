@@ -239,6 +239,18 @@ export default function QuizPage() {
               <span className="mx-8 font-medium">
                 📚 Réviser vos cours plus rapidement
               </span>
+
+              <span className="mx-8 font-medium">
+                📱 Ajouter TicQuiz à l'écran d'accueil
+              </span>
+
+              <span className="mx-8 font-medium">
+                ⚡ Ouvrir TicQuiz comme une application
+              </span>
+
+              <span className="mx-8 font-medium">
+                📚 Réviser vos cours plus rapidement
+              </span>
             </div>
           </div>
         )}
