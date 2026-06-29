@@ -122,7 +122,7 @@ export default function UsernamePage() {
             value={pseudo}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
-            placeholder="Quel nom porterez-vous ?"
+            placeholder="Entrez votre pseudo"
             maxLength={10}
             className={`w-full px-5 py-4 rounded-2xl bg-white/5 border backdrop-blur-xl outline-none transition
               ${
