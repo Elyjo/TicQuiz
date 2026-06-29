@@ -87,7 +87,7 @@ export default function UsernamePage() {
       <PwaInstallBanner />
 
       {/* HERO */}
-      <section className="relative z-10 flex flex-col items-center mt-28 px-6 text-center w-full max-w-sm">
+      <section className="relative z-10 flex flex-col items-center mt-32 px-6 text-center w-full max-w-sm">
         <div className="relative">
           <Image
             src="/logobf.png"
@@ -122,7 +122,7 @@ export default function UsernamePage() {
             value={pseudo}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
-            placeholder="Entrez votre pseudo"
+            placeholder="Quel nom porterez-vous ?"
             maxLength={10}
             className={`w-full px-5 py-4 rounded-2xl bg-white/5 border backdrop-blur-xl outline-none transition
               ${
