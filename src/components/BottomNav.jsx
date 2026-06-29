@@ -23,9 +23,9 @@ export default function BottomNav() {
         className="
           max-w-md mx-auto
 
-          bg-white/5
+          md:bg-white/5
           backdrop-blur-2xl
-          border border-white/10
+          md:border md:border-white/10
 
           rounded-3xl
 
