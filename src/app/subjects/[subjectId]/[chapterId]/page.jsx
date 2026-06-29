@@ -21,6 +21,7 @@ export default function QuizPage() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isIOS, setIsIOS] = useState(false);
   const [showInstall, setShowInstall] = useState(true);
+  const [showInstallModal, setShowInstallModal] = useState(false);
 
   const isStandalone =
     typeof window !== "undefined" &&
@@ -47,14 +48,10 @@ export default function QuizPage() {
   }, []);
 
   const installApp = async () => {
-    if (isIOS) {
-      alert(
-        "🚀 Installer TicQuiz sur iPhone\n\n1️⃣ Ouvrez TicQuiz dans Safari.\n\n2️⃣ Touchez l'icône Partager (⬆️ dans un carré).\n\n3️⃣ Sélectionnez 'Ajouter à l'écran d'accueil'.\n\n4️⃣ Touchez 'Ajouter'.\n\n📚 Vous pourrez ensuite lancer TicQuiz comme une application normale depuis votre écran d'accueil.",
-      );
+    if (isIOS || !deferredPrompt) {
+      setShowInstallModal(true);
       return;
     }
-
-    if (!deferredPrompt) return;
 
     deferredPrompt.prompt();
 
@@ -246,7 +243,47 @@ export default function QuizPage() {
           </div>
         )}
 
-        {/* RESTE DU DESIGN INCHANGÉ */}
+        {showInstallModal && (
+          <div
+            className="fixed inset-0 z-[10000] bg-black/50 backdrop-blur-sm flex items-center justify-center px-5"
+            onClick={() => setShowInstallModal(false)}
+          >
+            <div
+              className="w-full max-w-sm rounded-3xl border border-white/10 bg-[#35136d38] p-6"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className="text-xl font-bold text-white">
+                Ajouter TicQuiz à l'écran d'accueil
+              </h2>
+
+              <div className="mt-5 text-slate-300 text-sm leading-7">
+                {isIOS ? (
+                  <>
+                    <p>1️⃣ Touchez le bouton Partager ⬆️</p>
+                    <p>2️⃣ Sélectionnez "Ajouter à l'écran d'accueil"</p>
+                    <p>3️⃣ Touchez "Créer un raccourci"</p>
+                    <p>4️⃣ Touchez "Ajouter"</p>
+                  </>
+                ) : (
+                  <>
+                    <p>1️⃣ Ouvrez le menu Chrome ⋮</p>
+                    <p>2️⃣ Sélectionnez "Ajouter à l'écran d'accueil"</p>
+                    <p>3️⃣ Choisissez "Créer un raccourci"</p>
+                    <p>4️⃣ Touchez "Ajouter"</p>
+                  </>
+                )}
+              </div>
+
+              <button
+                onClick={() => setShowInstallModal(false)}
+                className="mt-6 w-full h-12 rounded-2xl bg-violet-600 text-white font-semibold"
+              >
+                Compris
+              </button>
+            </div>
+          </div>
+        )}
+
         <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
         <div className="absolute top-[-180px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-violet-500/30 via-fuchsia-500/10 to-cyan-400/10 blur-3xl opacity-80" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
