@@ -7,8 +7,8 @@ export const metadata = {
   description: "Application de révision destinée aux étudiants",
   manifest: "/manifest.json",
   icons: {
-    icon: "/tic-logo.png",
-    apple: "/tic-logo.png",
+    icon: "/logobf.png",
+    apple: "/logobf.png",
   },
 };
 
