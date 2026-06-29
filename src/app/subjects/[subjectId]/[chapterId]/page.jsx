@@ -8,9 +8,6 @@ import { quizRegistry } from "@/data/quizzes/registry";
 import { useRouter } from "next/navigation";
 import { encodeData } from "@/utils/secureStorage";
 
-window.onerror = function () {
-  return true;
-};
 
 export default function QuizPage() {
   if (typeof window === "undefined") return null;
@@ -27,7 +24,6 @@ export default function QuizPage() {
     typeof window !== "undefined" &&
     window.matchMedia("(display-mode: standalone)").matches;
 
-  // const shouldShowInstall = !isStandalone && (isIOS || deferredPrompt);
   const shouldShowInstall = !isStandalone;
 
   useEffect(() => {
