@@ -3,6 +3,7 @@ import { chapter2 } from "./chapitre-2";
 import { chapter3 } from "./chapitre-3";
 import { chapter4 } from "./chapitre-4";
 import { chapter5 } from "./chapitre-5";
+import { chapter6 } from "./chapitre-6";
 
 export const Quiz = {
   "chapter-1": chapter1,
@@ -10,6 +11,7 @@ export const Quiz = {
   "chapter-3": chapter3,
   "chapter-4": chapter4,
   "chapter-5": chapter5,
+  "chapter-6": chapter6,
 };
 
-export { chapter1, chapter2, chapter3, chapter4, chapter5 };
+export { chapter1, chapter2, chapter3, chapter4, chapter5, chapter6 };
