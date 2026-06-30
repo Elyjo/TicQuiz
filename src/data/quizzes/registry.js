@@ -28,6 +28,7 @@ import { Quiz as adminWindowsQuiz } from "@/data/quizzes/d2a/l2/semester2/adminW
 import { Quiz as phpQuiz } from "@/data/quizzes/d2a/l2/semester2/php/chapters";
 import { Quiz as javaPOOQuiz } from "@/data/quizzes/d2a/l2/semester2/javaPOO/chapters";
 import { Quiz as adminLinuxQuiz } from "@/data/quizzes/d2a/l2/semester2/adminLinux/chapters";
+import { Quiz as basesDonneesQuiz } from "@/data/quizzes/d2a/l2/semester2/basesDonnees/chapters";
 
 
 export const quizRegistry = {
@@ -59,6 +60,7 @@ export const quizRegistry = {
   php: phpQuiz,
   javaPOO: javaPOOQuiz,
   adminLinux: adminLinuxQuiz,
+  basesDonnees: basesDonneesQuiz,
   
 
 };
