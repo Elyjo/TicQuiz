@@ -1,6 +1,6 @@
 export const chapitre3 = {
   id: "chapitre-3",
-  title: "Exceptions-Entrées/Sorties",
+  title: "Exceptions et Flux",
   questions: [
     {
       id: 1,
