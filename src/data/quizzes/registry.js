@@ -29,7 +29,7 @@ import { Quiz as phpQuiz } from "@/data/quizzes/d2a/l2/semester2/php/chapters";
 import { Quiz as javaPOOQuiz } from "@/data/quizzes/d2a/l2/semester2/javaPOO/chapters";
 import { Quiz as adminLinuxQuiz } from "@/data/quizzes/d2a/l2/semester2/adminLinux/chapters";
 import { Quiz as basesDonneesQuiz } from "@/data/quizzes/d2a/l2/semester2/basesDonnees/chapters";
-import { Quiz as javaQuiz} from "@/data/quizzes/d2a/l3/semester2/java/chapters";
+import { Quiz as javaQuiz} from "@/data/quizzes/d2a/l2/semester2/java/chapters";
 
 
 export const quizRegistry = {
