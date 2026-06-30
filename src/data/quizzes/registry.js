@@ -27,6 +27,7 @@ import { Quiz as traitementSignalQuiz } from "@/data/quizzes/srt/l1/semester2/tr
 import { Quiz as adminWindowsQuiz } from "@/data/quizzes/d2a/l2/semester2/adminWindows/chapters";
 import { Quiz as phpQuiz } from "@/data/quizzes/d2a/l2/semester2/php/chapters";
 import { Quiz as javaPOOQuiz } from "@/data/quizzes/d2a/l2/semester2/javaPOO/chapters";
+import { Quiz as adminLinuxQuiz } from "@/data/quizzes/d2a/l2/semester2/adminLinux/chapters";
 
 
 export const quizRegistry = {
@@ -57,6 +58,7 @@ export const quizRegistry = {
   adminWindows: adminWindowsQuiz,
   php: phpQuiz,
   javaPOO: javaPOOQuiz,
+  adminLinux: adminLinuxQuiz,
   
 
 };
