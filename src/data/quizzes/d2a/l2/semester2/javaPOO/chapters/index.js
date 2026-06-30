@@ -8,14 +8,14 @@ import { chapter7 } from "./chapitre-7";
 import { chapter8 } from "./chapitre-8";
 
 export const Quiz = {
-  "chapter1": chapter1,
-  "chapter2": chapter2,
-  "chapter3": chapter3,
-  "chapter4": chapter4,
-  "chapter5": chapter5,
-  "chapter6": chapter6,
-  "chapter7": chapter7,
-  "chapter8": chapter8,
+  "chapter-1": chapter1,
+  "chapter-2": chapter2,
+  "chapter-3": chapter3,
+  "chapter-4": chapter4,
+  "chapter-5": chapter5,
+  "chapter-6": chapter6,
+  "chapter-7": chapter7,
+  "chapter-8": chapter8,
 
 };
 
