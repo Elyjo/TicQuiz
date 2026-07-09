@@ -1,0 +1,96 @@
+export const chapter4 = {
+  id: "chapter-4",
+  title: "Sécurité et Performance",
+  questions: [
+    {
+      id: 1,
+      question: "Technique Headless",
+      options: ["Découplage", "Intégré", "Monolithe", "Statique"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Optimisation cache",
+      options: ["Page/Objet", "Compiler", "Debugger", "Backup"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Staging",
+      options: ["Pré-prod", "Prod", "Local", "Backup"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Risque majeur",
+      options: ["Injection SQL", "CSS", "HTML", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Action sécurité",
+      options: ["Mises à jour", "Chiffrement", "Hard", "Virtu"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "SSL/TLS",
+      options: ["HTTPS", "HTTP", "FTP", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Brute force",
+      options: ["Attaque mot passe", "BDD", "Cache", "Log"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "CDN",
+      options: ["Distribution contenu", "Base", "Log", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Minification",
+      options: ["Réduction fichier", "Log", "SQL", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Backups",
+      options: ["Sécurité données", "Design", "CSS", "Log"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Pare-feu (WAF)",
+      options: ["Filtrage trafic", "Cache", "SQL", "Log"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Log accès",
+      options: ["Traçage erreurs", "Design", "SQL", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "File permissions",
+      options: ["Sécurité serveur", "Design", "CSS", "Log"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Object caching",
+      options: ["Stockage mémoire", "Log", "SQL", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Scan vulnérabilités",
+      options: ["Audit sécurité", "Log", "Design", "Cache"],
+      answer: 0,
+    },
+  ],
+};

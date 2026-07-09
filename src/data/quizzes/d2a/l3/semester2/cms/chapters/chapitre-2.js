@@ -1,0 +1,96 @@
+export const chapter2 = {
+  id: "chapter-2",
+  title: "Thèmes et Personnalisation",
+  questions: [
+    {
+      id: 1,
+      question: "Couche présentation",
+      options: ["Thème", "Core", "Plugin", "BDD"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Hiérarchie templates",
+      options: ["Ordre priorité", "Aléatoire", "Alpha", "Taille"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Fichier style obligatoire",
+      options: ["style.css", "index.php", "config.php", "logo.png"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Rôle template PHP",
+      options: ["Affichage", "Calcul", "Audit", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Surcharge thème",
+      options: ["Thème enfant", "Core", "Plugin", "BDD"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Variables globales",
+      options: ["$post", "$config", "$db", "$user"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Boucle affichage",
+      options: ["The Loop", "While", "For", "Map"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Dossier assets",
+      options: ["css/js/img", "core", "inc", "logs"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Traduction",
+      options: ["Fichiers .pot", "SQL", "PHP", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Widget",
+      options: ["Module zone", "Core", "DB", "Log"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Customizer",
+      options: ["Réglages temps réel", "SQL", "PHP", "FTP"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Images responsive",
+      options: ["srcset", "src", "css", "db"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Fichier functions.php",
+      options: ["Logique thème", "Style", "View", "Log"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Sidebar",
+      options: ["Zone widgets", "BDD", "Log", "FTP"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Template tag",
+      options: ["Fonction affichage", "SQL", "CSS", "Log"],
+      answer: 0,
+    },
+  ],
+};

@@ -1,0 +1,96 @@
+export const chapter3 = {
+  id: "chapter-3",
+  title: "Extensions, Hooks et API",
+  questions: [
+    {
+      id: 1,
+      question: "Extension fonction",
+      options: ["Plugin", "Thème", "Core", "Script"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Concept Hook",
+      options: ["Insertion code", "Thème", "BDD", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Types Hooks",
+      options: ["Action/Filtre", "Table/Col", "Read/Write", "Up/Down"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "API externe",
+      options: ["REST/GraphQL", "FTP", "SSH", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Usage plugin",
+      options: ["Ajout fonctionnel", "Design", "BDD", "OS"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "add_action",
+      options: ["Exécuter code", "Changer données", "Log", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "add_filter",
+      options: ["Modifier donnée", "Exécuter code", "Log", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Custom Post Type",
+      options: ["Type contenu", "Plugin", "CSS", "BDD"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Taxonomie",
+      options: ["Catégorisation", "BDD", "CSS", "Log"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Meta box",
+      options: ["Champs ajout", "Thème", "Log", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Endpoint API",
+      options: ["URL accès", "Log", "CSS", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Activation plugin",
+      options: ["Hook activation", "SQL", "FTP", "Log"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Désactivation",
+      options: ["Hook désactivation", "SQL", "FTP", "Log"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Dashboard",
+      options: ["Admin", "Front", "Log", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Shortcode",
+      options: ["Tag insertion", "CSS", "SQL", "Log"],
+      answer: 0,
+    },
+  ],
+};
