@@ -33,6 +33,7 @@ import { Quiz as javaQuiz} from "@/data/quizzes/srt/l2/semester2/java/chapters";
 import { Quiz as telecomsQuiz} from "@/data/quizzes/srt/l2/semester2/telecoms/chapters";
 import { Quiz as sibdQuiz} from "@/data/quizzes/srt/l2/semester2/sibd/chapters";
 import { Quiz as programmationWebQuiz} from "@/data/quizzes/srt/l2/semester2/programmationWeb/chapters";
+import { Quiz as oracleQuiz} from "@/data/quizzes/d2a/l3/semester1/oracle/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -68,4 +69,5 @@ export const quizRegistry = {
   telecoms: telecomsQuiz,
   sibd: sibdQuiz,
   programmationWeb: programmationWebQuiz,
+  oracle: oracleQuiz,
 };
