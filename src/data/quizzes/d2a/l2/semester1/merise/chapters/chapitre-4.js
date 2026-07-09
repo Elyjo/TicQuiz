@@ -1,6 +1,6 @@
 export const chapter4 = {
   id: "chapter-4",
-  title: "Le MCD",
+  title: "MCD",
   questions: [
     {
       id: 1,
