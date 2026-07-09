@@ -23,7 +23,6 @@ import {
 export const d2a = {
   l1: {
     semester1: [
-      // L1 - S1
       {
         id: "architecture",
         name: "Architecture",
