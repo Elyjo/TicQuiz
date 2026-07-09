@@ -30,7 +30,7 @@ import { Quiz as javaPOOQuiz } from "@/data/quizzes/d2a/l2/semester2/javaPOO/cha
 import { Quiz as adminLinuxQuiz } from "@/data/quizzes/d2a/l2/semester2/adminLinux/chapters";
 import { Quiz as basesDonneesQuiz } from "@/data/quizzes/d2a/l2/semester2/basesDonnees/chapters";
 import { Quiz as javaQuiz} from "@/data/quizzes/srt/l2/semester2/java/chapters";
-
+import { Quiz as telecomsQuiz} from "@/data/quizzes/srt/l2/semester2/telecoms/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -62,6 +62,7 @@ export const quizRegistry = {
   javaPOO: javaPOOQuiz,
   adminLinux: adminLinuxQuiz,
   basesDonnees: basesDonneesQuiz,
-  java: javaQuiz
+  java: javaQuiz,
+  telecoms: telecomsQuiz,
 
 };
