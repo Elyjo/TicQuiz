@@ -1,6 +1,6 @@
 export const chapter1 = {
   id: "chapter-1",
-  title: "Bases des Télécommunications",
+  title: "Bases des Télécoms",
   questions: [
     {
       id: 1,
