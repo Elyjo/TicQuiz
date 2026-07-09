@@ -4,7 +4,6 @@ import {
   Cpu,
   AppWindow,
   Code2,
-  Languages,
   Monitor,
   Network,
   Database,
@@ -201,13 +200,6 @@ export const srt = {
         credits: 9,
         icon: Scale,
         color: "orange",
-      },
-      {
-        id: "anglais",
-        name: "Anglais",
-        credits: 9,
-        icon: Languages,
-        color: "pink",
       },
 
     ],

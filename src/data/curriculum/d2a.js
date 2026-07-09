@@ -18,7 +18,6 @@ import {
   Image,
   LayoutDashboard,
   Scale,
-  Languages,
 } from "lucide-react";
 
 export const d2a = {
@@ -218,13 +217,6 @@ export const d2a = {
         credits: 2,
         icon: Scale,
         color: "orange",
-      },
-      {
-        id: "anglais",
-        name: "Anglais",
-        credits: 2,
-        icon: Languages,
-        color: "pink",
       },
     ],
   },
