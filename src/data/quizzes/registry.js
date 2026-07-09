@@ -32,6 +32,7 @@ import { Quiz as basesDonneesQuiz } from "@/data/quizzes/d2a/l2/semester2/basesD
 import { Quiz as javaQuiz} from "@/data/quizzes/srt/l2/semester2/java/chapters";
 import { Quiz as telecomsQuiz} from "@/data/quizzes/srt/l2/semester2/telecoms/chapters";
 import { Quiz as sibdQuiz} from "@/data/quizzes/srt/l2/semester2/sibd/chapters";
+import { Quiz as programmationWebQuiz} from "@/data/quizzes/srt/l2/semester2/programmationWeb/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -66,4 +67,5 @@ export const quizRegistry = {
   java: javaQuiz,
   telecoms: telecomsQuiz,
   sibd: sibdQuiz,
+  programmationWeb: programmationWebQuiz,
 };
