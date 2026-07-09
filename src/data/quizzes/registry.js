@@ -31,6 +31,7 @@ import { Quiz as adminLinuxQuiz } from "@/data/quizzes/d2a/l2/semester2/adminLin
 import { Quiz as basesDonneesQuiz } from "@/data/quizzes/d2a/l2/semester2/basesDonnees/chapters";
 import { Quiz as javaQuiz} from "@/data/quizzes/srt/l2/semester2/java/chapters";
 import { Quiz as telecomsQuiz} from "@/data/quizzes/srt/l2/semester2/telecoms/chapters";
+import { Quiz as sibdQuiz} from "@/data/quizzes/srt/l2/semester2/sibd/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -64,5 +65,5 @@ export const quizRegistry = {
   basesDonnees: basesDonneesQuiz,
   java: javaQuiz,
   telecoms: telecomsQuiz,
-
+  sibd: sibdQuiz,
 };
