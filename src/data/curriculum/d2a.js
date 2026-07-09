@@ -188,6 +188,13 @@ export const d2a = {
         icon: FileCode,
         color: "indigo",
       },
+      {
+        id: "oracle",
+        name: "Oracle",
+        credits: 4,
+        icon: Database,
+        color: "cyan",
+      }
     ],
 
     semester2: [
