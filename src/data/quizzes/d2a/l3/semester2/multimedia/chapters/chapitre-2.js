@@ -1,0 +1,96 @@
+export const chapter2 = {
+  id: "chapter-2",
+  title: "Intégration Vidéo et Audio",
+  questions: [
+    {
+      id: 1,
+      question: "Balise vidéo HTML5",
+      options: ["<video>", "<media>", "<movie>", "<play>"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Balise audio HTML5",
+      options: ["<audio>", "<sound>", "<track>", "<mp3>"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Attribut pour contrôles",
+      options: ["controls", "autoplay", "loop", "muted"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Attribut démarrage auto",
+      options: ["autoplay", "controls", "loop", "muted"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Sous-titrage",
+      options: ["<track>", "<subtitle>", "<caption>", "<text>"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Format source vidéo multiple",
+      options: ["<source>", "<src>", "<data>", "<file>"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Codecs vidéo",
+      options: ["H.264/H.265", "MP3", "SVG", "JSON"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Lecture en boucle",
+      options: ["loop", "autoplay", "muted", "controls"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "API JavaScript média",
+      options: ["HTMLMediaElement", "AudioContext", "DOM", "Fetch"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Streaming en direct",
+      options: ["HLS/DASH", "MP3", "JPG", "SVG"],
+      answer: 1,
+    },
+    {
+      id: 11,
+      question: "Mise en sourdine",
+      options: ["muted", "autoplay", "loop", "controls"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Affiche vidéo",
+      options: ["poster", "src", "alt", "title"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Événement média",
+      options: ["onplay", "onclick", "onfocus", "onhover"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Contrôle audio web",
+      options: ["Web Audio API", "CSS", "SQL", "XML"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Format conteneur vidéo",
+      options: ["MP4", "MP3", "JPG", "PNG"],
+      answer: 0,
+    },
+  ],
+};

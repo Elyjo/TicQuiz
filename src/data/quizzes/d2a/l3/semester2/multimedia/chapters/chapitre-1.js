@@ -1,0 +1,96 @@
+export const chapter1 = {
+  id: "chapter-1",
+  title: "Formats et Optimisation",
+  questions: [
+    {
+      id: 1,
+      question: "Format image vectoriel",
+      options: ["SVG", "JPG", "PNG", "GIF"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Format image avec transparence",
+      options: ["PNG", "JPG", "SVG", "BMP"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Format vidéo moderne (web)",
+      options: ["WebM", "AVI", "MOV", "WMV"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Compression sans perte",
+      options: ["Lossless", "Lossy", "Raw", "Dynamic"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Format image next-gen",
+      options: ["WebP", "JPG", "GIF", "TIFF"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Avantage du SVG",
+      options: ["Scalabilité", "Poids", "Couleur", "Simple"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Outil de compression image",
+      options: ["TinyPNG", "Git", "SQL", "Composer"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Format audio compressé",
+      options: ["MP3", "WAV", "AIFF", "FLAC"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Unité de résolution",
+      options: ["DPI", "CM", "MM", "KG"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Format sans perte audio",
+      options: ["FLAC", "MP3", "OGG", "AAC"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Technique image responsive",
+      options: ["srcset", "src", "href", "alt"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Format avec animation",
+      options: ["GIF", "JPG", "PNG", "SVG"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Color profile web",
+      options: ["sRGB", "CMYK", "RAW", "LAB"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Intérêt Lazy Loading",
+      options: ["Performance", "Design", "CSS", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Format vidéo haute compression",
+      options: ["AV1", "AVI", "MPEG", "WMV"],
+      answer: 0,
+    },
+  ],
+};

@@ -1,0 +1,96 @@
+export const chapter3 = {
+  id: "chapter-3",
+  title: "Accessibilité et Standards",
+  questions: [
+    {
+      id: 1,
+      question: "Attribut texte alternatif",
+      options: ["alt", "title", "src", "data"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Standard accessibilité",
+      options: ["WCAG", "W3C", "ISO", "HTTP"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Rôle des transcriptions",
+      options: ["Accessibilité", "Design", "CSS", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Audio description",
+      options: ["Description visuelle", "Son", "Image", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Contraste couleur",
+      options: ["Lisibilité", "Design", "Code", "Stockage"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Arrière-plan vidéo",
+      options: ["Muted + Autoplay", "Controls", "Loop", "Audio"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Navigation clavier",
+      options: ["Tabindex", "Mouse", "Click", "Scroll"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Langage signe vidéo",
+      options: ["Sign Language", "Caption", "Audio", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Légende vidéo",
+      options: ["<track>", "Alt", "Src", "Data"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Sémantique HTML5",
+      options: ["<figure>/<figcaption>", "<div>", "span", "p"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Taille cible clic",
+      options: ["44x44 px", "10x10 px", "20x20 px", "5x5 px"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Lecteur d'écran",
+      options: ["Assistive tech", "Browser", "Server", "Database"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Flash (obsolète)",
+      options: ["Déprécié", "Recommandé", "Standard", "Web"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Focus visuel",
+      options: ["Outline", "Color", "Border", "Font"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Multimédia inclusif",
+      options: ["Accessibilité", "Poids", "Taille", "Stockage"],
+      answer: 0,
+    },
+  ],
+};

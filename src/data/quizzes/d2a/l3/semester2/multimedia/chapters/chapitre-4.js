@@ -1,0 +1,96 @@
+export const chapter4 = {
+  id: "chapter-4",
+  title: "Performance et Livraison",
+  questions: [
+    {
+      id: 1,
+      question: "CDN (Content Delivery)",
+      options: ["Serveur distant", "Base", "Log", "CSS"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Compression globale",
+      options: ["Gzip/Brotli", "Zip", "Rar", "Tar"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Mise en cache",
+      options: ["Browser cache", "SQL", "Log", "FTP"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Poids page",
+      options: ["Mo/Ko", "Sec", "Min", "Pixels"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Outil analyse perf",
+      options: ["Lighthouse", "Notepad", "SQL", "Paint"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Adaptative streaming",
+      options: ["HLS", "MP3", "JPG", "BMP"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Dimension image",
+      options: ["Width/Height", "Alt", "Title", "Data"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Serveur média dédié",
+      options: ["Cloudinary/Vimeo", "Local", "FTP", "Log"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Sprite CSS",
+      options: ["Image combinée", "Code", "Log", "Base"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Base64 image",
+      options: ["Data URI", "File", "CSS", "Log"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "HTTP/2",
+      options: ["Multiplexage", "Séquentiel", "SQL", "Log"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Lazy Load JS",
+      options: ["Intersection Observer", "For", "While", "If"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "WebP support",
+      options: ["Navigateur", "BDD", "OS", "Serveur"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Analyse réseau",
+      options: ["Network tab", "Log", "CSS", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Optimisation globale",
+      options: ["WPO", "SEO", "DB", "Log"],
+      answer: 0,
+    },
+  ],
+};
