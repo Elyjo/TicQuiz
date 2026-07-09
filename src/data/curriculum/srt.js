@@ -197,7 +197,7 @@ export const srt = {
       {
         id: "droitTic",
         name: "Droit des TIC",
-        credits: 9,
+        credits: 3,
         icon: Scale,
         color: "orange",
       },
