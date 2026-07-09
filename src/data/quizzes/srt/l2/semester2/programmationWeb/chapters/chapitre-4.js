@@ -1,6 +1,6 @@
 export const chapter4= {
   id: "chapter-4",
-  title: "Les Bases de React",
+  title: "Bases de React",
   questions: [
     {
       id: 1,

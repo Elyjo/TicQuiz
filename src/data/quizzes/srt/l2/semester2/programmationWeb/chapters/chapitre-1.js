@@ -1,6 +1,6 @@
 export const chapter1 = {
   id: "chapter-1",
-  title: "Bases du Développement Web",
+  title: "Bases du Dev Web",
   questions: [
     {
       id: 1,
