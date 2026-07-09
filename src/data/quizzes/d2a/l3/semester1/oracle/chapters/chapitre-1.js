@@ -1,6 +1,6 @@
 export const chapter1 = {
   id: "chapter-1",
-  title: "Bases de Oracle",
+  title: "Bases Oracle",
   questions: [
     {
       id: 1,
