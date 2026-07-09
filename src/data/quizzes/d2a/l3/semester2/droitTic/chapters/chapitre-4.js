@@ -1,0 +1,96 @@
+export const chapter4 = {
+  id: "chapter-4",
+  title: "Contrats et Commerce",
+  questions: [
+    {
+      id: 1,
+      question: "Vente en ligne",
+      options: ["Contrat distance", "Magasin", "Oral", "Code"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Délai rétractation",
+      options: ["14 jours", "1 jour", "30 jours", "Code"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "CGV",
+      options: ["Conditions vente", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Signature électronique",
+      options: ["Preuve légale", "Image", "SQL", "Log"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Mentions légales",
+      options: ["Obligation", "Option", "Code", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Paiement en ligne",
+      options: ["Sécurisé", "Oral", "Libre", "Code"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Confirmation commande",
+      options: ["Obligatoire", "Option", "Code", "Log"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Droit consommateur",
+      options: ["Protection", "Vente", "Code", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Clause abusive",
+      options: ["Déséquilibre", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "E-commerce",
+      options: ["Commerce électronique", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Archivage contrat",
+      options: ["Obligation", "Option", "Code", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Litige en ligne",
+      options: ["Médiation", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Données bancaires",
+      options: ["PCI-DSS", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Publicité en ligne",
+      options: ["Identifiable", "Invisible", "Code", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Information précontractuelle",
+      options: ["Obligatoire", "Option", "Code", "SQL"],
+      answer: 0,
+    },
+  ],
+};

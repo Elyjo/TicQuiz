@@ -35,6 +35,7 @@ import { Quiz as sibdQuiz} from "@/data/quizzes/srt/l2/semester2/sibd/chapters";
 import { Quiz as programmationWebQuiz} from "@/data/quizzes/srt/l2/semester2/programmationWeb/chapters";
 import { Quiz as oracleQuiz} from "@/data/quizzes/d2a/l3/semester1/oracle/chapters";
 import { Quiz as multimediaQuiz} from "@/data/quizzes/d2a/l3/semester2/multimedia/chapters";
+import { Quiz as droitTicQuiz} from "@/data/quizzes/d2a/l3/semester2/droitTic/chapters";
 
 export const quizRegistry = {
   algorithmique: algorithmiqueQuiz,
@@ -72,4 +73,5 @@ export const quizRegistry = {
   programmationWeb: programmationWebQuiz,
   oracle: oracleQuiz,
   multimedia: multimediaQuiz,
+  droitTic: droitTicQuiz,
 };

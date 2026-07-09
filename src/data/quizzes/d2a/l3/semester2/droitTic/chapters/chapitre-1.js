@@ -1,0 +1,96 @@
+export const chapter1 = {
+  id: "chapter-1",
+  title: "Responsabilité des acteurs",
+  questions: [
+    {
+      id: 1,
+      question: "Qui est le responsable éditorial",
+      options: ["Éditeur", "Hébergeur", "Internaute", "FAI"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Responsabilité hébergeur",
+      options: ["Limitée", "Totale", "Absente", "Illimitée"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Obligation hébergeur après signalement",
+      options: ["Retrait contenu", "Stockage", "Publier", "Ignorer"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Définition FAI",
+      options: ["Fournisseur Accès", "Site Web", "Code", "Serveur"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Loi confiance numérique (LEN)",
+      options: ["Loi 2004", "Loi 2020", "Code Civil", "Code Pénal"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Responsabilité FAI",
+      options: ["Neutre", "Active", "Totale", "Limitée"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Contenu illicite",
+      options: ["Diffamation", "Article", "Code", "Image"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Rôle de l'éditeur",
+      options: ["Responsable contenu", "Hébergeur", "Client", "Codeur"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Preuve numérique",
+      options: ["Écrit électronique", "Papier", "Oral", "Rien"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Lieu de juridiction",
+      options: ["Lieu infraction", "Espace", "Local", "Réseau"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Droit à l'oubli",
+      options: ["Suppression lien", "Impression", "Stockage", "Publicité"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Diffamation en ligne",
+      options: ["Infraction", "Droit", "Liberté", "Code"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Liberté d'expression",
+      options: ["Cadre légal", "Illimité", "Interdit", "Payant"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Nom de domaine",
+      options: ["Propriété intellectuelle", "Code", "Logiciel", "Serveur"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Cybercriminalité",
+      options: ["Délit", "Droit", "Code", "Contrat"],
+      answer: 0,
+    },
+  ],
+};

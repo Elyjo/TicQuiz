@@ -1,0 +1,101 @@
+export const chapter2 = {
+  id: "chapter-2",
+  title: "Protection des données",
+  questions: [
+    {
+      id: 1,
+      question: "Signification RGPD",
+      options: [
+        "Règlement Général Protection",
+        "Règle Gestion",
+        "Réseau Global",
+        "Régulation",
+      ],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Autorité de contrôle (France)",
+      options: ["CNIL", "HADOPI", "Gouvernement", "Police"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Donnée personnelle",
+      options: ["Donnée identifiable", "Code", "Cache", "Log"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Consentement utilisateur",
+      options: ["Libre/Éclairé", "Force", "Payant", "Auto"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Droit accès",
+      options: ["Voir ses données", "Effacer", "Vendre", "Cacher"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Droit rectification",
+      options: ["Corriger", "Vendre", "Stockage", "Code"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Donnée sensible",
+      options: ["Santé/Religion", "Nom", "IP", "Date"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Privacy by Design",
+      options: ["Protection dès conception", "Code", "SQL", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Violation données",
+      options: ["Fuite information", "Stockage", "Vente", "Code"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Délégué protection (DPO)",
+      options: ["Responsable conformité", "Dev", "Client", "Admin"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Durée conservation",
+      options: ["Limitée", "Illimitée", "Définitive", "Variable"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Finalité traitement",
+      options: ["Objectif précis", "Flou", "Gratuit", "Code"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Sous-traitant",
+      options: ["Prestataire externe", "Employé", "Serveur", "Code"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Portabilité",
+      options: ["Transfert données", "Copie", "Suppression", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Sanction",
+      options: ["Amende", "Prix", "Cache", "Code"],
+      answer: 0,
+    },
+  ],
+};

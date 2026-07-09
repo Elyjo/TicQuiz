@@ -1,0 +1,96 @@
+export const chapter3 = {
+  id: "chapter-3",
+  title: "Propriété intellectuelle",
+  questions: [
+    {
+      id: 1,
+      question: "Protection logiciel",
+      options: ["Droit d'auteur", "Brevet", "Marque", "Code"],
+      answer: 0,
+    },
+    {
+      id: 2,
+      question: "Licence libre",
+      options: ["GPL/MIT", "Propriétaire", "Payant", "Code"],
+      answer: 0,
+    },
+    {
+      id: 3,
+      question: "Licence propriétaire",
+      options: ["Usage restreint", "Libre", "GPL", "Public"],
+      answer: 0,
+    },
+    {
+      id: 4,
+      question: "Contrefaçon",
+      options: ["Usage non autorisé", "Vente", "Achat", "Code"],
+      answer: 0,
+    },
+    {
+      id: 5,
+      question: "Droit auteur logiciel",
+      options: ["Moral et patrimonial", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 6,
+      question: "Brevet logiciel",
+      options: ["Invention technique", "Design", "Code", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 7,
+      question: "Marque déposée",
+      options: ["Signe distinctif", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 8,
+      question: "Base données",
+      options: ["Sui generis", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 9,
+      question: "Copyleft",
+      options: ["Liberté partage", "Interdiction", "Code", "Log"],
+      answer: 0,
+    },
+    {
+      id: 10,
+      question: "Open Source",
+      options: ["Code accessible", "Privé", "Vente", "Log"],
+      answer: 0,
+    },
+    {
+      id: 11,
+      question: "Cession droits",
+      options: ["Transfert propriété", "Code", "Log", "SQL"],
+      answer: 0,
+    },
+    {
+      id: 12,
+      question: "Plagiat",
+      options: ["Copie sans citation", "Droit", "Code", "Log"],
+      answer: 0,
+    },
+    {
+      id: 13,
+      question: "Code source",
+      options: ["Œuvre esprit", "Log", "SQL", "Cache"],
+      answer: 0,
+    },
+    {
+      id: 14,
+      question: "Usage professionnel",
+      options: ["Licence requise", "Public", "Gratuit", "Code"],
+      answer: 0,
+    },
+    {
+      id: 15,
+      question: "Creative Commons",
+      options: ["Licence flexible", "Code", "SQL", "Log"],
+      answer: 0,
+    },
+  ],
+};
