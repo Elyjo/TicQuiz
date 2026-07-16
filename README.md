@@ -1,36 +1,313 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 TicQuiz
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+### Smart Revision Platform for UADB Students
+
+🚀 Mobile First • 📱 Progressive Web App • ⚡ Fast • 🎓 Academic Learning
+
+</div>
+
+---
+
+## 🎓 Overview
+
+**TicQuiz** is a modern quiz platform designed for students of **Université Alioune Diop de Bambey (UADB)**.
+
+The application allows students to revise their courses through interactive quizzes organized according to the university curriculum. Learners can navigate through departments, academic levels, semesters, subjects, and chapters to access targeted assessments and monitor their progress.
+
+Built with a mobile-first approach, TicQuiz provides a smooth and engaging learning experience across smartphones, tablets, and desktop devices.
+
+---
+
+## 🏛️ Target Institution
+
+**Université Alioune Diop de Bambey (UADB)**
+
+TicQuiz is specifically designed to support students enrolled in UADB academic programs by providing an accessible and interactive revision environment.
+
+---
+
+## ✨ Features
+
+### 🧭 Academic Navigation
+
+* Department selection
+* Academic level selection (L1, L2, L3)
+* Semester selection
+* Subject browsing
+* Chapter organization
+
+### 📝 Quiz System
+
+* Multiple-choice questions
+* Automatic answer validation
+* Instant score calculation
+* Quiz timer
+* Completion tracking
+* Success percentage calculation
+
+### 📈 Student Progress
+
+* Quiz history tracking
+* Local performance storage
+* Chapter completion monitoring
+* Progress visualization
+
+### 📱 Mobile Experience
+
+* Mobile-first design
+* Responsive user interface
+* Smooth animations
+* Optimized touch interactions
+
+### 🚀 Progressive Web App
+
+* Home screen shortcut support
+* App-like user experience
+* Fast loading times
+* Modern browser compatibility
+
+---
+
+# 🛠️ Tech Stack
+
+## 🎨 Frontend
+
+* Next.js 15 (App Router)
+* React
+* Tailwind CSS
+* Framer Motion
+
+## ☁️ Backend & Database
+
+* Supabase
+
+## 💾 State Management & Storage
+
+* React Hooks
+* Browser Local Storage
+* Custom Secure Storage Layer
+
+## 🎯 UI & Icons
+
+* Lucide React
+
+---
+
+# 🏗️ Project Structure
+
+```text
+src/
+│
+├── app/
+│   ├── username/
+│   ├── department/
+│   ├── levels/
+│   ├── subjects/
+│   ├── stats/
+│   ├── profile/
+│   ├── leaderboard/
+│   └── ...
+│
+├── components/
+│   ├── BackButton.jsx
+│   ├── PwaInstallBanner.jsx
+│   └── ...
+│
+├── screens/
+│   ├── DepartmentScreen.jsx
+│   ├── LevelScreen.jsx
+│   ├── SemesterScreen.jsx
+│   └── ...
+│
+├── data/
+│   ├── curriculum/
+│   │   ├── d2a/
+│   │   └── srt/
+│   │
+│   └── quizzes/
+│       ├── registry.js
+│       ├── d2a/
+│       └── srt/
+│
+├── lib/
+│   └── supabase.js
+│
+├── utils/
+│   └── secureStorage.js
+│
+└── assets/
+```
+
+---
+
+# 🧠 Quiz Architecture
+
+```text
+Department
+    ↓
+Level
+    ↓
+Semester
+    ↓
+Subject
+    ↓
+Chapter
+    ↓
+Quiz
+```
+
+### Example
+
+```text
+D2A
+ └── L2
+      └── Semester 1
+           └── Active Directory
+                └── Chapter 1
+                     └── Quiz
+```
+
+---
+
+# 🔒 Data Persistence
+
+TicQuiz stores student information locally, including:
+
+* Academic path selection
+* Quiz scores
+* Completion history
+* Performance statistics
+* Learning progress
+
+Data is encoded through the custom storage utility:
+
+```javascript
+utils/secureStorage.js
+```
+
+---
+
+# ⚡ Supabase Integration
+
+Supabase is configured through:
+
+```javascript
+lib/supabase.js
+```
+
+Current and future use cases include:
+
+* Authentication
+* Database operations
+* User synchronization
+* Cloud storage
+* Global leaderboards
+
+---
+
+# 🚀 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/ticquiz.git
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build production version
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Start production server
 
-## Learn More
+```bash
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🎨 Design Principles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+TicQuiz follows a modern product design philosophy:
 
-## Deploy on Vercel
+* 📱 Mobile-first development
+* ✨ Glassmorphism-inspired interface
+* ⚡ Fast interactions
+* 🎯 Simple navigation
+* ♿ Accessibility-focused layouts
+* 🧠 Reduced cognitive load
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🔮 Roadmap
+
+### Learning Experience
+
+* [ ] User authentication
+* [ ] Cloud synchronization
+* [ ] Personalized dashboards
+* [ ] Smart recommendations
+
+### Academic Features
+
+* [ ] Teacher dashboard
+* [ ] Course management
+* [ ] Chapter analytics
+* [ ] Advanced statistics
+
+### AI Features
+
+* [ ] AI-generated quizzes
+* [ ] Adaptive learning paths
+* [ ] Intelligent revision assistant
+* [ ] Automated content generation
+
+---
+
+# 👨‍🎓 For UADB Students
+
+TicQuiz was developed to modernize academic revision and provide UADB students with a practical, engaging, and accessible learning tool.
+
+The goal is to make course revision more efficient while encouraging continuous learning through interactive assessments.
+
+---
+
+# 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+If you would like to contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Submit a Pull Request
+
+---
+
+# 📄 License
+
+This project was developed for educational purposes and academic support within **Université Alioune Diop de Bambey (UADB)**.
+
+All rights reserved.
+
+---
+
+### 📚 TicQuiz
+
+Learn. Practice. Progress.
