@@ -10,7 +10,7 @@ import {
   Hourglass,
   ArrowLeft,
 } from "lucide-react";
-
+import HomeButton from "@/components/HomeButton";
 
 export default function SemesterScreen() {
   const router = useRouter();
@@ -59,6 +59,9 @@ export default function SemesterScreen() {
       >
         <ArrowLeft size={18} className="text-white/80" />
       </button>
+
+      {/* HOME BUTTON */}
+      <HomeButton />
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />

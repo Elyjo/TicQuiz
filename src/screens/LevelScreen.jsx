@@ -11,6 +11,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { useEffect } from "react";
+import HomeButton from "@/components/HomeButton";
 
 const VALID_DEPTS = ["d2a", "srt"];
 
@@ -68,6 +69,9 @@ export default function LevelScreen({ dept: deptProp }) {
         <ArrowLeft size={18} className="text-white/80" />
       </button>
 
+      {/* HOME BUTTON */}
+      <HomeButton />
+
       {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
 
@@ -101,8 +105,7 @@ export default function LevelScreen({ dept: deptProp }) {
           </h1>
 
           <p className="mt-3 text-slate-300/70 text-sm leading-6">
-            Sélectionne ton année universitaire pour continuer ton
-            parcours.
+            Sélectionne ton année universitaire pour continuer ton parcours.
           </p>
         </motion.div>
 

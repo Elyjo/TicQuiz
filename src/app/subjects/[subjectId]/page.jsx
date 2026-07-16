@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import BackButton from "@/components/BackButton";
+import HomeButton from "@/components/HomeButton";
 
 const colorClasses = {
   violet: {
@@ -99,6 +100,10 @@ export default function SubjectPage() {
       className="relative min-h-screen overflow-hidden bg-[#020617]"
     >
       <BackButton />
+
+      {/* HOME BUTTON */}
+      <HomeButton />
+
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />

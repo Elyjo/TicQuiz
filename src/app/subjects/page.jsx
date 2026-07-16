@@ -7,6 +7,7 @@ import { d2a } from "@/data/curriculum/d2a";
 import { srt } from "@/data/curriculum/srt";
 import BackButton from "@/components/BackButton";
 import { useRouter } from "next/navigation";
+import HomeButton from "@/components/HomeButton";
 
 const curriculums = {
   d2a,
@@ -125,6 +126,9 @@ export default function SubjectsPage() {
       className="relative min-h-screen overflow-hidden bg-[#020617]"
     >
       <BackButton />
+
+      {/* HOME BUTTON */}
+      <HomeButton />
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />

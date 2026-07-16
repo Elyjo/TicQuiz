@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 import {
   ArrowRight,
   Code2,
@@ -10,6 +9,7 @@ import {
   Computer,
   ArrowLeft,
 } from "lucide-react";
+import HomeButton from "@/components/HomeButton";
 
 export default function DepartmentScreen() {
   const router = useRouter();
@@ -67,6 +67,9 @@ export default function DepartmentScreen() {
       >
         <ArrowLeft size={18} className="text-white/80" />
       </button>
+
+      {/* HOME BUTTON */}
+      <HomeButton />
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
